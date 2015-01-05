@@ -1,0 +1,20 @@
+BITMAP_HIGHLIGHT     BITMAP "Images\highlight.bmp"
+
+BITMAP_PROCEED   BITMAP "Images\proceed.bmp"
+BITMAP_WAIT      BITMAP "Images\wait.bmp"
+
+BITMAP_PDB       BITMAP "Images\PD_black.bmp"
+BITMAP_PDW       BITMAP "Images\PD_white.bmp"
+
+BITMAP_OKBUTTON  BITMAP "Images\OKButton.bmp"
+
+BITMAP_WHEEL1    BITMAP "Images\Lightwheel2.bmp"
+BITMAP_WHEEL2    BITMAP "Images\Lightwheel2a.bmp"
+BITMAP_WHEEL3    BITMAP "Images\Lightwheel2b.bmp"
+BITMAP_WHEEL4    BITMAP "Images\Lightwheel2c.bmp"
+BITMAP_WHEEL5    BITMAP "Images\Lightwheel2d.bmp"
+BITMAP_WHEEL6    BITMAP "Images\Lightwheel2e.bmp"
+BITMAP_WHEEL7    BITMAP "Images\Lightwheel2f.bmp"
+BITMAP_WHEEL8    BITMAP "Images\Lightwheel2g.bmp"
+BITMAP_WHEEL9    BITMAP "Images\Lightwheel2h.bmp"
+BITMAP_WHEEL10   BITMAP "Images\Lightwheel2i.bmp"

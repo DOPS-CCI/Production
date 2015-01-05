@@ -1,0 +1,3 @@
+RNG total within trial.
+var$,0,
+xxx, 999,

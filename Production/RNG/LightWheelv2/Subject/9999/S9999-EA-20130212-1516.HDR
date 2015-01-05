@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Header>
+  <ExperimentDescription>
+    <SoftwareVersion>1.0.0.0</SoftwareVersion>
+    <Title>Superman - RNG</Title>
+    <LongDescription>This is the Earth/Satellite RNG Experiment</LongDescription>
+    <Experimenter>Frank Applin</Experimenter>
+    <Experimenter>Ross Dunseath</Experimenter>
+    <Status>16</Status>
+    <GroupVar>
+      <Name>Target</Name>
+      <Description>Target selected by computer.</Description>
+      <GV Desc="CLOCKWISE">1</GV>
+      <GV Desc="COUNTER-CLOCKWISE">2</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>Response</Name>
+      <Description>Subject response.</Description>
+      <GV Desc="CLOCKWISE">1</GV>
+      <GV Desc="COUNTER-CLOCKWISE">2</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>HitMiss</Name>
+      <Description>Subject hit or miss target.</Description>
+      <GV Desc="Hit">2</GV>
+      <GV Desc="Miss">1</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>RNGTotal</Name>
+      <Description>RNG total within trial.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>RNGCount</Name>
+      <Description>RNG count within trial.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>RNGAverage</Name>
+      <Description>RNG average within trial.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>RunNumber</Name>
+      <Description>Run number within this experimental session.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>TrialNumber</Name>
+      <Description>Trial number within run.</Description>
+    </GroupVar>
+    <Event Type="intrinsic">
+      <Name>TargetSelected</Name>
+      <Description>Marks when target selected by computer.</Description>
+      <GroupVar Name="Target"/>
+      <GroupVar Name="Response"/>
+      <GroupVar Name="HitMiss"/>
+      <GroupVar Name="RNGTotal"/>
+      <GroupVar Name="RNGCount"/>
+      <GroupVar Name="RNGAverage"/>
+      <GroupVar Name="RunNumber"/>
+      <GroupVar Name="TrialNumber"/>
+    </Event>
+    <Event Type="extrinsic">
+      <Name>ResponseSelected</Name>
+      <Description>Marks when subject makes selection.</Description>
+      <Channel>Ana1</Channel>
+      <Edge>rising</Edge>
+      <Location>before</Location>
+      <Max>120000</Max>
+      <Min>0</Min>
+      <GroupVar Name="Target"/>
+      <GroupVar Name="Response"/>
+      <GroupVar Name="HitMiss"/>
+      <GroupVar Name="RNGTotal"/>
+      <GroupVar Name="RNGCount"/>
+      <GroupVar Name="RNGAverage"/>
+      <GroupVar Name="RunNumber"/>
+      <GroupVar Name="TrialNumber"/>
+    </Event>
+  </ExperimentDescription>
+  <SessionDescription>
+    <Date>02-12-2013</Date>
+    <Time>15:15</Time>
+    <Subject>9999</Subject>
+    <Technician>Allison Knee</Technician>
+    <Technician>Ed Modestino</Technician>
+    <BDFFile>S9999-EA-20130212-1516.BDF</BDFFile>
+    <EventFile>S9999-EA-20130212-1516.EVT</EventFile>
+    <ElectrodeFile>S9999-EA-20130212-1516.ETR</ElectrodeFile>
+    <Comment>Enter text</Comment>
+  </SessionDescription>
+</Header>

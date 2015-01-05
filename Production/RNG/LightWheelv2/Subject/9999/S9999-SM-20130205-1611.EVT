@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="TargetSelected">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>13004572313.4670715</Time>
+    <CameraTime>02-05-2013 16:11:57</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2405696</GV>
+      <GV Name="RNGCount">18754</GV>
+      <GV Name="RNGAverage">128.27642103018</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>13004572316.4802437</Time>
+    <CameraTime>02-05-2013 16:11:57</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2405696</GV>
+      <GV Name="RNGCount">18754</GV>
+      <GV Name="RNGAverage">128.27642103018</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>

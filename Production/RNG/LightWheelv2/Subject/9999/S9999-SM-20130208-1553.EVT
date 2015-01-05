@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="TargetSelected">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>13004830436.3887062</Time>
+    <CameraTime>02-08-2013 15:54:00</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">var$</GV>
+      <GV Name="RNGCount">51371</GV>
+      <GV Name="RNGAverage">var$</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>13004830439.3998776</Time>
+    <CameraTime>02-08-2013 15:54:00</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">var$</GV>
+      <GV Name="RNGCount">51371</GV>
+      <GV Name="RNGAverage">var$</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <Time>13004830440.4339371</Time>
+    <CameraTime>02-08-2013 15:54:04</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">var$</GV>
+      <GV Name="RNGCount">51371</GV>
+      <GV Name="RNGAverage">var$</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <Time>13004830443.437109</Time>
+    <CameraTime>02-08-2013 15:54:04</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">var$</GV>
+      <GV Name="RNGCount">51371</GV>
+      <GV Name="RNGAverage">var$</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>5</Index>
+    <GrayCode>7</GrayCode>
+    <Time>13004830444.4741669</Time>
+    <CameraTime>02-08-2013 15:54:08</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">var$</GV>
+      <GV Name="RNGCount">51284</GV>
+      <GV Name="RNGAverage">var$</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>6</Index>
+    <GrayCode>5</GrayCode>
+    <Time>13004830447.4773388</Time>
+    <CameraTime>02-08-2013 15:54:08</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">var$</GV>
+      <GV Name="RNGCount">51284</GV>
+      <GV Name="RNGAverage">var$</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>7</Index>
+    <GrayCode>4</GrayCode>
+    <Time>13004830448.5143986</Time>
+    <CameraTime>02-08-2013 15:54:12</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">var$</GV>
+      <GV Name="RNGCount">51138</GV>
+      <GV Name="RNGAverage">var$</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">4</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>8</Index>
+    <GrayCode>12</GrayCode>
+    <Time>13004830451.5175705</Time>
+    <CameraTime>02-08-2013 15:54:12</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">var$</GV>
+      <GV Name="RNGCount">51138</GV>
+      <GV Name="RNGAverage">var$</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">4</GV>
+    </GroupVars>
+  </Event>

@@ -1,0 +1,1538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="TargetSelected">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>13004567725.3181629</Time>
+    <CameraTime>02-05-2013 14:55:29</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2395910</GV>
+      <GV Name="RNGCount">18754</GV>
+      <GV Name="RNGAverage">127.754612349365</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>13004567728.331337</Time>
+    <CameraTime>02-05-2013 14:55:29</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2395910</GV>
+      <GV Name="RNGCount">18754</GV>
+      <GV Name="RNGAverage">127.754612349365</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <Time>13004567729.4083977</Time>
+    <CameraTime>02-05-2013 14:55:33</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2398210</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.455888605442</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <Time>13004567732.4215698</Time>
+    <CameraTime>02-05-2013 14:55:33</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2398210</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.455888605442</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>5</Index>
+    <GrayCode>7</GrayCode>
+    <Time>13004567733.4996319</Time>
+    <CameraTime>02-05-2013 14:55:37</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2407370</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.942708333333</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>6</Index>
+    <GrayCode>5</GrayCode>
+    <Time>13004567736.5158043</Time>
+    <CameraTime>02-05-2013 14:55:37</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2407370</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.942708333333</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>7</Index>
+    <GrayCode>4</GrayCode>
+    <Time>13004567737.6098671</Time>
+    <CameraTime>02-05-2013 14:55:41</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2394722</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.270514455782</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">4</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>8</Index>
+    <GrayCode>12</GrayCode>
+    <Time>13004567740.6240387</Time>
+    <CameraTime>02-05-2013 14:55:41</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2394722</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.270514455782</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">4</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>9</Index>
+    <GrayCode>13</GrayCode>
+    <Time>13004567741.705101</Time>
+    <CameraTime>02-05-2013 14:55:45</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2404266</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.777742346939</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">5</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>10</Index>
+    <GrayCode>15</GrayCode>
+    <Time>13004567744.7182732</Time>
+    <CameraTime>02-05-2013 14:55:45</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2404266</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.777742346939</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">5</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>11</Index>
+    <GrayCode>14</GrayCode>
+    <Time>13004567745.812336</Time>
+    <CameraTime>02-05-2013 14:55:49</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2397899</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.439360119048</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">6</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>12</Index>
+    <GrayCode>10</GrayCode>
+    <Time>13004567748.8295078</Time>
+    <CameraTime>02-05-2013 14:55:49</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2397899</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.439360119048</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">6</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>13</Index>
+    <GrayCode>11</GrayCode>
+    <Time>13004567749.9015694</Time>
+    <CameraTime>02-05-2013 14:55:53</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2407113</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.929049744898</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">7</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>14</Index>
+    <GrayCode>9</GrayCode>
+    <Time>13004567752.9147415</Time>
+    <CameraTime>02-05-2013 14:55:53</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2407113</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.929049744898</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">7</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>15</Index>
+    <GrayCode>8</GrayCode>
+    <Time>13004567753.9998035</Time>
+    <CameraTime>02-05-2013 14:55:58</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2399478</GV>
+      <GV Name="RNGCount">18752</GV>
+      <GV Name="RNGAverage">127.95851109215</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">8</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>16</Index>
+    <GrayCode>24</GrayCode>
+    <Time>13004567757.0049763</Time>
+    <CameraTime>02-05-2013 14:55:58</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2399478</GV>
+      <GV Name="RNGCount">18752</GV>
+      <GV Name="RNGAverage">127.95851109215</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">8</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>17</Index>
+    <GrayCode>25</GrayCode>
+    <Time>13004567758.0880375</Time>
+    <CameraTime>02-05-2013 14:56:02</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2414451</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.319036989796</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">9</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>18</Index>
+    <GrayCode>27</GrayCode>
+    <Time>13004567761.1052113</Time>
+    <CameraTime>02-05-2013 14:56:02</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2414451</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.319036989796</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">9</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>19</Index>
+    <GrayCode>26</GrayCode>
+    <Time>13004567762.1892719</Time>
+    <CameraTime>02-05-2013 14:56:06</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2405731</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.855601615646</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">10</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>20</Index>
+    <GrayCode>30</GrayCode>
+    <Time>13004567765.2024441</Time>
+    <CameraTime>02-05-2013 14:56:06</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2405731</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.855601615646</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">10</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>21</Index>
+    <GrayCode>31</GrayCode>
+    <Time>13004567766.2915077</Time>
+    <CameraTime>02-05-2013 14:56:10</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2398117</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.450946003401</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">11</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>22</Index>
+    <GrayCode>29</GrayCode>
+    <Time>13004567769.3046799</Time>
+    <CameraTime>02-05-2013 14:56:10</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2398117</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.450946003401</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">11</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>23</Index>
+    <GrayCode>28</GrayCode>
+    <Time>13004567770.3977413</Time>
+    <CameraTime>02-05-2013 14:56:14</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2416926</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.450573979592</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">12</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>24</Index>
+    <GrayCode>20</GrayCode>
+    <Time>13004567773.4159145</Time>
+    <CameraTime>02-05-2013 14:56:14</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2416926</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.450573979592</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">12</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>25</Index>
+    <GrayCode>21</GrayCode>
+    <Time>13004567774.5059776</Time>
+    <CameraTime>02-05-2013 14:56:18</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2401316</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.620960884354</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">13</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>26</Index>
+    <GrayCode>23</GrayCode>
+    <Time>13004567777.5211487</Time>
+    <CameraTime>02-05-2013 14:56:18</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2401316</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.620960884354</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">13</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>27</Index>
+    <GrayCode>22</GrayCode>
+    <Time>13004567778.6042118</Time>
+    <CameraTime>02-05-2013 14:56:22</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2403310</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.72693452381</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">14</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>28</Index>
+    <GrayCode>18</GrayCode>
+    <Time>13004567781.6193848</Time>
+    <CameraTime>02-05-2013 14:56:22</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2403310</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.72693452381</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">14</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>29</Index>
+    <GrayCode>19</GrayCode>
+    <Time>13004567782.7044468</Time>
+    <CameraTime>02-05-2013 14:56:26</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2415566</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.378295068027</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">15</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>30</Index>
+    <GrayCode>17</GrayCode>
+    <Time>13004567785.7216186</Time>
+    <CameraTime>02-05-2013 14:56:26</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2415566</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.378295068027</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">15</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>31</Index>
+    <GrayCode>16</GrayCode>
+    <Time>13004567786.8076801</Time>
+    <CameraTime>02-05-2013 14:56:30</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2411883</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.182557397959</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">16</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>32</Index>
+    <GrayCode>48</GrayCode>
+    <Time>13004567789.8208523</Time>
+    <CameraTime>02-05-2013 14:56:30</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2411883</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.182557397959</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">16</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>33</Index>
+    <GrayCode>49</GrayCode>
+    <Time>13004567790.9129162</Time>
+    <CameraTime>02-05-2013 14:56:34</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2390097</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.024713010204</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">17</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>34</Index>
+    <GrayCode>51</GrayCode>
+    <Time>13004567793.9290886</Time>
+    <CameraTime>02-05-2013 14:56:35</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2390097</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.024713010204</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">17</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>35</Index>
+    <GrayCode>50</GrayCode>
+    <Time>13004567795.0141506</Time>
+    <CameraTime>02-05-2013 14:56:39</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2415958</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.39912840136</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">18</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>36</Index>
+    <GrayCode>54</GrayCode>
+    <Time>13004567798.0313225</Time>
+    <CameraTime>02-05-2013 14:56:39</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2415958</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.39912840136</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">18</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>37</Index>
+    <GrayCode>55</GrayCode>
+    <Time>13004567799.117384</Time>
+    <CameraTime>02-05-2013 14:56:43</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2403900</GV>
+      <GV Name="RNGCount">18752</GV>
+      <GV Name="RNGAverage">128.194325938566</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">19</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>38</Index>
+    <GrayCode>53</GrayCode>
+    <Time>13004567802.1225567</Time>
+    <CameraTime>02-05-2013 14:56:43</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2403900</GV>
+      <GV Name="RNGCount">18752</GV>
+      <GV Name="RNGAverage">128.194325938566</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">19</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>39</Index>
+    <GrayCode>52</GrayCode>
+    <Time>13004567803.2056179</Time>
+    <CameraTime>02-05-2013 14:56:47</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2408960</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.027210884354</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">20</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>40</Index>
+    <GrayCode>60</GrayCode>
+    <Time>13004567806.2217903</Time>
+    <CameraTime>02-05-2013 14:56:47</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2408960</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.027210884354</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">20</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>41</Index>
+    <GrayCode>61</GrayCode>
+    <Time>13004567807.310854</Time>
+    <CameraTime>02-05-2013 14:56:51</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2415711</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.38600127551</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">21</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>42</Index>
+    <GrayCode>63</GrayCode>
+    <Time>13004567810.3290253</Time>
+    <CameraTime>02-05-2013 14:56:51</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2415711</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.38600127551</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">21</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>43</Index>
+    <GrayCode>62</GrayCode>
+    <Time>13004567811.4150886</Time>
+    <CameraTime>02-05-2013 14:56:55</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2402072</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.661139455782</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">22</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>44</Index>
+    <GrayCode>58</GrayCode>
+    <Time>13004567814.4292602</Time>
+    <CameraTime>02-05-2013 14:56:55</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2402072</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.661139455782</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">22</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>45</Index>
+    <GrayCode>59</GrayCode>
+    <Time>13004567815.518322</Time>
+    <CameraTime>02-05-2013 14:56:59</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2398265</GV>
+      <GV Name="RNGCount">18752</GV>
+      <GV Name="RNGAverage">127.893824658703</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">23</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>46</Index>
+    <GrayCode>57</GrayCode>
+    <Time>13004567818.5234947</Time>
+    <CameraTime>02-05-2013 14:56:59</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2398265</GV>
+      <GV Name="RNGCount">18752</GV>
+      <GV Name="RNGAverage">127.893824658703</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">23</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>47</Index>
+    <GrayCode>56</GrayCode>
+    <Time>13004567819.6175575</Time>
+    <CameraTime>02-05-2013 14:57:03</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2409945</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.07955994898</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">24</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>48</Index>
+    <GrayCode>40</GrayCode>
+    <Time>13004567822.6367302</Time>
+    <CameraTime>02-05-2013 14:57:03</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2409945</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.07955994898</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">24</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>49</Index>
+    <GrayCode>41</GrayCode>
+    <Time>13004567823.7267933</Time>
+    <CameraTime>02-05-2013 14:57:07</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2415449</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.372076955782</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">25</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>50</Index>
+    <GrayCode>43</GrayCode>
+    <Time>13004567826.7409649</Time>
+    <CameraTime>02-05-2013 14:57:07</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY LOW</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2415449</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.372076955782</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">25</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>51</Index>
+    <GrayCode>42</GrayCode>
+    <Time>13004567827.8210258</Time>
+    <CameraTime>02-05-2013 14:57:11</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2414007</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.29544005102</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>52</Index>
+    <GrayCode>46</GrayCode>
+    <Time>13004567830.834198</Time>
+    <CameraTime>02-05-2013 14:57:11</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2414007</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.29544005102</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>53</Index>
+    <GrayCode>47</GrayCode>
+    <Time>13004567831.9252605</Time>
+    <CameraTime>02-05-2013 14:57:15</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2405828</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.860756802721</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>54</Index>
+    <GrayCode>45</GrayCode>
+    <Time>13004567834.9424343</Time>
+    <CameraTime>02-05-2013 14:57:16</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2405828</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.860756802721</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>55</Index>
+    <GrayCode>44</GrayCode>
+    <Time>13004567836.0344963</Time>
+    <CameraTime>02-05-2013 14:57:20</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2403973</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.762170493197</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>56</Index>
+    <GrayCode>36</GrayCode>
+    <Time>13004567839.0476685</Time>
+    <CameraTime>02-05-2013 14:57:20</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2403973</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.762170493197</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>57</Index>
+    <GrayCode>37</GrayCode>
+    <Time>13004567840.1377316</Time>
+    <CameraTime>02-05-2013 14:57:24</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2398359</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.463807397959</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">4</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>58</Index>
+    <GrayCode>39</GrayCode>
+    <Time>13004567843.1509037</Time>
+    <CameraTime>02-05-2013 14:57:24</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2398359</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.463807397959</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">4</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>59</Index>
+    <GrayCode>38</GrayCode>
+    <Time>13004567844.231966</Time>
+    <CameraTime>02-05-2013 14:57:28</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2388896</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">126.960884353741</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">5</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>60</Index>
+    <GrayCode>34</GrayCode>
+    <Time>13004567847.2491379</Time>
+    <CameraTime>02-05-2013 14:57:28</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2388896</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">126.960884353741</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">5</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>61</Index>
+    <GrayCode>35</GrayCode>
+    <Time>13004567848.3362007</Time>
+    <CameraTime>02-05-2013 14:57:32</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2403590</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.74181547619</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">6</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>62</Index>
+    <GrayCode>33</GrayCode>
+    <Time>13004567851.3493729</Time>
+    <CameraTime>02-05-2013 14:57:32</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2403590</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.74181547619</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">6</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>63</Index>
+    <GrayCode>32</GrayCode>
+    <Time>13004567852.4424343</Time>
+    <CameraTime>02-05-2013 14:57:36</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2399861</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.543633078231</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">7</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>64</Index>
+    <GrayCode>96</GrayCode>
+    <Time>13004567855.4566078</Time>
+    <CameraTime>02-05-2013 14:57:36</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2399861</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.543633078231</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">7</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>65</Index>
+    <GrayCode>97</GrayCode>
+    <Time>13004567856.5436688</Time>
+    <CameraTime>02-05-2013 14:57:40</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2395904</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.333333333333</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">8</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>66</Index>
+    <GrayCode>99</GrayCode>
+    <Time>13004567859.5628414</Time>
+    <CameraTime>02-05-2013 14:57:40</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2395904</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.333333333333</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">8</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>67</Index>
+    <GrayCode>98</GrayCode>
+    <Time>13004567860.6459045</Time>
+    <CameraTime>02-05-2013 14:57:44</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2409829</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.073394982993</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">9</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>68</Index>
+    <GrayCode>102</GrayCode>
+    <Time>13004567863.6640758</Time>
+    <CameraTime>02-05-2013 14:57:44</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2409829</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.073394982993</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">9</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>69</Index>
+    <GrayCode>103</GrayCode>
+    <Time>13004567864.7511387</Time>
+    <CameraTime>02-05-2013 14:57:48</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2397850</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.436755952381</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">10</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>70</Index>
+    <GrayCode>101</GrayCode>
+    <Time>13004567867.7643108</Time>
+    <CameraTime>02-05-2013 14:57:48</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2397850</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.436755952381</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">10</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>71</Index>
+    <GrayCode>100</GrayCode>
+    <Time>13004567868.8483734</Time>
+    <CameraTime>02-05-2013 14:57:52</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2417490</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.480548469388</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">11</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>72</Index>
+    <GrayCode>108</GrayCode>
+    <Time>13004567871.8655453</Time>
+    <CameraTime>02-05-2013 14:57:52</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2417490</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.480548469388</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">11</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>73</Index>
+    <GrayCode>109</GrayCode>
+    <Time>13004567872.9556084</Time>
+    <CameraTime>02-05-2013 14:57:57</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2409904</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.077380952381</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">12</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>74</Index>
+    <GrayCode>111</GrayCode>
+    <Time>13004567875.9687805</Time>
+    <CameraTime>02-05-2013 14:57:57</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2409904</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.077380952381</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">12</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>75</Index>
+    <GrayCode>110</GrayCode>
+    <Time>13004567877.0528431</Time>
+    <CameraTime>02-05-2013 14:58:01</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2404696</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.800595238095</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">13</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>76</Index>
+    <GrayCode>106</GrayCode>
+    <Time>13004567880.0670147</Time>
+    <CameraTime>02-05-2013 14:58:01</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2404696</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.800595238095</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">13</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>77</Index>
+    <GrayCode>107</GrayCode>
+    <Time>13004567881.160078</Time>
+    <CameraTime>02-05-2013 14:58:05</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2408201</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.98687287415</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">14</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>78</Index>
+    <GrayCode>105</GrayCode>
+    <Time>13004567884.1782494</Time>
+    <CameraTime>02-05-2013 14:58:05</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2408201</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.98687287415</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">14</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>79</Index>
+    <GrayCode>104</GrayCode>
+    <Time>13004567885.2613125</Time>
+    <CameraTime>02-05-2013 14:58:09</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2394005</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.232408588435</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">15</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>80</Index>
+    <GrayCode>120</GrayCode>
+    <Time>13004567888.2764835</Time>
+    <CameraTime>02-05-2013 14:58:09</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2394005</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.232408588435</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">15</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>81</Index>
+    <GrayCode>121</GrayCode>
+    <Time>13004567889.3685474</Time>
+    <CameraTime>02-05-2013 14:58:13</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2410769</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.123352465986</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">16</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>82</Index>
+    <GrayCode>123</GrayCode>
+    <Time>13004567892.3817196</Time>
+    <CameraTime>02-05-2013 14:58:13</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2410769</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.123352465986</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">16</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>83</Index>
+    <GrayCode>122</GrayCode>
+    <Time>13004567893.4677811</Time>
+    <CameraTime>02-05-2013 14:58:17</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2400690</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.587691326531</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">17</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>84</Index>
+    <GrayCode>126</GrayCode>
+    <Time>13004567896.4869537</Time>
+    <CameraTime>02-05-2013 14:58:17</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2400690</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.587691326531</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">17</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>85</Index>
+    <GrayCode>127</GrayCode>
+    <Time>13004567897.5730152</Time>
+    <CameraTime>02-05-2013 14:58:21</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2390268</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.033801020408</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">18</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>86</Index>
+    <GrayCode>125</GrayCode>
+    <Time>13004567900.5871887</Time>
+    <CameraTime>02-05-2013 14:58:21</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2390268</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.033801020408</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">18</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>87</Index>
+    <GrayCode>124</GrayCode>
+    <Time>13004567901.6712513</Time>
+    <CameraTime>02-05-2013 14:58:25</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2408124</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.982780612245</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">19</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>88</Index>
+    <GrayCode>116</GrayCode>
+    <Time>13004567904.6864224</Time>
+    <CameraTime>02-05-2013 14:58:25</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY HIGH</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2408124</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.982780612245</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">19</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>89</Index>
+    <GrayCode>117</GrayCode>
+    <Time>13004567905.7784862</Time>
+    <CameraTime>02-05-2013 14:58:29</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2415745</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.387808248299</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">20</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>90</Index>
+    <GrayCode>119</GrayCode>
+    <Time>13004567908.7966576</Time>
+    <CameraTime>02-05-2013 14:58:29</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2415745</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.387808248299</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">20</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>91</Index>
+    <GrayCode>118</GrayCode>
+    <Time>13004567909.8777199</Time>
+    <CameraTime>02-05-2013 14:58:33</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2405323</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.833917942177</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">21</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>92</Index>
+    <GrayCode>114</GrayCode>
+    <Time>13004567912.890892</Time>
+    <CameraTime>02-05-2013 14:58:33</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2405323</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.833917942177</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">21</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>93</Index>
+    <GrayCode>115</GrayCode>
+    <Time>13004567913.9859543</Time>
+    <CameraTime>02-05-2013 14:58:38</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2398281</GV>
+      <GV Name="RNGCount">18752</GV>
+      <GV Name="RNGAverage">127.894677901024</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">22</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>94</Index>
+    <GrayCode>113</GrayCode>
+    <Time>13004567916.991127</Time>
+    <CameraTime>02-05-2013 14:58:38</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2398281</GV>
+      <GV Name="RNGCount">18752</GV>
+      <GV Name="RNGAverage">127.894677901024</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">22</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>95</Index>
+    <GrayCode>112</GrayCode>
+    <Time>13004567918.0861893</Time>
+    <CameraTime>02-05-2013 14:58:42</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2407857</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.968590561224</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">23</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>96</Index>
+    <GrayCode>80</GrayCode>
+    <Time>13004567921.1053619</Time>
+    <CameraTime>02-05-2013 14:58:42</CameraTime>
+    <GroupVars>
+      <GV Name="Target">FLY HIGH</GV>
+      <GV Name="Response">FLY LOW</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2407857</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.968590561224</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">23</GV>
+    </GroupVars>
+  </Event>

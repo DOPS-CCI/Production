@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Header>
+  <ExperimentDescription>
+    <SoftwareVersion></SoftwareVersion>
+    <Title></Title>
+    <LongDescription></LongDescription>
+    <Status></Status>
+    <GroupVar>
+      <Name>Target</Name>
+      <Description>Target selected by computer.</Description>
+      <GV Desc="CLOCKWISE">1</GV>
+      <GV Desc="COUNTER-CLOCKWISE">2</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>Response</Name>
+      <Description>Subject response.</Description>
+      <GV Desc="CLOCKWISE">1</GV>
+      <GV Desc="COUNTER-CLOCKWISE">2</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>HitMiss</Name>
+      <Description>Subject hit or miss target.</Description>
+      <GV Desc="Hit">2</GV>
+      <GV Desc="Miss">1</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>RNGTotal</Name>
+      <Description>RNG total within trial.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>RNGCount</Name>
+      <Description>RNG count within trial.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>RNGAverage</Name>
+      <Description>RNG average within trial.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>RunNumber</Name>
+      <Description>Run number within this experimental session.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>TrialNumber</Name>
+      <Description>Trial number within run.</Description>
+    </GroupVar>
+  </ExperimentDescription>
+  <SessionDescription>
+    <Date>02-12-2013</Date>
+    <Time>15:16</Time>
+    <Subject></Subject>
+    <BDFFile>S0000--20130212-1516.BDF</BDFFile>
+    <EventFile>S0000--20130212-1516.EVT</EventFile>
+    <ElectrodeFile>S0000--20130212-1516.ETR</ElectrodeFile>
+    <Comment>Enter text</Comment>
+  </SessionDescription>
+</Header>

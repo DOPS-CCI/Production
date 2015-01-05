@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="TargetSelected">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>13009997835.6262436</Time>
+    <CameraTime>04-09-2013 12:17:19</CameraTime>
+    <GroupVars>
+      <GV Name="Target">CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">var$</GV>
+      <GV Name="RNGCount">101141</GV>
+      <GV Name="RNGAverage">var$</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>13009997838.6334171</Time>
+    <CameraTime>04-09-2013 12:17:19</CameraTime>
+    <GroupVars>
+      <GV Name="Target">CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">var$</GV>
+      <GV Name="RNGCount">101141</GV>
+      <GV Name="RNGAverage">var$</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+</Events>

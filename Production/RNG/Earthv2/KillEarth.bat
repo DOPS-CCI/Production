@@ -1,0 +1,1 @@
+TaskKill /IM Earth.exe /F

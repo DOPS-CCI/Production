@@ -1,0 +1,5 @@
+Target selected by computer.
+FLY HIGH,1,
+FLY LOW,2,
+xxx,999,
+

@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="TargetSelected">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>13005173850.8909397</Time>
+    <CameraTime>02-12-2013 15:17:34</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2387436</GV>
+      <GV Name="RNGCount">18754</GV>
+      <GV Name="RNGAverage">127.302762077423</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>13005173853.9091129</Time>
+    <CameraTime>02-12-2013 15:17:34</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2387436</GV>
+      <GV Name="RNGCount">18754</GV>
+      <GV Name="RNGAverage">127.302762077423</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <Time>13005173854.9441719</Time>
+    <CameraTime>02-12-2013 15:17:38</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2407368</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.942602040816</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <Time>13005173857.9623451</Time>
+    <CameraTime>02-12-2013 15:17:38</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2407368</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.942602040816</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>5</Index>
+    <GrayCode>7</GrayCode>
+    <Time>13005173858.999403</Time>
+    <CameraTime>02-12-2013 15:17:43</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2404677</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.799585459184</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>6</Index>
+    <GrayCode>5</GrayCode>
+    <Time>13005173862.0175762</Time>
+    <CameraTime>02-12-2013 15:17:43</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2404677</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.799585459184</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>7</Index>
+    <GrayCode>4</GrayCode>
+    <Time>13005173863.0636368</Time>
+    <CameraTime>02-12-2013 15:17:47</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2393288</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.194302721088</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">4</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>8</Index>
+    <GrayCode>12</GrayCode>
+    <Time>13005173866.0798092</Time>
+    <CameraTime>02-12-2013 15:17:47</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2393288</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.194302721088</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">4</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>9</Index>
+    <GrayCode>13</GrayCode>
+    <Time>13005173867.1288681</Time>
+    <CameraTime>02-12-2013 15:17:51</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2398617</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.477519132653</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">5</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>10</Index>
+    <GrayCode>15</GrayCode>
+    <Time>13005173870.1470413</Time>
+    <CameraTime>02-12-2013 15:17:51</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2398617</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.477519132653</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">5</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>11</Index>
+    <GrayCode>14</GrayCode>
+    <Time>13005173871.1841011</Time>
+    <CameraTime>02-12-2013 15:17:55</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2394882</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.279017857143</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">6</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>12</Index>
+    <GrayCode>10</GrayCode>
+    <Time>13005173874.2022724</Time>
+    <CameraTime>02-12-2013 15:17:55</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2394882</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.279017857143</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">6</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>13</Index>
+    <GrayCode>11</GrayCode>
+    <Time>13005173875.2393322</Time>
+    <CameraTime>02-12-2013 15:17:59</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2404644</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.797831632653</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">7</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>14</Index>
+    <GrayCode>9</GrayCode>
+    <Time>13005173878.256506</Time>
+    <CameraTime>02-12-2013 15:17:59</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2404644</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.797831632653</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">7</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>15</Index>
+    <GrayCode>8</GrayCode>
+    <Time>13005173879.2965641</Time>
+    <CameraTime>02-12-2013 15:18:03</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2405807</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.859640731292</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">8</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>16</Index>
+    <GrayCode>24</GrayCode>
+    <Time>13005173882.3137379</Time>
+    <CameraTime>02-12-2013 15:18:03</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2405807</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.859640731292</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">8</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>17</Index>
+    <GrayCode>25</GrayCode>
+    <Time>13005173883.8238239</Time>
+    <CameraTime>02-12-2013 15:18:07</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2393853</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.224330357143</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">9</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>18</Index>
+    <GrayCode>27</GrayCode>
+    <Time>13005173886.8409958</Time>
+    <CameraTime>02-12-2013 15:18:07</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2393853</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.224330357143</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">9</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>19</Index>
+    <GrayCode>26</GrayCode>
+    <Time>13005173887.8740559</Time>
+    <CameraTime>02-12-2013 15:18:11</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2382255</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">126.60794005102</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">10</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>20</Index>
+    <GrayCode>30</GrayCode>
+    <Time>13005173890.8912277</Time>
+    <CameraTime>02-12-2013 15:18:11</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2382255</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">126.60794005102</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">10</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>21</Index>
+    <GrayCode>31</GrayCode>
+    <Time>13005173891.9312878</Time>
+    <CameraTime>02-12-2013 15:18:15</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2415184</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.357993197279</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">11</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>22</Index>
+    <GrayCode>29</GrayCode>
+    <Time>13005173894.9494591</Time>
+    <CameraTime>02-12-2013 15:18:15</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2415184</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.357993197279</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">11</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>23</Index>
+    <GrayCode>28</GrayCode>
+    <Time>13005173895.9955196</Time>
+    <CameraTime>02-12-2013 15:18:20</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2415967</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.399606717687</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">12</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>24</Index>
+    <GrayCode>20</GrayCode>
+    <Time>13005173899.011692</Time>
+    <CameraTime>02-12-2013 15:18:20</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2415967</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.399606717687</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">12</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>25</Index>
+    <GrayCode>21</GrayCode>
+    <Time>13005173900.0607529</Time>
+    <CameraTime>02-12-2013 15:18:24</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2408874</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.022640306122</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">13</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>26</Index>
+    <GrayCode>23</GrayCode>
+    <Time>13005173903.0799255</Time>
+    <CameraTime>02-12-2013 15:18:24</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2408874</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.022640306122</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">13</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>27</Index>
+    <GrayCode>22</GrayCode>
+    <Time>13005173904.1139832</Time>
+    <CameraTime>02-12-2013 15:18:28</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2399698</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.534970238095</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">14</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>28</Index>
+    <GrayCode>18</GrayCode>
+    <Time>13005173907.1331558</Time>
+    <CameraTime>02-12-2013 15:18:28</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2399698</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.534970238095</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">14</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>29</Index>
+    <GrayCode>19</GrayCode>
+    <Time>13005173908.1692162</Time>
+    <CameraTime>02-12-2013 15:18:32</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2408009</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.976668792517</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">15</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>30</Index>
+    <GrayCode>17</GrayCode>
+    <Time>13005173911.186388</Time>
+    <CameraTime>02-12-2013 15:18:32</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2408009</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.976668792517</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">15</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>31</Index>
+    <GrayCode>16</GrayCode>
+    <Time>13005173912.2384491</Time>
+    <CameraTime>02-12-2013 15:18:36</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2406476</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.895195578231</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">16</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>32</Index>
+    <GrayCode>48</GrayCode>
+    <Time>13005173915.2546215</Time>
+    <CameraTime>02-12-2013 15:18:36</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2406476</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.895195578231</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">16</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>33</Index>
+    <GrayCode>49</GrayCode>
+    <Time>13005173916.2976818</Time>
+    <CameraTime>02-12-2013 15:18:40</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2408291</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.991656037415</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">17</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>34</Index>
+    <GrayCode>51</GrayCode>
+    <Time>13005173919.3148537</Time>
+    <CameraTime>02-12-2013 15:18:40</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2408291</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.991656037415</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">17</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>35</Index>
+    <GrayCode>50</GrayCode>
+    <Time>13005173920.3529129</Time>
+    <CameraTime>02-12-2013 15:18:44</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2409541</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.058088860544</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">18</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>36</Index>
+    <GrayCode>54</GrayCode>
+    <Time>13005173923.3710861</Time>
+    <CameraTime>02-12-2013 15:18:44</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2409541</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.058088860544</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">18</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>37</Index>
+    <GrayCode>55</GrayCode>
+    <Time>13005173924.408144</Time>
+    <CameraTime>02-12-2013 15:18:48</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2392005</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.126116071428</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">19</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>38</Index>
+    <GrayCode>53</GrayCode>
+    <Time>13005173927.4253178</Time>
+    <CameraTime>02-12-2013 15:18:48</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2392005</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.126116071428</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">19</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>39</Index>
+    <GrayCode>52</GrayCode>
+    <Time>13005173928.4673767</Time>
+    <CameraTime>02-12-2013 15:18:52</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2412558</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.218431122449</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">20</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>40</Index>
+    <GrayCode>60</GrayCode>
+    <Time>13005173931.4845486</Time>
+    <CameraTime>02-12-2013 15:18:52</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2412558</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.218431122449</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">20</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>41</Index>
+    <GrayCode>61</GrayCode>
+    <Time>13005173932.5216084</Time>
+    <CameraTime>02-12-2013 15:18:56</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2383799</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">126.68999787415</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">21</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>42</Index>
+    <GrayCode>63</GrayCode>
+    <Time>13005173935.5387821</Time>
+    <CameraTime>02-12-2013 15:18:56</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2383799</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">126.68999787415</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">21</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>43</Index>
+    <GrayCode>62</GrayCode>
+    <Time>13005173936.5768414</Time>
+    <CameraTime>02-12-2013 15:19:00</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2404643</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.797778486394</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">22</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>44</Index>
+    <GrayCode>58</GrayCode>
+    <Time>13005173939.5940132</Time>
+    <CameraTime>02-12-2013 15:19:00</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2404643</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.797778486394</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">22</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>45</Index>
+    <GrayCode>59</GrayCode>
+    <Time>13005173940.6330719</Time>
+    <CameraTime>02-12-2013 15:19:04</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2394968</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.283588435374</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">23</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>46</Index>
+    <GrayCode>57</GrayCode>
+    <Time>13005173943.6512451</Time>
+    <CameraTime>02-12-2013 15:19:04</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2394968</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.283588435374</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">23</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>47</Index>
+    <GrayCode>56</GrayCode>
+    <Time>13005173944.7003059</Time>
+    <CameraTime>02-12-2013 15:19:08</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2402059</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.660448554422</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">24</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>48</Index>
+    <GrayCode>40</GrayCode>
+    <Time>13005173947.7164784</Time>
+    <CameraTime>02-12-2013 15:19:08</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2402059</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.660448554422</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">24</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>49</Index>
+    <GrayCode>41</GrayCode>
+    <Time>13005173948.762537</Time>
+    <CameraTime>02-12-2013 15:19:12</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2408185</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.986022534014</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">25</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>50</Index>
+    <GrayCode>43</GrayCode>
+    <Time>13005173951.7817097</Time>
+    <CameraTime>02-12-2013 15:19:12</CameraTime>
+    <GroupVars>
+      <GV Name="Target">COUNTER-CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2408185</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.986022534014</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">25</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>51</Index>
+    <GrayCode>42</GrayCode>
+    <Time>13005173952.8187695</Time>
+    <CameraTime>02-12-2013 15:19:16</CameraTime>
+    <GroupVars>
+      <GV Name="Target">CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2401382</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.624468537415</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>52</Index>
+    <GrayCode>46</GrayCode>
+    <Time>13005173955.8379421</Time>
+    <CameraTime>02-12-2013 15:19:16</CameraTime>
+    <GroupVars>
+      <GV Name="Target">CLOCKWISE</GV>
+      <GV Name="Response">COUNTER-CLOCKWISE</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="RNGTotal">2401382</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.624468537415</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>53</Index>
+    <GrayCode>47</GrayCode>
+    <Time>13005173956.8770027</Time>
+    <CameraTime>02-12-2013 15:19:20</CameraTime>
+    <GroupVars>
+      <GV Name="Target">CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2413171</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.251009778912</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>54</Index>
+    <GrayCode>45</GrayCode>
+    <Time>13005173959.8931751</Time>
+    <CameraTime>02-12-2013 15:19:20</CameraTime>
+    <GroupVars>
+      <GV Name="Target">CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2413171</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">128.251009778912</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>55</Index>
+    <GrayCode>44</GrayCode>
+    <Time>13005173960.9292336</Time>
+    <CameraTime>02-12-2013 15:19:24</CameraTime>
+    <GroupVars>
+      <GV Name="Target">CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2401709</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.641847363946</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>56</Index>
+    <GrayCode>36</GrayCode>
+    <Time>13005173963.9474068</Time>
+    <CameraTime>02-12-2013 15:19:24</CameraTime>
+    <GroupVars>
+      <GV Name="Target">CLOCKWISE</GV>
+      <GV Name="Response">CLOCKWISE</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="RNGTotal">2401709</GV>
+      <GV Name="RNGCount">18816</GV>
+      <GV Name="RNGAverage">127.641847363946</GV>
+      <GV Name="RunNumber">2</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>

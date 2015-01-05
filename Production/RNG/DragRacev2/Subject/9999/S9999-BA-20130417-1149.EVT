@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="TargetSelected">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <ClockTime>130106729693050000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:29.305</EventTime>
+    <GroupVars>
+      <GV Name="Target">C</GV>
+      <GV Name="Response">C</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+      <GV Name="TimeToResponse">7015</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <ClockTime>130106729773590000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:37.359</EventTime>
+    <GroupVars>
+      <GV Name="Target">C</GV>
+      <GV Name="Response">C</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+      <GV Name="TimeToResponse">7015</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetDisplayedUpstairs">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <ClockTime>130106729703440000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:30.344</EventTime>
+    <GroupVars>
+      <GV Name="Target">C</GV>
+      <GV Name="Response">C</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+      <GV Name="TimeToResponse">7015</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <ClockTime>130106729815960000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:41.596</EventTime>
+    <GroupVars>
+      <GV Name="Target">G</GV>
+      <GV Name="Response">G</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">2</GV>
+      <GV Name="TimeToResponse">3056</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>6</Index>
+    <GrayCode>5</GrayCode>
+    <ClockTime>130106729856640000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:45.664</EventTime>
+    <GroupVars>
+      <GV Name="Target">G</GV>
+      <GV Name="Response">G</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">2</GV>
+      <GV Name="TimeToResponse">3056</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetDisplayedUpstairs">
+    <Index>5</Index>
+    <GrayCode>7</GrayCode>
+    <ClockTime>130106729826080000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:42.608</EventTime>
+    <GroupVars>
+      <GV Name="Target">G</GV>
+      <GV Name="Response">G</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Hit</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">2</GV>
+      <GV Name="TimeToResponse">3056</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>7</Index>
+    <GrayCode>4</GrayCode>
+    <ClockTime>130106729898540000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:49.854</EventTime>
+    <GroupVars>
+      <GV Name="Target">F</GV>
+      <GV Name="Response">S</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">3</GV>
+      <GV Name="TimeToResponse">1616</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>9</Index>
+    <GrayCode>13</GrayCode>
+    <ClockTime>130106729925350000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:52.535</EventTime>
+    <GroupVars>
+      <GV Name="Target">F</GV>
+      <GV Name="Response">S</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">3</GV>
+      <GV Name="TimeToResponse">1616</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetDisplayedUpstairs">
+    <Index>8</Index>
+    <GrayCode>12</GrayCode>
+    <ClockTime>130106729909190000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:50.919</EventTime>
+    <GroupVars>
+      <GV Name="Target">F</GV>
+      <GV Name="Response">S</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">3</GV>
+      <GV Name="TimeToResponse">1616</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetSelected">
+    <Index>10</Index>
+    <GrayCode>15</GrayCode>
+    <ClockTime>130106729967160000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:56.716</EventTime>
+    <GroupVars>
+      <GV Name="Target">E</GV>
+      <GV Name="Response">O</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">4</GV>
+      <GV Name="TimeToResponse">2084</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="ResponseSelected">
+    <Index>12</Index>
+    <GrayCode>10</GrayCode>
+    <ClockTime>130106729998230000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:59.823</EventTime>
+    <GroupVars>
+      <GV Name="Target">E</GV>
+      <GV Name="Response">O</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">4</GV>
+      <GV Name="TimeToResponse">2084</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="TargetDisplayedUpstairs">
+    <Index>11</Index>
+    <GrayCode>14</GrayCode>
+    <ClockTime>130106729977390000</ClockTime>
+    <EventTime>17 Apr 2013 11:49:57.739</EventTime>
+    <GroupVars>
+      <GV Name="Target">E</GV>
+      <GV Name="Response">O</GV>
+      <GV Name="AgentInRoom">Not Present</GV>
+      <GV Name="TargetShownUpstairs">Yes</GV>
+      <GV Name="Feedback">yes</GV>
+      <GV Name="HitMiss">Miss</GV>
+      <GV Name="EnforcedDelay">4000</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">4</GV>
+      <GV Name="TimeToResponse">2084</GV>
+    </GroupVars>
+  </Event>
+</Events>

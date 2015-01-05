@@ -1,0 +1,1 @@
+TaskKill /IM DragRace.exe /F

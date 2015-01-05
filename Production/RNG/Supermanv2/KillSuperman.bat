@@ -1,0 +1,1 @@
+TaskKill /IM Superman.exe /F
