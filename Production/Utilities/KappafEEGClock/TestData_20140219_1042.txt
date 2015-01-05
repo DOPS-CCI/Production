@@ -1,0 +1,2030 @@
+Welcome to PB/Win IDE 10.04
+
+
+Saving files...
+Files saved.
+Compiling "E:\PowerBasicClassicWindows10\Projects\Utilities\KappafEEGClock\fEEGKappaClockRMSv22.bas"
+Successfully created "E:\PowerBasicClassicWindows10\Projects\Utilities\KappafEEGClock\fEEGKappaClockRMSv22.EXE"
+Begin Debug at 10:29:04 AM on 2/19/2014
+ 
+5 seconds...
+rmsValue for channel  1 =  18955.6531890621
+rmsValue for channel  2 =  18520.3062620465
+rmsValue for channel  3 =  19204.1980389705
+rmsValue for channel  4 =  18730.5561367515
+rmsValue for channel  5 =  18718.1085797684
+rmsValue for channel  6 =  18874.9781309542
+rmsValue for channel  7 =  18779.9836488747
+rmsValue for channel  8 =  19322.0079689457
+rmsTotal for 8 channels  =  151105.791955374
+rmsAvg for 8 channels  =  18888.2239944217
+running total rmsAvg for 8 channels  =  18888.2239944217
+ 
+5 seconds...
+rmsValue for channel  1 =  18998.1747583288
+rmsValue for channel  2 =  19219.0033199435
+rmsValue for channel  3 =  19042.7347895201
+rmsValue for channel  4 =  19248.7677717822
+rmsValue for channel  5 =  18965.6593827897
+rmsValue for channel  6 =  18626.9734342431
+rmsValue for channel  7 =  18828.4389845786
+rmsValue for channel  8 =  18288.3832884156
+rmsTotal for 8 channels  =  151218.135729602
+rmsAvg for 8 channels  =  18902.2669662002
+running total rmsAvg for 8 channels  =  37790.4909606219
+ 
+5 seconds...
+rmsValue for channel  1 =  18909.6752730447
+rmsValue for channel  2 =  18245.4400117947
+rmsValue for channel  3 =  18966.8829930487
+rmsValue for channel  4 =  19273.290610272
+rmsValue for channel  5 =  19393.5680542803
+rmsValue for channel  6 =  18872.5595417262
+rmsValue for channel  7 =  18842.910158147
+rmsValue for channel  8 =  19122.1107964576
+rmsTotal for 8 channels  =  151626.437438771
+rmsAvg for 8 channels  =  18953.3046798464
+running total rmsAvg for 8 channels  =  56743.7956404683
+ 
+5 seconds...
+rmsValue for channel  1 =  18710.8161912836
+rmsValue for channel  2 =  18765.041832514
+rmsValue for channel  3 =  19102.1499244457
+rmsValue for channel  4 =  19153.3871814883
+rmsValue for channel  5 =  18955.2069181004
+rmsValue for channel  6 =  19076.1456152966
+rmsValue for channel  7 =  19178.4246997505
+rmsValue for channel  8 =  19147.6175398403
+rmsTotal for 8 channels  =  152088.789902719
+rmsAvg for 8 channels  =  19011.0987378399
+running total rmsAvg for 8 channels  =  75754.8943783082
+ 
+5 seconds...
+rmsValue for channel  1 =  18781.2926544474
+rmsValue for channel  2 =  19216.9784928849
+rmsValue for channel  3 =  19166.7990227894
+rmsValue for channel  4 =  19236.1254662159
+rmsValue for channel  5 =  18740.5412402097
+rmsValue for channel  6 =  18873.8195523852
+rmsValue for channel  7 =  18699.3604452131
+rmsValue for channel  8 =  19577.5948961051
+rmsTotal for 8 channels  =  152292.511770251
+rmsAvg for 8 channels  =  19036.5639712813
+running total rmsAvg for 8 channels  =  94791.4583495896
+ 
+5 seconds...
+rmsValue for channel  1 =  17189.2033966673
+rmsValue for channel  2 =  19220.7530492434
+rmsValue for channel  3 =  19108.393546188
+rmsValue for channel  4 =  18865.6985599792
+rmsValue for channel  5 =  18682.0142973931
+rmsValue for channel  6 =  18770.4601535498
+rmsValue for channel  7 =  18895.0070892815
+rmsValue for channel  8 =  18836.1865416543
+rmsTotal for 8 channels  =  149567.716633957
+rmsAvg for 8 channels  =  18695.9645792446
+running total rmsAvg for 8 channels  =  113487.422928834
+ 
+5 seconds...
+rmsValue for channel  1 =  19116.8275552195
+rmsValue for channel  2 =  19028.0571690333
+rmsValue for channel  3 =  18821.2934101777
+rmsValue for channel  4 =  18819.8395187632
+rmsValue for channel  5 =  18710.4637911517
+rmsValue for channel  6 =  18864.0387259993
+rmsValue for channel  7 =  18839.8728957496
+rmsValue for channel  8 =  18968.537508622
+rmsTotal for 8 channels  =  151168.930574716
+rmsAvg for 8 channels  =  18896.1163218395
+running total rmsAvg for 8 channels  =  132383.539250674
+ 
+5 seconds...
+rmsValue for channel  1 =  18955.5213957306
+rmsValue for channel  2 =  18904.2814390815
+rmsValue for channel  3 =  19066.9680843075
+rmsValue for channel  4 =  18915.6315513916
+rmsValue for channel  5 =  18543.6284779436
+rmsValue for channel  6 =  18836.3489740448
+rmsValue for channel  7 =  18863.9990313825
+rmsValue for channel  8 =  19463.8844536233
+rmsTotal for 8 channels  =  151550.263407505
+rmsAvg for 8 channels  =  18943.7829259382
+running total rmsAvg for 8 channels  =  151327.322176612
+ 
+5 seconds...
+rmsValue for channel  1 =  19202.7293179902
+rmsValue for channel  2 =  18982.3919694015
+rmsValue for channel  3 =  19065.8329347553
+rmsValue for channel  4 =  18841.126408153
+rmsValue for channel  5 =  18872.3839316606
+rmsValue for channel  6 =  18753.1321023449
+rmsValue for channel  7 =  18513.3705548179
+rmsValue for channel  8 =  18471.0928499642
+rmsTotal for 8 channels  =  150702.060069088
+rmsAvg for 8 channels  =  18837.757508636
+running total rmsAvg for 8 channels  =  170165.079685248
+ 
+5 seconds...
+rmsValue for channel  1 =  19206.7376641636
+rmsValue for channel  2 =  19144.0265943192
+rmsValue for channel  3 =  19199.0538496042
+rmsValue for channel  4 =  18433.0966821096
+rmsValue for channel  5 =  18554.6084894292
+rmsValue for channel  6 =  19271.272325926
+rmsValue for channel  7 =  19127.4487481211
+rmsValue for channel  8 =  18466.191956221
+rmsTotal for 8 channels  =  151402.436309894
+rmsAvg for 8 channels  =  18925.3045387367
+running total rmsAvg for 8 channels  =  189090.384223984
+ 
+5 seconds...
+rmsValue for channel  1 =  18799.9464885409
+rmsValue for channel  2 =  18902.583838301
+rmsValue for channel  3 =  18842.4388317436
+rmsValue for channel  4 =  18849.1803322054
+rmsValue for channel  5 =  18342.8151789195
+rmsValue for channel  6 =  18882.8720693649
+rmsValue for channel  7 =  19009.405646048
+rmsValue for channel  8 =  19667.761447811
+rmsTotal for 8 channels  =  151297.003832934
+rmsAvg for 8 channels  =  18912.1254791168
+running total rmsAvg for 8 channels  =  208002.509703101
+ 
+5 seconds...
+rmsValue for channel  1 =  18325.5619803596
+rmsValue for channel  2 =  18737.9731612573
+rmsValue for channel  3 =  18786.9348704891
+rmsValue for channel  4 =  19057.353273002
+rmsValue for channel  5 =  19127.1939820769
+rmsValue for channel  6 =  18605.8387791575
+rmsValue for channel  7 =  18710.8791962323
+rmsValue for channel  8 =  19443.886359059
+rmsTotal for 8 channels  =  150795.621601634
+rmsAvg for 8 channels  =  18849.4527002042
+running total rmsAvg for 8 channels  =  226851.962403306
+ 
+5 seconds...
+rmsValue for channel  1 =  18744.3203809581
+rmsValue for channel  2 =  19115.37478806
+rmsValue for channel  3 =  18822.9442791504
+rmsValue for channel  4 =  18807.1962475006
+rmsValue for channel  5 =  18784.2372546771
+rmsValue for channel  6 =  19139.0802278479
+rmsValue for channel  7 =  18990.6328219994
+rmsValue for channel  8 =  19020.8221506853
+rmsTotal for 8 channels  =  151424.608150879
+rmsAvg for 8 channels  =  18928.0760188598
+running total rmsAvg for 8 channels  =  245780.038422165
+ 
+5 seconds...
+rmsValue for channel  1 =  19218.2392144546
+rmsValue for channel  2 =  19048.3320532796
+rmsValue for channel  3 =  18717.1420740454
+rmsValue for channel  4 =  18926.4209956346
+rmsValue for channel  5 =  18820.7748862792
+rmsValue for channel  6 =  18968.1250634848
+rmsValue for channel  7 =  19242.106423778
+rmsValue for channel  8 =  18366.9221868009
+rmsTotal for 8 channels  =  151308.062897757
+rmsAvg for 8 channels  =  18913.5078622196
+running total rmsAvg for 8 channels  =  264693.546284385
+ 
+5 seconds...
+rmsValue for channel  1 =  18756.8976535034
+rmsValue for channel  2 =  19458.1713424463
+rmsValue for channel  3 =  19290.3212511352
+rmsValue for channel  4 =  19163.6426026995
+rmsValue for channel  5 =  18788.9114898123
+rmsValue for channel  6 =  18846.1481344067
+rmsValue for channel  7 =  18691.1540713782
+rmsValue for channel  8 =  18549.4340118506
+rmsTotal for 8 channels  =  151544.680557232
+rmsAvg for 8 channels  =  18943.085069654
+running total rmsAvg for 8 channels  =  283636.631354039
+ 
+5 seconds...
+rmsValue for channel  1 =  19187.8879196226
+rmsValue for channel  2 =  19061.4409883408
+rmsValue for channel  3 =  19192.1980028344
+rmsValue for channel  4 =  18628.3844846514
+rmsValue for channel  5 =  18570.8731849636
+rmsValue for channel  6 =  18818.6019303242
+rmsValue for channel  7 =  18906.9969490662
+rmsValue for channel  8 =  19154.4941925387
+rmsTotal for 8 channels  =  151520.877652342
+rmsAvg for 8 channels  =  18940.1097065427
+running total rmsAvg for 8 channels  =  302576.741060582
+ 
+5 seconds...
+rmsValue for channel  1 =  19185.8523179972
+rmsValue for channel  2 =  18535.033070162
+rmsValue for channel  3 =  18761.8060133879
+rmsValue for channel  4 =  18514.411508984
+rmsValue for channel  5 =  18473.2024215619
+rmsValue for channel  6 =  18943.8637854056
+rmsValue for channel  7 =  18932.9729652794
+rmsValue for channel  8 =  18756.304871056
+rmsTotal for 8 channels  =  150103.446953834
+rmsAvg for 8 channels  =  18762.9308692293
+running total rmsAvg for 8 channels  =  321339.671929811
+ 
+5 seconds...
+rmsValue for channel  1 =  19054.7007970212
+rmsValue for channel  2 =  18770.6461255866
+rmsValue for channel  3 =  18887.8250160255
+rmsValue for channel  4 =  19122.4661316474
+rmsValue for channel  5 =  18870.3200055537
+rmsValue for channel  6 =  18618.179036952
+rmsValue for channel  7 =  18968.0723617346
+rmsValue for channel  8 =  18820.8664551874
+rmsTotal for 8 channels  =  151113.075929708
+rmsAvg for 8 channels  =  18889.1344912136
+running total rmsAvg for 8 channels  =  340228.806421025
+ 
+5 seconds...
+rmsValue for channel  1 =  18665.6292112535
+rmsValue for channel  2 =  18558.9723216562
+rmsValue for channel  3 =  19629.677557311
+rmsValue for channel  4 =  18838.5962720156
+rmsValue for channel  5 =  18699.1686245138
+rmsValue for channel  6 =  19302.5023743555
+rmsValue for channel  7 =  18950.7964690669
+rmsValue for channel  8 =  18887.8907789091
+rmsTotal for 8 channels  =  151533.233609082
+rmsAvg for 8 channels  =  18941.6542011352
+running total rmsAvg for 8 channels  =  359170.46062216
+ 
+5 seconds...
+rmsValue for channel  1 =  18830.6719823802
+rmsValue for channel  2 =  18943.2606326366
+rmsValue for channel  3 =  18337.5412669202
+rmsValue for channel  4 =  18815.845763611
+rmsValue for channel  5 =  19229.8884503265
+rmsValue for channel  6 =  19058.4104302536
+rmsValue for channel  7 =  18950.1388295706
+rmsValue for channel  8 =  18749.3065581637
+rmsTotal for 8 channels  =  150915.063913862
+rmsAvg for 8 channels  =  18864.3829892328
+running total rmsAvg for 8 channels  =  378034.843611393
+ 
+5 seconds...
+rmsValue for channel  1 =  19162.6568094302
+rmsValue for channel  2 =  18800.7233418292
+rmsValue for channel  3 =  18555.7061550349
+rmsValue for channel  4 =  18903.3236400375
+rmsValue for channel  5 =  19482.4877800552
+rmsValue for channel  6 =  18749.7491254683
+rmsValue for channel  7 =  18721.554842053
+rmsValue for channel  8 =  18844.0883929152
+rmsTotal for 8 channels  =  151220.290086823
+rmsAvg for 8 channels  =  18902.5362608529
+running total rmsAvg for 8 channels  =  396937.379872246
+ 
+5 seconds...
+rmsValue for channel  1 =  18718.3443734749
+rmsValue for channel  2 =  19725.4587950699
+rmsValue for channel  3 =  18468.8958811294
+rmsValue for channel  4 =  19020.8370464604
+rmsValue for channel  5 =  19646.9406458105
+rmsValue for channel  6 =  19353.8461684493
+rmsValue for channel  7 =  19016.9579407433
+rmsValue for channel  8 =  18755.2147836275
+rmsTotal for 8 channels  =  152706.495634765
+rmsAvg for 8 channels  =  19088.3119543456
+running total rmsAvg for 8 channels  =  416025.691826591
+ 
+5 seconds...
+rmsValue for channel  1 =  19160.0540670427
+rmsValue for channel  2 =  18551.0750222191
+rmsValue for channel  3 =  19529.3019074415
+rmsValue for channel  4 =  18795.9498796948
+rmsValue for channel  5 =  18687.5529891958
+rmsValue for channel  6 =  19095.163958343
+rmsValue for channel  7 =  18927.4352674629
+rmsValue for channel  8 =  19432.3440479012
+rmsTotal for 8 channels  =  152178.877139301
+rmsAvg for 8 channels  =  19022.3596424126
+running total rmsAvg for 8 channels  =  435048.051469004
+ 
+5 seconds...
+rmsValue for channel  1 =  18825.5778504672
+rmsValue for channel  2 =  18736.0953317387
+rmsValue for channel  3 =  18714.3032545698
+rmsValue for channel  4 =  18979.181045767
+rmsValue for channel  5 =  19416.6316896623
+rmsValue for channel  6 =  18679.4852950503
+rmsValue for channel  7 =  18926.7926313995
+rmsValue for channel  8 =  19215.5114228063
+rmsTotal for 8 channels  =  151493.578521461
+rmsAvg for 8 channels  =  18936.6973151826
+running total rmsAvg for 8 channels  =  453984.748784186
+ 
+5 seconds...
+rmsValue for channel  1 =  18223.554794935
+rmsValue for channel  2 =  19539.7585938005
+rmsValue for channel  3 =  19132.2647933798
+rmsValue for channel  4 =  18814.2997727792
+rmsValue for channel  5 =  19367.4616293411
+rmsValue for channel  6 =  19026.8641370038
+rmsValue for channel  7 =  19350.6311553913
+rmsValue for channel  8 =  18316.5977048141
+rmsTotal for 8 channels  =  151771.432581445
+rmsAvg for 8 channels  =  18971.4290726806
+running total rmsAvg for 8 channels  =  472956.177856867
+ 
+5 seconds...
+rmsValue for channel  1 =  18887.6598570601
+rmsValue for channel  2 =  19181.0579306773
+rmsValue for channel  3 =  19098.6639860489
+rmsValue for channel  4 =  19073.0111350044
+rmsValue for channel  5 =  19033.6578842849
+rmsValue for channel  6 =  18802.0022131687
+rmsValue for channel  7 =  19058.6631339137
+rmsValue for channel  8 =  18591.6222106625
+rmsTotal for 8 channels  =  151726.33835082
+rmsAvg for 8 channels  =  18965.7922938526
+running total rmsAvg for 8 channels  =  491921.97015072
+ 
+5 seconds...
+rmsValue for channel  1 =  19143.8455884914
+rmsValue for channel  2 =  18593.3329415681
+rmsValue for channel  3 =  19194.1353700551
+rmsValue for channel  4 =  19070.2997895681
+rmsValue for channel  5 =  18825.3613122298
+rmsValue for channel  6 =  18892.0182299298
+rmsValue for channel  7 =  18557.2264976208
+rmsValue for channel  8 =  19212.822338324
+rmsTotal for 8 channels  =  151489.042067787
+rmsAvg for 8 channels  =  18936.1302584734
+running total rmsAvg for 8 channels  =  510858.100409193
+ 
+5 seconds...
+rmsValue for channel  1 =  18868.631152683
+rmsValue for channel  2 =  18490.5562549102
+rmsValue for channel  3 =  18964.2271352143
+rmsValue for channel  4 =  18820.6251647494
+rmsValue for channel  5 =  18935.000014048
+rmsValue for channel  6 =  18854.5604613844
+rmsValue for channel  7 =  18985.2071086939
+rmsValue for channel  8 =  19453.9609123695
+rmsTotal for 8 channels  =  151372.768204053
+rmsAvg for 8 channels  =  18921.5960255066
+running total rmsAvg for 8 channels  =  529779.6964347
+ 
+5 seconds...
+rmsValue for channel  1 =  18718.4901380426
+rmsValue for channel  2 =  18875.9485198493
+rmsValue for channel  3 =  19252.0194945881
+rmsValue for channel  4 =  18986.8754235129
+rmsValue for channel  5 =  18403.4194586767
+rmsValue for channel  6 =  19032.5651611127
+rmsValue for channel  7 =  19086.1397522914
+rmsValue for channel  8 =  18495.9771818631
+rmsTotal for 8 channels  =  150851.435129937
+rmsAvg for 8 channels  =  18856.4293912421
+running total rmsAvg for 8 channels  =  548636.125825942
+ 
+5 seconds...
+rmsValue for channel  1 =  18781.1160039014
+rmsValue for channel  2 =  19004.2631527771
+rmsValue for channel  3 =  18834.0073189961
+rmsValue for channel  4 =  19121.3751981389
+rmsValue for channel  5 =  18996.6074959715
+rmsValue for channel  6 =  18577.0688987256
+rmsValue for channel  7 =  18948.8373405864
+rmsValue for channel  8 =  18792.8469617565
+rmsTotal for 8 channels  =  151056.122370853
+rmsAvg for 8 channels  =  18882.0152963567
+running total rmsAvg for 8 channels  =  567518.141122298
+ 
+5 seconds...
+rmsValue for channel  1 =  19037.7239898051
+rmsValue for channel  2 =  19044.1811261078
+rmsValue for channel  3 =  18805.3969930975
+rmsValue for channel  4 =  18939.1713260111
+rmsValue for channel  5 =  19000.7628537383
+rmsValue for channel  6 =  19030.0111047787
+rmsValue for channel  7 =  18495.4453820393
+rmsValue for channel  8 =  18906.1685418278
+rmsTotal for 8 channels  =  151258.861317406
+rmsAvg for 8 channels  =  18907.3576646757
+running total rmsAvg for 8 channels  =  586425.498786974
+ 
+5 seconds...
+rmsValue for channel  1 =  18431.2670473844
+rmsValue for channel  2 =  18768.2404123562
+rmsValue for channel  3 =  18971.0523993794
+rmsValue for channel  4 =  19266.5714233747
+rmsValue for channel  5 =  19623.6151356472
+rmsValue for channel  6 =  18443.3696163147
+rmsValue for channel  7 =  18739.3343379107
+rmsValue for channel  8 =  19056.9187708821
+rmsTotal for 8 channels  =  151300.36914325
+rmsAvg for 8 channels  =  18912.5461429062
+running total rmsAvg for 8 channels  =  605338.04492988
+ 
+5 seconds...
+rmsValue for channel  1 =  19026.3063634537
+rmsValue for channel  2 =  18442.4224890333
+rmsValue for channel  3 =  18794.6368208593
+rmsValue for channel  4 =  18874.5542858103
+rmsValue for channel  5 =  18652.8704558843
+rmsValue for channel  6 =  18876.1821281741
+rmsValue for channel  7 =  19018.3568188211
+rmsValue for channel  8 =  18951.6363002248
+rmsTotal for 8 channels  =  150636.965662261
+rmsAvg for 8 channels  =  18829.6207077826
+running total rmsAvg for 8 channels  =  624167.665637663
+ 
+5 seconds...
+rmsValue for channel  1 =  19063.6554249178
+rmsValue for channel  2 =  18494.764820781
+rmsValue for channel  3 =  18562.7298802735
+rmsValue for channel  4 =  18622.4924805462
+rmsValue for channel  5 =  19462.3654221166
+rmsValue for channel  6 =  19244.9230398046
+rmsValue for channel  7 =  18908.6721034556
+rmsValue for channel  8 =  18894.0336921474
+rmsTotal for 8 channels  =  151253.636864043
+rmsAvg for 8 channels  =  18906.7046080053
+running total rmsAvg for 8 channels  =  643074.370245668
+ 
+5 seconds...
+rmsValue for channel  1 =  18448.6329707109
+rmsValue for channel  2 =  19213.9082706252
+rmsValue for channel  3 =  18566.4432178056
+rmsValue for channel  4 =  18890.8329456379
+rmsValue for channel  5 =  19123.3307059204
+rmsValue for channel  6 =  19050.3138428741
+rmsValue for channel  7 =  19074.2914742331
+rmsValue for channel  8 =  18661.6504247615
+rmsTotal for 8 channels  =  151029.403852569
+rmsAvg for 8 channels  =  18878.6754815711
+running total rmsAvg for 8 channels  =  661953.045727239
+ 
+5 seconds...
+rmsValue for channel  1 =  18596.970236681
+rmsValue for channel  2 =  18567.4299496726
+rmsValue for channel  3 =  19057.3572197196
+rmsValue for channel  4 =  19188.7672182452
+rmsValue for channel  5 =  18914.431534466
+rmsValue for channel  6 =  18833.5565862638
+rmsValue for channel  7 =  19129.7524981376
+rmsValue for channel  8 =  18983.1097685284
+rmsTotal for 8 channels  =  151271.375011714
+rmsAvg for 8 channels  =  18908.9218764643
+running total rmsAvg for 8 channels  =  680861.967603704
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18387.5846035344
+Dequeue:  18888
+Enqueue:  18908.9218764643
+ 
+5 seconds...
+rmsValue for channel  1 =  18845.8804033136
+rmsValue for channel  2 =  18558.753473011
+rmsValue for channel  3 =  19055.5876831968
+rmsValue for channel  4 =  18630.4930407115
+rmsValue for channel  5 =  18721.6855291397
+rmsValue for channel  6 =  19636.2329725434
+rmsValue for channel  7 =  19284.0710514144
+rmsValue for channel  8 =  18433.8719138438
+rmsTotal for 8 channels  =  151166.576067174
+rmsAvg for 8 channels  =  18895.8220083968
+running total rmsAvg for 8 channels  =  699757.7896121
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18912.8324334362
+Dequeue:  18902
+Enqueue:  18895.8220083968
+ 
+5 seconds...
+rmsValue for channel  1 =  18581.6240177224
+rmsValue for channel  2 =  18463.595455057
+rmsValue for channel  3 =  18945.4138144301
+rmsValue for channel  4 =  18920.9508702919
+rmsValue for channel  5 =  18828.7236609389
+rmsValue for channel  6 =  18764.1487933772
+rmsValue for channel  7 =  18699.1735736101
+rmsValue for channel  8 =  19138.501032944
+rmsTotal for 8 channels  =  150342.131218372
+rmsAvg for 8 channels  =  18792.7664022965
+running total rmsAvg for 8 channels  =  718550.556014397
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18913.04348938
+Dequeue:  18953
+Enqueue:  18792.7664022965
+ 
+5 seconds...
+rmsValue for channel  1 =  19409.6321550925
+rmsValue for channel  2 =  18836.5043336602
+rmsValue for channel  3 =  18558.9978361979
+rmsValue for channel  4 =  18794.0364493634
+rmsValue for channel  5 =  18657.8323857837
+rmsValue for channel  6 =  19234.431268743
+rmsValue for channel  7 =  19042.865813212
+rmsValue for channel  8 =  18846.3676104442
+rmsTotal for 8 channels  =  151380.667852497
+rmsAvg for 8 channels  =  18922.5834815621
+running total rmsAvg for 8 channels  =  737473.139495959
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18910.0018070493
+Dequeue:  19011
+Enqueue:  18922.5834815621
+ 
+5 seconds...
+rmsValue for channel  1 =  19363.7796407623
+rmsValue for channel  2 =  19234.3562228633
+rmsValue for channel  3 =  18723.761183587
+rmsValue for channel  4 =  18777.8840321267
+rmsValue for channel  5 =  18707.0176315734
+rmsValue for channel  6 =  19000.6421985153
+rmsValue for channel  7 =  19151.7387736988
+rmsValue for channel  8 =  18718.9882555655
+rmsTotal for 8 channels  =  151678.167938692
+rmsAvg for 8 channels  =  18959.7709923366
+running total rmsAvg for 8 channels  =  756432.910488295
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18909.1484404303
+Dequeue:  19037
+Enqueue:  18959.7709923366
+ 
+5 seconds...
+rmsValue for channel  1 =  18859.6191946709
+rmsValue for channel  2 =  18843.7942163461
+rmsValue for channel  3 =  19114.0360664094
+rmsValue for channel  4 =  18641.3489326282
+rmsValue for channel  5 =  18619.7423004724
+rmsValue for channel  6 =  18817.8219857666
+rmsValue for channel  7 =  19119.4233980003
+rmsValue for channel  8 =  19765.6831648188
+rmsTotal for 8 channels  =  151781.469259113
+rmsAvg for 8 channels  =  18972.6836573891
+running total rmsAvg for 8 channels  =  775405.594145685
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18907.7226697219
+Dequeue:  18696
+Enqueue:  18972.6836573891
+ 
+5 seconds...
+rmsValue for channel  1 =  18761.099751134
+rmsValue for channel  2 =  18639.2474172108
+rmsValue for channel  3 =  19350.3567372801
+rmsValue for channel  4 =  18678.0249928091
+rmsValue for channel  5 =  19145.4742585291
+rmsValue for channel  6 =  18884.0696049342
+rmsValue for channel  7 =  19107.0353456521
+rmsValue for channel  8 =  18961.8765414186
+rmsTotal for 8 channels  =  151527.184648968
+rmsAvg for 8 channels  =  18940.898081121
+running total rmsAvg for 8 channels  =  794346.492226806
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18905.9482165582
+Dequeue:  18896
+Enqueue:  18940.898081121
+ 
+5 seconds...
+rmsValue for channel  1 =  18918.9663428
+rmsValue for channel  2 =  18943.6154073081
+rmsValue for channel  3 =  18683.5134701158
+rmsValue for channel  4 =  18987.4570680752
+rmsValue for channel  5 =  18726.3456949828
+rmsValue for channel  6 =  18656.9043130954
+rmsValue for channel  7 =  18935.7110313819
+rmsValue for channel  8 =  19200.4819886377
+rmsTotal for 8 channels  =  151052.995316397
+rmsAvg for 8 channels  =  18881.6244145496
+running total rmsAvg for 8 channels  =  813228.116641355
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18912.7519249436
+Dequeue:  18944
+Enqueue:  18881.6244145496
+ 
+5 seconds...
+rmsValue for channel  1 =  18747.8435815962
+rmsValue for channel  2 =  18524.6038076932
+rmsValue for channel  3 =  18845.2298426949
+rmsValue for channel  4 =  18607.7156217522
+rmsValue for channel  5 =  18723.5220781775
+rmsValue for channel  6 =  19435.0794459915
+rmsValue for channel  7 =  18503.6224144355
+rmsValue for channel  8 =  18607.3175288648
+rmsTotal for 8 channels  =  149994.934321206
+rmsAvg for 8 channels  =  18749.3667901507
+running total rmsAvg for 8 channels  =  831977.483431506
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18912.3493719634
+Dequeue:  18838
+Enqueue:  18749.3667901507
+ 
+5 seconds...
+rmsValue for channel  1 =  18907.2146845589
+rmsValue for channel  2 =  19194.3993476222
+rmsValue for channel  3 =  18600.4268492957
+rmsValue for channel  4 =  18937.0132558437
+rmsValue for channel  5 =  19818.8770852438
+rmsValue for channel  6 =  18641.7313483485
+rmsValue for channel  7 =  19072.4781950328
+rmsValue for channel  8 =  18934.8271118592
+rmsTotal for 8 channels  =  152106.967877805
+rmsAvg for 8 channels  =  19013.3709847256
+running total rmsAvg for 8 channels  =  850990.854416232
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18906.948923747
+Dequeue:  18925
+Enqueue:  19013.3709847256
+ 
+5 seconds...
+rmsValue for channel  1 =  19268.2566146499
+rmsValue for channel  2 =  19630.5632097502
+rmsValue for channel  3 =  18777.2760003148
+rmsValue for channel  4 =  18662.3736974695
+rmsValue for channel  5 =  19133.6400059163
+rmsValue for channel  6 =  19354.6084610358
+rmsValue for channel  7 =  18862.1401064672
+rmsValue for channel  8 =  18511.094146052
+rmsTotal for 8 channels  =  152199.952241656
+rmsAvg for 8 channels  =  19024.994030207
+running total rmsAvg for 8 channels  =  870015.848446439
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18911.8270758606
+Dequeue:  18912
+Enqueue:  19024.994030207
+ 
+5 seconds...
+rmsValue for channel  1 =  18877.7765547747
+rmsValue for channel  2 =  18888.4566465341
+rmsValue for channel  3 =  19038.444815583
+rmsValue for channel  4 =  18967.2357986081
+rmsValue for channel  5 =  18847.2316791618
+rmsValue for channel  6 =  19118.1040970071
+rmsValue for channel  7 =  18743.1034995808
+rmsValue for channel  8 =  18717.6376412196
+rmsTotal for 8 channels  =  151197.990732469
+rmsAvg for 8 channels  =  18899.7488415586
+running total rmsAvg for 8 channels  =  888915.597287997
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18914.5962284015
+Dequeue:  18849
+Enqueue:  18899.7488415586
+ 
+5 seconds...
+rmsValue for channel  1 =  18986.5854197115
+rmsValue for channel  2 =  18863.8914555825
+rmsValue for channel  3 =  19017.5899829605
+rmsValue for channel  4 =  19112.6965252944
+rmsValue for channel  5 =  19248.7733237212
+rmsValue for channel  6 =  18516.2953168284
+rmsValue for channel  7 =  18891.9246417087
+rmsValue for channel  8 =  18931.5989753639
+rmsTotal for 8 channels  =  151569.355641171
+rmsAvg for 8 channels  =  18946.1694551464
+running total rmsAvg for 8 channels  =  907861.766743144
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18914.2524329138
+Dequeue:  18928
+Enqueue:  18946.1694551464
+ 
+5 seconds...
+rmsValue for channel  1 =  18693.6807319479
+rmsValue for channel  2 =  18106.89071166
+rmsValue for channel  3 =  18670.7455097005
+rmsValue for channel  4 =  18634.6880325913
+rmsValue for channel  5 =  19278.9706577919
+rmsValue for channel  6 =  19292.9510854094
+rmsValue for channel  7 =  18887.7272139344
+rmsValue for channel  8 =  18202.9544690965
+rmsTotal for 8 channels  =  149768.608412132
+rmsAvg for 8 channels  =  18721.0760515165
+running total rmsAvg for 8 channels  =  926582.84279466
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18916.9390094399
+Dequeue:  18914
+Enqueue:  18721.0760515165
+ 
+5 seconds...
+rmsValue for channel  1 =  18653.0203261563
+rmsValue for channel  2 =  18399.9570417977
+rmsValue for channel  3 =  19141.3866214546
+rmsValue for channel  4 =  19097.4006632316
+rmsValue for channel  5 =  19491.064523109
+rmsValue for channel  6 =  19019.9469362036
+rmsValue for channel  7 =  18711.730974338
+rmsValue for channel  8 =  19236.827161255
+rmsTotal for 8 channels  =  151751.334247546
+rmsAvg for 8 channels  =  18968.9167809432
+running total rmsAvg for 8 channels  =  945551.759575604
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18911.1890103471
+Dequeue:  18943
+Enqueue:  18968.9167809432
+ 
+5 seconds...
+rmsValue for channel  1 =  19262.6994291039
+rmsValue for channel  2 =  18842.1245965523
+rmsValue for channel  3 =  18980.9196857265
+rmsValue for channel  4 =  18990.0602029588
+rmsValue for channel  5 =  19111.9505142725
+rmsValue for channel  6 =  18580.7861045759
+rmsValue for channel  7 =  18743.38373208
+rmsValue for channel  8 =  18243.5315311482
+rmsTotal for 8 channels  =  150755.455796418
+rmsAvg for 8 channels  =  18844.4319745522
+running total rmsAvg for 8 channels  =  964396.191550156
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18912.7281469783
+Dequeue:  18940
+Enqueue:  18844.4319745522
+ 
+5 seconds...
+rmsValue for channel  1 =  18990.4324435227
+rmsValue for channel  2 =  19244.6879128761
+rmsValue for channel  3 =  19456.7204426645
+rmsValue for channel  4 =  18516.9268742953
+rmsValue for channel  5 =  18772.6191178535
+rmsValue for channel  6 =  19342.9134979196
+rmsValue for channel  7 =  18848.7175050187
+rmsValue for channel  8 =  19766.40173203
+rmsTotal for 8 channels  =  152939.41952618
+rmsAvg for 8 channels  =  19117.4274407726
+running total rmsAvg for 8 channels  =  983513.618990928
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18909.9877832254
+Dequeue:  18763
+Enqueue:  19117.4274407726
+ 
+5 seconds...
+rmsValue for channel  1 =  18711.612810231
+rmsValue for channel  2 =  19020.0126970515
+rmsValue for channel  3 =  18878.9845405943
+rmsValue for channel  4 =  18809.5057460849
+rmsValue for channel  5 =  18793.8312447462
+rmsValue for channel  6 =  18789.2952263782
+rmsValue for channel  7 =  19327.3689236792
+rmsValue for channel  8 =  18081.2427632616
+rmsTotal for 8 channels  =  150411.853952027
+rmsAvg for 8 channels  =  18801.4817440034
+running total rmsAvg for 8 channels  =  1002315.10073493
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18914.913275843
+Dequeue:  18889
+Enqueue:  18801.4817440034
+ 
+5 seconds...
+rmsValue for channel  1 =  18616.7887185734
+rmsValue for channel  2 =  18735.4978685916
+rmsValue for channel  3 =  18785.8091001692
+rmsValue for channel  4 =  19364.8223780132
+rmsValue for channel  5 =  18920.3044146758
+rmsValue for channel  6 =  18716.6788382982
+rmsValue for channel  7 =  18939.0041752992
+rmsValue for channel  8 =  19371.696598801
+rmsTotal for 8 channels  =  151450.602092422
+rmsAvg for 8 channels  =  18931.3252615527
+running total rmsAvg for 8 channels  =  1021246.42599648
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18915.9841334756
+Dequeue:  18942
+Enqueue:  18931.3252615527
+ 
+5 seconds...
+rmsValue for channel  1 =  18813.7066264997
+rmsValue for channel  2 =  19761.9951558541
+rmsValue for channel  3 =  19027.186623776
+rmsValue for channel  4 =  18571.6689395434
+rmsValue for channel  5 =  18385.6200594921
+rmsValue for channel  6 =  18570.4736725804
+rmsValue for channel  7 =  19225.4216285625
+rmsValue for channel  8 =  19115.6625591686
+rmsTotal for 8 channels  =  151471.735265477
+rmsAvg for 8 channels  =  18933.9669081846
+running total rmsAvg for 8 channels  =  1040180.39290467
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18917.1560993183
+Dequeue:  18864
+Enqueue:  18933.9669081846
+ 
+5 seconds...
+rmsValue for channel  1 =  18850.9420050034
+rmsValue for channel  2 =  19353.3868333168
+rmsValue for channel  3 =  18442.8401416918
+rmsValue for channel  4 =  19084.2871883652
+rmsValue for channel  5 =  19028.3196055774
+rmsValue for channel  6 =  18414.2191682406
+rmsValue for channel  7 =  18583.9384905353
+rmsValue for channel  8 =  18583.3971947004
+rmsTotal for 8 channels  =  150341.330627431
+rmsAvg for 8 channels  =  18792.6663284289
+running total rmsAvg for 8 channels  =  1058973.0592331
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18916.942563403
+Dequeue:  18903
+Enqueue:  18792.6663284289
+ 
+5 seconds...
+rmsValue for channel  1 =  18960.4039664771
+rmsValue for channel  2 =  18330.9341290617
+rmsValue for channel  3 =  18877.9233565559
+rmsValue for channel  4 =  18868.743109174
+rmsValue for channel  5 =  18237.872824976
+rmsValue for channel  6 =  18940.604576412
+rmsValue for channel  7 =  18854.0779877458
+rmsValue for channel  8 =  19241.2852974015
+rmsTotal for 8 channels  =  150311.845247804
+rmsAvg for 8 channels  =  18788.9806559755
+running total rmsAvg for 8 channels  =  1077762.03988907
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18914.9504339362
+Dequeue:  19088
+Enqueue:  18788.9806559755
+ 
+5 seconds...
+rmsValue for channel  1 =  19039.6720349905
+rmsValue for channel  2 =  19126.4030926884
+rmsValue for channel  3 =  19564.853271415
+rmsValue for channel  4 =  19335.4863219936
+rmsValue for channel  5 =  19326.2659202444
+rmsValue for channel  6 =  18351.9691297692
+rmsValue for channel  7 =  18995.8571201196
+rmsValue for channel  8 =  18595.8913228702
+rmsTotal for 8 channels  =  152336.398214091
+rmsAvg for 8 channels  =  19042.0497767614
+running total rmsAvg for 8 channels  =  1096804.08966583
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18911.7961115785
+Dequeue:  19022
+Enqueue:  19042.0497767614
+ 
+5 seconds...
+rmsValue for channel  1 =  18739.9855640286
+rmsValue for channel  2 =  19949.2134955742
+rmsValue for channel  3 =  19246.3235214417
+rmsValue for channel  4 =  18877.3133039636
+rmsValue for channel  5 =  19491.440669381
+rmsValue for channel  6 =  18817.0124172781
+rmsValue for channel  7 =  18991.1532678771
+rmsValue for channel  8 =  18987.0175984539
+rmsTotal for 8 channels  =  153099.459837998
+rmsAvg for 8 channels  =  19137.4324797498
+running total rmsAvg for 8 channels  =  1115941.52214558
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18910.5110510901
+Dequeue:  18937
+Enqueue:  19137.4324797498
+ 
+5 seconds...
+rmsValue for channel  1 =  18595.0219235149
+rmsValue for channel  2 =  19573.9247187681
+rmsValue for channel  3 =  18828.5569938856
+rmsValue for channel  4 =  18978.3832905756
+rmsValue for channel  5 =  18867.4052631516
+rmsValue for channel  6 =  18647.7300632543
+rmsValue for channel  7 =  19089.5439763238
+rmsValue for channel  8 =  18462.5068115898
+rmsTotal for 8 channels  =  151043.073041064
+rmsAvg for 8 channels  =  18880.384130133
+running total rmsAvg for 8 channels  =  1134821.90627572
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18913.7075187939
+Dequeue:  18971
+Enqueue:  18880.384130133
+ 
+5 seconds...
+rmsValue for channel  1 =  18574.4343440117
+rmsValue for channel  2 =  18646.3013617178
+rmsValue for channel  3 =  18996.8470323893
+rmsValue for channel  4 =  19252.5002612128
+rmsValue for channel  5 =  18795.756722303
+rmsValue for channel  6 =  19154.8451512404
+rmsValue for channel  7 =  18622.2706287928
+rmsValue for channel  8 =  19075.821785391
+rmsTotal for 8 channels  =  151118.777287059
+rmsAvg for 8 channels  =  18889.8471608824
+running total rmsAvg for 8 channels  =  1153711.7534366
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18912.1432636536
+Dequeue:  18966
+Enqueue:  18889.8471608824
+ 
+5 seconds...
+rmsValue for channel  1 =  19007.4814925071
+rmsValue for channel  2 =  19435.1676770745
+rmsValue for channel  3 =  19360.6548260125
+rmsValue for channel  4 =  19132.3746285713
+rmsValue for channel  5 =  18801.2602110603
+rmsValue for channel  6 =  19188.6881280613
+rmsValue for channel  7 =  18845.3058927681
+rmsValue for channel  8 =  18789.018538391
+rmsTotal for 8 channels  =  152559.951394446
+rmsAvg for 8 channels  =  19069.9939243058
+running total rmsAvg for 8 channels  =  1172781.7473609
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18909.877099437
+Dequeue:  18936
+Enqueue:  19069.9939243058
+ 
+5 seconds...
+rmsValue for channel  1 =  19059.4551187593
+rmsValue for channel  2 =  18076.639928261
+rmsValue for channel  3 =  18624.1612961228
+rmsValue for channel  4 =  18753.9738193269
+rmsValue for channel  5 =  19806.1875482386
+rmsValue for channel  6 =  18718.7815710318
+rmsValue for channel  7 =  18893.062394117
+rmsValue for channel  8 =  18867.7809870689
+rmsTotal for 8 channels  =  150800.042662926
+rmsAvg for 8 channels  =  18850.0053328658
+running total rmsAvg for 8 channels  =  1191631.75269377
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18912.7715891718
+Dequeue:  18922
+Enqueue:  18850.0053328658
+ 
+5 seconds...
+rmsValue for channel  1 =  18885.7388467595
+rmsValue for channel  2 =  18598.9747752934
+rmsValue for channel  3 =  18840.8661834853
+rmsValue for channel  4 =  19314.8434735568
+rmsValue for channel  5 =  19064.0531902321
+rmsValue for channel  6 =  19150.6962942865
+rmsValue for channel  7 =  18597.7197055983
+rmsValue for channel  8 =  19390.0875864964
+rmsTotal for 8 channels  =  151842.980055708
+rmsAvg for 8 channels  =  18980.3725069635
+running total rmsAvg for 8 channels  =  1210612.12520073
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18910.3792301272
+Dequeue:  18856
+Enqueue:  18980.3725069635
+ 
+5 seconds...
+rmsValue for channel  1 =  19178.2526975739
+rmsValue for channel  2 =  18528.6845453205
+rmsValue for channel  3 =  18088.4420318611
+rmsValue for channel  4 =  18569.6658522441
+rmsValue for channel  5 =  19138.3262756177
+rmsValue for channel  6 =  18947.669770291
+rmsValue for channel  7 =  18415.699022736
+rmsValue for channel  8 =  18861.2117956403
+rmsTotal for 8 channels  =  149727.951991285
+rmsAvg for 8 channels  =  18715.9939989106
+running total rmsAvg for 8 channels  =  1229328.11919964
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18912.0119101676
+Dequeue:  18882
+Enqueue:  18715.9939989106
+ 
+5 seconds...
+rmsValue for channel  1 =  18848.0458248594
+rmsValue for channel  2 =  18631.3086957412
+rmsValue for channel  3 =  19160.3986643285
+rmsValue for channel  4 =  19083.6159570454
+rmsValue for channel  5 =  19154.0278743663
+rmsValue for channel  6 =  19202.1675145281
+rmsValue for channel  7 =  18937.0144370225
+rmsValue for channel  8 =  18634.8289634222
+rmsTotal for 8 channels  =  151651.407931314
+rmsAvg for 8 channels  =  18956.4259914142
+running total rmsAvg for 8 channels  =  1248284.54519106
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18908.1109270473
+Dequeue:  18907
+Enqueue:  18956.4259914142
+ 
+5 seconds...
+rmsValue for channel  1 =  18785.9123898734
+rmsValue for channel  2 =  19256.1060812408
+rmsValue for channel  3 =  19064.5150872504
+rmsValue for channel  4 =  18538.2396353052
+rmsValue for channel  5 =  19853.0704827238
+rmsValue for channel  6 =  19084.5023668944
+rmsValue for channel  7 =  18907.5812149518
+rmsValue for channel  8 =  18544.5524369827
+rmsTotal for 8 channels  =  152034.479695223
+rmsAvg for 8 channels  =  19004.3099619028
+running total rmsAvg for 8 channels  =  1267288.85515296
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18910.1778907989
+Dequeue:  18913
+Enqueue:  19004.3099619028
+ 
+5 seconds...
+rmsValue for channel  1 =  19067.7073312971
+rmsValue for channel  2 =  17998.1766838755
+rmsValue for channel  3 =  18583.9265026528
+rmsValue for channel  4 =  19075.6282905701
+rmsValue for channel  5 =  19082.5325723815
+rmsValue for channel  6 =  18663.587891614
+rmsValue for channel  7 =  19018.1697762955
+rmsValue for channel  8 =  19092.6017511496
+rmsTotal for 8 channels  =  150582.330799836
+rmsAvg for 8 channels  =  18822.7913499795
+running total rmsAvg for 8 channels  =  1286111.64650294
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18912.8710101663
+Dequeue:  18830
+Enqueue:  18822.7913499795
+ 
+5 seconds...
+rmsValue for channel  1 =  18845.1562323054
+rmsValue for channel  2 =  18898.3516361613
+rmsValue for channel  3 =  18940.3733650633
+rmsValue for channel  4 =  18344.1622300938
+rmsValue for channel  5 =  18718.4756133612
+rmsValue for channel  6 =  18968.5810310629
+rmsValue for channel  7 =  18882.2581955655
+rmsValue for channel  8 =  18878.5944774498
+rmsTotal for 8 channels  =  150475.952781063
+rmsAvg for 8 channels  =  18809.4940976329
+running total rmsAvg for 8 channels  =  1304921.14060057
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18910.3778214739
+Dequeue:  18907
+Enqueue:  18809.4940976329
+ 
+5 seconds...
+rmsValue for channel  1 =  19123.5015399377
+rmsValue for channel  2 =  19545.9806621208
+rmsValue for channel  3 =  18895.53398314
+rmsValue for channel  4 =  19119.5976490092
+rmsValue for channel  5 =  18998.9285831596
+rmsValue for channel  6 =  18975.3752595304
+rmsValue for channel  7 =  18697.8343903244
+rmsValue for channel  8 =  18126.9290387534
+rmsTotal for 8 channels  =  151483.681105976
+rmsAvg for 8 channels  =  18935.460138247
+running total rmsAvg for 8 channels  =  1323856.60073882
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18909.8187489698
+Dequeue:  18879
+Enqueue:  18935.460138247
+ 
+5 seconds...
+rmsValue for channel  1 =  19136.1959542643
+rmsValue for channel  2 =  18648.2598195113
+rmsValue for channel  3 =  18684.7699616559
+rmsValue for channel  4 =  18860.6668277662
+rmsValue for channel  5 =  18767.9314639627
+rmsValue for channel  6 =  18889.1240800626
+rmsValue for channel  7 =  18917.3796681253
+rmsValue for channel  8 =  18334.1974881913
+rmsTotal for 8 channels  =  150238.52526354
+rmsAvg for 8 channels  =  18779.8156579424
+running total rmsAvg for 8 channels  =  1342636.41639676
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18910.6175136987
+Dequeue:  18909
+Enqueue:  18779.8156579424
+ 
+5 seconds...
+rmsValue for channel  1 =  18444.0123305099
+rmsValue for channel  2 =  19387.0169140072
+rmsValue for channel  3 =  19172.6791117986
+rmsValue for channel  4 =  18856.799442005
+rmsValue for channel  5 =  19741.5008352455
+rmsValue for channel  6 =  18758.6652164806
+rmsValue for channel  7 =  18450.7290324258
+rmsValue for channel  8 =  19485.9686574725
+rmsTotal for 8 channels  =  152297.371539945
+rmsAvg for 8 channels  =  19037.1714424931
+running total rmsAvg for 8 channels  =  1361673.58783926
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18907.8714074868
+Dequeue:  18896
+Enqueue:  19037.1714424931
+ 
+5 seconds...
+rmsValue for channel  1 =  18842.3103971886
+rmsValue for channel  2 =  19077.4915158152
+rmsValue for channel  3 =  18671.333094881
+rmsValue for channel  4 =  18540.0976294085
+rmsValue for channel  5 =  19273.90755327
+rmsValue for channel  6 =  19114.4994663214
+rmsValue for channel  7 =  18624.0686824335
+rmsValue for channel  8 =  19299.2809818397
+rmsTotal for 8 channels  =  151442.989321158
+rmsAvg for 8 channels  =  18930.3736651447
+running total rmsAvg for 8 channels  =  1380603.9615044
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18911.433895432
+Dequeue:  18793
+Enqueue:  18930.3736651447
+ 
+5 seconds...
+rmsValue for channel  1 =  18634.2952058832
+rmsValue for channel  2 =  18770.3658652675
+rmsValue for channel  3 =  19024.8463842418
+rmsValue for channel  4 =  18913.3785233628
+rmsValue for channel  5 =  19061.0388613003
+rmsValue for channel  6 =  19139.2380179567
+rmsValue for channel  7 =  18622.2103768591
+rmsValue for channel  8 =  18602.7035102966
+rmsTotal for 8 channels  =  150768.076745168
+rmsAvg for 8 channels  =  18846.009593146
+running total rmsAvg for 8 channels  =  1399449.97109755
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18912.393663675
+Dequeue:  18923
+Enqueue:  18846.009593146
+ 
+5 seconds...
+rmsValue for channel  1 =  19228.5558200297
+rmsValue for channel  2 =  19366.5230750385
+rmsValue for channel  3 =  18585.9203653734
+rmsValue for channel  4 =  18494.0992031512
+rmsValue for channel  5 =  18624.9279095518
+rmsValue for channel  6 =  19225.8158211297
+rmsValue for channel  7 =  18961.2122242224
+rmsValue for channel  8 =  18779.495851593
+rmsTotal for 8 channels  =  151266.55027009
+rmsAvg for 8 channels  =  18908.3187837612
+running total rmsAvg for 8 channels  =  1418358.28988131
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18913.8726411986
+Dequeue:  18960
+Enqueue:  18908.3187837612
+ 
+5 seconds...
+rmsValue for channel  1 =  19104.2593834987
+rmsValue for channel  2 =  19521.3011271278
+rmsValue for channel  3 =  18744.2927372574
+rmsValue for channel  4 =  19063.067583996
+rmsValue for channel  5 =  19245.4860567355
+rmsValue for channel  6 =  18718.5649784378
+rmsValue for channel  7 =  18445.7122311934
+rmsValue for channel  8 =  19517.558452327
+rmsTotal for 8 channels  =  152360.242550574
+rmsAvg for 8 channels  =  19045.0303188217
+running total rmsAvg for 8 channels  =  1437403.32020013
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18913.4763995931
+Dequeue:  18973
+Enqueue:  19045.0303188217
+ 
+5 seconds...
+rmsValue for channel  1 =  18939.3791771536
+rmsValue for channel  2 =  18804.5517786519
+rmsValue for channel  3 =  19156.2032883346
+rmsValue for channel  4 =  18486.3233900092
+rmsValue for channel  5 =  18589.4636179746
+rmsValue for channel  6 =  19405.7833753755
+rmsValue for channel  7 =  18828.8196209959
+rmsValue for channel  8 =  18672.9712682262
+rmsTotal for 8 channels  =  150883.495516721
+rmsAvg for 8 channels  =  18860.4369395902
+running total rmsAvg for 8 channels  =  1456263.75713972
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18915.8447142176
+Dequeue:  18941
+Enqueue:  18860.4369395902
+ 
+5 seconds...
+rmsValue for channel  1 =  18894.5190885611
+rmsValue for channel  2 =  18756.8004759874
+rmsValue for channel  3 =  18412.9044915787
+rmsValue for channel  4 =  19095.6944359717
+rmsValue for channel  5 =  19575.3072318163
+rmsValue for channel  6 =  18951.1099827952
+rmsValue for channel  7 =  19195.7039981346
+rmsValue for channel  8 =  18761.0918801652
+rmsTotal for 8 channels  =  151643.13158501
+rmsAvg for 8 channels  =  18955.3914481263
+running total rmsAvg for 8 channels  =  1475219.14858785
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18912.7267498343
+Dequeue:  18882
+Enqueue:  18955.3914481263
+ 
+5 seconds...
+rmsValue for channel  1 =  18338.5619840815
+rmsValue for channel  2 =  19451.0036144154
+rmsValue for channel  3 =  18871.8489972763
+rmsValue for channel  4 =  19168.0019037979
+rmsValue for channel  5 =  18752.9791312207
+rmsValue for channel  6 =  19075.2843714583
+rmsValue for channel  7 =  19043.5787275396
+rmsValue for channel  8 =  18651.7959589955
+rmsTotal for 8 channels  =  151353.054688785
+rmsAvg for 8 channels  =  18919.1318360982
+running total rmsAvg for 8 channels  =  1494138.28042394
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18913.1293433623
+Dequeue:  18749
+Enqueue:  18919.1318360982
+ 
+5 seconds...
+rmsValue for channel  1 =  19180.7273230188
+rmsValue for channel  2 =  19053.5051452482
+rmsValue for channel  3 =  18780.3942545411
+rmsValue for channel  4 =  18962.1070842879
+rmsValue for channel  5 =  19250.4547548363
+rmsValue for channel  6 =  18701.263290163
+rmsValue for channel  7 =  18653.4443296674
+rmsValue for channel  8 =  19274.9709008341
+rmsTotal for 8 channels  =  151856.867082597
+rmsAvg for 8 channels  =  18982.1083853246
+running total rmsAvg for 8 channels  =  1513120.38880927
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18914.1712161831
+Dequeue:  19013
+Enqueue:  18982.1083853246
+ 
+5 seconds...
+rmsValue for channel  1 =  18787.7865522259
+rmsValue for channel  2 =  19176.478085926
+rmsValue for channel  3 =  19144.2287863471
+rmsValue for channel  4 =  19134.4150690843
+rmsValue for channel  5 =  18730.0523354314
+rmsValue for channel  6 =  19061.4478452189
+rmsValue for channel  7 =  18685.241925327
+rmsValue for channel  8 =  18483.9271255867
+rmsTotal for 8 channels  =  151203.577725147
+rmsAvg for 8 channels  =  18900.4472156434
+running total rmsAvg for 8 channels  =  1532020.83602491
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18920.6362604934
+Dequeue:  19025
+Enqueue:  18900.4472156434
+ 
+5 seconds...
+rmsValue for channel  1 =  18554.1676136657
+rmsValue for channel  2 =  18578.3227626177
+rmsValue for channel  3 =  19161.9748336125
+rmsValue for channel  4 =  18698.8079597604
+rmsValue for channel  5 =  18643.7888062486
+rmsValue for channel  6 =  19376.1205873622
+rmsValue for channel  7 =  19245.0220317878
+rmsValue for channel  8 =  19401.3024133948
+rmsTotal for 8 channels  =  151659.50700845
+rmsAvg for 8 channels  =  18957.4383760562
+running total rmsAvg for 8 channels  =  1550978.27440097
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18917.49948913
+Dequeue:  18900
+Enqueue:  18957.4383760562
+ 
+5 seconds...
+rmsValue for channel  1 =  18322.3699288056
+rmsValue for channel  2 =  18686.2337549331
+rmsValue for channel  3 =  18638.5010058212
+rmsValue for channel  4 =  19166.0210799216
+rmsValue for channel  5 =  19755.3072114812
+rmsValue for channel  6 =  18657.8827030293
+rmsValue for channel  7 =  19250.3565618926
+rmsValue for channel  8 =  19033.9008113418
+rmsTotal for 8 channels  =  151510.573057226
+rmsAvg for 8 channels  =  18938.8216321533
+running total rmsAvg for 8 channels  =  1569917.09603312
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18915.6229431814
+Dequeue:  18946
+Enqueue:  18938.8216321533
+ 
+5 seconds...
+rmsValue for channel  1 =  19010.9640358399
+rmsValue for channel  2 =  18961.5695585571
+rmsValue for channel  3 =  18909.0050578025
+rmsValue for channel  4 =  18933.9965164252
+rmsValue for channel  5 =  18085.6087664198
+rmsValue for channel  6 =  18549.0250031639
+rmsValue for channel  7 =  19426.1998699694
+rmsValue for channel  8 =  19145.4281467926
+rmsTotal for 8 channels  =  151021.79695497
+rmsAvg for 8 channels  =  18877.7246193713
+running total rmsAvg for 8 channels  =  1588794.82065249
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18916.7082984757
+Dequeue:  18721
+Enqueue:  18877.7246193713
+ 
+5 seconds...
+rmsValue for channel  1 =  18892.6822047056
+rmsValue for channel  2 =  18274.8666852593
+rmsValue for channel  3 =  18630.071645917
+rmsValue for channel  4 =  19266.0261508179
+rmsValue for channel  5 =  19687.6438387126
+rmsValue for channel  6 =  18932.2724645511
+rmsValue for channel  7 =  19071.3702531307
+rmsValue for channel  8 =  18845.016576379
+rmsTotal for 8 channels  =  151599.949819473
+rmsAvg for 8 channels  =  18949.9937274342
+running total rmsAvg for 8 channels  =  1607744.81437993
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18914.8070530375
+Dequeue:  18969
+Enqueue:  18949.9937274342
+ 
+5 seconds...
+rmsValue for channel  1 =  18860.2763929906
+rmsValue for channel  2 =  19047.9080064977
+rmsValue for channel  3 =  19656.3756673503
+rmsValue for channel  4 =  19173.5048969144
+rmsValue for channel  5 =  18735.0325857203
+rmsValue for channel  6 =  18537.6071203378
+rmsValue for channel  7 =  18856.5522815811
+rmsValue for channel  8 =  18726.1472083288
+rmsTotal for 8 channels  =  151593.404159721
+rmsAvg for 8 channels  =  18949.1755199651
+running total rmsAvg for 8 channels  =  1626693.98989989
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18921.1658773686
+Dequeue:  18844
+Enqueue:  18949.1755199651
+ 
+5 seconds...
+rmsValue for channel  1 =  18979.2748132272
+rmsValue for channel  2 =  18613.7010113518
+rmsValue for channel  3 =  18270.7650569975
+rmsValue for channel  4 =  18764.2468183511
+rmsValue for channel  5 =  19013.5675576153
+rmsValue for channel  6 =  18631.5797371023
+rmsValue for channel  7 =  18651.9406044518
+rmsValue for channel  8 =  19404.109450217
+rmsTotal for 8 channels  =  150329.185049314
+rmsAvg for 8 channels  =  18791.1481311642
+running total rmsAvg for 8 channels  =  1645485.13803106
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18920.6175090081
+Dequeue:  19117
+Enqueue:  18791.1481311642
+ 
+5 seconds...
+rmsValue for channel  1 =  19147.9888819688
+rmsValue for channel  2 =  18978.4133406352
+rmsValue for channel  3 =  18819.2962266924
+rmsValue for channel  4 =  19275.2055477497
+rmsValue for channel  5 =  18987.8745021132
+rmsValue for channel  6 =  19042.0562128148
+rmsValue for channel  7 =  19159.5675871873
+rmsValue for channel  8 =  18557.190854437
+rmsTotal for 8 channels  =  151967.593153598
+rmsAvg for 8 channels  =  18995.9491441998
+running total rmsAvg for 8 channels  =  1664481.08717526
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18919.1374022473
+Dequeue:  18801
+Enqueue:  18995.9491441998
+ 
+5 seconds...
+rmsValue for channel  1 =  19183.1172464748
+rmsValue for channel  2 =  18966.7050676706
+rmsValue for channel  3 =  18833.2073128291
+rmsValue for channel  4 =  19108.2668059665
+rmsValue for channel  5 =  19009.599130755
+rmsValue for channel  6 =  18372.3437375856
+rmsValue for channel  7 =  19089.1786017104
+rmsValue for channel  8 =  18848.0378242405
+rmsTotal for 8 channels  =  151410.455727232
+rmsAvg for 8 channels  =  18926.306965904
+running total rmsAvg for 8 channels  =  1683407.39414116
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18915.7630051203
+Dequeue:  18931
+Enqueue:  18926.306965904
+ 
+5 seconds...
+rmsValue for channel  1 =  18762.4593346395
+rmsValue for channel  2 =  19062.4766258742
+rmsValue for channel  3 =  18802.5957242079
+rmsValue for channel  4 =  19063.1659707405
+rmsValue for channel  5 =  19146.4532401173
+rmsValue for channel  6 =  18945.0905667933
+rmsValue for channel  7 =  18639.0571631722
+rmsValue for channel  8 =  18650.2182601706
+rmsTotal for 8 channels  =  151071.516885715
+rmsAvg for 8 channels  =  18883.9396107144
+running total rmsAvg for 8 channels  =  1702291.33375188
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18919.2303723953
+Dequeue:  18934
+Enqueue:  18883.9396107144
+ 
+5 seconds...
+rmsValue for channel  1 =  18601.871975046
+rmsValue for channel  2 =  18990.4674233153
+rmsValue for channel  3 =  19124.6726319694
+rmsValue for channel  4 =  18995.1542132198
+rmsValue for channel  5 =  19334.4079445945
+rmsValue for channel  6 =  19026.9049690169
+rmsValue for channel  7 =  18939.5188378163
+rmsValue for channel  8 =  18963.8394442687
+rmsTotal for 8 channels  =  151976.837439247
+rmsAvg for 8 channels  =  18997.1046799058
+running total rmsAvg for 8 channels  =  1721288.43843178
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18917.9141043164
+Dequeue:  18793
+Enqueue:  18997.1046799058
+ 
+5 seconds...
+rmsValue for channel  1 =  19148.483186613
+rmsValue for channel  2 =  18766.0639970133
+rmsValue for channel  3 =  18560.5402336247
+rmsValue for channel  4 =  18978.617285461
+rmsValue for channel  5 =  18944.4389901628
+rmsValue for channel  6 =  19019.398969999
+rmsValue for channel  7 =  19100.6871671152
+rmsValue for channel  8 =  18607.1834036213
+rmsTotal for 8 channels  =  151125.41323361
+rmsAvg for 8 channels  =  18890.6766542013
+running total rmsAvg for 8 channels  =  1740179.11508598
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18919.6679313087
+Dequeue:  18789
+Enqueue:  18890.6766542013
+ 
+5 seconds...
+rmsValue for channel  1 =  19143.1215583039
+rmsValue for channel  2 =  18345.9260495621
+rmsValue for channel  3 =  18804.4633545337
+rmsValue for channel  4 =  18848.403272426
+rmsValue for channel  5 =  19278.4813450645
+rmsValue for channel  6 =  19681.7717605911
+rmsValue for channel  7 =  18931.7791952051
+rmsValue for channel  8 =  19084.6178126784
+rmsTotal for 8 channels  =  152118.564348365
+rmsAvg for 8 channels  =  19014.8205435456
+running total rmsAvg for 8 channels  =  1759193.93562953
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18922.3904403579
+Dequeue:  19042
+Enqueue:  19014.8205435456
+ 
+5 seconds...
+rmsValue for channel  1 =  18920.1904826564
+rmsValue for channel  2 =  18233.2369816223
+rmsValue for channel  3 =  18586.9772950848
+rmsValue for channel  4 =  19026.3673268441
+rmsValue for channel  5 =  19096.4748272554
+rmsValue for channel  6 =  18916.6705538792
+rmsValue for channel  7 =  18989.1786832396
+rmsValue for channel  8 =  19373.9533072628
+rmsTotal for 8 channels  =  151143.049457845
+rmsAvg for 8 channels  =  18892.8811822306
+running total rmsAvg for 8 channels  =  1778086.81681176
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18928.6637705682
+Dequeue:  19137
+Enqueue:  18892.8811822306
+ 
+5 seconds...
+rmsValue for channel  1 =  18865.3736137931
+rmsValue for channel  2 =  19268.2664044278
+rmsValue for channel  3 =  18696.0758421654
+rmsValue for channel  4 =  18553.8978746785
+rmsValue for channel  5 =  18804.0296944033
+rmsValue for channel  6 =  18755.9233491716
+rmsValue for channel  7 =  18882.8858705442
+rmsValue for channel  8 =  19052.9888537206
+rmsTotal for 8 channels  =  150879.441502904
+rmsAvg for 8 channels  =  18859.930187863
+running total rmsAvg for 8 channels  =  1796946.74699962
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18924.5201984979
+Dequeue:  18880
+Enqueue:  18859.930187863
+ 
+5 seconds...
+rmsValue for channel  1 =  18383.2268833304
+rmsValue for channel  2 =  19060.678808479
+rmsValue for channel  3 =  19364.6750963707
+rmsValue for channel  4 =  18828.2120203698
+rmsValue for channel  5 =  19357.7480846301
+rmsValue for channel  6 =  18711.6287035629
+rmsValue for channel  7 =  18706.3445548295
+rmsValue for channel  8 =  18841.2659443043
+rmsTotal for 8 channels  =  151253.780095877
+rmsAvg for 8 channels  =  18906.7225119846
+running total rmsAvg for 8 channels  =  1815853.46951161
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18916.8118015011
+Dequeue:  18890
+Enqueue:  18906.7225119846
+ 
+5 seconds...
+rmsValue for channel  1 =  18559.2113892805
+rmsValue for channel  2 =  18905.2258396455
+rmsValue for channel  3 =  19452.9089107002
+rmsValue for channel  4 =  18808.7454225953
+rmsValue for channel  5 =  19103.552213345
+rmsValue for channel  6 =  19043.6486333896
+rmsValue for channel  7 =  19244.9081667853
+rmsValue for channel  8 =  18674.7265276898
+rmsTotal for 8 channels  =  151792.927103431
+rmsAvg for 8 channels  =  18974.1158879289
+running total rmsAvg for 8 channels  =  1834827.58539954
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18917.5434232192
+Dequeue:  19070
+Enqueue:  18974.1158879289
+ 
+5 seconds...
+rmsValue for channel  1 =  18722.8073375763
+rmsValue for channel  2 =  18468.6619559729
+rmsValue for channel  3 =  18858.8323254649
+rmsValue for channel  4 =  19359.5717760492
+rmsValue for channel  5 =  18955.8866904189
+rmsValue for channel  6 =  19336.9012261014
+rmsValue for channel  7 =  18860.6401083314
+rmsValue for channel  8 =  18970.4343924961
+rmsTotal for 8 channels  =  151533.735812411
+rmsAvg for 8 channels  =  18941.7169765514
+running total rmsAvg for 8 channels  =  1853769.30237609
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18919.8842211927
+Dequeue:  18850
+Enqueue:  18941.7169765514
+ 
+5 seconds...
+rmsValue for channel  1 =  19589.1729763152
+rmsValue for channel  2 =  18650.9622104598
+rmsValue for channel  3 =  19015.9597132514
+rmsValue for channel  4 =  18911.3509614728
+rmsValue for channel  5 =  18503.1877843792
+rmsValue for channel  6 =  18818.5285024095
+rmsValue for channel  7 =  18953.3145202627
+rmsValue for channel  8 =  19133.6726158885
+rmsTotal for 8 channels  =  151576.149284439
+rmsAvg for 8 channels  =  18947.0186605549
+running total rmsAvg for 8 channels  =  1872716.32103664
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18916.3209726439
+Dequeue:  18980
+Enqueue:  18947.0186605549
+ 
+5 seconds...
+rmsValue for channel  1 =  18661.8067497228
+rmsValue for channel  2 =  18040.6451584194
+rmsValue for channel  3 =  18526.4481341675
+rmsValue for channel  4 =  18379.6258756265
+rmsValue for channel  5 =  18773.729862763
+rmsValue for channel  6 =  19330.4706744559
+rmsValue for channel  7 =  19412.0913413264
+rmsValue for channel  8 =  19066.5797729955
+rmsTotal for 8 channels  =  150191.397569477
+rmsAvg for 8 channels  =  18773.9246961846
+running total rmsAvg for 8 channels  =  1891490.24573283
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18919.015787302
+Dequeue:  18716
+Enqueue:  18773.9246961846
+ 
+5 seconds...
+rmsValue for channel  1 =  18754.8613221212
+rmsValue for channel  2 =  18868.6516342848
+rmsValue for channel  3 =  19003.8317811961
+rmsValue for channel  4 =  18877.4450985296
+rmsValue for channel  5 =  18697.4447133291
+rmsValue for channel  6 =  19042.177838052
+rmsValue for channel  7 =  18820.0982628678
+rmsValue for channel  8 =  19117.6459099963
+rmsTotal for 8 channels  =  151182.156560377
+rmsAvg for 8 channels  =  18897.7695700471
+running total rmsAvg for 8 channels  =  1910388.01530287
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18913.2811258914
+Dequeue:  18956
+Enqueue:  18897.7695700471
+ 
+5 seconds...
+rmsValue for channel  1 =  18976.3310254643
+rmsValue for channel  2 =  18527.4668455242
+rmsValue for channel  3 =  19295.2744383696
+rmsValue for channel  4 =  18332.2483919458
+rmsValue for channel  5 =  18640.6280058371
+rmsValue for channel  6 =  19025.2837941514
+rmsValue for channel  7 =  19362.0197749098
+rmsValue for channel  8 =  19218.2361508022
+rmsTotal for 8 channels  =  151377.488427005
+rmsAvg for 8 channels  =  18922.1860533756
+running total rmsAvg for 8 channels  =  1929310.20135625
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18918.3304473119
+Dequeue:  19004
+Enqueue:  18922.1860533756
+ 
+5 seconds...
+rmsValue for channel  1 =  18914.1259146702
+rmsValue for channel  2 =  19020.3060605238
+rmsValue for channel  3 =  18989.7450563192
+rmsValue for channel  4 =  19275.1507268815
+rmsValue for channel  5 =  19166.5431657354
+rmsValue for channel  6 =  18604.6469071574
+rmsValue for channel  7 =  18760.8383805202
+rmsValue for channel  8 =  18776.8963638829
+rmsTotal for 8 channels  =  151508.252575691
+rmsAvg for 8 channels  =  18938.5315719613
+running total rmsAvg for 8 channels  =  1948248.73292821
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18917.379337922
+Dequeue:  18823
+Enqueue:  18938.5315719613
+ 
+5 seconds...
+rmsValue for channel  1 =  19159.2913578765
+rmsValue for channel  2 =  19031.8887768923
+rmsValue for channel  3 =  18939.6045523659
+rmsValue for channel  4 =  18556.1232765899
+rmsValue for channel  5 =  19054.2991314821
+rmsValue for channel  6 =  19238.0612035621
+rmsValue for channel  7 =  18982.7188324539
+rmsValue for channel  8 =  18566.8333480968
+rmsTotal for 8 channels  =  151528.820479319
+rmsAvg for 8 channels  =  18941.1025599149
+running total rmsAvg for 8 channels  =  1967189.83548812
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18915.5521604236
+Dequeue:  18809
+Enqueue:  18941.1025599149
+ 
+5 seconds...
+rmsValue for channel  1 =  19179.0772324426
+rmsValue for channel  2 =  18986.9633644772
+rmsValue for channel  3 =  18681.7905333509
+rmsValue for channel  4 =  18483.2331260524
+rmsValue for channel  5 =  19347.4790501502
+rmsValue for channel  6 =  18763.3351679279
+rmsValue for channel  7 =  18822.0526486353
+rmsValue for channel  8 =  18232.7725125939
+rmsTotal for 8 channels  =  150496.70363563
+rmsAvg for 8 channels  =  18812.0879544538
+running total rmsAvg for 8 channels  =  1986001.92344258
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18918.8385829218
+Dequeue:  18935
+Enqueue:  18812.0879544538
+ 
+5 seconds...
+rmsValue for channel  1 =  18769.6777306378
+rmsValue for channel  2 =  18432.6258436502
+rmsValue for channel  3 =  18848.0190239717
+rmsValue for channel  4 =  19104.2460206102
+rmsValue for channel  5 =  19183.6791200228
+rmsValue for channel  6 =  19130.0080580223
+rmsValue for channel  7 =  18960.0932134839
+rmsValue for channel  8 =  18606.7364572082
+rmsTotal for 8 channels  =  151035.085467607
+rmsAvg for 8 channels  =  18879.3856834509
+running total rmsAvg for 8 channels  =  2004881.30912603
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18918.9106345001
+Dequeue:  18780
+Enqueue:  18879.3856834509
+ 
+5 seconds...
+rmsValue for channel  1 =  18877.971885772
+rmsValue for channel  2 =  17956.5448897052
+rmsValue for channel  3 =  19024.7401871353
+rmsValue for channel  4 =  18873.4663300624
+rmsValue for channel  5 =  18721.4016816049
+rmsValue for channel  6 =  18581.5413290717
+rmsValue for channel  7 =  19337.4327251577
+rmsValue for channel  8 =  19108.5216665236
+rmsTotal for 8 channels  =  150481.620695033
+rmsAvg for 8 channels  =  18810.2025868791
+running total rmsAvg for 8 channels  =  2023691.51171291
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18917.3530107558
+Dequeue:  19037
+Enqueue:  18810.2025868791
+ 
+5 seconds...
+rmsValue for channel  1 =  18454.1394327668
+rmsValue for channel  2 =  19044.9086396338
+rmsValue for channel  3 =  18782.661087503
+rmsValue for channel  4 =  18834.8567042067
+rmsValue for channel  5 =  19171.806783921
+rmsValue for channel  6 =  19309.7818592546
+rmsValue for channel  7 =  18521.7796567176
+rmsValue for channel  8 =  18867.3716086794
+rmsTotal for 8 channels  =  150987.305772683
+rmsAvg for 8 channels  =  18873.4132215854
+running total rmsAvg for 8 channels  =  2042564.9249345
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18918.1970921152
+Dequeue:  18930
+Enqueue:  18873.4132215854
+ 
+5 seconds...
+rmsValue for channel  1 =  18774.0084985599
+rmsValue for channel  2 =  18973.0578393679
+rmsValue for channel  3 =  18833.9328333728
+rmsValue for channel  4 =  19155.5029059537
+rmsValue for channel  5 =  19224.8493581614
+rmsValue for channel  6 =  19059.3327009106
+rmsValue for channel  7 =  18601.7800479416
+rmsValue for channel  8 =  18589.7299623206
+rmsTotal for 8 channels  =  151212.194146589
+rmsAvg for 8 channels  =  18901.5242683236
+running total rmsAvg for 8 channels  =  2061466.44920282
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18913.6482526455
+Dequeue:  18846
+Enqueue:  18901.5242683236
+ 
+5 seconds...
+rmsValue for channel  1 =  18847.546497303
+rmsValue for channel  2 =  19120.8688998173
+rmsValue for channel  3 =  19211.1726141847
+rmsValue for channel  4 =  18821.4923162856
+rmsValue for channel  5 =  18485.6833600492
+rmsValue for channel  6 =  19080.9192889651
+rmsValue for channel  7 =  18676.970630485
+rmsValue for channel  8 =  18688.9745761505
+rmsTotal for 8 channels  =  150933.62818324
+rmsAvg for 8 channels  =  18866.703522905
+running total rmsAvg for 8 channels  =  2080333.15272572
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18912.8468805116
+Dequeue:  18908
+Enqueue:  18866.703522905
+ 
+5 seconds...
+rmsValue for channel  1 =  18720.7015658068
+rmsValue for channel  2 =  18646.4050480515
+rmsValue for channel  3 =  18931.084426308
+rmsValue for channel  4 =  19194.7513024785
+rmsValue for channel  5 =  18943.7287985233
+rmsValue for channel  6 =  19245.4258707881
+rmsValue for channel  7 =  18643.6932068729
+rmsValue for channel  8 =  18145.8952332476
+rmsTotal for 8 channels  =  150471.685452077
+rmsAvg for 8 channels  =  18808.9606815096
+running total rmsAvg for 8 channels  =  2099142.11340723
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18913.4217118938
+Dequeue:  19045
+Enqueue:  18808.9606815096
+ 
+5 seconds...
+rmsValue for channel  1 =  19298.2390023546
+rmsValue for channel  2 =  18258.0567240876
+rmsValue for channel  3 =  18824.5164513727
+rmsValue for channel  4 =  19123.390340209
+rmsValue for channel  5 =  19019.5482364855
+rmsValue for channel  6 =  18387.2081697032
+rmsValue for channel  7 =  18826.1667439763
+rmsValue for channel  8 =  18490.2958419815
+rmsTotal for 8 channels  =  150227.42151017
+rmsAvg for 8 channels  =  18778.4276887713
+running total rmsAvg for 8 channels  =  2117920.541096
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18910.661764609
+Dequeue:  18860
+Enqueue:  18778.4276887713
+ 
+5 seconds...
+rmsValue for channel  1 =  18673.01626958
+rmsValue for channel  2 =  19062.231752552
+rmsValue for channel  3 =  19747.6350219463
+rmsValue for channel  4 =  19103.157059502
+rmsValue for channel  5 =  18747.2466213042
+rmsValue for channel  6 =  18528.8509671809
+rmsValue for channel  7 =  18875.2963751036
+rmsValue for channel  8 =  18911.6427119381
+rmsTotal for 8 channels  =  151649.076779107
+rmsAvg for 8 channels  =  18956.1345973884
+running total rmsAvg for 8 channels  =  2136876.67569339
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18903.2561359965
+Dequeue:  18955
+Enqueue:  18956.1345973884
+ 
+5 seconds...
+rmsValue for channel  1 =  18567.4051256496
+rmsValue for channel  2 =  18956.7115962658
+rmsValue for channel  3 =  18984.096930431
+rmsValue for channel  4 =  18332.9806257466
+rmsValue for channel  5 =  19099.0633501227
+rmsValue for channel  6 =  18936.6901710938
+rmsValue for channel  7 =  18833.4721495533
+rmsValue for channel  8 =  18699.2870531472
+rmsTotal for 8 channels  =  150409.70700201
+rmsAvg for 8 channels  =  18801.2133752513
+running total rmsAvg for 8 channels  =  2155677.88906864
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18905.9144042687
+Dequeue:  18919
+Enqueue:  18801.2133752513
+ 
+5 seconds...
+rmsValue for channel  1 =  18736.0349998606
+rmsValue for channel  2 =  19304.9825155062
+rmsValue for channel  3 =  19087.1156392997
+rmsValue for channel  4 =  18395.214875505
+rmsValue for channel  5 =  19067.134464203
+rmsValue for channel  6 =  18496.0089528525
+rmsValue for channel  7 =  18520.1729530801
+rmsValue for channel  8 =  18041.6003745787
+rmsTotal for 8 channels  =  149648.264774886
+rmsAvg for 8 channels  =  18706.0330968607
+running total rmsAvg for 8 channels  =  2174383.9221655
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18901.6316800221
+Dequeue:  18982
+Enqueue:  18706.0330968607
+ 
+5 seconds...
+rmsValue for channel  1 =  18628.4515317833
+rmsValue for channel  2 =  18155.473391019
+rmsValue for channel  3 =  18904.8783011158
+rmsValue for channel  4 =  18931.9606841975
+rmsValue for channel  5 =  18606.872390598
+rmsValue for channel  6 =  19416.7897591749
+rmsValue for channel  7 =  19286.8401023081
+rmsValue for channel  8 =  19076.6112594454
+rmsTotal for 8 channels  =  151007.877419642
+rmsAvg for 8 channels  =  18875.9846774553
+running total rmsAvg for 8 channels  =  2193259.90684296
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18895.7122705989
+Dequeue:  18900
+Enqueue:  18875.9846774553
+ 
+5 seconds...
+rmsValue for channel  1 =  18668.0294172684
+rmsValue for channel  2 =  18662.9006127129
+rmsValue for channel  3 =  19340.6190913321
+rmsValue for channel  4 =  19197.7609116272
+rmsValue for channel  5 =  18789.4231772026
+rmsValue for channel  6 =  19039.9831579757
+rmsValue for channel  7 =  19275.3037900833
+rmsValue for channel  8 =  19487.9956222286
+rmsTotal for 8 channels  =  152462.015780431
+rmsAvg for 8 channels  =  19057.7519725539
+running total rmsAvg for 8 channels  =  2212317.65881551
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18892.7643898247
+Dequeue:  18957
+Enqueue:  19057.7519725539
+ 
+5 seconds...
+rmsValue for channel  1 =  19258.7020919895
+rmsValue for channel  2 =  18790.2052333656
+rmsValue for channel  3 =  18265.3610217811
+rmsValue for channel  4 =  18737.0113376707
+rmsValue for channel  5 =  19044.8548312661
+rmsValue for channel  6 =  19082.2538639438
+rmsValue for channel  7 =  19262.6221175623
+rmsValue for channel  8 =  19260.3884844517
+rmsTotal for 8 channels  =  151701.398982031
+rmsAvg for 8 channels  =  18962.6748727538
+running total rmsAvg for 8 channels  =  2231280.33368827
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18897.1339664056
+Dequeue:  18939
+Enqueue:  18962.6748727538
+ 
+5 seconds...
+rmsValue for channel  1 =  18764.7446186725
+rmsValue for channel  2 =  19245.420777837
+rmsValue for channel  3 =  18930.6053235495
+rmsValue for channel  4 =  18953.3989253643
+rmsValue for channel  5 =  18634.8813843287
+rmsValue for channel  6 =  19522.607991352
+rmsValue for channel  7 =  18910.5864737189
+rmsValue for channel  8 =  18986.3170084142
+rmsTotal for 8 channels  =  151948.562503237
+rmsAvg for 8 channels  =  18993.5703129046
+running total rmsAvg for 8 channels  =  2250273.90400117
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18897.2794246472
+Dequeue:  18878
+Enqueue:  18993.5703129046
+ 
+5 seconds...
+rmsValue for channel  1 =  18876.568690734
+rmsValue for channel  2 =  19040.703421355
+rmsValue for channel  3 =  19090.3931886171
+rmsValue for channel  4 =  19030.7194191917
+rmsValue for channel  5 =  19135.3608225191
+rmsValue for channel  6 =  18652.8394211712
+rmsValue for channel  7 =  18857.0174377604
+rmsValue for channel  8 =  18682.1278356615
+rmsTotal for 8 channels  =  151365.73023701
+rmsAvg for 8 channels  =  18920.7162796263
+running total rmsAvg for 8 channels  =  2269194.6202808
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18898.8002213347
+Dequeue:  18950
+Enqueue:  18920.7162796263
+ 
+5 seconds...
+rmsValue for channel  1 =  19321.9410474207
+rmsValue for channel  2 =  19201.5607662502
+rmsValue for channel  3 =  18812.7259683439
+rmsValue for channel  4 =  18255.6405815846
+rmsValue for channel  5 =  19118.7250661753
+rmsValue for channel  6 =  18717.349719979
+rmsValue for channel  7 =  19194.4600774286
+rmsValue for channel  8 =  19265.9055940799
+rmsTotal for 8 channels  =  151888.308821262
+rmsAvg for 8 channels  =  18986.0386026578
+running total rmsAvg for 8 channels  =  2288180.65888346
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18899.9944341196
+Dequeue:  18949
+Enqueue:  18986.0386026578
+ 
+5 seconds...
+rmsValue for channel  1 =  18950.4940834797
+rmsValue for channel  2 =  18603.4741999445
+rmsValue for channel  3 =  18798.2497142686
+rmsValue for channel  4 =  19077.6191247231
+rmsValue for channel  5 =  17985.3499545602
+rmsValue for channel  6 =  18451.1523008185
+rmsValue for channel  7 =  18596.5063691006
+rmsValue for channel  8 =  19595.8007895569
+rmsTotal for 8 channels  =  150058.646536452
+rmsAvg for 8 channels  =  18757.3308170565
+running total rmsAvg for 8 channels  =  2306937.98970051
+ 
+5 seconds after 3 minutes...
+Moving RMS Avg (using queue):  18900.9956806536
+Dequeue:  18791
+Enqueue:  18757.3308170565
+End Debug at 10:39:35 AM on 2/19/2014

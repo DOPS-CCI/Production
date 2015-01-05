@@ -1,0 +1,20 @@
+Classic PowerBASIC Console Compiler
+Classic PB/CC   Version 4.06 
+Copyright (c) 1998-2010 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  F:\ClasCC\Projects\GESPOffsets.bas   {260 total lines}
+Target compilation:  GESPOffsets.exe
+Compile time:  0.1 seconds, at 312000 lines/minute
+
+3316 bytes compiled code, 20672 bytes RTLibrary,
+364 bytes string literals, and 2316 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 28672 bytes   Memory image: 23352 bytes.
+
+Component Files:
+----------------
+F:\CLASCC\PROJECTS\GESPOFFSETS.BAS
+
+

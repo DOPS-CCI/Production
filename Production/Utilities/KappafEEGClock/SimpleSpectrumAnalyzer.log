@@ -1,0 +1,7 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Error 421 in E:\PowerBasicClassicWindows10\Projects\Utilities\KappafEEGClock\SimpleSpectrumAnalyzer.bas(583:042):  String operand expected
+  Line 583:       hWnd& = ChildWindowFromPoint(hDlg, LO(WORD, CBLPARAM), HI(WORD, CBLPARAM))  

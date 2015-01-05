@@ -1,0 +1,9 @@
+[EEG Information]
+NumberOfChannels=1
+EEGChannels=
+AIBChannels=3
+AuxiliarySensors=
+BipolarLeads=
+SampleRates=3
+AIBChannelsFile=H:\EEGSettings\Default.AIB
+BipolarLeadsFile=H:\EEGSettings\Default.BL

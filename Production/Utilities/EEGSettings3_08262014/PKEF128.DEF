@@ -1,0 +1,39 @@
+[EEG Information]
+NumberOfChannels=
+EEGChannels=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,
+AIBChannels=1,2,3,4,5,6,7,8,9,13,14,15,16,17,18,19,20,21,22,23
+AuxiliarySensors=
+BipolarLeads=1,2,3,4,5,6,7,8
+SampleRates=3
+ScreenLength=3
+EEGChannelsFile=H:\EEGSettings3\Default128.EEG
+AIBChannelsFile=H:\EEGSettings3\PKv46.AIB
+BipolarLeadsFile=H:\EEGSettings3\Default.BL
+[OPTIONS]
+IP=137.54.99.111
+Port=778
+BytesInTCPArray=192
+ChannelsSentByTCP=64
+TCPSamplesPerChannel=1
+TCPSubset= 4
+Add8EXElectrodes= 0
+Add7Sensors= 0
+Add9Jazz= 0
+Add32AIBChan= 1
+AddTriggerStatusChan= 0
+SampleRate=512
+[Experiment Section]
+UseTCPIP=1
+[CHANNELS INFO]
+ChooseGain= 3
+EEGGain= 1
+AIBGain= 1
+OtherGain= .006
+ChooseThreshold= 1
+LowerThreshold= 1
+UpperThreshold= 1
+ChannelsToProcess=45,46,50,51
+45=Box13=QC1,GF= 1,MS= 1
+46=Box14=QC2,GF= 1,MS= 1
+50=Box18=PL1,GF= 1,MS= 1
+51=Box19=PL2,GF= 1,MS= 1

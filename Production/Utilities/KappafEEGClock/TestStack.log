@@ -1,0 +1,25 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  F:\PowerBasicClassicWindows10\Projects\Utilities\KappafEEGClock\TestStack.bas   {133 total lines}
+Target compilation:  TestStack.EXE
+Compile time:  0.1 seconds, at 159600 lines/minute
+
+1936 bytes compiled code, 10060 bytes RTLibrary,
+100 bytes string literals, and 2764 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 15872 bytes   Memory image: 12924 bytes.
+
+Component Files:
+----------------
+F:\PowerBasicClassicWindows10\Projects\Utilities\KappafEEGClock\TestStack.bas
+F:\POWERBASICCLASSICWINDOWS10\PROJECTS\UTILITIES\KAPPAFEEGCLOCK\DOUBLEQUEUEUSINGARRAY.INC
+
+
+Code Extracted:
+---------------
+GETDOUBLEQUEUECOUNT
+RMSDOUBLEQUEUE
+MEANDOUBLEQUEUE

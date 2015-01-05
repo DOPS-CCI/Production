@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartEpoch">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>13002300884.9452</Time>
+    <CameraTime>01-10-2013 09:14:44</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">ClickMe</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>13002300890.3216</Time>
+    <CameraTime>01-10-2013 09:14:50</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">ClickMe</GV>
+    </GroupVars>
+  </Event>
+</Events>

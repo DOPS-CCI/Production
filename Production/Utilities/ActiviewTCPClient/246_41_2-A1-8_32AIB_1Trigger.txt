@@ -1,0 +1,7170 @@
+
+Saving files...
+Files saved.
+Compiling "E:\DOPS_Applications\Utilities\ActiviewTCPClient\ActiviewTCPClientv2.bas"
+Successfully created "E:\DOPS_Applications\Utilities\ActiviewTCPClient\ActiviewTCPClientv2.EXE"
+Begin Debug at 3:19:58 PM on 10/15/2013
+conv.nbr:  8474833
+conv.nbr:  8474092
+conv.nbr:  8474805
+conv.nbr:  8473665
+conv.nbr:  8474178
+conv.nbr:  8474057
+conv.nbr:  8473833
+conv.nbr:  8474932
+conv.nbr:  936
+conv.nbr:  1860
+conv.nbr:  598
+conv.nbr:  3752
+conv.nbr:  16777049
+conv.nbr:  8739519
+conv.nbr:  8743715
+conv.nbr:  949
+conv.nbr:  8744323
+conv.nbr:  8740710
+conv.nbr:  8745253
+conv.nbr:  8749989
+conv.nbr:  280
+conv.nbr:  2139
+conv.nbr:  16775288
+conv.nbr:  16775763
+conv.nbr:  1306
+conv.nbr:  1209
+conv.nbr:  226
+conv.nbr:  1390
+conv.nbr:  3069
+conv.nbr:  146
+conv.nbr:  770
+conv.nbr:  8749543
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474833
+sample:  1, channel:  2
+ 8474092
+sample:  1, channel:  3
+ 8474805
+sample:  1, channel:  4
+ 8473665
+sample:  1, channel:  5
+ 8474178
+sample:  1, channel:  6
+ 8474057
+sample:  1, channel:  7
+ 8473833
+sample:  1, channel:  8
+ 8474932
+sample:  1, channel:  9
+ 936
+sample:  1, channel:  10
+ 1860
+sample:  1, channel:  11
+ 598
+sample:  1, channel:  12
+ 3752
+sample:  1, channel:  13
+ 16777049
+sample:  1, channel:  14
+ 8739519
+sample:  1, channel:  15
+ 8743715
+sample:  1, channel:  16
+ 949
+sample:  1, channel:  17
+ 8744323
+sample:  1, channel:  18
+ 8740710
+sample:  1, channel:  19
+ 8745253
+sample:  1, channel:  20
+ 8749989
+sample:  1, channel:  21
+ 280
+sample:  1, channel:  22
+ 2139
+sample:  1, channel:  23
+ 16775288
+sample:  1, channel:  24
+ 16775763
+sample:  1, channel:  25
+ 1306
+sample:  1, channel:  26
+ 1209
+sample:  1, channel:  27
+ 226
+sample:  1, channel:  28
+ 1390
+sample:  1, channel:  29
+ 3069
+sample:  1, channel:  30
+ 146
+sample:  1, channel:  31
+ 770
+sample:  1, channel:  32
+ 8749543
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474819
+conv.nbr:  8474083
+conv.nbr:  8474802
+conv.nbr:  8473671
+conv.nbr:  8474177
+conv.nbr:  8474048
+conv.nbr:  8473803
+conv.nbr:  8474944
+conv.nbr:  1139
+conv.nbr:  1782
+conv.nbr:  536
+conv.nbr:  3758
+conv.nbr:  16777054
+conv.nbr:  8739512
+conv.nbr:  8743717
+conv.nbr:  954
+conv.nbr:  8744319
+conv.nbr:  8740692
+conv.nbr:  8745251
+conv.nbr:  8749992
+conv.nbr:  275
+conv.nbr:  2140
+conv.nbr:  16775281
+conv.nbr:  16775771
+conv.nbr:  1310
+conv.nbr:  1200
+conv.nbr:  238
+conv.nbr:  1386
+conv.nbr:  3091
+conv.nbr:  134
+conv.nbr:  763
+conv.nbr:  8749534
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474819
+sample:  1, channel:  2
+ 8474083
+sample:  1, channel:  3
+ 8474802
+sample:  1, channel:  4
+ 8473671
+sample:  1, channel:  5
+ 8474177
+sample:  1, channel:  6
+ 8474048
+sample:  1, channel:  7
+ 8473803
+sample:  1, channel:  8
+ 8474944
+sample:  1, channel:  9
+ 1139
+sample:  1, channel:  10
+ 1782
+sample:  1, channel:  11
+ 536
+sample:  1, channel:  12
+ 3758
+sample:  1, channel:  13
+ 16777054
+sample:  1, channel:  14
+ 8739512
+sample:  1, channel:  15
+ 8743717
+sample:  1, channel:  16
+ 954
+sample:  1, channel:  17
+ 8744319
+sample:  1, channel:  18
+ 8740692
+sample:  1, channel:  19
+ 8745251
+sample:  1, channel:  20
+ 8749992
+sample:  1, channel:  21
+ 275
+sample:  1, channel:  22
+ 2140
+sample:  1, channel:  23
+ 16775281
+sample:  1, channel:  24
+ 16775771
+sample:  1, channel:  25
+ 1310
+sample:  1, channel:  26
+ 1200
+sample:  1, channel:  27
+ 238
+sample:  1, channel:  28
+ 1386
+sample:  1, channel:  29
+ 3091
+sample:  1, channel:  30
+ 134
+sample:  1, channel:  31
+ 763
+sample:  1, channel:  32
+ 8749534
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474817
+conv.nbr:  8474090
+conv.nbr:  8474801
+conv.nbr:  8473661
+conv.nbr:  8474184
+conv.nbr:  8474030
+conv.nbr:  8473794
+conv.nbr:  8474940
+conv.nbr:  1467
+conv.nbr:  886
+conv.nbr:  391
+conv.nbr:  3752
+conv.nbr:  16777048
+conv.nbr:  8739518
+conv.nbr:  8743723
+conv.nbr:  942
+conv.nbr:  8744335
+conv.nbr:  8740711
+conv.nbr:  8745255
+conv.nbr:  8749993
+conv.nbr:  268
+conv.nbr:  2139
+conv.nbr:  16775254
+conv.nbr:  16775769
+conv.nbr:  1313
+conv.nbr:  1198
+conv.nbr:  234
+conv.nbr:  1392
+conv.nbr:  3093
+conv.nbr:  130
+conv.nbr:  767
+conv.nbr:  8749529
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474817
+sample:  1, channel:  2
+ 8474090
+sample:  1, channel:  3
+ 8474801
+sample:  1, channel:  4
+ 8473661
+sample:  1, channel:  5
+ 8474184
+sample:  1, channel:  6
+ 8474030
+sample:  1, channel:  7
+ 8473794
+sample:  1, channel:  8
+ 8474940
+sample:  1, channel:  9
+ 1467
+sample:  1, channel:  10
+ 886
+sample:  1, channel:  11
+ 391
+sample:  1, channel:  12
+ 3752
+sample:  1, channel:  13
+ 16777048
+sample:  1, channel:  14
+ 8739518
+sample:  1, channel:  15
+ 8743723
+sample:  1, channel:  16
+ 942
+sample:  1, channel:  17
+ 8744335
+sample:  1, channel:  18
+ 8740711
+sample:  1, channel:  19
+ 8745255
+sample:  1, channel:  20
+ 8749993
+sample:  1, channel:  21
+ 268
+sample:  1, channel:  22
+ 2139
+sample:  1, channel:  23
+ 16775254
+sample:  1, channel:  24
+ 16775769
+sample:  1, channel:  25
+ 1313
+sample:  1, channel:  26
+ 1198
+sample:  1, channel:  27
+ 234
+sample:  1, channel:  28
+ 1392
+sample:  1, channel:  29
+ 3093
+sample:  1, channel:  30
+ 130
+sample:  1, channel:  31
+ 767
+sample:  1, channel:  32
+ 8749529
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474822
+conv.nbr:  8474098
+conv.nbr:  8474808
+conv.nbr:  8473669
+conv.nbr:  8474185
+conv.nbr:  8474030
+conv.nbr:  8473810
+conv.nbr:  8474935
+conv.nbr:  1272
+conv.nbr:  1994
+conv.nbr:  423
+conv.nbr:  3744
+conv.nbr:  16777041
+conv.nbr:  8739512
+conv.nbr:  8743721
+conv.nbr:  941
+conv.nbr:  8744327
+conv.nbr:  8740714
+conv.nbr:  8745242
+conv.nbr:  8749989
+conv.nbr:  291
+conv.nbr:  2141
+conv.nbr:  16775274
+conv.nbr:  16775762
+conv.nbr:  1324
+conv.nbr:  1213
+conv.nbr:  240
+conv.nbr:  1396
+conv.nbr:  3093
+conv.nbr:  130
+conv.nbr:  782
+conv.nbr:  8749528
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474822
+sample:  1, channel:  2
+ 8474098
+sample:  1, channel:  3
+ 8474808
+sample:  1, channel:  4
+ 8473669
+sample:  1, channel:  5
+ 8474185
+sample:  1, channel:  6
+ 8474030
+sample:  1, channel:  7
+ 8473810
+sample:  1, channel:  8
+ 8474935
+sample:  1, channel:  9
+ 1272
+sample:  1, channel:  10
+ 1994
+sample:  1, channel:  11
+ 423
+sample:  1, channel:  12
+ 3744
+sample:  1, channel:  13
+ 16777041
+sample:  1, channel:  14
+ 8739512
+sample:  1, channel:  15
+ 8743721
+sample:  1, channel:  16
+ 941
+sample:  1, channel:  17
+ 8744327
+sample:  1, channel:  18
+ 8740714
+sample:  1, channel:  19
+ 8745242
+sample:  1, channel:  20
+ 8749989
+sample:  1, channel:  21
+ 291
+sample:  1, channel:  22
+ 2141
+sample:  1, channel:  23
+ 16775274
+sample:  1, channel:  24
+ 16775762
+sample:  1, channel:  25
+ 1324
+sample:  1, channel:  26
+ 1213
+sample:  1, channel:  27
+ 240
+sample:  1, channel:  28
+ 1396
+sample:  1, channel:  29
+ 3093
+sample:  1, channel:  30
+ 130
+sample:  1, channel:  31
+ 782
+sample:  1, channel:  32
+ 8749528
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474831
+conv.nbr:  8474095
+conv.nbr:  8474802
+conv.nbr:  8473666
+conv.nbr:  8474179
+conv.nbr:  8474036
+conv.nbr:  8473826
+conv.nbr:  8474949
+conv.nbr:  978
+conv.nbr:  1537
+conv.nbr:  513
+conv.nbr:  3772
+conv.nbr:  16777050
+conv.nbr:  8739511
+conv.nbr:  8743709
+conv.nbr:  941
+conv.nbr:  8744326
+conv.nbr:  8740714
+conv.nbr:  8745235
+conv.nbr:  8749980
+conv.nbr:  288
+conv.nbr:  2141
+conv.nbr:  16775291
+conv.nbr:  16775773
+conv.nbr:  1330
+conv.nbr:  1205
+conv.nbr:  245
+conv.nbr:  1394
+conv.nbr:  3095
+conv.nbr:  127
+conv.nbr:  790
+conv.nbr:  8749530
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474831
+sample:  1, channel:  2
+ 8474095
+sample:  1, channel:  3
+ 8474802
+sample:  1, channel:  4
+ 8473666
+sample:  1, channel:  5
+ 8474179
+sample:  1, channel:  6
+ 8474036
+sample:  1, channel:  7
+ 8473826
+sample:  1, channel:  8
+ 8474949
+sample:  1, channel:  9
+ 978
+sample:  1, channel:  10
+ 1537
+sample:  1, channel:  11
+ 513
+sample:  1, channel:  12
+ 3772
+sample:  1, channel:  13
+ 16777050
+sample:  1, channel:  14
+ 8739511
+sample:  1, channel:  15
+ 8743709
+sample:  1, channel:  16
+ 941
+sample:  1, channel:  17
+ 8744326
+sample:  1, channel:  18
+ 8740714
+sample:  1, channel:  19
+ 8745235
+sample:  1, channel:  20
+ 8749980
+sample:  1, channel:  21
+ 288
+sample:  1, channel:  22
+ 2141
+sample:  1, channel:  23
+ 16775291
+sample:  1, channel:  24
+ 16775773
+sample:  1, channel:  25
+ 1330
+sample:  1, channel:  26
+ 1205
+sample:  1, channel:  27
+ 245
+sample:  1, channel:  28
+ 1394
+sample:  1, channel:  29
+ 3095
+sample:  1, channel:  30
+ 127
+sample:  1, channel:  31
+ 790
+sample:  1, channel:  32
+ 8749530
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474836
+conv.nbr:  8474101
+conv.nbr:  8474800
+conv.nbr:  8473666
+conv.nbr:  8474190
+conv.nbr:  8474021
+conv.nbr:  8473828
+conv.nbr:  8474938
+conv.nbr:  806
+conv.nbr:  1000
+conv.nbr:  656
+conv.nbr:  3754
+conv.nbr:  16777046
+conv.nbr:  8739522
+conv.nbr:  8743711
+conv.nbr:  936
+conv.nbr:  8744338
+conv.nbr:  8740718
+conv.nbr:  8745240
+conv.nbr:  8749979
+conv.nbr:  262
+conv.nbr:  2144
+conv.nbr:  16775287
+conv.nbr:  16775762
+conv.nbr:  1323
+conv.nbr:  1188
+conv.nbr:  235
+conv.nbr:  1396
+conv.nbr:  3090
+conv.nbr:  150
+conv.nbr:  792
+conv.nbr:  8749549
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474836
+sample:  1, channel:  2
+ 8474101
+sample:  1, channel:  3
+ 8474800
+sample:  1, channel:  4
+ 8473666
+sample:  1, channel:  5
+ 8474190
+sample:  1, channel:  6
+ 8474021
+sample:  1, channel:  7
+ 8473828
+sample:  1, channel:  8
+ 8474938
+sample:  1, channel:  9
+ 806
+sample:  1, channel:  10
+ 1000
+sample:  1, channel:  11
+ 656
+sample:  1, channel:  12
+ 3754
+sample:  1, channel:  13
+ 16777046
+sample:  1, channel:  14
+ 8739522
+sample:  1, channel:  15
+ 8743711
+sample:  1, channel:  16
+ 936
+sample:  1, channel:  17
+ 8744338
+sample:  1, channel:  18
+ 8740718
+sample:  1, channel:  19
+ 8745240
+sample:  1, channel:  20
+ 8749979
+sample:  1, channel:  21
+ 262
+sample:  1, channel:  22
+ 2144
+sample:  1, channel:  23
+ 16775287
+sample:  1, channel:  24
+ 16775762
+sample:  1, channel:  25
+ 1323
+sample:  1, channel:  26
+ 1188
+sample:  1, channel:  27
+ 235
+sample:  1, channel:  28
+ 1396
+sample:  1, channel:  29
+ 3090
+sample:  1, channel:  30
+ 150
+sample:  1, channel:  31
+ 792
+sample:  1, channel:  32
+ 8749549
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474818
+conv.nbr:  8474102
+conv.nbr:  8474799
+conv.nbr:  8473659
+conv.nbr:  8474203
+conv.nbr:  8474036
+conv.nbr:  8473842
+conv.nbr:  8474944
+conv.nbr:  416
+conv.nbr:  2188
+conv.nbr:  825
+conv.nbr:  3761
+conv.nbr:  16777036
+conv.nbr:  8739523
+conv.nbr:  8743694
+conv.nbr:  946
+conv.nbr:  8744333
+conv.nbr:  8740717
+conv.nbr:  8745259
+conv.nbr:  8749981
+conv.nbr:  278
+conv.nbr:  2145
+conv.nbr:  16775275
+conv.nbr:  16775761
+conv.nbr:  1325
+conv.nbr:  1198
+conv.nbr:  244
+conv.nbr:  1386
+conv.nbr:  3092
+conv.nbr:  163
+conv.nbr:  797
+conv.nbr:  8749549
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474818
+sample:  1, channel:  2
+ 8474102
+sample:  1, channel:  3
+ 8474799
+sample:  1, channel:  4
+ 8473659
+sample:  1, channel:  5
+ 8474203
+sample:  1, channel:  6
+ 8474036
+sample:  1, channel:  7
+ 8473842
+sample:  1, channel:  8
+ 8474944
+sample:  1, channel:  9
+ 416
+sample:  1, channel:  10
+ 2188
+sample:  1, channel:  11
+ 825
+sample:  1, channel:  12
+ 3761
+sample:  1, channel:  13
+ 16777036
+sample:  1, channel:  14
+ 8739523
+sample:  1, channel:  15
+ 8743694
+sample:  1, channel:  16
+ 946
+sample:  1, channel:  17
+ 8744333
+sample:  1, channel:  18
+ 8740717
+sample:  1, channel:  19
+ 8745259
+sample:  1, channel:  20
+ 8749981
+sample:  1, channel:  21
+ 278
+sample:  1, channel:  22
+ 2145
+sample:  1, channel:  23
+ 16775275
+sample:  1, channel:  24
+ 16775761
+sample:  1, channel:  25
+ 1325
+sample:  1, channel:  26
+ 1198
+sample:  1, channel:  27
+ 244
+sample:  1, channel:  28
+ 1386
+sample:  1, channel:  29
+ 3092
+sample:  1, channel:  30
+ 163
+sample:  1, channel:  31
+ 797
+sample:  1, channel:  32
+ 8749549
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474813
+conv.nbr:  8474104
+conv.nbr:  8474794
+conv.nbr:  8473645
+conv.nbr:  8474204
+conv.nbr:  8474047
+conv.nbr:  8473841
+conv.nbr:  8474958
+conv.nbr:  477
+conv.nbr:  1468
+conv.nbr:  791
+conv.nbr:  3780
+conv.nbr:  16777044
+conv.nbr:  8739521
+conv.nbr:  8743705
+conv.nbr:  976
+conv.nbr:  8744340
+conv.nbr:  8740726
+conv.nbr:  8745272
+conv.nbr:  8749988
+conv.nbr:  297
+conv.nbr:  2148
+conv.nbr:  16775293
+conv.nbr:  16775789
+conv.nbr:  1330
+conv.nbr:  1220
+conv.nbr:  268
+conv.nbr:  1401
+conv.nbr:  3114
+conv.nbr:  179
+conv.nbr:  795
+conv.nbr:  8749543
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474813
+sample:  1, channel:  2
+ 8474104
+sample:  1, channel:  3
+ 8474794
+sample:  1, channel:  4
+ 8473645
+sample:  1, channel:  5
+ 8474204
+sample:  1, channel:  6
+ 8474047
+sample:  1, channel:  7
+ 8473841
+sample:  1, channel:  8
+ 8474958
+sample:  1, channel:  9
+ 477
+sample:  1, channel:  10
+ 1468
+sample:  1, channel:  11
+ 791
+sample:  1, channel:  12
+ 3780
+sample:  1, channel:  13
+ 16777044
+sample:  1, channel:  14
+ 8739521
+sample:  1, channel:  15
+ 8743705
+sample:  1, channel:  16
+ 976
+sample:  1, channel:  17
+ 8744340
+sample:  1, channel:  18
+ 8740726
+sample:  1, channel:  19
+ 8745272
+sample:  1, channel:  20
+ 8749988
+sample:  1, channel:  21
+ 297
+sample:  1, channel:  22
+ 2148
+sample:  1, channel:  23
+ 16775293
+sample:  1, channel:  24
+ 16775789
+sample:  1, channel:  25
+ 1330
+sample:  1, channel:  26
+ 1220
+sample:  1, channel:  27
+ 268
+sample:  1, channel:  28
+ 1401
+sample:  1, channel:  29
+ 3114
+sample:  1, channel:  30
+ 179
+sample:  1, channel:  31
+ 795
+sample:  1, channel:  32
+ 8749543
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474817
+conv.nbr:  8474097
+conv.nbr:  8474801
+conv.nbr:  8473646
+conv.nbr:  8474189
+conv.nbr:  8474039
+conv.nbr:  8473828
+conv.nbr:  8474948
+conv.nbr:  847
+conv.nbr:  1201
+conv.nbr:  628
+conv.nbr:  3759
+conv.nbr:  16777059
+conv.nbr:  8739531
+conv.nbr:  8743710
+conv.nbr:  974
+conv.nbr:  8744360
+conv.nbr:  8740736
+conv.nbr:  8745272
+conv.nbr:  8750000
+conv.nbr:  279
+conv.nbr:  2137
+conv.nbr:  16775307
+conv.nbr:  16775785
+conv.nbr:  1327
+conv.nbr:  1232
+conv.nbr:  274
+conv.nbr:  1417
+conv.nbr:  3108
+conv.nbr:  172
+conv.nbr:  782
+conv.nbr:  8749546
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474817
+sample:  1, channel:  2
+ 8474097
+sample:  1, channel:  3
+ 8474801
+sample:  1, channel:  4
+ 8473646
+sample:  1, channel:  5
+ 8474189
+sample:  1, channel:  6
+ 8474039
+sample:  1, channel:  7
+ 8473828
+sample:  1, channel:  8
+ 8474948
+sample:  1, channel:  9
+ 847
+sample:  1, channel:  10
+ 1201
+sample:  1, channel:  11
+ 628
+sample:  1, channel:  12
+ 3759
+sample:  1, channel:  13
+ 16777059
+sample:  1, channel:  14
+ 8739531
+sample:  1, channel:  15
+ 8743710
+sample:  1, channel:  16
+ 974
+sample:  1, channel:  17
+ 8744360
+sample:  1, channel:  18
+ 8740736
+sample:  1, channel:  19
+ 8745272
+sample:  1, channel:  20
+ 8750000
+sample:  1, channel:  21
+ 279
+sample:  1, channel:  22
+ 2137
+sample:  1, channel:  23
+ 16775307
+sample:  1, channel:  24
+ 16775785
+sample:  1, channel:  25
+ 1327
+sample:  1, channel:  26
+ 1232
+sample:  1, channel:  27
+ 274
+sample:  1, channel:  28
+ 1417
+sample:  1, channel:  29
+ 3108
+sample:  1, channel:  30
+ 172
+sample:  1, channel:  31
+ 782
+sample:  1, channel:  32
+ 8749546
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474822
+conv.nbr:  8474095
+conv.nbr:  8474802
+conv.nbr:  8473662
+conv.nbr:  8474180
+conv.nbr:  8474030
+conv.nbr:  8473827
+conv.nbr:  8474937
+conv.nbr:  1005
+conv.nbr:  2237
+conv.nbr:  617
+conv.nbr:  3763
+conv.nbr:  16777082
+conv.nbr:  8739532
+conv.nbr:  8743705
+conv.nbr:  959
+conv.nbr:  8744353
+conv.nbr:  8740730
+conv.nbr:  8745270
+conv.nbr:  8749976
+conv.nbr:  262
+conv.nbr:  2149
+conv.nbr:  16775304
+conv.nbr:  16775758
+conv.nbr:  1313
+conv.nbr:  1215
+conv.nbr:  274
+conv.nbr:  1410
+conv.nbr:  3088
+conv.nbr:  153
+conv.nbr:  776
+conv.nbr:  8749540
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474822
+sample:  1, channel:  2
+ 8474095
+sample:  1, channel:  3
+ 8474802
+sample:  1, channel:  4
+ 8473662
+sample:  1, channel:  5
+ 8474180
+sample:  1, channel:  6
+ 8474030
+sample:  1, channel:  7
+ 8473827
+sample:  1, channel:  8
+ 8474937
+sample:  1, channel:  9
+ 1005
+sample:  1, channel:  10
+ 2237
+sample:  1, channel:  11
+ 617
+sample:  1, channel:  12
+ 3763
+sample:  1, channel:  13
+ 16777082
+sample:  1, channel:  14
+ 8739532
+sample:  1, channel:  15
+ 8743705
+sample:  1, channel:  16
+ 959
+sample:  1, channel:  17
+ 8744353
+sample:  1, channel:  18
+ 8740730
+sample:  1, channel:  19
+ 8745270
+sample:  1, channel:  20
+ 8749976
+sample:  1, channel:  21
+ 262
+sample:  1, channel:  22
+ 2149
+sample:  1, channel:  23
+ 16775304
+sample:  1, channel:  24
+ 16775758
+sample:  1, channel:  25
+ 1313
+sample:  1, channel:  26
+ 1215
+sample:  1, channel:  27
+ 274
+sample:  1, channel:  28
+ 1410
+sample:  1, channel:  29
+ 3088
+sample:  1, channel:  30
+ 153
+sample:  1, channel:  31
+ 776
+sample:  1, channel:  32
+ 8749540
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474820
+conv.nbr:  8474096
+conv.nbr:  8474806
+conv.nbr:  8473670
+conv.nbr:  8474177
+conv.nbr:  8474028
+conv.nbr:  8473834
+conv.nbr:  8474930
+conv.nbr:  1330
+conv.nbr:  1220
+conv.nbr:  583
+conv.nbr:  3750
+conv.nbr:  16777061
+conv.nbr:  8739514
+conv.nbr:  8743680
+conv.nbr:  941
+conv.nbr:  8744347
+conv.nbr:  8740711
+conv.nbr:  8745249
+conv.nbr:  8749963
+conv.nbr:  265
+conv.nbr:  2130
+conv.nbr:  16775291
+conv.nbr:  16775748
+conv.nbr:  1288
+conv.nbr:  1200
+conv.nbr:  255
+conv.nbr:  1402
+conv.nbr:  3074
+conv.nbr:  131
+conv.nbr:  780
+conv.nbr:  8749539
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474820
+sample:  1, channel:  2
+ 8474096
+sample:  1, channel:  3
+ 8474806
+sample:  1, channel:  4
+ 8473670
+sample:  1, channel:  5
+ 8474177
+sample:  1, channel:  6
+ 8474028
+sample:  1, channel:  7
+ 8473834
+sample:  1, channel:  8
+ 8474930
+sample:  1, channel:  9
+ 1330
+sample:  1, channel:  10
+ 1220
+sample:  1, channel:  11
+ 583
+sample:  1, channel:  12
+ 3750
+sample:  1, channel:  13
+ 16777061
+sample:  1, channel:  14
+ 8739514
+sample:  1, channel:  15
+ 8743680
+sample:  1, channel:  16
+ 941
+sample:  1, channel:  17
+ 8744347
+sample:  1, channel:  18
+ 8740711
+sample:  1, channel:  19
+ 8745249
+sample:  1, channel:  20
+ 8749963
+sample:  1, channel:  21
+ 265
+sample:  1, channel:  22
+ 2130
+sample:  1, channel:  23
+ 16775291
+sample:  1, channel:  24
+ 16775748
+sample:  1, channel:  25
+ 1288
+sample:  1, channel:  26
+ 1200
+sample:  1, channel:  27
+ 255
+sample:  1, channel:  28
+ 1402
+sample:  1, channel:  29
+ 3074
+sample:  1, channel:  30
+ 131
+sample:  1, channel:  31
+ 780
+sample:  1, channel:  32
+ 8749539
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474829
+conv.nbr:  8474093
+conv.nbr:  8474824
+conv.nbr:  8473666
+conv.nbr:  8474173
+conv.nbr:  8474044
+conv.nbr:  8473833
+conv.nbr:  8474938
+conv.nbr:  1421
+conv.nbr:  1354
+conv.nbr:  461
+conv.nbr:  3744
+conv.nbr:  16777038
+conv.nbr:  8739503
+conv.nbr:  8743668
+conv.nbr:  922
+conv.nbr:  8744323
+conv.nbr:  8740708
+conv.nbr:  8745231
+conv.nbr:  8749973
+conv.nbr:  274
+conv.nbr:  2120
+conv.nbr:  16775275
+conv.nbr:  16775738
+conv.nbr:  1282
+conv.nbr:  1210
+conv.nbr:  254
+conv.nbr:  1385
+conv.nbr:  3064
+conv.nbr:  129
+conv.nbr:  768
+conv.nbr:  8749534
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474829
+sample:  1, channel:  2
+ 8474093
+sample:  1, channel:  3
+ 8474824
+sample:  1, channel:  4
+ 8473666
+sample:  1, channel:  5
+ 8474173
+sample:  1, channel:  6
+ 8474044
+sample:  1, channel:  7
+ 8473833
+sample:  1, channel:  8
+ 8474938
+sample:  1, channel:  9
+ 1421
+sample:  1, channel:  10
+ 1354
+sample:  1, channel:  11
+ 461
+sample:  1, channel:  12
+ 3744
+sample:  1, channel:  13
+ 16777038
+sample:  1, channel:  14
+ 8739503
+sample:  1, channel:  15
+ 8743668
+sample:  1, channel:  16
+ 922
+sample:  1, channel:  17
+ 8744323
+sample:  1, channel:  18
+ 8740708
+sample:  1, channel:  19
+ 8745231
+sample:  1, channel:  20
+ 8749973
+sample:  1, channel:  21
+ 274
+sample:  1, channel:  22
+ 2120
+sample:  1, channel:  23
+ 16775275
+sample:  1, channel:  24
+ 16775738
+sample:  1, channel:  25
+ 1282
+sample:  1, channel:  26
+ 1210
+sample:  1, channel:  27
+ 254
+sample:  1, channel:  28
+ 1385
+sample:  1, channel:  29
+ 3064
+sample:  1, channel:  30
+ 129
+sample:  1, channel:  31
+ 768
+sample:  1, channel:  32
+ 8749534
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474820
+conv.nbr:  8474099
+conv.nbr:  8474823
+conv.nbr:  8473666
+conv.nbr:  8474185
+conv.nbr:  8474044
+conv.nbr:  8473840
+conv.nbr:  8474938
+conv.nbr:  1091
+conv.nbr:  2170
+conv.nbr:  495
+conv.nbr:  3770
+conv.nbr:  16777046
+conv.nbr:  8739520
+conv.nbr:  8743709
+conv.nbr:  932
+conv.nbr:  8744322
+conv.nbr:  8740713
+conv.nbr:  8745233
+conv.nbr:  8749990
+conv.nbr:  276
+conv.nbr:  2130
+conv.nbr:  16775281
+conv.nbr:  16775747
+conv.nbr:  1301
+conv.nbr:  1228
+conv.nbr:  268
+conv.nbr:  1385
+conv.nbr:  3076
+conv.nbr:  145
+conv.nbr:  774
+conv.nbr:  8749524
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474820
+sample:  1, channel:  2
+ 8474099
+sample:  1, channel:  3
+ 8474823
+sample:  1, channel:  4
+ 8473666
+sample:  1, channel:  5
+ 8474185
+sample:  1, channel:  6
+ 8474044
+sample:  1, channel:  7
+ 8473840
+sample:  1, channel:  8
+ 8474938
+sample:  1, channel:  9
+ 1091
+sample:  1, channel:  10
+ 2170
+sample:  1, channel:  11
+ 495
+sample:  1, channel:  12
+ 3770
+sample:  1, channel:  13
+ 16777046
+sample:  1, channel:  14
+ 8739520
+sample:  1, channel:  15
+ 8743709
+sample:  1, channel:  16
+ 932
+sample:  1, channel:  17
+ 8744322
+sample:  1, channel:  18
+ 8740713
+sample:  1, channel:  19
+ 8745233
+sample:  1, channel:  20
+ 8749990
+sample:  1, channel:  21
+ 276
+sample:  1, channel:  22
+ 2130
+sample:  1, channel:  23
+ 16775281
+sample:  1, channel:  24
+ 16775747
+sample:  1, channel:  25
+ 1301
+sample:  1, channel:  26
+ 1228
+sample:  1, channel:  27
+ 268
+sample:  1, channel:  28
+ 1385
+sample:  1, channel:  29
+ 3076
+sample:  1, channel:  30
+ 145
+sample:  1, channel:  31
+ 774
+sample:  1, channel:  32
+ 8749524
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474803
+conv.nbr:  8474118
+conv.nbr:  8474812
+conv.nbr:  8473660
+conv.nbr:  8474193
+conv.nbr:  8474029
+conv.nbr:  8473828
+conv.nbr:  8474946
+conv.nbr:  898
+conv.nbr:  1070
+conv.nbr:  663
+conv.nbr:  3746
+conv.nbr:  16777039
+conv.nbr:  8739526
+conv.nbr:  8743715
+conv.nbr:  925
+conv.nbr:  8744333
+conv.nbr:  8740724
+conv.nbr:  8745248
+conv.nbr:  8749993
+conv.nbr:  265
+conv.nbr:  2135
+conv.nbr:  16775290
+conv.nbr:  16775764
+conv.nbr:  1311
+conv.nbr:  1205
+conv.nbr:  243
+conv.nbr:  1383
+conv.nbr:  3095
+conv.nbr:  150
+conv.nbr:  779
+conv.nbr:  8749528
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474803
+sample:  1, channel:  2
+ 8474118
+sample:  1, channel:  3
+ 8474812
+sample:  1, channel:  4
+ 8473660
+sample:  1, channel:  5
+ 8474193
+sample:  1, channel:  6
+ 8474029
+sample:  1, channel:  7
+ 8473828
+sample:  1, channel:  8
+ 8474946
+sample:  1, channel:  9
+ 898
+sample:  1, channel:  10
+ 1070
+sample:  1, channel:  11
+ 663
+sample:  1, channel:  12
+ 3746
+sample:  1, channel:  13
+ 16777039
+sample:  1, channel:  14
+ 8739526
+sample:  1, channel:  15
+ 8743715
+sample:  1, channel:  16
+ 925
+sample:  1, channel:  17
+ 8744333
+sample:  1, channel:  18
+ 8740724
+sample:  1, channel:  19
+ 8745248
+sample:  1, channel:  20
+ 8749993
+sample:  1, channel:  21
+ 265
+sample:  1, channel:  22
+ 2135
+sample:  1, channel:  23
+ 16775290
+sample:  1, channel:  24
+ 16775764
+sample:  1, channel:  25
+ 1311
+sample:  1, channel:  26
+ 1205
+sample:  1, channel:  27
+ 243
+sample:  1, channel:  28
+ 1383
+sample:  1, channel:  29
+ 3095
+sample:  1, channel:  30
+ 150
+sample:  1, channel:  31
+ 779
+sample:  1, channel:  32
+ 8749528
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474797
+conv.nbr:  8474107
+conv.nbr:  8474795
+conv.nbr:  8473660
+conv.nbr:  8474188
+conv.nbr:  8474027
+conv.nbr:  8473823
+conv.nbr:  8474946
+conv.nbr:  609
+conv.nbr:  1608
+conv.nbr:  703
+conv.nbr:  3755
+conv.nbr:  16777034
+conv.nbr:  8739516
+conv.nbr:  8743698
+conv.nbr:  892
+conv.nbr:  8744307
+conv.nbr:  8740715
+conv.nbr:  8745244
+conv.nbr:  8749984
+conv.nbr:  256
+conv.nbr:  2121
+conv.nbr:  16775278
+conv.nbr:  16775748
+conv.nbr:  1304
+conv.nbr:  1178
+conv.nbr:  230
+conv.nbr:  1378
+conv.nbr:  3087
+conv.nbr:  138
+conv.nbr:  773
+conv.nbr:  8749518
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474797
+sample:  1, channel:  2
+ 8474107
+sample:  1, channel:  3
+ 8474795
+sample:  1, channel:  4
+ 8473660
+sample:  1, channel:  5
+ 8474188
+sample:  1, channel:  6
+ 8474027
+sample:  1, channel:  7
+ 8473823
+sample:  1, channel:  8
+ 8474946
+sample:  1, channel:  9
+ 609
+sample:  1, channel:  10
+ 1608
+sample:  1, channel:  11
+ 703
+sample:  1, channel:  12
+ 3755
+sample:  1, channel:  13
+ 16777034
+sample:  1, channel:  14
+ 8739516
+sample:  1, channel:  15
+ 8743698
+sample:  1, channel:  16
+ 892
+sample:  1, channel:  17
+ 8744307
+sample:  1, channel:  18
+ 8740715
+sample:  1, channel:  19
+ 8745244
+sample:  1, channel:  20
+ 8749984
+sample:  1, channel:  21
+ 256
+sample:  1, channel:  22
+ 2121
+sample:  1, channel:  23
+ 16775278
+sample:  1, channel:  24
+ 16775748
+sample:  1, channel:  25
+ 1304
+sample:  1, channel:  26
+ 1178
+sample:  1, channel:  27
+ 230
+sample:  1, channel:  28
+ 1378
+sample:  1, channel:  29
+ 3087
+sample:  1, channel:  30
+ 138
+sample:  1, channel:  31
+ 773
+sample:  1, channel:  32
+ 8749518
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474796
+conv.nbr:  8474092
+conv.nbr:  8474796
+conv.nbr:  8473642
+conv.nbr:  8474172
+conv.nbr:  8474026
+conv.nbr:  8473817
+conv.nbr:  8474947
+conv.nbr:  355
+conv.nbr:  2092
+conv.nbr:  760
+conv.nbr:  3775
+conv.nbr:  16777043
+conv.nbr:  8739511
+conv.nbr:  8743692
+conv.nbr:  913
+conv.nbr:  8744305
+conv.nbr:  8740713
+conv.nbr:  8745233
+conv.nbr:  8749996
+conv.nbr:  272
+conv.nbr:  2121
+conv.nbr:  16775275
+conv.nbr:  16775749
+conv.nbr:  1301
+conv.nbr:  1193
+conv.nbr:  253
+conv.nbr:  1391
+conv.nbr:  3083
+conv.nbr:  129
+conv.nbr:  774
+conv.nbr:  8749509
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474796
+sample:  1, channel:  2
+ 8474092
+sample:  1, channel:  3
+ 8474796
+sample:  1, channel:  4
+ 8473642
+sample:  1, channel:  5
+ 8474172
+sample:  1, channel:  6
+ 8474026
+sample:  1, channel:  7
+ 8473817
+sample:  1, channel:  8
+ 8474947
+sample:  1, channel:  9
+ 355
+sample:  1, channel:  10
+ 2092
+sample:  1, channel:  11
+ 760
+sample:  1, channel:  12
+ 3775
+sample:  1, channel:  13
+ 16777043
+sample:  1, channel:  14
+ 8739511
+sample:  1, channel:  15
+ 8743692
+sample:  1, channel:  16
+ 913
+sample:  1, channel:  17
+ 8744305
+sample:  1, channel:  18
+ 8740713
+sample:  1, channel:  19
+ 8745233
+sample:  1, channel:  20
+ 8749996
+sample:  1, channel:  21
+ 272
+sample:  1, channel:  22
+ 2121
+sample:  1, channel:  23
+ 16775275
+sample:  1, channel:  24
+ 16775749
+sample:  1, channel:  25
+ 1301
+sample:  1, channel:  26
+ 1193
+sample:  1, channel:  27
+ 253
+sample:  1, channel:  28
+ 1391
+sample:  1, channel:  29
+ 3083
+sample:  1, channel:  30
+ 129
+sample:  1, channel:  31
+ 774
+sample:  1, channel:  32
+ 8749509
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474803
+conv.nbr:  8474091
+conv.nbr:  8474816
+conv.nbr:  8473650
+conv.nbr:  8474177
+conv.nbr:  8474026
+conv.nbr:  8473830
+conv.nbr:  8474952
+conv.nbr:  665
+conv.nbr:  963
+conv.nbr:  651
+conv.nbr:  3778
+conv.nbr:  16777055
+conv.nbr:  8739517
+conv.nbr:  8743700
+conv.nbr:  952
+conv.nbr:  8744323
+conv.nbr:  8740718
+conv.nbr:  8745231
+conv.nbr:  8749996
+conv.nbr:  289
+conv.nbr:  2140
+conv.nbr:  16775281
+conv.nbr:  16775754
+conv.nbr:  1297
+conv.nbr:  1205
+conv.nbr:  258
+conv.nbr:  1397
+conv.nbr:  3092
+conv.nbr:  133
+conv.nbr:  788
+conv.nbr:  8749523
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474803
+sample:  1, channel:  2
+ 8474091
+sample:  1, channel:  3
+ 8474816
+sample:  1, channel:  4
+ 8473650
+sample:  1, channel:  5
+ 8474177
+sample:  1, channel:  6
+ 8474026
+sample:  1, channel:  7
+ 8473830
+sample:  1, channel:  8
+ 8474952
+sample:  1, channel:  9
+ 665
+sample:  1, channel:  10
+ 963
+sample:  1, channel:  11
+ 651
+sample:  1, channel:  12
+ 3778
+sample:  1, channel:  13
+ 16777055
+sample:  1, channel:  14
+ 8739517
+sample:  1, channel:  15
+ 8743700
+sample:  1, channel:  16
+ 952
+sample:  1, channel:  17
+ 8744323
+sample:  1, channel:  18
+ 8740718
+sample:  1, channel:  19
+ 8745231
+sample:  1, channel:  20
+ 8749996
+sample:  1, channel:  21
+ 289
+sample:  1, channel:  22
+ 2140
+sample:  1, channel:  23
+ 16775281
+sample:  1, channel:  24
+ 16775754
+sample:  1, channel:  25
+ 1297
+sample:  1, channel:  26
+ 1205
+sample:  1, channel:  27
+ 258
+sample:  1, channel:  28
+ 1397
+sample:  1, channel:  29
+ 3092
+sample:  1, channel:  30
+ 133
+sample:  1, channel:  31
+ 788
+sample:  1, channel:  32
+ 8749523
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474812
+conv.nbr:  8474108
+conv.nbr:  8474820
+conv.nbr:  8473659
+conv.nbr:  8474190
+conv.nbr:  8474034
+conv.nbr:  8473829
+conv.nbr:  8474959
+conv.nbr:  918
+conv.nbr:  1791
+conv.nbr:  615
+conv.nbr:  3784
+conv.nbr:  16777057
+conv.nbr:  8739531
+conv.nbr:  8743714
+conv.nbr:  971
+conv.nbr:  8744359
+conv.nbr:  8740725
+conv.nbr:  8745245
+conv.nbr:  8749994
+conv.nbr:  291
+conv.nbr:  2166
+conv.nbr:  16775291
+conv.nbr:  16775754
+conv.nbr:  1313
+conv.nbr:  1226
+conv.nbr:  268
+conv.nbr:  1414
+conv.nbr:  3108
+conv.nbr:  148
+conv.nbr:  785
+conv.nbr:  8749535
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474812
+sample:  1, channel:  2
+ 8474108
+sample:  1, channel:  3
+ 8474820
+sample:  1, channel:  4
+ 8473659
+sample:  1, channel:  5
+ 8474190
+sample:  1, channel:  6
+ 8474034
+sample:  1, channel:  7
+ 8473829
+sample:  1, channel:  8
+ 8474959
+sample:  1, channel:  9
+ 918
+sample:  1, channel:  10
+ 1791
+sample:  1, channel:  11
+ 615
+sample:  1, channel:  12
+ 3784
+sample:  1, channel:  13
+ 16777057
+sample:  1, channel:  14
+ 8739531
+sample:  1, channel:  15
+ 8743714
+sample:  1, channel:  16
+ 971
+sample:  1, channel:  17
+ 8744359
+sample:  1, channel:  18
+ 8740725
+sample:  1, channel:  19
+ 8745245
+sample:  1, channel:  20
+ 8749994
+sample:  1, channel:  21
+ 291
+sample:  1, channel:  22
+ 2166
+sample:  1, channel:  23
+ 16775291
+sample:  1, channel:  24
+ 16775754
+sample:  1, channel:  25
+ 1313
+sample:  1, channel:  26
+ 1226
+sample:  1, channel:  27
+ 268
+sample:  1, channel:  28
+ 1414
+sample:  1, channel:  29
+ 3108
+sample:  1, channel:  30
+ 148
+sample:  1, channel:  31
+ 785
+sample:  1, channel:  32
+ 8749535
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474813
+conv.nbr:  8474108
+conv.nbr:  8474830
+conv.nbr:  8473675
+conv.nbr:  8474207
+conv.nbr:  8474059
+conv.nbr:  8473829
+conv.nbr:  8474963
+conv.nbr:  1114
+conv.nbr:  1887
+conv.nbr:  439
+conv.nbr:  3756
+conv.nbr:  16777054
+conv.nbr:  8739521
+conv.nbr:  8743716
+conv.nbr:  967
+conv.nbr:  8744359
+conv.nbr:  8740723
+conv.nbr:  8745265
+conv.nbr:  8750010
+conv.nbr:  291
+conv.nbr:  2158
+conv.nbr:  16775294
+conv.nbr:  16775773
+conv.nbr:  1323
+conv.nbr:  1225
+conv.nbr:  274
+conv.nbr:  1409
+conv.nbr:  3103
+conv.nbr:  154
+conv.nbr:  775
+conv.nbr:  8749542
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474813
+sample:  1, channel:  2
+ 8474108
+sample:  1, channel:  3
+ 8474830
+sample:  1, channel:  4
+ 8473675
+sample:  1, channel:  5
+ 8474207
+sample:  1, channel:  6
+ 8474059
+sample:  1, channel:  7
+ 8473829
+sample:  1, channel:  8
+ 8474963
+sample:  1, channel:  9
+ 1114
+sample:  1, channel:  10
+ 1887
+sample:  1, channel:  11
+ 439
+sample:  1, channel:  12
+ 3756
+sample:  1, channel:  13
+ 16777054
+sample:  1, channel:  14
+ 8739521
+sample:  1, channel:  15
+ 8743716
+sample:  1, channel:  16
+ 967
+sample:  1, channel:  17
+ 8744359
+sample:  1, channel:  18
+ 8740723
+sample:  1, channel:  19
+ 8745265
+sample:  1, channel:  20
+ 8750010
+sample:  1, channel:  21
+ 291
+sample:  1, channel:  22
+ 2158
+sample:  1, channel:  23
+ 16775294
+sample:  1, channel:  24
+ 16775773
+sample:  1, channel:  25
+ 1323
+sample:  1, channel:  26
+ 1225
+sample:  1, channel:  27
+ 274
+sample:  1, channel:  28
+ 1409
+sample:  1, channel:  29
+ 3103
+sample:  1, channel:  30
+ 154
+sample:  1, channel:  31
+ 775
+sample:  1, channel:  32
+ 8749542
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474803
+conv.nbr:  8474087
+conv.nbr:  8474822
+conv.nbr:  8473683
+conv.nbr:  8474203
+conv.nbr:  8474047
+conv.nbr:  8473824
+conv.nbr:  8474940
+conv.nbr:  1464
+conv.nbr:  884
+conv.nbr:  382
+conv.nbr:  3748
+conv.nbr:  16777067
+conv.nbr:  8739507
+conv.nbr:  8743710
+conv.nbr:  949
+conv.nbr:  8744347
+conv.nbr:  8740716
+conv.nbr:  8745248
+conv.nbr:  8749998
+conv.nbr:  289
+conv.nbr:  2123
+conv.nbr:  16775300
+conv.nbr:  16775763
+conv.nbr:  1314
+conv.nbr:  1208
+conv.nbr:  260
+conv.nbr:  1407
+conv.nbr:  3094
+conv.nbr:  136
+conv.nbr:  775
+conv.nbr:  8749536
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474803
+sample:  1, channel:  2
+ 8474087
+sample:  1, channel:  3
+ 8474822
+sample:  1, channel:  4
+ 8473683
+sample:  1, channel:  5
+ 8474203
+sample:  1, channel:  6
+ 8474047
+sample:  1, channel:  7
+ 8473824
+sample:  1, channel:  8
+ 8474940
+sample:  1, channel:  9
+ 1464
+sample:  1, channel:  10
+ 884
+sample:  1, channel:  11
+ 382
+sample:  1, channel:  12
+ 3748
+sample:  1, channel:  13
+ 16777067
+sample:  1, channel:  14
+ 8739507
+sample:  1, channel:  15
+ 8743710
+sample:  1, channel:  16
+ 949
+sample:  1, channel:  17
+ 8744347
+sample:  1, channel:  18
+ 8740716
+sample:  1, channel:  19
+ 8745248
+sample:  1, channel:  20
+ 8749998
+sample:  1, channel:  21
+ 289
+sample:  1, channel:  22
+ 2123
+sample:  1, channel:  23
+ 16775300
+sample:  1, channel:  24
+ 16775763
+sample:  1, channel:  25
+ 1314
+sample:  1, channel:  26
+ 1208
+sample:  1, channel:  27
+ 260
+sample:  1, channel:  28
+ 1407
+sample:  1, channel:  29
+ 3094
+sample:  1, channel:  30
+ 136
+sample:  1, channel:  31
+ 775
+sample:  1, channel:  32
+ 8749536
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474812
+conv.nbr:  8474093
+conv.nbr:  8474815
+conv.nbr:  8473668
+conv.nbr:  8474183
+conv.nbr:  8474044
+conv.nbr:  8473816
+conv.nbr:  8474942
+conv.nbr:  1313
+conv.nbr:  1929
+conv.nbr:  570
+conv.nbr:  3755
+conv.nbr:  16777086
+conv.nbr:  8739523
+conv.nbr:  8743695
+conv.nbr:  938
+conv.nbr:  8744343
+conv.nbr:  8740727
+conv.nbr:  8745254
+conv.nbr:  8749980
+conv.nbr:  287
+conv.nbr:  2126
+conv.nbr:  16775293
+conv.nbr:  16775760
+conv.nbr:  1315
+conv.nbr:  1201
+conv.nbr:  256
+conv.nbr:  1414
+conv.nbr:  3093
+conv.nbr:  142
+conv.nbr:  783
+conv.nbr:  8749521
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474812
+sample:  1, channel:  2
+ 8474093
+sample:  1, channel:  3
+ 8474815
+sample:  1, channel:  4
+ 8473668
+sample:  1, channel:  5
+ 8474183
+sample:  1, channel:  6
+ 8474044
+sample:  1, channel:  7
+ 8473816
+sample:  1, channel:  8
+ 8474942
+sample:  1, channel:  9
+ 1313
+sample:  1, channel:  10
+ 1929
+sample:  1, channel:  11
+ 570
+sample:  1, channel:  12
+ 3755
+sample:  1, channel:  13
+ 16777086
+sample:  1, channel:  14
+ 8739523
+sample:  1, channel:  15
+ 8743695
+sample:  1, channel:  16
+ 938
+sample:  1, channel:  17
+ 8744343
+sample:  1, channel:  18
+ 8740727
+sample:  1, channel:  19
+ 8745254
+sample:  1, channel:  20
+ 8749980
+sample:  1, channel:  21
+ 287
+sample:  1, channel:  22
+ 2126
+sample:  1, channel:  23
+ 16775293
+sample:  1, channel:  24
+ 16775760
+sample:  1, channel:  25
+ 1315
+sample:  1, channel:  26
+ 1201
+sample:  1, channel:  27
+ 256
+sample:  1, channel:  28
+ 1414
+sample:  1, channel:  29
+ 3093
+sample:  1, channel:  30
+ 142
+sample:  1, channel:  31
+ 783
+sample:  1, channel:  32
+ 8749521
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474821
+conv.nbr:  8474109
+conv.nbr:  8474821
+conv.nbr:  8473661
+conv.nbr:  8474191
+conv.nbr:  8474059
+conv.nbr:  8473837
+conv.nbr:  8474951
+conv.nbr:  1004
+conv.nbr:  1632
+conv.nbr:  578
+conv.nbr:  3765
+conv.nbr:  16777072
+conv.nbr:  8739531
+conv.nbr:  8743692
+conv.nbr:  927
+conv.nbr:  8744332
+conv.nbr:  8740735
+conv.nbr:  8745271
+conv.nbr:  8749989
+conv.nbr:  278
+conv.nbr:  2130
+conv.nbr:  16775281
+conv.nbr:  16775757
+conv.nbr:  1297
+conv.nbr:  1220
+conv.nbr:  243
+conv.nbr:  1404
+conv.nbr:  3097
+conv.nbr:  145
+conv.nbr:  789
+conv.nbr:  8749536
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474821
+sample:  1, channel:  2
+ 8474109
+sample:  1, channel:  3
+ 8474821
+sample:  1, channel:  4
+ 8473661
+sample:  1, channel:  5
+ 8474191
+sample:  1, channel:  6
+ 8474059
+sample:  1, channel:  7
+ 8473837
+sample:  1, channel:  8
+ 8474951
+sample:  1, channel:  9
+ 1004
+sample:  1, channel:  10
+ 1632
+sample:  1, channel:  11
+ 578
+sample:  1, channel:  12
+ 3765
+sample:  1, channel:  13
+ 16777072
+sample:  1, channel:  14
+ 8739531
+sample:  1, channel:  15
+ 8743692
+sample:  1, channel:  16
+ 927
+sample:  1, channel:  17
+ 8744332
+sample:  1, channel:  18
+ 8740735
+sample:  1, channel:  19
+ 8745271
+sample:  1, channel:  20
+ 8749989
+sample:  1, channel:  21
+ 278
+sample:  1, channel:  22
+ 2130
+sample:  1, channel:  23
+ 16775281
+sample:  1, channel:  24
+ 16775757
+sample:  1, channel:  25
+ 1297
+sample:  1, channel:  26
+ 1220
+sample:  1, channel:  27
+ 243
+sample:  1, channel:  28
+ 1404
+sample:  1, channel:  29
+ 3097
+sample:  1, channel:  30
+ 145
+sample:  1, channel:  31
+ 789
+sample:  1, channel:  32
+ 8749536
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474828
+conv.nbr:  8474107
+conv.nbr:  8474826
+conv.nbr:  8473657
+conv.nbr:  8474202
+conv.nbr:  8474052
+conv.nbr:  8473845
+conv.nbr:  8474943
+conv.nbr:  815
+conv.nbr:  949
+conv.nbr:  603
+conv.nbr:  3768
+conv.nbr:  16777064
+conv.nbr:  8739542
+conv.nbr:  8743681
+conv.nbr:  926
+conv.nbr:  8744347
+conv.nbr:  8740733
+conv.nbr:  8745259
+conv.nbr:  8749998
+conv.nbr:  279
+conv.nbr:  2120
+conv.nbr:  16775274
+conv.nbr:  16775747
+conv.nbr:  1288
+conv.nbr:  1232
+conv.nbr:  244
+conv.nbr:  1399
+conv.nbr:  3103
+conv.nbr:  150
+conv.nbr:  792
+conv.nbr:  8749537
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474828
+sample:  1, channel:  2
+ 8474107
+sample:  1, channel:  3
+ 8474826
+sample:  1, channel:  4
+ 8473657
+sample:  1, channel:  5
+ 8474202
+sample:  1, channel:  6
+ 8474052
+sample:  1, channel:  7
+ 8473845
+sample:  1, channel:  8
+ 8474943
+sample:  1, channel:  9
+ 815
+sample:  1, channel:  10
+ 949
+sample:  1, channel:  11
+ 603
+sample:  1, channel:  12
+ 3768
+sample:  1, channel:  13
+ 16777064
+sample:  1, channel:  14
+ 8739542
+sample:  1, channel:  15
+ 8743681
+sample:  1, channel:  16
+ 926
+sample:  1, channel:  17
+ 8744347
+sample:  1, channel:  18
+ 8740733
+sample:  1, channel:  19
+ 8745259
+sample:  1, channel:  20
+ 8749998
+sample:  1, channel:  21
+ 279
+sample:  1, channel:  22
+ 2120
+sample:  1, channel:  23
+ 16775274
+sample:  1, channel:  24
+ 16775747
+sample:  1, channel:  25
+ 1288
+sample:  1, channel:  26
+ 1232
+sample:  1, channel:  27
+ 244
+sample:  1, channel:  28
+ 1399
+sample:  1, channel:  29
+ 3103
+sample:  1, channel:  30
+ 150
+sample:  1, channel:  31
+ 792
+sample:  1, channel:  32
+ 8749537
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474813
+conv.nbr:  8474102
+conv.nbr:  8474818
+conv.nbr:  8473643
+conv.nbr:  8474171
+conv.nbr:  8474053
+conv.nbr:  8473840
+conv.nbr:  8474958
+conv.nbr:  459
+conv.nbr:  2127
+conv.nbr:  710
+conv.nbr:  3761
+conv.nbr:  16777042
+conv.nbr:  8739525
+conv.nbr:  8743679
+conv.nbr:  924
+conv.nbr:  8744344
+conv.nbr:  8740719
+conv.nbr:  8745250
+conv.nbr:  8749978
+conv.nbr:  270
+conv.nbr:  2107
+conv.nbr:  16775279
+conv.nbr:  16775748
+conv.nbr:  1293
+conv.nbr:  1219
+conv.nbr:  245
+conv.nbr:  1376
+conv.nbr:  3099
+conv.nbr:  133
+conv.nbr:  773
+conv.nbr:  8749514
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474813
+sample:  1, channel:  2
+ 8474102
+sample:  1, channel:  3
+ 8474818
+sample:  1, channel:  4
+ 8473643
+sample:  1, channel:  5
+ 8474171
+sample:  1, channel:  6
+ 8474053
+sample:  1, channel:  7
+ 8473840
+sample:  1, channel:  8
+ 8474958
+sample:  1, channel:  9
+ 459
+sample:  1, channel:  10
+ 2127
+sample:  1, channel:  11
+ 710
+sample:  1, channel:  12
+ 3761
+sample:  1, channel:  13
+ 16777042
+sample:  1, channel:  14
+ 8739525
+sample:  1, channel:  15
+ 8743679
+sample:  1, channel:  16
+ 924
+sample:  1, channel:  17
+ 8744344
+sample:  1, channel:  18
+ 8740719
+sample:  1, channel:  19
+ 8745250
+sample:  1, channel:  20
+ 8749978
+sample:  1, channel:  21
+ 270
+sample:  1, channel:  22
+ 2107
+sample:  1, channel:  23
+ 16775279
+sample:  1, channel:  24
+ 16775748
+sample:  1, channel:  25
+ 1293
+sample:  1, channel:  26
+ 1219
+sample:  1, channel:  27
+ 245
+sample:  1, channel:  28
+ 1376
+sample:  1, channel:  29
+ 3099
+sample:  1, channel:  30
+ 133
+sample:  1, channel:  31
+ 773
+sample:  1, channel:  32
+ 8749514
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474808
+conv.nbr:  8474113
+conv.nbr:  8474810
+conv.nbr:  8473658
+conv.nbr:  8474170
+conv.nbr:  8474060
+conv.nbr:  8473838
+conv.nbr:  8474974
+conv.nbr:  476
+conv.nbr:  1549
+conv.nbr:  638
+conv.nbr:  3801
+conv.nbr:  16777057
+conv.nbr:  8739520
+conv.nbr:  8743700
+conv.nbr:  951
+conv.nbr:  8744351
+conv.nbr:  8740725
+conv.nbr:  8745257
+conv.nbr:  8749980
+conv.nbr:  267
+conv.nbr:  2120
+conv.nbr:  16775285
+conv.nbr:  16775754
+conv.nbr:  1322
+conv.nbr:  1203
+conv.nbr:  253
+conv.nbr:  1384
+conv.nbr:  3108
+conv.nbr:  144
+conv.nbr:  773
+conv.nbr:  8749511
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474808
+sample:  1, channel:  2
+ 8474113
+sample:  1, channel:  3
+ 8474810
+sample:  1, channel:  4
+ 8473658
+sample:  1, channel:  5
+ 8474170
+sample:  1, channel:  6
+ 8474060
+sample:  1, channel:  7
+ 8473838
+sample:  1, channel:  8
+ 8474974
+sample:  1, channel:  9
+ 476
+sample:  1, channel:  10
+ 1549
+sample:  1, channel:  11
+ 638
+sample:  1, channel:  12
+ 3801
+sample:  1, channel:  13
+ 16777057
+sample:  1, channel:  14
+ 8739520
+sample:  1, channel:  15
+ 8743700
+sample:  1, channel:  16
+ 951
+sample:  1, channel:  17
+ 8744351
+sample:  1, channel:  18
+ 8740725
+sample:  1, channel:  19
+ 8745257
+sample:  1, channel:  20
+ 8749980
+sample:  1, channel:  21
+ 267
+sample:  1, channel:  22
+ 2120
+sample:  1, channel:  23
+ 16775285
+sample:  1, channel:  24
+ 16775754
+sample:  1, channel:  25
+ 1322
+sample:  1, channel:  26
+ 1203
+sample:  1, channel:  27
+ 253
+sample:  1, channel:  28
+ 1384
+sample:  1, channel:  29
+ 3108
+sample:  1, channel:  30
+ 144
+sample:  1, channel:  31
+ 773
+sample:  1, channel:  32
+ 8749511
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474820
+conv.nbr:  8474095
+conv.nbr:  8474820
+conv.nbr:  8473662
+conv.nbr:  8474210
+conv.nbr:  8474052
+conv.nbr:  8473836
+conv.nbr:  8474967
+conv.nbr:  825
+conv.nbr:  1141
+conv.nbr:  440
+conv.nbr:  3791
+conv.nbr:  16777071
+conv.nbr:  8739553
+conv.nbr:  8743721
+conv.nbr:  964
+conv.nbr:  8744351
+conv.nbr:  8740736
+conv.nbr:  8745268
+conv.nbr:  8749974
+conv.nbr:  280
+conv.nbr:  2145
+conv.nbr:  16775294
+conv.nbr:  16775765
+conv.nbr:  1332
+conv.nbr:  1204
+conv.nbr:  247
+conv.nbr:  1417
+conv.nbr:  3097
+conv.nbr:  145
+conv.nbr:  792
+conv.nbr:  8749529
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474820
+sample:  1, channel:  2
+ 8474095
+sample:  1, channel:  3
+ 8474820
+sample:  1, channel:  4
+ 8473662
+sample:  1, channel:  5
+ 8474210
+sample:  1, channel:  6
+ 8474052
+sample:  1, channel:  7
+ 8473836
+sample:  1, channel:  8
+ 8474967
+sample:  1, channel:  9
+ 825
+sample:  1, channel:  10
+ 1141
+sample:  1, channel:  11
+ 440
+sample:  1, channel:  12
+ 3791
+sample:  1, channel:  13
+ 16777071
+sample:  1, channel:  14
+ 8739553
+sample:  1, channel:  15
+ 8743721
+sample:  1, channel:  16
+ 964
+sample:  1, channel:  17
+ 8744351
+sample:  1, channel:  18
+ 8740736
+sample:  1, channel:  19
+ 8745268
+sample:  1, channel:  20
+ 8749974
+sample:  1, channel:  21
+ 280
+sample:  1, channel:  22
+ 2145
+sample:  1, channel:  23
+ 16775294
+sample:  1, channel:  24
+ 16775765
+sample:  1, channel:  25
+ 1332
+sample:  1, channel:  26
+ 1204
+sample:  1, channel:  27
+ 247
+sample:  1, channel:  28
+ 1417
+sample:  1, channel:  29
+ 3097
+sample:  1, channel:  30
+ 145
+sample:  1, channel:  31
+ 792
+sample:  1, channel:  32
+ 8749529
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474820
+conv.nbr:  8474090
+conv.nbr:  8474815
+conv.nbr:  8473649
+conv.nbr:  8474214
+conv.nbr:  8474042
+conv.nbr:  8473827
+conv.nbr:  8474947
+conv.nbr:  975
+conv.nbr:  2214
+conv.nbr:  377
+conv.nbr:  3776
+conv.nbr:  16777079
+conv.nbr:  8739560
+conv.nbr:  8743717
+conv.nbr:  966
+conv.nbr:  8744332
+conv.nbr:  8740748
+conv.nbr:  8745270
+conv.nbr:  8749985
+conv.nbr:  288
+conv.nbr:  2155
+conv.nbr:  16775295
+conv.nbr:  16775762
+conv.nbr:  1333
+conv.nbr:  1208
+conv.nbr:  252
+conv.nbr:  1431
+conv.nbr:  3079
+conv.nbr:  149
+conv.nbr:  775
+conv.nbr:  8749542
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474820
+sample:  1, channel:  2
+ 8474090
+sample:  1, channel:  3
+ 8474815
+sample:  1, channel:  4
+ 8473649
+sample:  1, channel:  5
+ 8474214
+sample:  1, channel:  6
+ 8474042
+sample:  1, channel:  7
+ 8473827
+sample:  1, channel:  8
+ 8474947
+sample:  1, channel:  9
+ 975
+sample:  1, channel:  10
+ 2214
+sample:  1, channel:  11
+ 377
+sample:  1, channel:  12
+ 3776
+sample:  1, channel:  13
+ 16777079
+sample:  1, channel:  14
+ 8739560
+sample:  1, channel:  15
+ 8743717
+sample:  1, channel:  16
+ 966
+sample:  1, channel:  17
+ 8744332
+sample:  1, channel:  18
+ 8740748
+sample:  1, channel:  19
+ 8745270
+sample:  1, channel:  20
+ 8749985
+sample:  1, channel:  21
+ 288
+sample:  1, channel:  22
+ 2155
+sample:  1, channel:  23
+ 16775295
+sample:  1, channel:  24
+ 16775762
+sample:  1, channel:  25
+ 1333
+sample:  1, channel:  26
+ 1208
+sample:  1, channel:  27
+ 252
+sample:  1, channel:  28
+ 1431
+sample:  1, channel:  29
+ 3079
+sample:  1, channel:  30
+ 149
+sample:  1, channel:  31
+ 775
+sample:  1, channel:  32
+ 8749542
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474813
+conv.nbr:  8474095
+conv.nbr:  8474802
+conv.nbr:  8473641
+conv.nbr:  8474185
+conv.nbr:  8474018
+conv.nbr:  8473835
+conv.nbr:  8474933
+conv.nbr:  1280
+conv.nbr:  1273
+conv.nbr:  330
+conv.nbr:  3762
+conv.nbr:  16777082
+conv.nbr:  8739518
+conv.nbr:  8743706
+conv.nbr:  945
+conv.nbr:  8744307
+conv.nbr:  8740727
+conv.nbr:  8745252
+conv.nbr:  8749990
+conv.nbr:  266
+conv.nbr:  2159
+conv.nbr:  16775275
+conv.nbr:  16775755
+conv.nbr:  1326
+conv.nbr:  1198
+conv.nbr:  226
+conv.nbr:  1421
+conv.nbr:  3068
+conv.nbr:  139
+conv.nbr:  751
+conv.nbr:  8749539
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474813
+sample:  1, channel:  2
+ 8474095
+sample:  1, channel:  3
+ 8474802
+sample:  1, channel:  4
+ 8473641
+sample:  1, channel:  5
+ 8474185
+sample:  1, channel:  6
+ 8474018
+sample:  1, channel:  7
+ 8473835
+sample:  1, channel:  8
+ 8474933
+sample:  1, channel:  9
+ 1280
+sample:  1, channel:  10
+ 1273
+sample:  1, channel:  11
+ 330
+sample:  1, channel:  12
+ 3762
+sample:  1, channel:  13
+ 16777082
+sample:  1, channel:  14
+ 8739518
+sample:  1, channel:  15
+ 8743706
+sample:  1, channel:  16
+ 945
+sample:  1, channel:  17
+ 8744307
+sample:  1, channel:  18
+ 8740727
+sample:  1, channel:  19
+ 8745252
+sample:  1, channel:  20
+ 8749990
+sample:  1, channel:  21
+ 266
+sample:  1, channel:  22
+ 2159
+sample:  1, channel:  23
+ 16775275
+sample:  1, channel:  24
+ 16775755
+sample:  1, channel:  25
+ 1326
+sample:  1, channel:  26
+ 1198
+sample:  1, channel:  27
+ 226
+sample:  1, channel:  28
+ 1421
+sample:  1, channel:  29
+ 3068
+sample:  1, channel:  30
+ 139
+sample:  1, channel:  31
+ 751
+sample:  1, channel:  32
+ 8749539
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+conv.nbr:  8474797
+conv.nbr:  8474086
+conv.nbr:  8474787
+conv.nbr:  8473646
+conv.nbr:  8474182
+conv.nbr:  8474018
+conv.nbr:  8473842
+conv.nbr:  8474930
+conv.nbr:  1458
+conv.nbr:  1264
+conv.nbr:  386
+conv.nbr:  3723
+conv.nbr:  16777063
+conv.nbr:  8739512
+conv.nbr:  8743712
+conv.nbr:  916
+conv.nbr:  8744315
+conv.nbr:  8740706
+conv.nbr:  8745250
+conv.nbr:  8749981
+conv.nbr:  253
+conv.nbr:  2143
+conv.nbr:  16775256
+conv.nbr:  16775757
+conv.nbr:  1305
+conv.nbr:  1201
+conv.nbr:  215
+conv.nbr:  1405
+conv.nbr:  3083
+conv.nbr:  115
+conv.nbr:  779
+conv.nbr:  8749540
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  10485771
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+conv.nbr:  0
+=====
+sample:  1, channel:  1
+ 8474797
+sample:  1, channel:  2
+ 8474086
+sample:  1, channel:  3
+ 8474787
+sample:  1, channel:  4
+ 8473646
+sample:  1, channel:  5
+ 8474182
+sample:  1, channel:  6
+ 8474018
+sample:  1, channel:  7
+ 8473842
+sample:  1, channel:  8
+ 8474930
+sample:  1, channel:  9
+ 1458
+sample:  1, channel:  10
+ 1264
+sample:  1, channel:  11
+ 386
+sample:  1, channel:  12
+ 3723
+sample:  1, channel:  13
+ 16777063
+sample:  1, channel:  14
+ 8739512
+sample:  1, channel:  15
+ 8743712
+sample:  1, channel:  16
+ 916
+sample:  1, channel:  17
+ 8744315
+sample:  1, channel:  18
+ 8740706
+sample:  1, channel:  19
+ 8745250
+sample:  1, channel:  20
+ 8749981
+sample:  1, channel:  21
+ 253
+sample:  1, channel:  22
+ 2143
+sample:  1, channel:  23
+ 16775256
+sample:  1, channel:  24
+ 16775757
+sample:  1, channel:  25
+ 1305
+sample:  1, channel:  26
+ 1201
+sample:  1, channel:  27
+ 215
+sample:  1, channel:  28
+ 1405
+sample:  1, channel:  29
+ 3083
+sample:  1, channel:  30
+ 115
+sample:  1, channel:  31
+ 779
+sample:  1, channel:  32
+ 8749540
+sample:  1, channel:  33
+ 0
+sample:  1, channel:  34
+ 0
+sample:  1, channel:  35
+ 0
+sample:  1, channel:  36
+ 0
+sample:  1, channel:  37
+ 0
+sample:  1, channel:  38
+ 0
+sample:  1, channel:  39
+ 0
+sample:  1, channel:  40
+ 0
+sample:  1, channel:  41
+ 10485771
+sample:  2, channel:  1
+ 0
+sample:  2, channel:  2
+ 0
+sample:  2, channel:  3
+ 0
+sample:  2, channel:  4
+ 0
+sample:  2, channel:  5
+ 0
+sample:  2, channel:  6
+ 0
+sample:  2, channel:  7
+ 0
+sample:  2, channel:  8
+ 0
+sample:  2, channel:  9
+ 0
+sample:  2, channel:  10
+ 0
+sample:  2, channel:  11
+ 0
+sample:  2, channel:  12
+ 0
+sample:  2, channel:  13
+ 0
+sample:  2, channel:  14
+ 0
+sample:  2, channel:  15
+ 0
+sample:  2, channel:  16
+ 0
+sample:  2, channel:  17
+ 0
+sample:  2, channel:  18
+ 0
+sample:  2, channel:  19
+ 0
+sample:  2, channel:  20
+ 0
+sample:  2, channel:  21
+ 0
+sample:  2, channel:  22
+ 0
+sample:  2, channel:  23
+ 0
+sample:  2, channel:  24
+ 0
+sample:  2, channel:  25
+ 0
+sample:  2, channel:  26
+ 0
+sample:  2, channel:  27
+ 0
+sample:  2, channel:  28
+ 0
+sample:  2, channel:  29
+ 0
+sample:  2, channel:  30
+ 0
+sample:  2, channel:  31
+ 0
+sample:  2, channel:  32
+ 0
+sample:  2, channel:  33
+ 0
+sample:  2, channel:  34
+ 0
+sample:  2, channel:  35
+ 0
+sample:  2, channel:  36
+ 0
+sample:  2, channel:  37
+ 0
+sample:  2, channel:  38
+ 0
+sample:  2, channel:  39
+ 0
+sample:  2, channel:  40
+ 0
+sample:  2, channel:  41
+ 0
+End Debug at 3:23:40 PM on 10/15/2013

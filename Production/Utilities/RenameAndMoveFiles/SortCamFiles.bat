@@ -1,0 +1,1 @@
+dir C:\DOPS_Experiments\RecordedFiles\*.WMV /o:d > C:\DOPS_Experiments\RecordedFiles\tempfiles.tmp

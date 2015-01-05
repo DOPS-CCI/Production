@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartEpoch">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>13002300992.3774</Time>
+    <CameraTime>01-10-2013 09:16:32</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">ClickMe</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>13002300996.5846</Time>
+    <CameraTime>01-10-2013 09:16:36</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">ClickMe</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <Time>13002300996.5856</Time>
+    <CameraTime>01-10-2013 09:16:36</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">ClickMe</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <Time>13002301005.1531</Time>
+    <CameraTime>01-10-2013 09:16:45</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">ClickMe</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>5</Index>
+    <GrayCode>7</GrayCode>
+    <Time>13002301005.1541</Time>
+    <CameraTime>01-10-2013 09:16:45</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">ClickMe</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>6</Index>
+    <GrayCode>5</GrayCode>
+    <Time>13002301009.9294</Time>
+    <CameraTime>01-10-2013 09:16:49</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">ClickMe</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>7</Index>
+    <GrayCode>4</GrayCode>
+    <Time>13002301009.9304</Time>
+    <CameraTime>01-10-2013 09:16:49</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">ClickMe</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>8</Index>
+    <GrayCode>12</GrayCode>
+    <Time>13002301016.9928</Time>
+    <CameraTime>01-10-2013 09:16:56</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">ClickMe</GV>
+    </GroupVars>
+  </Event>
+</Events>

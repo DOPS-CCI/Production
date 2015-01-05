@@ -1,0 +1,26 @@
+PowerBASIC for Windows
+PB/Win  Version 9.05.
+Copyright (c) 1996-2010 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  F:\POWERB~3\Projects\UTILIT~1\ELAPSE~1\ElapsedTimeKeeper.bas   {53412 total lines}
+Target compilation:  ElapsedTimeKeeper.exe
+Compile time:  0.2 seconds, at 16023600 lines/minute
+
+41116 bytes compiled code, 58178 bytes RTLibrary,
+4544 bytes string literals, and 11104444 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 154624 bytes   Memory image: 11167166 bytes.
+
+Component Files:
+----------------
+F:\POWERB~3\Projects\UTILIT~1\ELAPSE~1\ElapsedTimeKeeper.bas
+F:\POWERB~3\WINAPI\WIN32API.INC
+F:\POWERB~3\DOPS_I~1\DOPS_PB_CBW.INC
+F:\POWERB~3\DOPS_I~1\DOPS_EXPERIMENTINFO.INC
+F:\POWERB~3\DOPS_I~1\DOPS_UTILS.INC
+F:\POWERB~3\DOPS_I~1\MERSENNE-TWISTER.INC
+F:\POWERB~3\DOPS_I~1\DOPS_STATISTICS.INC
+
+

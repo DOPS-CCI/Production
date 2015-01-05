@@ -1,0 +1,759 @@
+#PBFORMS CREATED V2.01
+'------------------------------------------------------------------------------
+' The first line in this file is a PB/Forms metastatement.
+' It should ALWAYS be the first line of the file. Other
+' PB/Forms metastatements are placed at the beginning and
+' end of "Named Blocks" of code that should be edited
+' with PBForms only. Do not manually edit or delete these
+' metastatements or PB/Forms will not be able to reread
+' the file correctly.  See the PB/Forms documentation for
+' more information.
+' Named blocks begin like this:    #PBFORMS BEGIN ...
+' Named blocks end like this:      #PBFORMS END ...
+' Other PB/Forms metastatements such as:
+'     #PBFORMS DECLARATIONS
+' are used by PB/Forms to insert additional code.
+' Feel free to make changes anywhere else in the file.
+'------------------------------------------------------------------------------
+
+#COMPILE EXE
+#DIM ALL
+
+'------------------------------------------------------------------------------
+'   ** Includes **
+'------------------------------------------------------------------------------
+#PBFORMS BEGIN INCLUDES
+#RESOURCE "DlgfEEGDummyReceiver_New.pbr"
+%USEMACROS = 1
+#INCLUDE ONCE "WIN32API.INC"
+#INCLUDE ONCE "COMMCTRL.INC"
+#INCLUDE ONCE "PBForms.INC"
+#PBFORMS END INCLUDES
+'------------------------------------------------------------------------------
+
+'------------------------------------------------------------------------------
+'   ** Constants **
+'------------------------------------------------------------------------------
+#PBFORMS BEGIN CONSTANTS
+%IDD_DIALOG1            =  101
+
+%IDC_FRAME1             =  201
+%IDC_FRAME3             =  202
+
+%IDC_LABEL1             = 1001
+%IDC_LABEL2             = 1002
+%IDC_LABEL4             = 1009
+%IDC_LABEL5             = 1010
+%IDC_LABEL6             = 1011
+%IDC_LABEL7             = 1012
+%IDC_LABEL8             = 1013
+%IDC_LABEL9             = 1014
+%IDC_LABEL16            = 1015
+%IDC_LABEL17            = 1016
+%IDC_LABEL18            = 1017
+%IDC_LABEL19            = 1018
+%IDC_LABEL20            = 1019
+%IDC_LABEL21            = 1020
+%IDC_LABEL22            = 1021
+%IDC_LABEL23            = 1022
+%IDC_LABEL24            = 1023
+%IDC_LABEL25            = 1024
+%IDC_LABEL26            = 1025
+%IDC_LABEL27            = 1026
+%IDC_LABEL28            = 1027
+%IDC_LABEL29            = 1028
+%IDC_LABEL30            = 1029
+%IDC_LABEL31            = 1030
+%IDC_LABEL32            = 1031
+%IDC_LABEL33            = 1032
+%IDC_LABEL34            = 1033
+%IDC_LABEL35            = 1034
+%IDC_LABEL36            = 1035
+%IDC_LABEL37            = 1036
+%IDC_LABEL38            = 1037
+%IDC_LABEL39            = 1038
+%IDC_LABEL40            = 1039
+%IDC_LABEL41            = 1040
+%IDC_LABEL42            = 1041
+%IDC_LABEL43            = 1043
+%IDC_LABEL44            = 1044
+%IDC_LABEL45            = 1045
+%IDC_LABEL46            = 1046
+%IDC_LABEL47            = 1047
+%IDC_LABEL48            = 1048
+
+%IDC_LABEL_STATUS       = 1049
+
+%IDC_TEXTBOX_CHAN01     = 1101
+%IDC_TEXTBOX_CHAN02     = 1102
+%IDC_TEXTBOX_CHAN03     = 1103
+%IDC_TEXTBOX_CHAN04     = 1104
+%IDC_TEXTBOX_CHAN05     = 1105
+%IDC_TEXTBOX_CHAN06     = 1106
+%IDC_TEXTBOX_CHAN07     = 1107
+%IDC_TEXTBOX_CHAN08     = 1108
+%IDC_TEXTBOX_CHAN09     = 1109
+%IDC_TEXTBOX_CHAN10     = 1110
+%IDC_TEXTBOX_CHAN11     = 1111
+%IDC_TEXTBOX_CHAN12     = 1112
+%IDC_TEXTBOX_CHAN13     = 1113
+%IDC_TEXTBOX_CHAN14     = 1114
+%IDC_TEXTBOX_CHAN15     = 1115
+%IDC_TEXTBOX_CHAN16     = 1116
+%IDC_TEXTBOX_CHAN17     = 1117
+%IDC_TEXTBOX_CHAN18     = 1218
+%IDC_TEXTBOX_CHAN19     = 1119
+%IDC_TEXTBOX_CHAN20     = 1120
+%IDC_TEXTBOX_CHAN21     = 1121
+%IDC_TEXTBOX_CHAN22     = 1122
+%IDC_TEXTBOX_CHAN23     = 1123
+%IDC_TEXTBOX_CHAN24     = 1124
+%IDC_TEXTBOX_CHAN25     = 1125
+%IDC_TEXTBOX_CHAN26     = 1126
+%IDC_TEXTBOX_CHAN27     = 1127
+%IDC_TEXTBOX_CHAN28     = 1128
+%IDC_TEXTBOX_CHAN29     = 1129
+%IDC_TEXTBOX_CHAN30     = 1130
+%IDC_TEXTBOX_CHAN31     = 1131
+%IDC_TEXTBOX_CHAN32     = 1132
+%IDC_TEXTBOX_CHAN33     = 1133
+%IDC_TEXTBOX_CHAN34     = 1134
+%IDC_TEXTBOX_CHAN35     = 1135
+%IDC_TEXTBOX_CHAN36     = 1136
+
+%IDC_CHECKBOX_CHAN01    = 1201
+%IDC_CHECKBOX_CHAN02    = 1202
+%IDC_CHECKBOX_CHAN03    = 1203
+%IDC_CHECKBOX_CHAN04    = 1204
+%IDC_CHECKBOX_CHAN05    = 1205
+%IDC_CHECKBOX_CHAN06    = 1206
+%IDC_CHECKBOX_CHAN07    = 1207
+%IDC_CHECKBOX_CHAN08    = 1208
+%IDC_CHECKBOX_CHAN09    = 1209
+%IDC_CHECKBOX_CHAN10    = 1210
+%IDC_CHECKBOX_CHAN11    = 1211
+%IDC_CHECKBOX_CHAN12    = 1212
+%IDC_CHECKBOX_CHAN13    = 1213
+%IDC_CHECKBOX_CHAN14    = 1214
+%IDC_CHECKBOX_CHAN15    = 1215
+%IDC_CHECKBOX_CHAN16    = 1216
+%IDC_CHECKBOX_CHAN17    = 1217
+%IDC_CHECKBOX_CHAN18    = 1218
+%IDC_CHECKBOX_CHAN19    = 1219
+%IDC_CHECKBOX_CHAN20    = 1220
+%IDC_CHECKBOX_CHAN21    = 1221
+%IDC_CHECKBOX_CHAN22    = 1222
+%IDC_CHECKBOX_CHAN23    = 1223
+%IDC_CHECKBOX_CHAN24    = 1224
+%IDC_CHECKBOX_CHAN25    = 1225
+%IDC_CHECKBOX_CHAN26    = 1226
+%IDC_CHECKBOX_CHAN27    = 1227
+%IDC_CHECKBOX_CHAN28    = 1228
+%IDC_CHECKBOX_CHAN29    = 1229
+%IDC_CHECKBOX_CHAN30    = 1230
+%IDC_CHECKBOX_CHAN31    = 1231
+%IDC_CHECKBOX_CHAN32    = 1232
+%IDC_CHECKBOX_CHAN33    = 1233
+%IDC_CHECKBOX_CHAN34    = 1234
+%IDC_CHECKBOX_CHAN35    = 1235
+%IDC_CHECKBOX_CHAN36    = 1236
+
+%IDC_TEXTBOX_ANALOG1    = 1301
+%IDC_TEXTBOX_ANALOG2    = 1302
+%IDC_TEXTBOX_DIGITAL    = 1303
+
+%IDC_CHECKBOX_ANALOG1   = 1401
+%IDC_CHECKBOX_ANALOG2   = 1402
+%IDC_CHECKBOX_DIGITAL   = 1403
+
+%IDC_CHECKBOX_SELECTALL = 1501
+
+%IDC_TEXTBOX_SERVER     = 1601
+%IDC_TEXTBOX_PORT       = 1602
+
+%IDC_BUTTON_CONNECT     = 1701
+%IDC_BUTTON_PROCESS     = 1702
+%IDC_BUTTON_CLOSE       = 1703
+#PBFORMS END CONSTANTS
+'------------------------------------------------------------------------------
+
+'------------------------------------------------------------------------------
+'   ** Declarations **
+'------------------------------------------------------------------------------
+DECLARE CALLBACK FUNCTION ShowDIALOG1Proc()
+DECLARE FUNCTION ShowDIALOG1(BYVAL hParent AS DWORD) AS LONG
+#PBFORMS DECLARATIONS
+'------------------------------------------------------------------------------
+
+'------------------------------------------------------------------------------
+'   ** Main Application Entry Point **
+'------------------------------------------------------------------------------
+FUNCTION PBMAIN()
+    PBFormsInitComCtls (%ICC_WIN95_CLASSES OR %ICC_DATE_CLASSES OR _
+        %ICC_INTERNET_CLASSES)
+
+    ShowDIALOG1 %HWND_DESKTOP
+END FUNCTION
+'------------------------------------------------------------------------------
+
+'------------------------------------------------------------------------------
+'   ** CallBacks **
+'------------------------------------------------------------------------------
+CALLBACK FUNCTION ShowDIALOG1Proc()
+
+    SELECT CASE AS LONG CB.MSG
+        CASE %WM_INITDIALOG
+            ' Initialization handler
+
+        CASE %WM_NCACTIVATE
+            STATIC hWndSaveFocus AS DWORD
+            IF ISFALSE CB.WPARAM THEN
+                ' Save control focus
+                hWndSaveFocus = GetFocus()
+            ELSEIF hWndSaveFocus THEN
+                ' Restore control focus
+                SetFocus(hWndSaveFocus)
+                hWndSaveFocus = 0
+            END IF
+
+        CASE %WM_COMMAND
+            ' Process control notifications
+            SELECT CASE AS LONG CB.CTL
+                ' /* Inserted by PB/Forms 06-24-2011 10:14:02
+                CASE %IDC_TEXTBOX_CHAN01
+                ' */
+
+                ' /* Inserted by PB/Forms 06-24-2011 10:11:27
+                CASE %IDC_TEXTBOX_CHAN02
+
+                CASE %IDC_TEXTBOX_CHAN05
+                ' */
+
+                ' /* Inserted by PB/Forms 06-24-2011 09:46:34
+                CASE %IDC_STATUSBAR1
+                ' */
+
+                ' /* Inserted by PB/Forms 06-24-2011 09:14:56
+                CASE %IDC_TEXTBOX_CHAN13
+
+                CASE %IDC_CHECKBOX_CHAN13
+
+                CASE %IDC_TEXTBOX_CHAN14
+
+                CASE %IDC_CHECKBOX_CHAN14
+
+                CASE %IDC_TEXTBOX_CHAN15
+
+                CASE %IDC_CHECKBOX_CHAN15
+
+                CASE %IDC_TEXTBOX_CHAN16
+
+                CASE %IDC_CHECKBOX_CHAN16
+
+                CASE %IDC_TEXTBOX_CHAN17
+
+                CASE %IDC_CHECKBOX_CHAN17
+
+                CASE %IDC_TEXTBOX_CHAN18
+
+                CASE %IDC_CHECKBOX_CHAN18
+
+                CASE %IDC_TEXTBOX_CHAN19
+
+                CASE %IDC_CHECKBOX_CHAN19
+
+                CASE %IDC_TEXTBOX_CHAN20
+
+                CASE %IDC_CHECKBOX_CHAN20
+
+                CASE %IDC_TEXTBOX_CHAN21
+
+                CASE %IDC_CHECKBOX_CHAN21
+
+                CASE %IDC_TEXTBOX_CHAN22
+
+                CASE %IDC_CHECKBOX_CHAN22
+
+                CASE %IDC_TEXTBOX_CHAN23
+
+                CASE %IDC_CHECKBOX_CHAN23
+
+                CASE %IDC_TEXTBOX_CHAN24
+
+                CASE %IDC_CHECKBOX_CHAN24
+
+                CASE %IDC_TEXTBOX_CHAN25
+
+                CASE %IDC_CHECKBOX_CHAN25
+
+                CASE %IDC_TEXTBOX_CHAN26
+
+                CASE %IDC_CHECKBOX_CHAN26
+
+                CASE %IDC_TEXTBOX_CHAN27
+
+                CASE %IDC_CHECKBOX_CHAN27
+
+                CASE %IDC_TEXTBOX_CHAN28
+
+                CASE %IDC_CHECKBOX_CHAN28
+
+                CASE %IDC_TEXTBOX_CHAN29
+
+                CASE %IDC_CHECKBOX_CHAN29
+
+                CASE %IDC_TEXTBOX_CHAN30
+
+                CASE %IDC_CHECKBOX_CHAN30
+
+                CASE %IDC_TEXTBOX_CHAN31
+
+                CASE %IDC_CHECKBOX_CHAN31
+
+                CASE %IDC_TEXTBOX_CHAN32
+
+                CASE %IDC_CHECKBOX_CHAN32
+
+                CASE %IDC_TEXTBOX_CHAN33
+
+                CASE %IDC_CHECKBOX_CHAN33
+
+                CASE %IDC_TEXTBOX_CHAN34
+
+                CASE %IDC_CHECKBOX_CHAN34
+
+                CASE %IDC_TEXTBOX_CHAN35
+
+                CASE %IDC_CHECKBOX_CHAN35
+
+                CASE %IDC_TEXTBOX_CHAN36
+
+                CASE %IDC_CHECKBOX_CHAN36
+
+                CASE %IDC_TEXTBOX_ANALOG1
+
+                CASE %IDC_CHECKBOX_ANALOG1
+
+                CASE %IDC_TEXTBOX_ANALOG2
+
+                CASE %IDC_CHECKBOX_ANALOG2
+
+                CASE %IDC_TEXTBOX_DIGITAL
+
+                CASE %IDC_CHECKBOX_DIGITAL
+
+                CASE %IDC_CHECKBOX_SELECTALL
+                ' */
+
+                CASE %IDC_TEXTBOX_SERVER
+
+                CASE %IDC_TEXTBOX_PORT
+
+                CASE %IDC_BUTTON_CONNECT
+                    IF CB.CTLMSG = %BN_CLICKED OR CB.CTLMSG = 1 THEN
+                        MSGBOX "%IDC_BUTTON_CONNECT=" + _
+                            FORMAT$(%IDC_BUTTON_CONNECT), %MB_TASKMODAL
+                    END IF
+
+                CASE %IDC_BUTTON_PROCESS
+                    IF CB.CTLMSG = %BN_CLICKED OR CB.CTLMSG = 1 THEN
+                        MSGBOX "%IDC_BUTTON_PROCESS=" + _
+                            FORMAT$(%IDC_BUTTON_PROCESS), %MB_TASKMODAL
+                    END IF
+
+                CASE %IDC_BUTTON_CLOSE
+                    IF CB.CTLMSG = %BN_CLICKED OR CB.CTLMSG = 1 THEN
+                        MSGBOX "%IDC_BUTTON_CLOSE=" + _
+                            FORMAT$(%IDC_BUTTON_CLOSE), %MB_TASKMODAL
+                    END IF
+
+                CASE %IDC_TEXTBOXCHAN01
+
+                CASE %IDC_CHECKBOX_CHAN01
+
+                CASE %IDC_TEXTBOX1
+
+                CASE %IDC_CHECKBOX_CHAN02
+
+                CASE %IDC_TEXTBOX_CHAN03
+
+                CASE %IDC_CHECKBOX_CHAN03
+
+                CASE %IDC_TEXTBOX_CHAN04
+
+                CASE %IDC_CHECKBOX_CHAN04
+
+                CASE %IDC_CHECKBOX_CHAN05
+
+                CASE %IDC_TEXTBOX_CHAN06
+
+                CASE %IDC_CHECKBOX_CHAN06
+
+                CASE %IDC_TEXTBOX_CHAN07
+
+                CASE %IDC_CHECKBOX_CHAN07
+
+                CASE %IDC_TEXTBOX_CHAN08
+
+                CASE %IDC_CHECKBOX_CHAN08
+
+                CASE %IDC_TEXTBOX_CHAN09
+
+                CASE %IDC_CHECKBOX_CHAN09
+
+                CASE %IDC_TEXTBOX_CHAN10
+
+                CASE %IDC_CHECKBOX_CHAN10
+
+                CASE %IDC_TEXTBOX_CHAN11
+
+                CASE %IDC_CHECKBOX_CHAN11
+
+                CASE %IDC_TEXTBOX_CHAN12
+
+                CASE %IDC_CHECKBOX_CHAN12
+
+                CASE %IDC_TEXTBOX15
+
+                CASE %IDC_CHECKBOX7
+
+                CASE %IDC_TEXTBOX16
+
+                CASE %IDC_CHECKBOX8
+
+                CASE %IDC_TEXTBOX17
+
+                CASE %IDC_CHECKBOX10
+
+                CASE %IDC_TEXTBOX14
+
+                CASE %IDC_CHECKBOX9
+
+                CASE %IDC_TEXTBOX19
+
+                CASE %IDC_CHECKBOX12
+
+                CASE %IDC_TEXTBOX18
+
+                CASE %IDC_CHECKBOX11
+
+                CASE %IDC_TEXTBOX21
+
+                CASE %IDC_CHECKBOX13
+
+                CASE %IDC_TEXTBOX22
+
+                CASE %IDC_CHECKBOX14
+
+                CASE %IDC_TEXTBOX23
+
+                CASE %IDC_CHECKBOX16
+
+                CASE %IDC_TEXTBOX20
+
+                CASE %IDC_CHECKBOX15
+
+                CASE %IDC_TEXTBOX25
+
+                CASE %IDC_CHECKBOX18
+
+                CASE %IDC_TEXTBOX24
+
+                CASE %IDC_CHECKBOX17
+
+                CASE %IDC_TEXTBOX27
+
+                CASE %IDC_CHECKBOX19
+
+                CASE %IDC_TEXTBOX28
+
+                CASE %IDC_CHECKBOX20
+
+                CASE %IDC_TEXTBOX29
+
+                CASE %IDC_CHECKBOX22
+
+                CASE %IDC_TEXTBOX26
+
+                CASE %IDC_CHECKBOX21
+
+                CASE %IDC_TEXTBOX31
+
+                CASE %IDC_CHECKBOX24
+
+                CASE %IDC_TEXTBOX30
+
+                CASE %IDC_CHECKBOX23
+
+                CASE %IDC_TEXTBOX40
+
+                CASE %IDC_CHECKBOX33
+
+                CASE %IDC_TEXTBOX39
+
+                CASE %IDC_CHECKBOX32
+
+                CASE %IDC_TEXTBOX38
+
+                CASE %IDC_CHECKBOX31
+
+                CASE %IDC_TEXTBOX37
+
+                CASE %IDC_CHECKBOX30
+
+                CASE %IDC_TEXTBOX35
+
+                CASE %IDC_CHECKBOX29
+
+                CASE %IDC_TEXTBOX36
+
+                CASE %IDC_CHECKBOX28
+
+                CASE %IDC_TEXTBOX34
+
+                CASE %IDC_CHECKBOX27
+
+                CASE %IDC_TEXTBOX33
+
+                CASE %IDC_CHECKBOX26
+
+                CASE %IDC_TEXTBOX32
+
+                CASE %IDC_CHECKBOX25
+
+            END SELECT
+    END SELECT
+END FUNCTION
+'------------------------------------------------------------------------------
+
+'------------------------------------------------------------------------------
+'   ** Dialogs **
+'------------------------------------------------------------------------------
+FUNCTION ShowDIALOG1(BYVAL hParent AS DWORD) AS LONG
+    LOCAL lRslt AS LONG
+
+#PBFORMS BEGIN DIALOG %IDD_DIALOG1->->
+    LOCAL hDlg  AS DWORD
+
+    DIALOG NEW hParent, "Dialog1", 10, 70, 865, 320, TO hDlg
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_SERVER, "10.10.11.11", 51, 35, _
+        115, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_PORT, "9780", 209, 35, 115, 15
+    CONTROL ADD BUTTON,   hDlg, %IDC_BUTTON_CONNECT, "Connect", 373, 35, 75, _
+        20
+    CONTROL ADD BUTTON,   hDlg, %IDC_BUTTON_PROCESS, "Process", 463, 35, 75, _
+        20
+    CONTROL ADD BUTTON,   hDlg, %IDC_BUTTON_CLOSE, "Close", 553, 35, 75, 20
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN01, "", 55, 122, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN01, "", 122, 122, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN02, "", 55, 143, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN02, "", 122, 143, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN03, "", 55, 163, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN03, "", 122, 163, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN04, "", 55, 184, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN04, "", 122, 184, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN05, "", 55, 206, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN05, "", 121, 206, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN06, "", 55, 227, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN06, "", 121, 227, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN07, "", 190, 122, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN07, "", 257, 122, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN08, "", 190, 143, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN08, "", 257, 143, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN09, "", 190, 163, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN09, "", 257, 163, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN10, "", 190, 184, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN10, "", 257, 184, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN11, "", 190, 206, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN11, "", 256, 206, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN12, "", 190, 227, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN12, "", 256, 227, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN13, "", 325, 122, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN13, "", 392, 122, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN14, "", 325, 143, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN14, "", 392, 143, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN15, "", 325, 163, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN15, "", 392, 163, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN16, "", 325, 184, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN16, "", 392, 184, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN17, "", 325, 206, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN17, "", 391, 206, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN18, "", 325, 227, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN18, "", 391, 227, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN19, "", 460, 122, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN19, "", 527, 122, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN20, "", 460, 143, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN20, "", 527, 143, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN21, "", 460, 163, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN21, "", 527, 163, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN22, "", 460, 184, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN22, "", 527, 184, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN23, "", 460, 206, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN23, "", 526, 206, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN24, "", 460, 227, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN24, "", 526, 227, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN25, "", 595, 122, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN25, "", 662, 122, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN26, "", 595, 143, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN26, "", 662, 143, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN27, "", 595, 163, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN27, "", 662, 163, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN28, "", 595, 184, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN28, "", 662, 184, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN29, "", 595, 206, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN29, "", 661, 206, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN30, "", 595, 227, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN30, "", 661, 227, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN31, "", 730, 122, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN31, "", 797, 122, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN32, "", 730, 143, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN32, "", 797, 143, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN33, "", 730, 163, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN33, "", 797, 163, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN34, "", 730, 184, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN34, "", 797, 184, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN35, "", 730, 206, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN35, "", 796, 206, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_CHAN36, "", 730, 227, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_CHAN36, "", 796, 227, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_ANALOG1, "", 190, 260, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_ANALOG1, "", 256, 260, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_ANALOG2, "", 325, 260, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_ANALOG2, "", 391, 260, 20, 15
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_DIGITAL, "", 460, 260, 60, 15
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_DIGITAL, "", 526, 260, 20, 15
+    CONTROL ADD FRAME,    hDlg, %IDC_FRAME1, "fEEG Program Streaming " + _
+        "Information", 10, 10, 675, 65
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL1, "Server:", 23, 35, 25, 20, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL2, "Port:", 180, 35, 25, 20, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL4, "1", 25, 122, 25, 21, %WS_CHILD _
+        OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL5, "2", 25, 143, 25, 21, %WS_CHILD _
+        OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL6, "4", 25, 184, 25, 21, %WS_CHILD _
+        OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL7, "3", 25, 163, 25, 21, %WS_CHILD _
+        OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL8, "6", 25, 227, 25, 21, %WS_CHILD _
+        OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL9, "5", 25, 206, 25, 21, %WS_CHILD _
+        OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL16, "7", 160, 122, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL17, "8", 160, 143, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL18, "10", 160, 184, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL19, "9", 160, 163, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL20, "12", 160, 227, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL21, "11", 160, 206, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL22, "13", 295, 122, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL23, "14", 295, 143, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL24, "16", 295, 184, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL25, "15", 295, 163, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL26, "18", 295, 227, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL27, "17", 295, 206, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL28, "19", 430, 122, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL29, "20", 430, 143, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL30, "22", 430, 184, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL31, "21", 430, 163, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL32, "24", 430, 227, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL33, "23", 430, 206, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL34, "25", 565, 122, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL35, "26", 565, 143, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL36, "28", 565, 184, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL37, "27", 565, 163, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL38, "30", 565, 227, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL39, "29", 565, 206, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL40, "Digital Events", 410, 260, 45, _
+        21, %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL41, "Analog 2", 285, 260, 35, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL42, "Analog 1", 150, 260, 35, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD FRAME,    hDlg, %IDC_FRAME3, "Channels", 10, 95, 810, 195
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL43, "36", 700, 227, 25, 22, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL44, "35", 700, 206, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL45, "34", 700, 184, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL46, "33", 700, 163, 25, 22, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL47, "32", 700, 143, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL48, "31", 700, 122, 25, 21, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_SELECTALL, "Select/Deselect " + _
+        "All", 630, 260, 80, 15
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL_STATUS, "", 0, 305, 865, 15, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_LEFT, %WS_EX_CLIENTEDGE OR _
+        %WS_EX_LEFT OR %WS_EX_LTRREADING
+#PBFORMS END DIALOG
+
+    DIALOG SHOW MODAL hDlg, CALL ShowDIALOG1Proc TO lRslt
+
+#PBFORMS BEGIN CLEANUP %IDD_DIALOG1
+#PBFORMS END CLEANUP
+
+    FUNCTION = lRslt
+END FUNCTION
+'------------------------------------------------------------------------------

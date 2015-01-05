@@ -1,0 +1,18 @@
+AG, Altered States General
+AP, Audio-Paced Trials
+A1, Audio Presentiment - Rnd Match
+A2, Audio Presentiment - Rnd Time
+OB, Oddball
+BA, Brugman Alpha (5 x 5)
+BN, Brugman Numeric (8 x 8)
+CE, Cards Exact
+CS, Cards Suits
+CV, Cards Values
+CC, Color Cards
+GM, Gumball Machine
+ZC, Zener Cards
+DR, Drag Race
+EA, Earth
+LW, Light Wheel
+SM, Superman
+

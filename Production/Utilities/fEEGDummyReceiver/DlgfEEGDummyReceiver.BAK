@@ -1,0 +1,155 @@
+#PBFORMS CREATED V2.01
+'------------------------------------------------------------------------------
+' The first line in this file is a PB/Forms metastatement.
+' It should ALWAYS be the first line of the file. Other   
+' PB/Forms metastatements are placed at the beginning and 
+' end of "Named Blocks" of code that should be edited     
+' with PBForms only. Do not manually edit or delete these 
+' metastatements or PB/Forms will not be able to reread   
+' the file correctly.  See the PB/Forms documentation for 
+' more information.                                       
+' Named blocks begin like this:    #PBFORMS BEGIN ...     
+' Named blocks end like this:      #PBFORMS END ...       
+' Other PB/Forms metastatements such as:                  
+'     #PBFORMS DECLARATIONS                               
+' are used by PB/Forms to insert additional code.         
+' Feel free to make changes anywhere else in the file.    
+'------------------------------------------------------------------------------
+
+#COMPILE EXE
+#DIM ALL
+
+'------------------------------------------------------------------------------
+'   ** Includes **
+'------------------------------------------------------------------------------
+#PBFORMS BEGIN INCLUDES 
+#RESOURCE "DlgfEEGDummyReceiver.pbr"
+%USEMACROS = 1
+#INCLUDE ONCE "WIN32API.INC"
+#INCLUDE ONCE "COMMCTRL.INC"
+#INCLUDE ONCE "PBForms.INC"
+#PBFORMS END INCLUDES
+'------------------------------------------------------------------------------
+
+'------------------------------------------------------------------------------
+'   ** Constants **
+'------------------------------------------------------------------------------
+#PBFORMS BEGIN CONSTANTS 
+%IDD_DIALOG1        =  101
+%IDC_TEXTBOX_SERVER = 1002
+%IDC_LABEL_SERVER   = 1001
+%IDC_LABEL_PORT     = 1003
+%IDC_TEXTBOX_PORT   = 1004
+%IDC_RICHEDIT_FEED  = 1005
+%IDC_BUTTON_CONNECT = 1006
+%IDC_BUTTON_CANCEL  = 1007
+#PBFORMS END CONSTANTS
+'------------------------------------------------------------------------------
+
+'------------------------------------------------------------------------------
+'   ** Declarations **
+'------------------------------------------------------------------------------
+DECLARE CALLBACK FUNCTION ShowDIALOG1Proc()
+DECLARE FUNCTION ShowDIALOG1(BYVAL hParent AS DWORD) AS LONG
+#PBFORMS DECLARATIONS
+'------------------------------------------------------------------------------
+
+'------------------------------------------------------------------------------
+'   ** Main Application Entry Point **
+'------------------------------------------------------------------------------
+FUNCTION PBMAIN()
+    PBFormsInitComCtls (%ICC_WIN95_CLASSES OR %ICC_DATE_CLASSES OR _
+        %ICC_INTERNET_CLASSES)
+
+    ShowDIALOG1 %HWND_DESKTOP
+END FUNCTION
+'------------------------------------------------------------------------------
+
+'------------------------------------------------------------------------------
+'   ** CallBacks **
+'------------------------------------------------------------------------------
+CALLBACK FUNCTION ShowDIALOG1Proc()
+
+    SELECT CASE AS LONG CB.MSG
+        CASE %WM_INITDIALOG
+            ' Initialization handler
+
+        CASE %WM_NCACTIVATE
+            STATIC hWndSaveFocus AS DWORD
+            IF ISFALSE CB.WPARAM THEN
+                ' Save control focus
+                hWndSaveFocus = GetFocus()
+            ELSEIF hWndSaveFocus THEN
+                ' Restore control focus
+                SetFocus(hWndSaveFocus)
+                hWndSaveFocus = 0
+            END IF
+
+        CASE %WM_COMMAND
+            ' Process control notifications
+            SELECT CASE AS LONG CB.CTL
+                CASE %IDC_TEXTBOX_SERVER
+
+                CASE %IDC_TEXTBOX_PORT
+
+                CASE %IDC_RICHEDIT_FEED
+
+                CASE %IDC_BUTTON_CONNECT
+                    IF CB.CTLMSG = %BN_CLICKED OR CB.CTLMSG = 1 THEN
+                        MSGBOX "%IDC_BUTTON_CONNECT=" + _
+                            FORMAT$(%IDC_BUTTON_CONNECT), %MB_TASKMODAL
+                    END IF
+
+                CASE %IDC_BUTTON_CANCEL
+                    IF CB.CTLMSG = %BN_CLICKED OR CB.CTLMSG = 1 THEN
+                        MSGBOX "%IDC_BUTTON_CANCEL=" + _
+                            FORMAT$(%IDC_BUTTON_CANCEL), %MB_TASKMODAL
+                    END IF
+
+            END SELECT
+    END SELECT
+END FUNCTION
+'------------------------------------------------------------------------------
+
+'------------------------------------------------------------------------------
+'   ** Dialogs **
+'------------------------------------------------------------------------------
+FUNCTION ShowDIALOG1(BYVAL hParent AS DWORD) AS LONG
+    LOCAL lRslt AS LONG
+
+#PBFORMS BEGIN DIALOG %IDD_DIALOG1->->
+    LOCAL hDlg  AS DWORD
+
+    DIALOG NEW PIXELS, hParent, "fEEG Dummy Receiver", 105, 114, 444, 309, TO _
+        hDlg
+    CONTROL ADD LABEL,   hDlg, %IDC_LABEL_SERVER, "Server:", 16, 26, 56, 25, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD TEXTBOX, hDlg, %IDC_TEXTBOX_SERVER, "127.0.0.1", 80, 24, 136, _
+        24
+    CONTROL ADD LABEL,   hDlg, %IDC_LABEL_PORT, "Port:", 222, 27, 56, 24, _
+        %WS_CHILD OR %WS_VISIBLE OR %SS_RIGHT, %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING
+    CONTROL ADD TEXTBOX, hDlg, %IDC_TEXTBOX_PORT, "9870", 296, 24, 112, 24, _
+        %WS_CHILD OR %WS_VISIBLE OR %WS_TABSTOP OR %ES_LEFT OR _
+        %ES_AUTOHSCROLL OR %ES_NUMBER, %WS_EX_CLIENTEDGE OR %WS_EX_LEFT OR _
+        %WS_EX_LTRREADING OR %WS_EX_RIGHTSCROLLBAR
+    CONTROL ADD PBFormsRichEdit(), hDlg, %IDC_RICHEDIT_FEED, "", 16, 64, 416, _
+        176, %WS_CHILD OR %WS_VISIBLE OR %WS_TABSTOP OR %WS_HSCROLL OR _
+        %WS_VSCROLL OR %ES_LEFT OR %ES_MULTILINE OR %ES_AUTOHSCROLL OR _
+        %ES_AUTOVSCROLL OR %ES_WANTRETURN, %WS_EX_CLIENTEDGE OR %WS_EX_LEFT _
+        OR %WS_EX_LTRREADING OR %WS_EX_RIGHTSCROLLBAR
+    CONTROL ADD BUTTON,  hDlg, %IDC_BUTTON_CONNECT, "Connect", 104, 256, 80, _
+        32
+    CONTROL ADD BUTTON,  hDlg, %IDC_BUTTON_CANCEL, "Cancel", 216, 256, 80, 32
+#PBFORMS END DIALOG
+
+    DIALOG SHOW MODAL hDlg, CALL ShowDIALOG1Proc TO lRslt
+
+#PBFORMS BEGIN CLEANUP %IDD_DIALOG1
+#PBFORMS END CLEANUP
+
+    FUNCTION = lRslt
+END FUNCTION
+'------------------------------------------------------------------------------
+

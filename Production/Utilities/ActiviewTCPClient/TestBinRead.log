@@ -1,0 +1,22 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  E:\PowerBasicClassicWindows10\Projects\Utilities\ActiviewTCPClient\TestBinRead.bas   {34 total lines}
+Target compilation:  TestBinRead.EXE
+Compile time:  0.1 seconds, at 40800 lines/minute
+
+1088 bytes compiled code, 16744 bytes RTLibrary,
+96 bytes string literals, and 2760 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 21504 bytes   Memory image: 19600 bytes.
+
+Component Files:
+----------------
+E:\PowerBasicClassicWindows10\Projects\Utilities\ActiviewTCPClient\TestBinRead.bas
+
+
+Code Extracted:
+---------------
+<NONE>

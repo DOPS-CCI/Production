@@ -1,0 +1,23 @@
+[EEG Information]
+NumberOfChannels=1
+EEGChannels=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+AIBChannels=9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
+AuxiliarySensors=
+BipolarLeads=1
+SampleRates=3
+ScreenLength=3
+EEGChannelsFile=H:\EEGSettings2\Default.EEG
+AIBChannelsFile=H:\EEGSettings2\PKv43.AIB
+BipolarLeadsFile=H:\EEGSettings2\Default.BL
+[OPTIONS]
+IP=137.54.99.124
+Port=778
+BytesInTCPArray=96
+ChannelsSentByTCP=32
+TCPSamplesPerChannel=1
+TCPSubset= 4
+Add8EXElectrodes= 0
+Add7Sensors= 0
+Add9Jazz= 0
+Add32AIBChan= 0
+AddTriggerStatusChan= 0

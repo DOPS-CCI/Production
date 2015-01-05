@@ -1,0 +1,12 @@
+ChooseScale,ScaleFactor,ChooseGain,EEGGain,AIBGain,ChooseThreshold,PreviousAverage,LowerThreshold,UpperThreshold
+ 0 
+ 1 
+ 2 
+ .0312 
+ .01 
+ 1 
+ 12.5 
+ 1 
+ 1 
+ 13,Box13=QC1,SF= 1,GF= .01
+ 14,Box14=QC2,SF= 1,GF= .01

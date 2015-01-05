@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartEpoch">
+    <Index>0</Index>
+    <GrayCode>1</GrayCode>
+    <Time>13002211873.6742</Time>
+    <CameraTime>01-09-2013 08:31:13</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>0</Index>
+    <GrayCode>3</GrayCode>
+    <Time>13002211881.7306</Time>
+    <CameraTime>01-09-2013 08:31:21</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>0</Index>
+    <GrayCode>2</GrayCode>
+    <Time>13002211881.7416</Time>
+    <CameraTime>01-09-2013 08:31:21</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>0</Index>
+    <GrayCode>6</GrayCode>
+    <Time>13002211892.1462</Time>
+    <CameraTime>01-09-2013 08:31:32</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>0</Index>
+    <GrayCode>7</GrayCode>
+    <Time>13002211892.1502</Time>
+    <CameraTime>01-09-2013 08:31:32</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>0</Index>
+    <GrayCode>5</GrayCode>
+    <Time>13002211898.6656</Time>
+    <CameraTime>01-09-2013 08:31:38</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>0</Index>
+    <GrayCode>4</GrayCode>
+    <Time>13002211898.6706</Time>
+    <CameraTime>01-09-2013 08:31:38</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>0</Index>
+    <GrayCode>12</GrayCode>
+    <Time>13002211902.1298</Time>
+    <CameraTime>01-09-2013 08:31:42</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+</Events>

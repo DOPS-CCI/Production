@@ -1,0 +1,22 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  E:\PowerBasicClassicWindows10\Projects\Utilities\KappafEEGClient\CreateChannelData.bas   {41 total lines}
+Target compilation:  CreateChannelData.EXE
+Compile time:  0.1 seconds, at 49200 lines/minute
+
+1008 bytes compiled code, 8404 bytes RTLibrary,
+20 bytes string literals, and 2704 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 13312 bytes   Memory image: 11128 bytes.
+
+Component Files:
+----------------
+E:\PowerBasicClassicWindows10\Projects\Utilities\KappafEEGClient\CreateChannelData.bas
+
+
+Code Extracted:
+---------------
+<NONE>

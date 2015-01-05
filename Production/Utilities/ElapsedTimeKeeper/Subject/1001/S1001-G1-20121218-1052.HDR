@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Header>
+  <ExperimentDescription>
+    <SoftwareVersion>1.0.0.0</SoftwareVersion>
+    <Title>Generic ASC</Title>
+    <LongDescription>Testing</LongDescription>
+    <Experimenter>Frank Applin</Experimenter>
+    <Experimenter>Ross Dunseath</Experimenter>
+    <Status>16</Status>
+    <GroupVar>
+      <Name>ASCCondition</Name>
+      <Description>The GV is used for generic ASC experiments.</Description>
+      <GV Desc="State1">1</GV>
+      <GV Desc="State2">2</GV>
+      <GV Desc="State3">3</GV>
+      <GV Desc="SPECIAL">4</GV>
+    </GroupVar>
+    <Event Type="intrinsic">
+      <Name>StartEpoch</Name>
+      <Description>Marks when subject starts an ASC state.</Description>
+      <GroupVar Name="ASCCondition"/>
+    </Event>
+    <Event Type="intrinsic">
+      <Name>EndEpoch</Name>
+      <Description>Marks when subject end an ASC state.</Description>
+      <GroupVar Name="ASCCondition"/>
+    </Event>
+    <Event Type="intrinsic">
+      <Name>SpecialEvent</Name>
+      <Description>Marks when a special event is selected.</Description>
+      <GroupVar Name="Comment"/>
+    </Event>
+  </ExperimentDescription>
+  <SessionDescription>
+    <Date>12-18-2012</Date>
+    <Time>10:52</Time>
+    <Subject>1001</Subject>
+    <Technician>Ed Modestino</Technician>
+    <Technician>Allison Knee</Technician>
+    <BDFFile>S1001-G1-20121218-1052.BDF</BDFFile>
+    <EventFile>S1001-G1-20121218-1052.EVT</EventFile>
+    <ElectrodeFile>S1001-G1-20121218-1052.ETR</ElectrodeFile>
+    <Comment>(12-18-2012 10:52:44)</Comment>
+  </SessionDescription>
+</Header>

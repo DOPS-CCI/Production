@@ -1,0 +1,22 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  E:\PowerBasicClassicWindows10\Projects\Ross\Test.bas   {18 total lines}
+Target compilation:  Test.EXE
+Compile time:  0.1 seconds, at 21600 lines/minute
+
+720 bytes compiled code, 4436 bytes RTLibrary,
+12 bytes string literals, and 2668 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 8704 bytes   Memory image: 7116 bytes.
+
+Component Files:
+----------------
+E:\PowerBasicClassicWindows10\Projects\Ross\Test.bas
+
+
+Code Extracted:
+---------------
+<NONE>

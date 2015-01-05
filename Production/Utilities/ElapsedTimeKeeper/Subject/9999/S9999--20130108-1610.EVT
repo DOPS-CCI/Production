@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartEpoch">
+    <Index>0</Index>
+    <GrayCode>1</GrayCode>
+    <Time>13002153028.1708</Time>
+    <CameraTime>01-08-2013 16:10:28</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>0</Index>
+    <GrayCode>3</GrayCode>
+    <Time>13002153033.3471</Time>
+    <CameraTime>01-08-2013 16:10:33</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>0</Index>
+    <GrayCode>2</GrayCode>
+    <Time>13002153033.3561</Time>
+    <CameraTime>01-08-2013 16:10:33</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>0</Index>
+    <GrayCode>6</GrayCode>
+    <Time>13002153035.5222</Time>
+    <CameraTime>01-08-2013 16:10:35</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>0</Index>
+    <GrayCode>7</GrayCode>
+    <Time>13002153035.5272</Time>
+    <CameraTime>01-08-2013 16:10:35</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>0</Index>
+    <GrayCode>5</GrayCode>
+    <Time>13002153037.2103</Time>
+    <CameraTime>01-08-2013 16:10:37</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition"></GV>
+    </GroupVars>
+  </Event>
+</Events>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartEpoch">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>13000319575.5480</Time>
+    <CameraTime>12-18-2012 10:52:55</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">State1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>13000319589.2438</Time>
+    <CameraTime>12-18-2012 10:53:09</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">State1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <Time>13000319589.2488</Time>
+    <CameraTime>12-18-2012 10:53:09</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">State2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <Time>13000319603.3076</Time>
+    <CameraTime>12-18-2012 10:53:23</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">State2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>5</Index>
+    <GrayCode>7</GrayCode>
+    <Time>13000319603.3116</Time>
+    <CameraTime>12-18-2012 10:53:23</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">State1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>6</Index>
+    <GrayCode>5</GrayCode>
+    <Time>13000319614.4432</Time>
+    <CameraTime>12-18-2012 10:53:34</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">State1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>7</Index>
+    <GrayCode>4</GrayCode>
+    <Time>13000319614.4472</Time>
+    <CameraTime>12-18-2012 10:53:34</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">State3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>8</Index>
+    <GrayCode>12</GrayCode>
+    <Time>13000319626.7229</Time>
+    <CameraTime>12-18-2012 10:53:46</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">State3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>9</Index>
+    <GrayCode>13</GrayCode>
+    <Time>13000319626.7279</Time>
+    <CameraTime>12-18-2012 10:53:46</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">SPECIAL</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>10</Index>
+    <GrayCode>15</GrayCode>
+    <Time>13000319636.3625</Time>
+    <CameraTime>12-18-2012 10:53:56</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">SPECIAL</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>11</Index>
+    <GrayCode>14</GrayCode>
+    <Time>13000319636.3675</Time>
+    <CameraTime>12-18-2012 10:53:56</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">SPECIAL</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>12</Index>
+    <GrayCode>10</GrayCode>
+    <Time>13000319647.4990</Time>
+    <CameraTime>12-18-2012 10:54:07</CameraTime>
+    <GroupVars>
+      <GV Name="ASCCondition">SPECIAL</GV>
+    </GroupVars>
+  </Event>
+</Events>

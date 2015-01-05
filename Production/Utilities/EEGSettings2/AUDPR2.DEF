@@ -1,0 +1,44 @@
+[EEG Information]
+NumberOfChannels=1
+EEGChannels=
+AIBChannels=4,5,8,13,14,15,16,17,18,19,20,21,22,23
+AuxiliarySensors=1,6
+BipolarLeads=
+SampleRates=3
+AIBChannelsFile=H:\EEGSettings\Default.AIB
+BipolarLeadsFile=DH:\EEGSettings\efault.BL
+
+[OPTIONS]
+ActiviewConfig=\\DOPSBIOSEMI-PC\DOPS_Applications\Actiview605\Configuring\Generic.cfg
+
+IP=137.54.99.124
+Port=778
+BytesInTCPArray=24
+ChannelsSentByTCP=8
+TCPSamplesPerChannel=1
+
+;TCP subset
+;7 - None   (0)
+;6 - A1-A8  (8)
+;5 - A1-A16 (16)
+;4 - A1-A32 (32)
+;3 - A1-B32 (64)
+;2 - A1-D32 (128)
+;1 - A1-E32 (160)
+;0 - A1-H32 (256)
+TCPSubset= 6
+
+;The Addxxx will be either a 1 or a 0
+Add8EXElectrodes= 0
+Add7Sensors= 0
+Add9Jazz= 0
+Add32AIBChan= 0
+AddTriggerStatusChan= 0
+
+SampleRate=512
+ThrottledSampleRate=64
+ChannelsUsed=18, 19, 20, 21, 22, 23,
+
+;ChannelsUsed by the program
+[Experiment Section]
+UseTCPIP=1

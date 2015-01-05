@@ -1,0 +1,22 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  E:\PowerBasicClassicWindows10\Projects\Ross\RMSTest.bas   {101 total lines}
+Target compilation:  RMSTest.EXE
+Compile time:  0.1 seconds, at 121200 lines/minute
+
+1392 bytes compiled code, 5888 bytes RTLibrary,
+12 bytes string literals, and 2944 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 10752 bytes   Memory image: 8844 bytes.
+
+Component Files:
+----------------
+E:\PowerBasicClassicWindows10\Projects\Ross\RMSTest.bas
+
+
+Code Extracted:
+---------------
+<NONE>

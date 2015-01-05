@@ -1,0 +1,60 @@
+[EEG Information]
+NumberOfChannels=1
+EEGChannels=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+AIBChannels=
+AuxiliarySensors=
+BipolarLeads=
+SampleRates=3
+EEGChannelsFile=H:\EEGSettings3\Default.EEG
+AIBChannelsFile=H:\EEGSettings3\Default.AIB
+BipolarLeadsFile=H:\EEGSettings3\Default.BL
+ScreenLength=3
+
+[OPTIONS]
+ActiviewConfig=\\DOPSBIOSEMI-PC\DOPS_Applications\Actiview605\Configuring\Generic.cfg
+
+IP=137.54.99.124
+Port=778
+BytesInTCPArray=96
+ChannelsSentByTCP=32
+TCPSamplesPerChannel=1
+
+;TCP subset
+;7 - None   (0)
+;6 - A1-A8  (8)
+;5 - A1-A16 (16)
+;4 - A1-A32 (32)
+;3 - A1-B32 (64)
+;2 - A1-D32 (128)
+;1 - A1-E32 (160)
+;0 - A1-H32 (256)
+TCPSubset= 7
+
+;The Addxxx will be either a 1 or a 0
+Add8EXElectrodes= 0
+Add7Sensors= 0
+Add9Jazz= 0
+Add32AIBChan= 1
+AddTriggerStatusChan= 0
+
+SampleRate=512
+ThrottledSampleRate=64
+ChannelsUsed=
+
+;ChannelsUsed by the program
+[Experiment Section]
+UseTCPIP=1
+
+[CHANNELS INFO]
+ChooseScale= 0 
+ScaleFactor= 0 
+ChooseGain= 1 
+EEGGain= .0312 
+AIBGain= .0006 
+ChooseThreshold= 1 
+PreviousAverage= 12.5 
+LowerThreshold= 1
+UpperThreshold= 1
+ChannelsToProcess=1
+OtherGain= 1
+1=Chan1=FP1,GF= .0312,MS= 1
