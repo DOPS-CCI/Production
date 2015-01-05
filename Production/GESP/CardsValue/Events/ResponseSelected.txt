@@ -1,0 +1,4 @@
+Marks when subject makes selection.
+extrinsic,Ana1,rising,before,120000,0
+xxx,999,,,,
+

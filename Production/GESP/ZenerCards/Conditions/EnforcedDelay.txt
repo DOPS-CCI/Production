@@ -1,0 +1,3 @@
+Enforced delay between trials.
+var$,0,
+xxx, 999,

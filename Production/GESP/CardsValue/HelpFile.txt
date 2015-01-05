@@ -1,0 +1,23 @@
+This is one member of a family of "General ESP" (GESP) experiments prepared for the Westphal Lab using classical forced-choice testing techniques. The available target pools include Zener cards, playing cards (with colors, suits, numbers, or whole cards as the targets), a Schmidt-type 4-choice (gumball) machine, Brugmans-type square or rectangular arrays with selected cells as targets, and so on. Targets are selected trial-by-trial by a sophisticated pseudo-random algorithm (Mersenne Twister), and can be displayed or not, on a random basis, to an "agent" located in our remote satellite room. Number of trials per run and number of runs are set at run time. Results feedback is optionally available following each trial and/or completion of the session.
+
+This is a playing cards type forced-choice GESP experiment. It consists of 13 playing card with values 1 through 13 being displayed on the screen. The goal of each trial of the experiment is to deduce which playing card value that the computer's random algorithm has chosen. A hit is determined if the subject chose the same playing card value as the computer's random algorithm. The odds in this experiment of getting a hit for a particular trial are 1 in 13.
+
+
+
+Parameters to the experiment:
+
+Number of runs - how many runs of N trials would the subject like to attempt.
+
+Number of trials - (per run) of N trials would the subject like to attempt.
+
+Subject ID - a number between 0 and 9999 which represents an ID assigned by the experimenter to keep the subject's identification anonymous.
+
+Agent ID - a number between 0 and 9999 which represents an ID assigned by the experimenter to keep the agent's identification anonymous. If left blank, no agent will be used in the experiment.
+
+Display duration (ms) - [feedback] how long an image will be kept on the screen (in milliseconds).
+
+Enforced delay (ms) - A period of time (in milliseconds) that the subject wait before making a response.
+
+Feedback - determines if the subject will receive feedback (be shown the correct result) for each trial.
+
+Initial Comment - a place where the experimenter can place any text before the experiment starts. This comment is date and time stamped.

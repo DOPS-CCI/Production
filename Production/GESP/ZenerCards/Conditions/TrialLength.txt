@@ -1,0 +1,4 @@
+Time elapsed between target selected and response.
+var$,0,
+xxx, 999,
+

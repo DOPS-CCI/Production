@@ -1,0 +1,3 @@
+Marks when target is displayed on agent's display.
+extrinsic,Ana3,rising,after,90000,0
+xxx,999,,,,

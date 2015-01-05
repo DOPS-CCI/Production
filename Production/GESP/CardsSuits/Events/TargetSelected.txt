@@ -1,0 +1,3 @@
+Marks when target selected by computer.
+intrinsic,,,,,
+xxx,999,,,,

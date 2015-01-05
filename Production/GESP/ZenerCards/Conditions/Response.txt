@@ -1,0 +1,7 @@
+Subject response.
+CIRCLE,1,
+CROSS,2,
+WAVE,3,
+SQUARE,4,
+STAR,5,
+xxx,999,

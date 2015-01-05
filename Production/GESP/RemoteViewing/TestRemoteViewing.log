@@ -1,0 +1,22 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  E:\PowerBasicClassicWindows10\Projects\GESP\GenericGESP2\TestRemoteViewing.bas   {41 total lines}
+Target compilation:  TestRemoteViewing.EXE
+Compile time:  0.1 seconds, at 49200 lines/minute
+
+1376 bytes compiled code, 14484 bytes RTLibrary,
+184 bytes string literals, and 3092 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 19456 bytes   Memory image: 17760 bytes.
+
+Component Files:
+----------------
+E:\PowerBasicClassicWindows10\Projects\GESP\GenericGESP2\TestRemoteViewing.bas
+
+
+Code Extracted:
+---------------
+<NONE>

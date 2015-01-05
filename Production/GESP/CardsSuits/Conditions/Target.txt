@@ -1,0 +1,6 @@
+Target selected by computer.
+CLUBS,1,
+HEARTS,2,
+SPADES,3,
+DIAMONDS,4,
+xxx,999,

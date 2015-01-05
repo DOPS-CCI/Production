@@ -1,0 +1,4 @@
+Subject hit or miss target.
+Hit,2,
+Miss,1,
+xxx,999,
