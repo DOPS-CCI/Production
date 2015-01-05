@@ -1,0 +1,6 @@
+The GV is used for generic ASC experiments.
+GOINGUP, 1,
+INSTATE, 2,
+GOINGDOWN, 3,
+BASELINE, 4,
+xxx,999,

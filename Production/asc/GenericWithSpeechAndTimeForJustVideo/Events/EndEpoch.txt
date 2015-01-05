@@ -1,0 +1,4 @@
+Marks when subject end an ASC state.
+intrinsic,,,,,
+xxx,999,,,,
+

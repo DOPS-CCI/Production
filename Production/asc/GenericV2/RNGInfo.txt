@@ -1,0 +1,408 @@
+            gStandardRNGTCPIP = 2 'RNG
+
+            gSampleDuration = 1000   ' 1 second
+            gSampleSize = 50        '25 samp/sec but need 50 because were doing even/odd picks
+            REDIM gSamples(gSampleSize)
+
+            gRndCnt = 0
+
+            CALL StartExperiment()
+
+            CONTROL DISABLE globals.hdl.DlgController, %IDC_BUTTON_ControllerAudioChoices
+
+            GetPrivateProfileString("Subject Section", "FileFolder", "", subjDir, 255, filename)
+
+
+            gRNDFile = subjDir + "\" + LEFT$(EXPERIMENT.SessionDescription.HDRFile, LEN(EXPERIMENT.SessionDescription.HDRFile) - 4) + "-RNG.CSV"
+            gARSFile = subjDir + "\" + LEFT$(EXPERIMENT.SessionDescription.HDRFile, LEN(EXPERIMENT.SessionDescription.HDRFile) - 4)  + "-ANG.CSV"
+            OPEN gRNDFile FOR APPEND AS #900
+            OPEN gARSFile FOR APPEND AS #950
+            PRINT #900, "Sample Size " +   STR$((gSampleSize * 8) / 2) +  " bits"       ' We are actually getting 50 samples, but are using odd samples
+            PRINT #900, "Time, Trial Sec, Bitsum-ev, Cum Z, Type"
+            PRINT #950, "Sample Size " +   STR$((gSampleSize * 8) / 2) +  " bits"       ' We are actually getting 50 samples, but are using even samples
+            PRINT #950, "Time, Trial Sec, Bitsum-ev, Cum Z, Type"
+
+            'CALL StartTrial()
+            'gTimers.Add("SUBJECTDIODE", vTimers)
+            'SetMMTimerDuration("SUBJECTDIODE", globals.DiodeDelay)
+
+            gPauseFlag = %TRUE
+            gTimers.Add("DELAY", vTimers)
+            SetMMTimerDuration("DELAY", 5000)
+            SetMMTimerOnOff("DELAY", 1)    'turn on
+
+
+
+            gTimers.Add("GETRESULT", vTimers)
+            SetMMTimerDuration("GETRESULT", 1000)
+
+            'gTimers.Add("STARTTRIAL", vTimers)
+            'SetMMTimerDuration("STARTTRIAL", 5000)
+
+            gAccumNbrBits = 0
+            gAccumDev = 0
+            gOldZScore = 0
+            gSavedZScore = 0
+            gFirstHit = 1
+            'SetMMTimerOnOff("GETRESULT", 1)    'turn on
+            'SetMMTimerOnOff("STARTTRIAL", 1)    'turn on
+            'Start the timers
+            setMMTimerEventPeriodic(1, 0)
+
+SUB DoWorkForEachTick()
+    LOCAL x, sumOfBits AS LONG
+    LOCAL rndByte AS VARIANT
+    LOCAL bRndByte AS BYTE
+    LOCAL timing AS LONG
+
+    SELECT CASE gStandardRNGTCPIP
+        CASE 1  'Standard
+            EXIT SUB
+        CASE 2
+        CASE 3
+            EXIT SUB
+    END SELECT
+
+    IF (gPauseFlag = %TRUE) THEN
+        EXIT SUB
+    END IF
+
+
+    TRY
+        '**********************************************
+        '10 is a scaling factor since we can get 10
+        'random numbers per ms.
+        '**********************************************
+        timing = 10 / (gSampleSize / gSampleDuration)
+
+        '**********************************************
+        'should be able to get 10 random numbers per ms
+        'or 10,000 samples per second
+        '**********************************************
+        FOR x = 1 TO 10
+            INCR gBytesPerMillisecond
+            OBJECT CALL oApp.GetRandomByte() TO rndByte
+            bRndByte = VARIANT#(rndByte)
+            IF (gBytesPerMillisecond MOD timing = 0) THEN
+                INCR gRndCnt
+                INCR gByteCnt
+                'OBJECT CALL oApp.GetRandomByte() TO rndByte
+                'bRndByte = VARIANT#(rndByte)
+                'if (gRndCnt < gSampleSize) then
+                    gSamples(gRndCnt) = bRndByte
+                'end if
+
+
+                'gSamples(gRndCnt) = bRndByte
+                'gRndTotal = gRndTotal +  bRndByte
+                'gRndAvg = gRndTotal / gByteCnt
+
+                #DEBUG PRINT STR$(gRndCnt) + ", " + STR$(bRndByte)
+            END IF
+        NEXT x
+
+
+    CATCH
+        MSGBOX STR$(gRndCnt)
+        MSGBOX "Error generating random numbers. Error: " + ERROR$ + $CRLF + "Please close the application."
+        SetMMTimerOnOff("GETRESULT", 0)    'turn on
+        killMMTimerEvent()
+        DIALOG END globals.hdl.DlgSubject, -1
+    END TRY
+
+    '#debug print str$(gRndCnt) + ", " + str$(bRndByte)
+
+    'MSGBOX STR$(gRndTotal(0)) + ", " + STR$(gRndCnt(0))
+    'MSGBOX STR$(gRndTotal(1)) + ", " +  STR$(gRndCnt(1))
+
+END SUB
+
+
+SUB DoTimerWork(itemName AS WSTRING)
+    LOCAL lResult, rndJitter, subPtr  AS LONG
+    LOCAL x, totalBits, arsTotalBits AS LONG
+    LOCAL absAccumDev, sqrAccumNbrBits, zScore AS DOUBLE
+    LOCAL absARSAccumDev, sqrARSAccumNbrBits, zARSScore AS DOUBLE
+    LOCAL MyTime, MyTimeRNDFile, MyTimeARSFile AS IPOWERTIME
+    LOCAL now AS QUAD
+    LOCAL tempForFile, arsTempForFile AS STRING
+    GLOBAL gTimerTix AS LONG
+
+    SELECT CASE itemName
+        CASE "DELAY"
+            SetMMTimerOnOff("DELAY", 0)    'turn off
+            gPauseFlag = %FALSE
+            'PhotoDiodeOnOff(globals.hdl.DlgSubjectPhotoDiode,  1)
+            'SetMMTimerOnOff("SUBJECTDIODE", 1)    'turn on
+            CALL StartTrial()
+            gTimerSeconds = 0
+            gTimerMinutes = 0
+            SELECT CASE gStandardRNGTCPIP
+                CASE 1  'Standard
+                    SetMMTimerDuration("ENDINTENTION", globals.TrialLength)
+                    SetMMTimerOnOff("ENDINTENTION", 1)    'turn on
+                CASE 2  'RNG
+                    SetMMTimerDuration("GETRESULT", 1000)
+                    SetMMTimerOnOff("GETRESULT", 1)    'turn on
+                CASE 3
+            END SELECT
+        CASE "GETRESULT"
+            'accumulating time in seconds
+            INCR gRunningDuration
+            arsTempForFile = ""
+
+            arsTotalBits = 0
+            'use odd samples for alternate stream of random number
+            FOR x = 1 TO gSampleSize
+                IF (Odd(x) = 1) THEN
+                   #DEBUG PRINT "gSamples(x): " + STR$(gSamples(x))
+                   arsTotalBits += sumBitsOfByte(gSamples(x))
+                END IF
+            NEXT x
+
+            gARSAccumNbrBits += 200
+            '#DEBUG PRINT "gAccumNbrBits: " + STR$(gAccumNbrBits)
+
+            gARSAccumDev += (arsTotalBits - 100)
+            '#DEBUG PRINT "gAccumDev: " + STR$(gAccumDev)
+
+            absARSAccumDev = ABS(gARSAccumDev)
+            '#DEBUG PRINT "absAccumDev: " + STR$(absAccumDev)
+
+            sqrARSAccumNbrBits = SQR(gARSAccumNbrBits)
+            '#DEBUG PRINT "sqrAccumNbrBits: " + STR$(sqrAccumNbrBits)
+
+            zARSScore = absARSAccumDev * 1.0 / SQR((gARSAccumNbrBits * 1.0) / 4.0)
+            IF (absARSAccumDev > sqrARSAccumNbrBits) THEN
+                '#DEBUG PRINT "zScore: " + STR$(zScore)
+                IF (gARSFirstHit = 1) THEN
+                    gARSOldZScore = zARSScore
+                    gARSFirstHit = 0
+                ELSE
+                    gARSNewZScore = zARSScore
+                END IF
+            END IF
+
+            '#DEBUG PRINT "gOldZScore: " + STR$(gOldZScore)
+            '#DEBUG PRINT "gNewZScore: " + STR$(gNewZScore)
+
+            IF (gARSNewZScore > gARSOldZscore) THEN
+                gARSSavedZScore = gARSNewZScore
+                gARSOldZScore = gARSSavedZScore
+            END IF
+
+            '#DEBUG PRINT "gSavedZScore: " + STR$(gSavedZScore)
+            LET MyTimeARSFile = CLASS "PowerTime"
+            MyTimeARSFile.Now()
+            MyTimeARSFile.FileTime TO now
+
+            arsTempForFile = TIME$ + "," + STR$(gRunningDuration) + ","  + FORMAT$(arsTotalBits, "0000") + "," + FORMAT$(zARSScore, "00.0000") + ","
+
+            SELECT CASE globals.Target
+                CASE 1 'REST
+                    arsTempForFile += "REST"
+                CASE 2 'FOCUS
+                    IF (gHighOrLow = 1) THEN 'High
+                        arsTempForFile += "FOCUSHIGH"
+                    ELSE
+                        arsTempForFile += "FOCUSLOW"
+                    END IF
+                CASE ELSE
+                   arsTempForFile += "FOCUS"
+            END SELECT
+
+
+            IF (gARSFile <> "") THEN
+                PRINT #950, arsTempForFile
+            END IF
+
+
+            gRndCnt = 0
+            INCR gSampleCnt
+
+            tempForFile = ""
+
+            #DEBUG PRINT STR$(gRunningDuration) + " dur " + STR$(gTimerMinutes) + " mins " + STR$(gTimerSeconds) + " secs"
+
+            totalBits = 0
+            'use even samples for deviation processing
+            FOR x = 1 TO gSampleSize
+                IF (Odd(x) = 0) THEN
+                   '#debug print "gSamples(x): " + str$(gSamples(x))
+                   totalBits += sumBitsOfByte(gSamples(x))
+                END IF
+            NEXT x
+
+
+            '#DEBUG PRINT "totalBits: " + STR$(totalBits)
+
+            gAccumNbrBits += 200
+            '#DEBUG PRINT "gAccumNbrBits: " + STR$(gAccumNbrBits)
+
+            gAccumDev += (totalBits - 100)
+            '#DEBUG PRINT "gAccumDev: " + STR$(gAccumDev)
+
+            absAccumDev = ABS(gAccumDev)
+            '#DEBUG PRINT "absAccumDev: " + STR$(absAccumDev)
+
+            sqrAccumNbrBits = SQR(gAccumNbrBits)
+            '#DEBUG PRINT "sqrAccumNbrBits: " + STR$(sqrAccumNbrBits)
+
+            zScore = absAccumDev * 1.0 / SQR((gAccumNbrBits * 1.0) / 4.0)
+            IF (absAccumDev > sqrAccumNbrBits) THEN
+                '#DEBUG PRINT "zScore: " + STR$(zScore)
+                IF (gFirstHit = 1) THEN
+                    gOldZScore = zScore
+                    gFirstHit = 0
+                ELSE
+                    gNewZScore = zScore
+                END IF
+            END IF
+
+            '#DEBUG PRINT "gOldZScore: " + STR$(gOldZScore)
+            '#DEBUG PRINT "gNewZScore: " + STR$(gNewZScore)
+
+            IF (gNewZScore > gOldZscore) THEN
+                gSavedZScore = gNewZScore
+                gOldZScore = gSavedZScore
+            END IF
+
+            '#DEBUG PRINT "gSavedZScore: " + STR$(gSavedZScore)
+            LET MyTimeRNDFile = CLASS "PowerTime"
+            MyTimeRNDFile.Now()
+            MyTimeRNDFile.FileTime TO now
+
+            tempForFile = TIME$ + "," + STR$(gRunningDuration) + "," + FORMAT$(totalBits, "0000") + "," + FORMAT$(zScore, "00.0000") + ","
+
+            SELECT CASE globals.Target
+                CASE 1 'REST
+                    tempForFile += "REST"
+                CASE 2 'FOCUS
+                    IF (gHighOrLow = 1) THEN 'High
+                        tempForFile += "FOCUSHIGH"
+                    ELSE
+                        tempForFile += "FOCUSLOW"
+                    END IF
+                CASE ELSE
+                    tempForFile += "FOCUS"
+            END SELECT
+
+            IF (gRNDFile <> "") THEN
+                PRINT #900, tempForFile
+            END IF
+
+
+
+
+
+            '================================================================
+            '3/20/2014 changing from 3 minute fixed trial length to
+            'variable length trials.
+            '================================================================
+            IF (gRunningDuration MOD (globals.TrialLength / 1000) = 0) THEN
+            'IF (gTimerMinutes = 3) THEN 'every 60 sec/min * 3 min
+                'PhotoDiodeOnOff(globals.hdl.DlgSubjectPhotoDiode,  1)
+                'SetMMTimerOnOff("SUBJECTDIODE", 1)    'turn on
+
+                LET MyTime = CLASS "PowerTime"
+                MyTime.Now()
+                MyTime.FileTime TO now
+                   'iVPos = 200
+                globals.DioIndex = DIOWrite(globals.DioCardPresent, globals.BoardNum, globals.GreyCode)
+                globals.TargetTime = FORMAT$(now, "###################") 'TRIM$(STR$(now, 18))
+                EVENTSANDCONDITIONS(2).EvtName = "EndTrial"
+                EVENTSANDCONDITIONS(2).NbrOfGVars = 4
+                EVENTSANDCONDITIONS(2).Index = globals.DioIndex
+                EVENTSANDCONDITIONS(2).GrayCode = globals.GreyCode
+                EVENTSANDCONDITIONS(2).ClockTime = globals.TargetTime
+                EVENTSANDCONDITIONS(2).EventTime = PowerTimeDateTime(MyTime)
+
+                '**********************************************************************************************
+
+
+                SetMMTimerOnOff("GETRESULT", 0)    'turn off
+                gPauseFlag = %TRUE
+
+                '================================================================
+                '3/20/2014 adding a 5 - 15 second random delay per Ross Dunseath
+                '================================================================
+
+                gBetweenTrialFlag = 0
+                rndJitter = RND(5,10) * 1000
+                SetMMTimerDuration("DELAY", rndJitter)
+
+                'SetMMTimerDuration("DELAY", 6000)
+                SetMMTimerOnOff("DELAY", 1)    'turn on
+
+                'only play audio feedback on non-rest
+                SELECT CASE globals.Target
+                    CASE 2 'FOCUS
+                        IF (gSavedZScore = 0) THEN
+                            #DEBUG PRINT "NEUTRAL AUDIO"
+                            globals.Feedback = 1
+                            SHELL("PlayWaveAsynch.exe " + EXE.PATH$ + "\Sounds\VocodSynthSwish.wav")
+                        ELSE
+                            #DEBUG PRINT "UPBEAT AUDIO"
+                            globals.Feedback = 2
+                            SHELL("PlayWaveAsynch.exe " + EXE.PATH$ + "\Sounds\MusicalAccentTwinkle.wav")
+                        END IF
+                END SELECT
+
+                WriteOutEndTrialEvents()
+
+
+
+                CALL EndTrial()
+
+                'CALL StartTrial()
+                'SetMMTimerDuration("STARTTRIAL", 4000)
+                'SetMMTimerOnOff("STARTTRIAL", 1)    'turn on
+
+                gARSFirstHit = 1
+                gARSNewZScore = 0
+                gARSOldZScore = 0
+                gARSSavedZScore = 0
+                gARSAccumNbrBits = 0
+                gARSAccumDev = 0
+                gRunningDuration = 0
+
+                gFirstHit = 1
+                gNewZScore = 0
+                gOldZScore = 0
+                gSavedZScore = 0
+                gAccumNbrBits = 0
+                gAccumDev = 0
+            ELSE
+                SetMMTimerOnOff("GETRESULT", 1)    'turn on
+            END IF
+        CASE "ENDINTENTION"
+            'msgbox "here"
+            SetMMTimerOnOff("ENDINTENTION", 0)    'turn off
+            gPauseFlag = %TRUE
+
+            CALL EndTrial()
+
+            '================================================================
+            '3/20/2014 adding a 5 - 15 second random delay per Ross Dunseath
+            '================================================================
+            RANDOMIZE TIMER
+            rndJitter = RND(5,10) * 1000
+
+            SetMMTimerDuration("DELAY", rndJitter)
+            SetMMTimerOnOff("DELAY", 1)    'turn on
+        CASE "SUBJECTDIODE"
+            CONTROL SET TEXT globals.hdl.DlgSubject, %IDC_LABEL_TARGET, ""
+            'PhotoDiodeOnOff(globals.hdl.DlgSubjectPhotoDiode,  0)
+            'SetMMTimerOnOff("SUBJECTDIODE", 0)    'turn off
+    END SELECT
+END SUB
+
+FUNCTION PowerTimeDateTimeApp(MyTime AS IPOWERTIME) AS STRING
+    'This is a version for this application
+    LOCAL tempDateTime AS STRING
+
+    tempDateTime = TRIM$(FORMAT$(MyTime.Hour(), "00")) + ":" + TRIM$(FORMAT$(MyTime.Minute(), "00")) + _
+                                            ":" + TRIM$(FORMAT$(MyTime.Second(), "00")) + "." + TRIM$(FORMAT$(MyTime.MSecond(), "000"))
+    FUNCTION = tempDateTime
+
+END FUNCTION

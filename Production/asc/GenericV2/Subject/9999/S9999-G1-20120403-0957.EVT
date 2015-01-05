@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartEpoch">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>12977935064.8785</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">ON</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>12977935067.6706</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">ON</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <Time>12977935067.6746</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">OFF</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <Time>12977935069.4787</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">OFF</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>5</Index>
+    <GrayCode>7</GrayCode>
+    <Time>12977935069.4827</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">ON</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>6</Index>
+    <GrayCode>5</GrayCode>
+    <Time>12977935071.3509</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">ON</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>7</Index>
+    <GrayCode>4</GrayCode>
+    <Time>12977935071.3549</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">OFF</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>8</Index>
+    <GrayCode>12</GrayCode>
+    <Time>12977935076.8382</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">OFF</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>9</Index>
+    <GrayCode>13</GrayCode>
+    <Time>12977935076.8422</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">ON</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>10</Index>
+    <GrayCode>15</GrayCode>
+    <Time>12977935081.4464</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">ON</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>11</Index>
+    <GrayCode>14</GrayCode>
+    <Time>12977935081.4504</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">OFF</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>12</Index>
+    <GrayCode>10</GrayCode>
+    <Time>12977935084.3986</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">OFF</GV>
+    </GroupVars>
+  </Event>
+</Events>

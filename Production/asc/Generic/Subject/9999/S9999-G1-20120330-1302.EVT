@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartEpoch">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>12977600587.3616</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">ON</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>12977600591.9379</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">ON</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <Time>12977600591.9419</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">OFF</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <Time>12977600594.5380</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">OFF</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>5</Index>
+    <GrayCode>7</GrayCode>
+    <Time>12977600594.5430</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">RESIDUAL</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>6</Index>
+    <GrayCode>5</GrayCode>
+    <Time>12977600600.2664</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">RESIDUAL</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>7</Index>
+    <GrayCode>4</GrayCode>
+    <Time>12977600600.2704</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">SPONTANEOUS</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>8</Index>
+    <GrayCode>12</GrayCode>
+    <Time>12977600602.1065</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">SPONTANEOUS</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>9</Index>
+    <GrayCode>13</GrayCode>
+    <Time>12977600602.1105</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">ON</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>10</Index>
+    <GrayCode>15</GrayCode>
+    <Time>12977600603.2425</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">ON</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>11</Index>
+    <GrayCode>14</GrayCode>
+    <Time>12977600603.2465</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">OFF</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>12</Index>
+    <GrayCode>10</GrayCode>
+    <Time>12977600604.7776</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">OFF</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>13</Index>
+    <GrayCode>11</GrayCode>
+    <Time>12977600604.7816</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">RESIDUAL</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>14</Index>
+    <GrayCode>9</GrayCode>
+    <Time>12977600608.0338</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">RESIDUAL</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="SpecialEvent">
+    <Index>15</Index>
+    <GrayCode>8</GrayCode>
+    <Time>12977600608.0378</Time>
+    <GroupVars>
+      <GV Name="Comment"></GV>
+    </GroupVars>
+  </Event>
+</Events>

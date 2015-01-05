@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartEpoch">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>12959796383.7147</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">FOCUS10</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>12959796394.6583</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">FOCUS10</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <Time>12959796394.6643</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">FOCUS12</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <Time>12959796403.3148</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">FOCUS12</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>5</Index>
+    <GrayCode>7</GrayCode>
+    <Time>12959796403.3198</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">FOCUS27</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>6</Index>
+    <GrayCode>5</GrayCode>
+    <Time>12959796416.7226</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">FOCUS27</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="SpecialEvent">
+    <Index>7</Index>
+    <GrayCode>4</GrayCode>
+    <Time>12959796416.7276</Time>
+    <GroupVars>
+      <GV Name="Comment">seeing elephants</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>8</Index>
+    <GrayCode>12</GrayCode>
+    <Time>12959796428.5943</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">FOCUS21</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>9</Index>
+    <GrayCode>13</GrayCode>
+    <Time>12959796435.4267</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">FOCUS21</GV>
+    </GroupVars>
+  </Event>
+</Events>

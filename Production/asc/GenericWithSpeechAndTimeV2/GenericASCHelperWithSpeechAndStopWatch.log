@@ -1,0 +1,10 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Error 466 in F:\PowerBasicClassicWindows10\Projects\ASC\GenericWithSpeechAndTime\GenericASCHelperWithSpeechAndStopWatch.bas(189:011):  This name is already in use: HDLG
+  Line 189:     LOCAL hDlg  AS DWORD  
+
+A likely conflict is in F:\PowerBasicClassicWindows10\Projects\ASC\GenericWithSpeechAndTime\GenericASCHelperWithSpeechAndStopWatch.bas:
+  Line 186:     LOCAL hDlg AS DWORD  

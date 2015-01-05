@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartEpoch">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>12979163561.4814</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">SPECIAL</GV>
+    </GroupVars>
+  </Event>

@@ -1,0 +1,22 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  E:\PowerBasicClassicWindows10\Projects\ASC\GenericWithSpeechAndTimeForJustVideo\TestPowerTime.bas   {20 total lines}
+Target compilation:  TestPowerTime.EXE
+Compile time:  0.1 seconds, at 24000 lines/minute
+
+3104 bytes compiled code, 23812 bytes RTLibrary,
+44 bytes string literals, and 2708 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 31744 bytes   Memory image: 26564 bytes.
+
+Component Files:
+----------------
+E:\PowerBasicClassicWindows10\Projects\ASC\GenericWithSpeechAndTimeForJustVideo\TestPowerTime.bas
+
+
+Code Extracted:
+---------------
+<NONE>

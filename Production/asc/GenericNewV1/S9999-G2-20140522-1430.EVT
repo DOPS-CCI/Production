@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartEpoch">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <ClockTime>13044377995000000</ClockTime>
+    <EventTime>12 May 2014 14:19:55.000</EventTime>
+    <GroupVars>
+      <GV Name="ASCCondition">HandNear</GV>
+      <GV Name=""></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <ClockTime>13044378006000000</ClockTime>
+    <EventTime>12 May 2014 14:20:06.000</EventTime>
+    <GroupVars>
+      <GV Name="ASCCondition">HandNear</GV>
+      <GV Name=""></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <ClockTime>13044378017000000</ClockTime>
+    <EventTime>12 May 2014 14:20:17.000</EventTime>
+    <GroupVars>
+      <GV Name="ASCCondition">WheelStart</GV>
+      <GV Name=""></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <ClockTime>13044378031000000</ClockTime>
+    <EventTime>12 May 2014 14:20:31.000</EventTime>
+    <GroupVars>
+      <GV Name="ASCCondition">WheelStart</GV>
+      <GV Name=""></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>5</Index>
+    <GrayCode>7</GrayCode>
+    <ClockTime>13044378045000000</ClockTime>
+    <EventTime>12 May 2014 14:20:45.000</EventTime>
+    <GroupVars>
+      <GV Name="ASCCondition">HandAway</GV>
+      <GV Name=""></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>6</Index>
+    <GrayCode>5</GrayCode>
+    <ClockTime>13044378059000000</ClockTime>
+    <EventTime>12 May 2014 14:20:59.000</EventTime>
+    <GroupVars>
+      <GV Name="ASCCondition">HandAway</GV>
+      <GV Name=""></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>7</Index>
+    <GrayCode>4</GrayCode>
+    <ClockTime>13044378073000000</ClockTime>
+    <EventTime>12 May 2014 14:21:13.000</EventTime>
+    <GroupVars>
+      <GV Name="ASCCondition">WheelStop</GV>
+      <GV Name=""></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>8</Index>
+    <GrayCode>12</GrayCode>
+    <ClockTime>13044378085000000</ClockTime>
+    <EventTime>12 May 2014 14:21:25.000</EventTime>
+    <GroupVars>
+      <GV Name="ASCCondition">WheelStop</GV>
+      <GV Name=""></GV>
+    </GroupVars>
+  </Event>
+</Events>

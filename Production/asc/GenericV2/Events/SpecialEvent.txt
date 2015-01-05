@@ -1,0 +1,3 @@
+Marks when a special event is selected.
+intrinsic,,,,,
+xxx,999,,,,

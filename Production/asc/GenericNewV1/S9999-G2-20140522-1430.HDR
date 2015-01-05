@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Header>
+  <ExperimentDescription>
+    <SoftwareVersion>1.0.0.0</SoftwareVersion>
+    <Title>Generic ASC</Title>
+    <LongDescription></LongDescription>
+    <Experimenter>Frank Applin</Experimenter>
+    <Experimenter>Ross Dunseath</Experimenter>
+    <Status>16</Status>
+    <GroupVar>
+      <Name>ASCCondition</Name>
+      <Description>The GV is used for generic ASC experiments.</Description>
+      <GV Desc="HandNear">1</GV>
+      <GV Desc="WheelStart">2</GV>
+      <GV Desc="HandAway">3</GV>
+      <GV Desc="WheelStop">4</GV>
+    </GroupVar>
+    <Event Type="intrinsic">
+      <Name>StartEpoch</Name>
+      <Description>Marks when subject starts an ASC state.</Description>
+      <GroupVar Name="ASCCondition"/>
+    </Event>
+    <Event Type="intrinsic">
+      <Name>EndEpoch</Name>
+      <Description>Marks when subject end an ASC state.</Description>
+      <GroupVar Name="ASCCondition"/>
+    </Event>
+    <Event Type="intrinsic">
+      <Name>SpecialEvent</Name>
+      <Description>Marks when a special event is selected.</Description>
+      <GroupVar Name="Comment"/>
+    </Event>
+  </ExperimentDescription>
+  <SessionDescription>
+    <Date>05-22-2014</Date>
+    <Time>14:30</Time>
+    <Subject>9999</Subject>
+    <Technician>Allison Knee</Technician>
+    <Technician>Ed Modestino</Technician>
+    <BDFFile>S9999-G2-20140522-1430.BDF</BDFFile>
+    <EventFile>S9999-G2-20140522-1430.EVT</EventFile>
+    <ElectrodeFile>S9999-G2-20140522-1430.ETR</ElectrodeFile>
+    <Comment></Comment>
+  </SessionDescription>
+</Header>

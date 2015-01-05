@@ -1,0 +1,1 @@
+TaskKill /IM ASCGeneric.exe /F

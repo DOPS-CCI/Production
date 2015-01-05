@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartEpoch">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <Time>12978024988.8526</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">on</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <Time>12978025009.8608</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">on</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="StartEpoch">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <Time>12978025009.8728</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">off</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndEpoch">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <Time>12978025017.4282</Time>
+    <GroupVars>
+      <GV Name="ASCCondition">off</GV>
+    </GroupVars>
+  </Event>
+</Events>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Header>
+  <ExperimentDescription>
+    <SoftwareVersion>1.0.0.0</SoftwareVersion>
+    <Title>Generic ASC</Title>
+    <LongDescription></LongDescription>
+    <Experimenter>Frank Applin</Experimenter>
+    <Experimenter>Ross Dunseath</Experimenter>
+    <Status>16</Status>
+    <GroupVar>
+      <Name>ASCCondition</Name>
+      <Description>The GV is used for generic ASC experiments.</Description>
+      <GV Desc="FOCUS 3">1</GV>
+      <GV Desc="FOCUS 10">2</GV>
+      <GV Desc="FOCUS 12">3</GV>
+      <GV Desc="FOCUS 15">4</GV>
+      <GV Desc="FOCUS 21">5</GV>
+      <GV Desc="FOCUS 22">6</GV>
+      <GV Desc="FOCUS 23">7</GV>
+      <GV Desc="FOCUS 24">8</GV>
+      <GV Desc="FOCUS 25">9</GV>
+      <GV Desc="FOCUS 26">10</GV>
+      <GV Desc="FOCUS 27">11</GV>
+      <GV Desc="SPECIAL">12</GV>
+    </GroupVar>
+    <Event Type="intrinsic">
+      <Name>StartEpoch</Name>
+      <Description>Marks when subject starts an ASC state.</Description>
+      <GroupVar Name="ASCCondition"/>
+    </Event>
+    <Event Type="intrinsic">
+      <Name>EndEpoch</Name>
+      <Description>Marks when subject end an ASC state.</Description>
+      <GroupVar Name="ASCCondition"/>
+    </Event>
+    <Event Type="intrinsic">
+      <Name>SpecialEvent</Name>
+      <Description>Marks when a special event is selected.</Description>
+      <GroupVar Name="Comment"/>
+    </Event>
+  </ExperimentDescription>
+  <SessionDescription>
+    <Date>04-06-2012</Date>
+    <Time>09:36</Time>
+    <Subject>9999</Subject>
+    <Technician>Ed Modestino</Technician>
+    <Technician>Allison Knee</Technician>
+    <BDFFile>S9999-G1-20120406-0936.BDF</BDFFile>
+    <EventFile>S9999-G1-20120406-0936.EVT</EventFile>
+    <ElectrodeFile>S9999-G1-20120406-0936.ETR</ElectrodeFile>
+    <Comment>(04-06-2012 09:36:04)</Comment>
+  </SessionDescription>
+</Header>
