@@ -1,0 +1,444 @@
+#INCLUDE "Mersenne-Twister.inc"
+
+FUNCTION GreyCode (BYVAL n AS DWORD) AS DWORD
+    LOCAL temp AS DWORD
+    temp = n
+    SHIFT RIGHT temp, 1
+    n = n XOR temp
+    FUNCTION = n
+END FUNCTION
+
+FUNCTION ConfigurePorts(cardPresent AS LONG, portA AS LONG, OPTIONAL portB AS LONG) AS LONG
+    LOCAL lError AS LONG
+    LOCAL boardNum AS LONG
+
+    boardNum = 0
+    IF (cardPresent = 1) THEN
+        IF (portA = 1) THEN
+            SLEEP 1000
+            lError = cbDConfigPort(boardNum, %FIRSTPORTA, %DIGITALOUT)
+            IF (lError <> 0) THEN
+                MSGBOX "Error on cbDConfigPortA: Error# " + STR$(lError)
+                FUNCTION = -1
+                EXIT FUNCTION
+            END IF
+        END IF
+        IF (portB = 1) THEN
+            SLEEP 1000
+            lError = cbDConfigPort(boardNum, %FIRSTPORTB, %DIGITALOUT)
+            IF (lError <> 0) THEN
+                MSGBOX "Error on cbDConfigPortB: Error# " + STR$(lError)
+                FUNCTION = -1
+                EXIT FUNCTION
+            END IF
+        END IF
+        FUNCTION = boardNum
+    END IF
+END FUNCTION
+
+FUNCTION DIOWrite(cardPresent AS LONG, boardNum AS LONG, BYREF gCode AS DWORD) AS LONG
+    LOCAL lError AS LONG
+    LOCAL loValue, hiValue AS DWORD
+    GLOBAL dioCardPresent AS LONG
+    STATIC dioIndex AS LONG
+
+    INCR dioIndex
+    gCode = GreyCode(dioIndex)
+
+    loValue = LO(BYTE, gCode)
+    hiValue = HI(BYTE, gCode)
+
+    IF (cardPresent = 1) THEN
+      cbDOut(boardNum, %FIRSTPORTA, loValue)
+      IF (lError <> 0) THEN
+            MSGBOX "Error on cbDConfigPortA: Error# " + STR$(lError)
+            EXIT FUNCTION
+      END IF
+      cbDOut(boardNum, %FIRSTPORTB, hiValue)
+      IF (lError <> 0) THEN
+            MSGBOX "Error on cbDConfigPortB: Error# " + STR$(lError)
+            EXIT FUNCTION
+      END IF
+      FUNCTION = dioIndex
+    END IF
+END FUNCTION
+
+SUB DIOWriteInitialize(cardPresent AS LONG, boardNum AS LONG)
+    LOCAL lError AS LONG
+    LOCAL gCode AS DWORD
+    LOCAL loValue, hiValue AS DWORD
+    GLOBAL dioCardPresent AS LONG
+
+    gCode = 0
+
+    loValue = LO(DWORD, gCode)
+    hiValue = HI(DWORD, gCode)
+
+    IF (cardPresent = 1) THEN
+      cbDOut(boardNum, %FIRSTPORTA, loValue)
+      IF (lError <> 0) THEN
+            MSGBOX "Error on cbDConfigPortA: Error# " + STR$(lError)
+            EXIT SUB
+      END IF
+      cbDOut(boardNum, %FIRSTPORTB, hiValue)
+      IF (lError <> 0) THEN
+            MSGBOX "Error on cbDConfigPortB: Error# " + STR$(lError)
+            EXIT SUB
+      END IF
+    END IF
+END SUB
+
+SUB shuffle(BYREF arr AS INTEGER, BYREF numOfElems AS DWORD)
+    LOCAL k, n, temp AS INTEGER
+    DIM arr (numOfElems) AS INTEGER AT VARPTR(arr)
+
+    n = numOfElems
+    WHILE (n > 1)
+      k = RND(0, n - 1)
+      n = n - 1
+      temp = arr(n)
+      arr(n) = arr(k)
+      arr(k) = temp
+    WEND
+END SUB
+
+SUB shuffleLongs(BYREF arr AS LONG, BYREF numOfElems AS DWORD)
+    LOCAL k, n, temp AS LONG
+    DIM arr (numOfElems) AS LONG AT VARPTR(arr)
+
+    n = numOfElems
+    WHILE (n > 1)
+      k = RND(0, n - 1)
+      n = n - 1
+      temp = arr(n)
+      arr(n) = arr(k)
+      arr(k) = temp
+    WEND
+END SUB
+
+FUNCTION GetTimeWithSeconds() AS STRING
+    LOCAL temp AS STRING
+    LOCAL nano AS QUAD
+    LOCAL secs AS DOUBLE
+
+    temp = GetTimeWithNano()
+    nano = VAL(temp)
+
+    secs = nano / 10000000
+
+    FUNCTION = STR$(secs, 18)
+
+END FUNCTION
+
+FUNCTION GetTimeWithNano() AS STRING
+    LOCAL TimeStart AS QUAD
+
+    GetSystemTimeAsFileTime BYVAL VARPTR(TimeStart)
+
+   FUNCTION = STR$(TimeStart, 18)
+END FUNCTION
+
+FUNCTION GetTimeWithMilli() AS STRING
+    LOCAL systime AS SYSTEMTIME
+
+    GetSystemTime(systime)
+
+    FUNCTION = TIME$ + "." + FORMAT$(systime.wMilliseconds, "0000")
+END FUNCTION
+
+
+FUNCTION CustomMessageBox(screen AS INTEGER, txt AS STRING, title AS STRING) AS LONG
+    LOCAL hDlg AS DWORD
+    LOCAL lResult AS LONG
+
+
+    DIALOG FONT "arial", 18, 0, 0
+    DIALOG NEW PIXELS, hDlg, title, EXPERIMENT.Misc.Screen(screen).x, EXPERIMENT.Misc.Screen(screen).y, 490, 330, %WS_OVERLAPPEDWINDOW, 0 TO hDlg
+    DIALOG SET LOC hDlg, EXPERIMENT.Misc.Screen(screen).x + (EXPERIMENT.Misc.Screen(screen).xMax - 490) / 2, EXPERIMENT.Misc.Screen(screen).y + (EXPERIMENT.Misc.Screen(screen).yMax - 330) / 2
+    CONTROL ADD LABEL, hDlg, 9910, txt, 54, 49, 364, 140, %SS_CENTER,
+    CONTROL ADD IMAGEX, hDlg, 9914, "BITMAP_OKBUTTON", 208, 324, 80, 30,,,
+    DIALOG SHOW MODAL hDlg, CALL cbCustomMessageBox() TO lResult&
+
+    FUNCTION = lResult
+
+END FUNCTION
+
+FUNCTION TimedMessageBox(screen AS INTEGER, txt AS STRING, title AS STRING) AS LONG
+    LOCAL hDlg AS DWORD
+    LOCAL lResult AS LONG
+
+
+    DIALOG FONT "arial", 18, 0, 0
+    DIALOG NEW PIXELS, hDlg, title, EXPERIMENT.Misc.Screen(screen).x, EXPERIMENT.Misc.Screen(screen).y, 490, 330, %WS_OVERLAPPEDWINDOW, 0 TO hDlg
+    DIALOG SET LOC hDlg, EXPERIMENT.Misc.Screen(screen).x + (EXPERIMENT.Misc.Screen(screen).xMax - 490) / 2, EXPERIMENT.Misc.Screen(screen).y + (EXPERIMENT.Misc.Screen(screen).yMax - 330) / 2
+    CONTROL ADD LABEL, hDlg, 9910, txt, 54, 49, 364, 140, %SS_CENTER,
+    'CONTROL ADD IMAGEX, hDlg, 9914, "BITMAP_OKBUTTON", 208, 224, 80, 30,,,
+    DIALOG SHOW MODAL hDlg, CALL cbTimedMessageBox() TO lResult&
+
+    FUNCTION = lResult
+
+END FUNCTION
+
+FUNCTION ModelessMessageBox(screen AS INTEGER, txt AS STRING, title AS STRING, BYREF hDlg AS DWORD) AS LONG
+    LOCAL lResult AS LONG
+
+
+    DIALOG FONT "arial", 18, 0, 0
+    DIALOG NEW PIXELS, hDlg, title, EXPERIMENT.Misc.Screen(screen).x, EXPERIMENT.Misc.Screen(screen).y, 490, 330, %WS_OVERLAPPEDWINDOW, 0 TO hDlg
+    DIALOG SET LOC hDlg, EXPERIMENT.Misc.Screen(screen).x + (EXPERIMENT.Misc.Screen(screen).xMax - 490) / 2, EXPERIMENT.Misc.Screen(screen).y + (EXPERIMENT.Misc.Screen(screen).yMax - 330) / 2
+    CONTROL ADD LABEL, hDlg, 9910, txt, 54, 49, 364, 140, %SS_CENTER,
+    'CONTROL ADD IMAGEX, hDlg, 9914, "BITMAP_OKBUTTON", 208, 224, 80, 30,,,
+    DIALOG SHOW MODELESS hDlg,  TO lResult&
+
+    FUNCTION = lResult
+
+END FUNCTION
+
+CALLBACK FUNCTION cbCustomMessageBox() AS LONG
+   SELECT CASE CB.MSG
+        CASE %WM_LBUTTONUP
+            CALL FindOKButton(CB.HNDL, CB.LPARAM)
+        CASE %WM_COMMAND
+            IF CB.CTLMSG = %BN_CLICKED THEN
+            END IF
+    END SELECT
+END FUNCTION
+
+CALLBACK FUNCTION cbTimedMessageBox() AS LONG
+   SELECT CASE CB.MSG
+        CASE %WM_INITDIALOG
+            STATIC TimerId AS LONG
+            TimerId = SetTimer(CBHNDL, 1, 5000, 0) 'set a 5-second timer
+        CASE %WM_LBUTTONUP
+            CALL FindOKButton(CB.HNDL, CB.LPARAM)
+        CASE %WM_COMMAND
+            IF CB.CTLMSG = %BN_CLICKED THEN
+            END IF
+        CASE %WM_TIMER 'will be triggered when timer ticks
+            IF CBWPARAM = TimerId THEN
+               DIALOG END CBHNDL
+            END IF
+         CASE %WM_DESTROY 'kill timer on exit (important)
+            IF TimerId THEN KillTimer CBHNDL, TimerId
+    END SELECT
+END FUNCTION
+
+SUB FindOKButton(hdl AS DWORD, lParam AS DWORD)
+     LOCAL l, wide, high, x, y, result, xMouse, yMouse AS LONG
+
+    'Response selected
+     CONTROL GET LOC hdl, 9914 TO x, y
+     CONTROL GET CLIENT hdl, 9914 TO wide, high
+     xMouse = LO(WORD, lParam)
+     yMouse = HI(WORD, lParam)
+     IF (xMouse >= x) AND (xMouse <= x + wide) THEN
+         IF (yMouse >= y) AND (yMouse <= y + high) THEN
+            DIALOG END hdl, 1
+            DIALOG FONT DEFAULT "MS Sans Serif", 8
+         END IF
+     END IF
+END SUB
+
+
+FUNCTION CreatePhotoDiodeDDialog(x AS INTEGER, y AS INTEGER) AS LONG
+    IF (LTRIM$(LCASE$(EXPERIMENT.Misc.DigitalIOCard)) <> "yes") THEN
+        EXIT FUNCTION
+    END IF
+
+    LOCAL hDlg AS LONG
+
+    DIALOG NEW PIXELS, 0, "", x, y, 60, 34, %WS_POPUP OR %WS_BORDER, %WS_EX_TOPMOST TO hDlg
+    CONTROL ADD IMAGE, hDlg, 9977, "BITMAP_PDB", 3, 3, 58, 31,,,
+    DIALOG SHOW MODELESS hDlg
+
+    FUNCTION = hDlg
+END FUNCTION
+
+SUB PhotoDiodeOnOff(dlg AS LONG,  flag AS INTEGER)
+    IF (LTRIM$(LCASE$(EXPERIMENT.Misc.DigitalIOCard)) <> "yes") THEN
+        EXIT SUB
+    END IF
+
+    IF (flag = 1) THEN
+        CONTROL SET IMAGE dlg, 9977, "BITMAP_PDW"
+    ELSE
+        CONTROL SET IMAGE dlg, 9977, "BITMAP_PDB"
+    END IF
+    CONTROL REDRAW dlg, 9977
+END SUB
+
+
+
+SUB delay(milliseconds AS LONG)
+    LOCAL tickCount, qDelay AS QUAD
+
+    tickCount = GetTickCount()
+    qDelay = tickCount + milliseconds
+    WHILE (GetTickCount()  < qDelay)
+    WEND
+END SUB
+
+SUB delaySeconds(seconds AS DOUBLE)
+    LOCAL timeEllapsed AS QUAD
+    LOCAL timeStart AS QUAD
+    LOCAL timeDelta AS QUAD
+    LOCAL timeToWait AS QUAD
+
+    QueryPerformanceFrequency(timeDelta)
+    QueryPerformanceCounter (timeStart)
+
+    timeToWait = timeDelta * seconds
+
+    timeEllapsed = timeStart
+
+    WHILE(( timeEllapsed - timeStart ) < timeToWait )
+        QueryPerformanceCounter(timeEllapsed)
+    WEND
+END SUB
+
+SUB delayMilliSeconds(milliseconds AS DOUBLE)
+    LOCAL timeEllapsed AS QUAD
+    LOCAL timeStart AS QUAD
+    LOCAL timeDelta AS QUAD
+    LOCAL timeToWait AS QUAD
+
+    QueryPerformanceFrequency(timeDelta)
+
+    timeToWait = timeDelta * milliseconds/1000.0
+
+    QueryPerformanceCounter (timeStart)
+
+    timeEllapsed = timeStart
+
+    WHILE( ( timeEllapsed - timeStart ) < timeToWait )
+        QueryPerformanceCounter(timeEllapsed)
+    WEND
+END SUB
+
+SUB delayMicroSeconds(microseconds AS DOUBLE)
+    LOCAL timeEllapsed AS QUAD
+    LOCAL timeStart AS QUAD
+    LOCAL timeDelta AS QUAD
+    LOCAL timeToWait AS QUAD
+
+    QueryPerformanceFrequency(timeDelta)
+
+    timeToWait = timeDelta * microseconds / 1000000.0
+
+    QueryPerformanceCounter (timeStart)
+
+    timeEllapsed = timeStart
+
+    WHILE( ( timeEllapsed - timeStart ) < timeToWait )
+        QueryPerformanceCounter(timeEllapsed)
+    WEND
+END SUB
+
+
+SUB randomDelayMilliSeconds(minMs AS LONG, maxMs AS LONG)
+    LOCAL tickCount, qDelay AS QUAD
+    LOCAL rndNbr AS LONG
+
+    rndNbr = RND(minMs, maxMs)
+    'rndNbr = RandomNumber2(minMs, maxMs)
+
+    delayMilliSeconds(CDBL(rndNbr))
+END SUB
+
+FUNCTION isNumeric(str AS ASCIIZ * 255) AS LONG
+    LOCAL result AS LONG
+    LOCAL temp AS STRING
+
+    temp = str
+    result = VERIFY(temp, "0123456789")
+    IF (result = 0) THEN
+        FUNCTION = 1
+    ELSE
+        MSGBOX "This must be a number."
+        FUNCTION = 0
+    END IF
+END FUNCTION
+
+FUNCTION Odd(num AS LONG) AS LONG
+    'return 1 if odd
+    IF ((num MOD 2) = 0) THEN
+        FUNCTION = 0
+    ELSE
+        FUNCTION = 1
+    END IF
+END FUNCTION
+
+FUNCTION findLargest(arrChannel() AS DOUBLE) AS INTEGER
+    LOCAL location, i, n AS LONG
+    LOCAL largest_so_far AS DOUBLE
+
+    location = 0
+
+    largest_so_far = arrChannel(0)
+    n = UBOUND(arrChannel)
+
+    i = 1
+    WHILE (i < n)
+        IF (arrChannel(i) > largest_so_far) THEN
+            largest_so_far = arrChannel(i)
+            location = i
+        END IF
+        i = i + 1
+    WEND
+
+    FUNCTION  = location + 1
+END FUNCTION
+
+SUB StartRenameAndMoveFiles()
+    IF (Experiment.Misc.Mode <> "demo") THEN
+        SHELL("\\DOPSEXPERIMENT\Current_Applications\Utilities\RenameAndMoveFiles\RenameAndCopyFiles.exe", 1)
+    END IF
+END SUB
+
+SUB StartModifyExpAndTech(filename AS ASCIIZ * 255)
+    IF (Experiment.Misc.Mode <> "demo") THEN
+        SHELL "\\DOPSEXPERIMENT\Current_Applications\Utilities\ModifyExpAndTech\ModifyExpAndTech.exe " + filename, 1
+    END IF
+END SUB
+
+SUB StartupActiview()
+    IF (Experiment.Misc.Mode <> "demo") THEN
+        CALL DeleteMacroTextFiles()
+        OPEN "\\DOPSBIOSEMI-PC\DOPS_Experiments\Semaphores\Create\MacroValues.txt" FOR OUTPUT AS #1
+        PRINT #1, "GESP.cfg,";
+        PRINT #1, EXPERIMENT.SessionDescription.Subject + ",";
+        PRINT #1, "Some kind of description.,";
+        PRINT #1, EXPERIMENT.SessionDescription.BDFFile
+        CLOSE #1
+
+        FILECOPY "\\DOPSBIOSEMI-PC\DOPS_Experiments\Semaphores\Create\MacroValues.txt", "X:\Semaphores\ActiviewStart\MacroValues.txt"
+    END IF
+END SUB
+
+SUB StartBiosemiRecord()
+    IF (Experiment.Misc.Mode <> "demo") THEN
+        OPEN "\\DOPSBIOSEMI-PC\DOPS_Experiments\Semaphores\Create\MacroValues2.txt" FOR OUTPUT AS #1
+        PRINT #1, ""
+        CLOSE #1
+
+        FILECOPY "\\DOPSBIOSEMI-PC\DOPS_Experiments\Semaphores\Create\MacroValues2.txt", "X:\Semaphores\BiosemiRecord\MacroValues2.txt"
+    END IF
+END SUB
+
+SUB DeleteMacroTextFiles()
+    'IF ISFILE("\\DOPSBIOSEMI-PC\DOPS_Experiments\Semaphores\Create\MacroValues.txt") THEN
+        KILL "\\DOPSBIOSEMI-PC\DOPS_Experiments\Semaphores\Create\MacroValues.txt"
+    'END IF
+    'IF ISFILE(\\DOPSBIOSEMI-PC\DOPS_Experiments\Semaphores\Create\MacroValues2.txt") THEN
+        KILL "\\DOPSBIOSEMI-PC\Dops_Experiments\Semaphores\Create\MacroValues2.txt"
+    'END IF
+    'IF ISFILE("\\DOPSBIOSEMI-PC\DOPS_Experiments\Semaphores\ActiviewStart\MacroValues.txt") THEN
+        KILL "\\DOPSBIOSEMI-PC\DOPS_Experiments\Semaphores\ActiviewStart\MacroValues.txt"
+    'END IF
+    'IF ISFILE("\\DOPSBIOSEMI-PC\DOPS_Experiments\Semaphores\BiosemiRecord\MacroValues2.txt") THEN
+        KILL "\\DOPSBIOSEMI-PC\Dops_Experiments\Semaphores\BiosemiRecord\MacroValues2.txt"
+    'END IF
+    'IF ISFILE("\\DOPSBIOSEMI-PC\DOPS_Experiments\BDFFiles\" + EXPERIMENT.SessionDescription.BDFFile) THEN
+        KILL "\\DOPSBIOSEMI-PC\DOPS_Experiments\BDFFiles\" + EXPERIMENT.SessionDescription.BDFFile
+    'END IF
+END SUB

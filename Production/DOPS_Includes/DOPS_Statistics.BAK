@@ -1,0 +1,146 @@
+ FUNCTION psiStdDev(nbrOfTrials AS LONG, p AS DOUBLE) AS DOUBLE
+    LOCAL N, q AS DOUBLE
+
+    n = NbrOfTrials
+    q = 1 - p
+    FUNCTION = SQR((N * p * q))
+END FUNCTION
+
+FUNCTION PsiZ(nbrOfTrials AS LONG, nbrOfHits AS LONG, p AS DOUBLE) AS DOUBLE
+    LOCAL N, mu, temp AS DOUBLE
+    LOCAL rawDev, absRawDev, zScore AS DOUBLE
+    LOCAL x, i AS INTEGER
+
+
+    '*******************************
+    'p coming in is the probability
+    'of a hit on each trial
+    '*******************************
+    N = 0 : mu = 0 : temp = 0
+    rawDev = 0 : absRawDev = 0 : zScore = 0
+    x = 0
+
+    '********************************
+    'Number of trials N
+    '********************************
+    N = NbrOfTrials
+
+    'looking for number of hits - defined as 2
+    x = nbrOfHits
+
+    '**************************
+    'expected value mu = N * p
+    '**************************
+    mu = N * p
+
+    '***********************************
+    'Raw deviation = x - mu where x is
+    'the observed number of hits
+    '***********************************
+    rawDev = x - mu
+
+    '**************************************************
+    'The quantity of 0.5 is applied so as to reduce the
+    'absolute size of the raw deviation; that is,
+    'subtract 0.5 if the deviation is positive and
+    'add 0.5 if the deviation is negative (i.e. if
+    'you observed fewer hits than expected by chance
+    '**************************************************
+
+    absRawDev = ABS(rawDev)
+
+    IF (absRawDev > 0.5) THEN
+        IF (rawDev > 0) THEN
+            temp = rawDev - 0.5
+        ELSE
+            temp = rawDev + 0.5
+        END IF
+    ELSE
+        temp = rawDev
+    END IF
+
+    '**************************************************
+    'Then divide the adjusted deviation by the standard
+    'deviation to get the final z-score.
+    '**************************************************
+    zScore = temp / psiStdDev(NbrOfTrials, p)
+
+    FUNCTION = zScore
+END FUNCTION
+
+FUNCTION gauCumDis(z AS DOUBLE) AS DOUBLE
+    LOCAL x, p, pi, temp AS DOUBLE
+
+    x = ABS(z)
+    IF (x > 5.5) THEN
+        pi = 4.0 * ATN(1.0)
+        p = SQR(2.0 / pi) * EXP(-(x * x / 2.0 + 0.94 / (x * x))) / x
+    ELSE
+        p = EXP(-((83.0 * x + 351.0) * x + 562.0) * x / (703.0 + 165.0 * x))
+    END IF
+
+    temp = p / 2.0
+
+    IF (z > 0.0) THEN
+        temp = 1.0 - temp
+    END IF
+
+    FUNCTION = temp
+END FUNCTION
+
+FUNCTION NormCumDist(x AS DOUBLE) AS DOUBLE
+    LOCAL b1, b2, b3, b4, b5, p, c, t AS DOUBLE
+
+    b1 = 0.319381530
+    b2 = -0.356563782
+    b3 = 1.781477937
+    b4 = -1.821255978
+    b5 = 1.330274429
+    p = 0.2316419
+    c = 0.39894228
+
+    IF (x >= 0.0) THEN
+        t = 1.0 / (1.0 + p * x)
+        FUNCTION = (1.0 - c * EXP(-x * x / 2.0) * t * (t * (t * (t * (t * b5 + b4) + b3) + b2) + b1))
+    ELSE
+        t = 1.0 / (1.0 - p * x)
+        FUNCTION = (c * EXP(-x * x / 2.0) * t * (t * (t * (t * (t * b5 + b4) + b3) + b2) + b1))
+    END IF
+END FUNCTION
+
+FUNCTION displayStatisticsResults(nbrOfTrials AS LONG, nbrOfHits AS LONG) AS STRING
+    LOCAL n AS INTEGER
+    LOCAL x, psiP, mu, stdDev, Z, P, NCD AS DOUBLE
+    LOCAL msg AS STRING
+
+    'N - number of trials
+    N = nbrOfTrials
+
+    'x - number of hits
+    x = nbrOfHits
+
+    'p = 1 / NbrOfTargets
+    psiP = 1.0 / EXPERIMENT.Misc.NbrOfTargets
+
+    'mu = N * P
+    mu = N * psiP
+
+    'Std Dev
+    stdDev = psiStdDev(N, psiP)
+
+    'Z
+    Z = PsiZ(N, nbrOfHits, psiP)
+
+    'P
+    P = gauCumDis(Z)
+
+    NCD = NormCumDist(Z)
+
+    msg = "Number of trials (N): " + STR$(N) + $CRLF + _
+          "Number of hits (x): " + STR$(nbrOfHits) + $CRLF + _
+          "Expected number of hits (mu): " + FORMAT$(mu, "0.00")
+
+
+
+   FUNCTION = msg
+END FUNCTION

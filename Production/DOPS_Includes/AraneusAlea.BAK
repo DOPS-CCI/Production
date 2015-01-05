@@ -1,0 +1,33 @@
+' ------------------------------------------------------------
+' Library File:      C:\Program Files\Araneus\Alea\ActiveX Control\alea.tlb
+' ------------------------------------------------------------
+' ProgID:            Araneus.Alea.1
+' Interface Name:    AraneusAlea (Control)
+'
+' Interface Prefix:  Araneus
+' ------------------------------------------------------------
+
+$PROGID_AraneusAlea1 = "Araneus.Alea.1"
+
+
+INTERFACE DISPATCH AraneusAlea   ' (Control)
+    MEMBER CALL OPEN<&H00000001>()
+    MEMBER CALL CLOSE<&H00000002>()
+    MEMBER CALL GetRandomByte<&H00000003>() AS BYTE
+    MEMBER CALL GetRandomBytes<&H00000004>(IN length AS DWORD<&H00000000>, OUT array AS VARIANT<&H00000001>)
+    MEMBER CALL GetRandomWord<&H00000005>() AS DWORD
+    MEMBER CALL GetRandomWords<&H00000006>(IN length AS DWORD<&H00000000>, OUT array AS VARIANT<&H00000001>)
+    MEMBER CALL GetRandomDouble<&H00000007>() AS DOUBLE
+    MEMBER CALL GetRandomDoubles<&H00000008>(IN length AS DWORD<&H00000000>, OUT array AS VARIANT<&H00000001>)
+END INTERFACE
+
+' Interface Name  : Int__DAleaEvents
+' Description     : Event interface for Alea (not used)
+' ClassID         : $CLSID_AleaLib_Event__DAleaEvents
+' Version ProgID  : $PROGID_AleaLib_Alea1
+CLASS Class_Int__DAleaEvents $CLSID_AleaLib_Event__DAleaEvents AS EVENT
+    INTERFACE Int__DAleaEvents $IID_AleaLib_Int__DAleaEvents
+        INHERIT IDISPATCH
+
+    END INTERFACE
+END CLASS

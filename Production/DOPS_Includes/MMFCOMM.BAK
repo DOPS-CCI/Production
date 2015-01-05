@@ -1,0 +1,233 @@
+' mailslots don't work properly on 9x. sometimes messages are lost, sometimes messages are duplicated.
+' i doubt they don't even work 100% properly on 2k/xp.
+' this emulates our mailslot functionality using memory-mapped files.
+
+%MMF_TOTAL = 1024 * 1024 * 20       ' 20MB buffer
+%MMF_HEADER = 4                     ' 4 bytes length
+%MMF_SIZE = 1024 * 1024 * 20 - 4
+%MMF_TIMEOUT = 10000                ' 10 sec.
+%MMF_SLEEP_WRITE = 10               ' sleep time waiting for space inside mmf
+
+TYPE MMFChannelType
+    hSection AS LONG        ' mmf handle
+    pSection AS LONG PTR    ' mmf pointer
+
+    hMutex AS LONG          ' access mutex
+
+END TYPE
+
+FUNCTION CreateMMFChannel(BYVAL sName AS STRING, BYREF mmfChannel AS MMFChannelType) AS LONG
+    ' creates a new mmf channel with name sName for receiving data (server-side)
+    ' returns nonzero on success, or zero if fails.
+    ' returns handle, pointer and mutex handle in mmfChannel struct.
+
+    LOCAL hSection AS LONG
+    LOCAL pSection AS LONG PTR
+
+    LOCAL hMutex AS LONG
+
+    ' create file mapping in pagefile.
+    hSection = CreateFileMapping(%INVALID_HANDLE_VALUE, BYVAL %NULL, %PAGE_READWRITE, 0, %MMF_TOTAL, "mmf_" + sName)
+
+    IF hSection = %NULL THEN
+        ' failed. exit
+        FUNCTION = 0
+        EXIT FUNCTION
+
+    END IF
+
+    ' map file into memory
+    pSection = MapViewOfFile(hSection, %FILE_MAP_ALL_ACCESS, 0, 0, %MMF_TOTAL)
+
+    IF pSection = %NULL THEN
+        ' failed. close & exit
+        CloseHandle hSection
+
+        FUNCTION = 0
+        EXIT FUNCTION
+
+    END IF
+
+    ' set length dword to zero
+    @pSection = 0
+
+    ' create access mutex
+    hMutex = CreateMutex(BYVAL %NULL, %FALSE, "mutex_" + sName)
+
+    IF hMutex = %NULL THEN
+        ' failed. close & exit
+        UnmapViewOfFile pSection
+        CloseHandle hSection
+
+        FUNCTION = 0
+        EXIT FUNCTION
+
+    END IF
+
+    ' fill structure
+    mmfChannel.hSection = hSection
+    mmfChannel.pSection = pSection
+    mmfChannel.hMutex = hMutex
+
+    ' return success
+    FUNCTION = -1
+END FUNCTION
+
+FUNCTION OpenMMFChannel(BYVAL sName AS STRING, BYREF mmfChannel AS MMFChannelType) AS LONG
+    ' similar to CreateMMFChannel(), but opens an existing mmf channel for writing data (client-side).
+
+    LOCAL buf AS ASCIIZ * 1024
+
+    LOCAL hSection AS LONG
+    LOCAL pSection AS LONG
+
+    LOCAL hMutex AS LONG
+
+    ' open file mapping
+    hSection = OpenFileMapping(%FILE_MAP_ALL_ACCESS, %FALSE, "mmf_" + sName)
+
+    IF hSection = %NULL THEN
+        ' failed. exit
+        FUNCTION = 0
+        EXIT FUNCTION
+
+    END IF
+
+    ' map file into memory
+    pSection = MapViewOfFile(hSection, %FILE_MAP_ALL_ACCESS, 0, 0, %MMF_TOTAL)
+
+    IF pSection = %NULL THEN
+        ' failed. close & exit
+        CloseHandle hSection
+
+        FUNCTION = 0
+        EXIT FUNCTION
+
+    END IF
+
+    ' open access mutex
+    hMutex = OpenMutex(%MUTEX_MODIFY_STATE, %FALSE, "mutex_" + sName)
+
+    IF hMutex = %NULL THEN
+        ' failed. close & exit
+        UnmapViewOfFile pSection
+        CloseHandle hSection
+
+        FUNCTION = 0
+        EXIT FUNCTION
+
+    END IF
+
+    ' fill structure
+    mmfChannel.hSection = hSection
+    mmfChannel.pSection = pSection
+    mmfChannel.hMutex = hMutex
+
+    ' return success
+    FUNCTION = -1
+END FUNCTION
+
+FUNCTION WriteMMFChannel(BYREF mmfChannel AS MMFChannelType, BYVAL pData AS LONG PTR, BYVAL lDataLen AS LONG) AS LONG
+    ' posts data into the mmf channel specified by mmfChannel. this is done by waiting for the synchronization event,
+    ' and then adding the data at the end of the mmf.
+
+    LOCAL lLen AS LONG
+
+    IF lDataLen > %MMF_SIZE THEN
+        ' message too large. exit
+        FUNCTION = 0
+        EXIT FUNCTION
+
+    END IF
+
+    ' wait-for-space loop
+    DO
+        WaitForSingleObject mmfChannel.hMutex, %INFINITE
+
+        ' pdata contains current length of data in mmf
+        lLen = mmfChannel.@pSection
+
+        IF %MMF_SIZE - lLen > = lDataLen THEN
+            ' enough space. exit loop
+            EXIT LOOP
+
+        END IF
+
+        ' release mutex & sleep
+        ReleaseMutex mmfChannel.hMutex
+
+        SLEEP %MMF_SLEEP_WRITE
+
+    LOOP
+
+    ' write data
+    CopyMemory BYVAL mmfChannel.pSection + lLen + %MMF_HEADER, BYVAL pData, lDataLen
+
+    ' update length
+    mmfChannel.@pSection = lLen + lDataLen
+
+    ' release mutex
+    ReleaseMutex mmfChannel.hMutex
+
+    ' return success
+    FUNCTION = -1
+END FUNCTION
+
+FUNCTION ReadMMFChannel(BYREF mmfChannel AS MMFChannelType) AS STRING
+    ' reads data from the mmf channel specified by mmfChannel. caution: this reads ALL data in the mmf, but
+    ' this also means that only complete message(s) are received.
+    ' returns empty string if no data.
+
+    LOCAL sRetStr AS STRING
+
+    ' poll length
+    IF mmfChannel.@pSection = 0 THEN
+        ' no data. exit
+        FUNCTION = ""
+        EXIT FUNCTION
+
+    END IF
+
+    ' wait for mmf to become available
+    WaitForSingleObject mmfChannel.hMutex, %INFINITE
+
+    ' read data
+    sRetStr = PEEK$(mmfChannel.pSection + %MMF_HEADER, mmfChannel.@pSection)
+
+    ' set length to zero
+    mmfChannel.@pSection = 0
+
+    ' release mutex
+    ReleaseMutex mmfChannel.hMutex
+
+    ' return data
+    FUNCTION = sRetStr
+END FUNCTION
+
+FUNCTION PollMMFChannel(BYREF mmfChannel AS MMFChannelType) AS LONG
+    ' polls the number of bytes waiting on mmf channel specified by mmfChannel
+
+    LOCAL lRet AS LONG
+
+    ' read length
+    lRet = mmfChannel.@pSection
+
+    ' return length
+    FUNCTION = lRet
+END FUNCTION
+
+SUB CloseMMFChannel(BYREF mmfChannel AS MMFChannelType)
+    ' closes the mmf channel specified by mmfChannel.
+    ' no return value.
+
+    ' close mutex
+    CloseHandle mmfChannel.hMutex
+
+    ' unmap
+    UnmapViewOfFile mmfChannel.pSection
+
+    ' close mmf
+    CloseHandle mmfChannel.hSection
+
+END SUB
+----------------

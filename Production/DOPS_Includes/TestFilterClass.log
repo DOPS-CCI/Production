@@ -1,0 +1,23 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  F:\PowerBasicClassicWindows10\DOPS_Includes\TestFilterClass.bas   {224 total lines}
+Target compilation:  TestFilterClass.EXE
+Compile time:  0.1 seconds, at 268800 lines/minute
+
+5840 bytes compiled code, 16016 bytes RTLibrary,
+52 bytes string literals, and 2760 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 26112 bytes   Memory image: 18828 bytes.
+
+Component Files:
+----------------
+F:\PowerBasicClassicWindows10\DOPS_Includes\TestFilterClass.bas
+F:\POWERBASICCLASSICWINDOWS10\DOPS_INCLUDES\FFTCLASS.INC
+
+
+Code Extracted:
+---------------
+<NONE>
