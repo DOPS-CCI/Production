@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Header>
+  <ExperimentDescription>
+    <SoftwareVersion>1.0.0.0</SoftwareVersion>
+    <Title>Brugman Alpha</Title>
+    <LongDescription>This is one member of a family of "General ESP" (GESP) experiments prepared for the Westphal Lab using classical forced-choice testing techniques. The available target pools include Zener cards, playing cards (with colors, suits, numbers, or whole cards as the targets), a Schmidt-type 4-choice (gumball) machine, Brugmans-type square or rectangular arrays with selected cells as targets, and so on. Targets are selected trial-by-trial by a sophisticated pseudo-random algorithm (Mersenne Twister), and can be displayed or not, on a random basis, to an "agent" located in our remote satellite room. Number of trials per run and number of runs are set at run time. Results feedback is optionally available following each trial and/or completion of the session.</LongDescription>
+    <Experimenter>Frank Applin</Experimenter>
+    <Status>16</Status>
+    <GroupVar>
+      <Name>Target</Name>
+      <Description>Target selected by computer.</Description>
+      <GV Desc="A">1</GV>
+      <GV Desc="B">2</GV>
+      <GV Desc="C">3</GV>
+      <GV Desc="D">4</GV>
+      <GV Desc="E">5</GV>
+      <GV Desc="F">6</GV>
+      <GV Desc="G">7</GV>
+      <GV Desc="H">8</GV>
+      <GV Desc="I">9</GV>
+      <GV Desc="J">10</GV>
+      <GV Desc="K">11</GV>
+      <GV Desc="L">12</GV>
+      <GV Desc="M">13</GV>
+      <GV Desc="N">14</GV>
+      <GV Desc="O">15</GV>
+      <GV Desc="P">16</GV>
+      <GV Desc="Q">17</GV>
+      <GV Desc="R">18</GV>
+      <GV Desc="S">19</GV>
+      <GV Desc="T">20</GV>
+      <GV Desc="V">21</GV>
+      <GV Desc="W">22</GV>
+      <GV Desc="X">23</GV>
+      <GV Desc="Y">24</GV>
+      <GV Desc="Z">25</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>Response</Name>
+      <Description>Subject response.</Description>
+      <GV Desc="A">1</GV>
+      <GV Desc="B">2</GV>
+      <GV Desc="C">3</GV>
+      <GV Desc="D">4</GV>
+      <GV Desc="E">5</GV>
+      <GV Desc="F">6</GV>
+      <GV Desc="G">7</GV>
+      <GV Desc="H">8</GV>
+      <GV Desc="I">9</GV>
+      <GV Desc="J">10</GV>
+      <GV Desc="K">11</GV>
+      <GV Desc="L">12</GV>
+      <GV Desc="M">13</GV>
+      <GV Desc="N">14</GV>
+      <GV Desc="O">15</GV>
+      <GV Desc="P">16</GV>
+      <GV Desc="Q">17</GV>
+      <GV Desc="R">18</GV>
+      <GV Desc="S">19</GV>
+      <GV Desc="T">20</GV>
+      <GV Desc="V">21</GV>
+      <GV Desc="W">22</GV>
+      <GV Desc="X">23</GV>
+      <GV Desc="Y">24</GV>
+      <GV Desc="Z">25</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>AgentInRoom</Name>
+      <Description>Agent present?</Description>
+      <GV Desc="Not Present">1</GV>
+      <GV Desc="Present">2</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>TargetShownUpstairs</Name>
+      <Description>Target presented to agent?</Description>
+      <GV Desc="No">1</GV>
+      <GV Desc="Yes">2</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>Feedback</Name>
+      <Description>Feedback returned to subject?</Description>
+      <GV Desc="yes">2</GV>
+      <GV Desc="no">1</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>HitMiss</Name>
+      <Description>Subject hit or miss target.</Description>
+      <GV Desc="Hit">2</GV>
+      <GV Desc="Miss">1</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>EnforcedDelay</Name>
+      <Description>Enforced delay between trials.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>RunNumber</Name>
+      <Description>Run number within this experimental session.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>TrialNumber</Name>
+      <Description>Trial number within run.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>TimeToResponse</Name>
+      <Description>Time elapsed between target selected and response.</Description>
+    </GroupVar>
+    <Event Type="intrinsic">
+      <Name>TargetSelected</Name>
+      <Description>Marks when target selected by computer.</Description>
+      <GroupVar Name="Target"/>
+      <GroupVar Name="Response"/>
+      <GroupVar Name="AgentInRoom"/>
+      <GroupVar Name="TargetShownUpstairs"/>
+      <GroupVar Name="Feedback"/>
+      <GroupVar Name="HitMiss"/>
+      <GroupVar Name="EnforcedDelay"/>
+      <GroupVar Name="RunNumber"/>
+      <GroupVar Name="TrialNumber"/>
+      <GroupVar Name="TimeToResponse"/>
+    </Event>
+    <Event Type="extrinsic">
+      <Name>ResponseSelected</Name>
+      <Description>Marks when subject makes selection.</Description>
+      <Channel>Ana1</Channel>
+      <Edge>rising</Edge>
+      <Location>before</Location>
+      <Max>120000</Max>
+      <Min>0</Min>
+      <GroupVar Name="Target"/>
+      <GroupVar Name="Response"/>
+      <GroupVar Name="AgentInRoom"/>
+      <GroupVar Name="TargetShownUpstairs"/>
+      <GroupVar Name="Feedback"/>
+      <GroupVar Name="HitMiss"/>
+      <GroupVar Name="EnforcedDelay"/>
+      <GroupVar Name="RunNumber"/>
+      <GroupVar Name="TrialNumber"/>
+      <GroupVar Name="TimeToResponse"/>
+    </Event>
+    <Event Type="extrinsic">
+      <Name>TargetDisplayedUpstairs</Name>
+      <Description>Marks when target is displayed on agent's display.</Description>
+      <Channel>Ana3</Channel>
+      <Edge>rising</Edge>
+      <Location>after</Location>
+      <Max>90000</Max>
+      <Min>0</Min>
+      <GroupVar Name="Target"/>
+      <GroupVar Name="Response"/>
+      <GroupVar Name="AgentInRoom"/>
+      <GroupVar Name="TargetShownUpstairs"/>
+      <GroupVar Name="Feedback"/>
+      <GroupVar Name="HitMiss"/>
+      <GroupVar Name="EnforcedDelay"/>
+      <GroupVar Name="RunNumber"/>
+      <GroupVar Name="TrialNumber"/>
+      <GroupVar Name="TimeToResponse"/>
+    </Event>
+  </ExperimentDescription>
+  <SessionDescription>
+    <Date>04-19-2013</Date>
+    <Time>08:47</Time>
+    <Subject>9999</Subject>
+    <Technician>Frank Applin</Technician>
+    <BDFFile>S9999-BA-20130419-0847.BDF</BDFFile>
+    <EventFile>S9999-BA-20130419-0847.EVT</EventFile>
+    <ElectrodeFile>S9999-BA-20130419-0847.ETR</ElectrodeFile>
+    <Comment>(04-19-2013 08:47:33)</Comment>
+  </SessionDescription>
+</Header>

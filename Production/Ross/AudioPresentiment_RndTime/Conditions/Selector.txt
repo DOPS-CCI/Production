@@ -1,0 +1,6 @@
+What is driving the trial.
+RNG,1,
+GSR,2,
+ALWAYSON,3,
+xxx,999,
+

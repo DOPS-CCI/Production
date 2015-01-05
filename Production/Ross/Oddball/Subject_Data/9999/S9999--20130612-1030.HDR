@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Header>
+  <ExperimentDescription>
+    <SoftwareVersion></SoftwareVersion>
+    <Title></Title>
+    <LongDescription></LongDescription>
+    <Status></Status>
+    <GroupVar>
+      <Name></Name>
+      <Description></Description>
+      <GV Desc="">0</GV>
+    </GroupVar>
+  </ExperimentDescription>
+  <SessionDescription>
+    <Date>06-12-2013</Date>
+    <Time>10:30</Time>
+    <Subject>9999</Subject>
+    <BDFFile>S9999--20130612-1030.BDF</BDFFile>
+    <EventFile>S9999--20130612-1030.EVT</EventFile>
+    <ElectrodeFile>S9999--20130612-1030.ETR</ElectrodeFile>
+    <Comment>Enter text</Comment>
+  </SessionDescription>
+</Header>

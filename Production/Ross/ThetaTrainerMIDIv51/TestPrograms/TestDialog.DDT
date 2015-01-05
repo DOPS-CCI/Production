@@ -1,0 +1,38 @@
+'=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+'                     PBWinAdp RC2DDT Conversion
+'=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+'   RC File: E:\PowerBasicClassicWindows9\Projects\TestDialog.RES
+'  DDT File: E:\PowerBasicClassicWindows9\Projects\TestDialog.DDT
+'      Date: 03-08-2011
+'      Time: 11:29:57
+'=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+'===========================================================================
+CALLBACK FUNCTION _ 
+  _CB AS LONG
+
+  SELECT CASE CBMSG
+    CASE %WM_INITDIALOG
+      SendMessage CBHNDL,%WM_SETICON,1,LoadIcon(0,BYVAL %IDI_APPLICATION)
+  END SELECT
+END FUNCTION
+'===========================================================================
+FUNCTION _ 
+  Create_ ( _
+    BYVAL hParent		AS LONG _
+  ) AS LONG
+
+  DIM hDlg                              AS LONG
+  DIM lRetVal                           AS LONG
+'---------------------------------------------------------------------------
+  DIALOG NEW hParent, _
+            "", _
+            , _
+            , _
+            , _
+            , _
+            , _
+            , TO hDlg
+
+  DIALOG SHOW MODAL hDlg,CALL _CB TO lRetVal
+END FUNCTION
+'===========================================================================

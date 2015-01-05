@@ -1,0 +1,1 @@
+TaskKill /IM AudioPresentiment.exe /F

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="StartExperiment">
+    <Index>1</Index>
+    <GrayCode>1</GrayCode>
+    <ClockTime>130396296424570000</ClockTime>
+    <EventTime>18 Mar 2014 15:20:42.457</EventTime>
+    <GroupVars>
+    </GroupVars>
+  </Event>
+  <Event Name="IntentionSelected">
+    <Index>2</Index>
+    <GrayCode>3</GrayCode>
+    <ClockTime>130396296525020000</ClockTime>
+    <EventTime>18 Mar 2014 15:20:52.502</EventTime>
+    <GroupVars>
+      <GV Name="Intention">FOCUS</GV>
+      <GV Name="Feedback">NONE</GV>
+      <GV Name="Milliseconds">0</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndTrial">
+    <Index>3</Index>
+    <GrayCode>2</GrayCode>
+    <ClockTime>130396296824530000</ClockTime>
+    <EventTime>18 Mar 2014 15:21:22.453</EventTime>
+    <GroupVars>
+      <GV Name="Intention">FOCUS</GV>
+      <GV Name="Feedback">NEUTRAL</GV>
+      <GV Name="Milliseconds">15360</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">1</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="IntentionSelected">
+    <Index>4</Index>
+    <GrayCode>6</GrayCode>
+    <ClockTime>130396296884670000</ClockTime>
+    <EventTime>18 Mar 2014 15:21:28.467</EventTime>
+    <GroupVars>
+      <GV Name="Intention">REST</GV>
+      <GV Name="Feedback">NONE</GV>
+      <GV Name="Milliseconds">18432</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndTrial">
+    <Index>5</Index>
+    <GrayCode>7</GrayCode>
+    <ClockTime>130396297124620000</ClockTime>
+    <EventTime>18 Mar 2014 15:21:52.462</EventTime>
+    <GroupVars>
+      <GV Name="Intention">REST</GV>
+      <GV Name="Feedback">NONE</GV>
+      <GV Name="Milliseconds">30720</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">2</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="IntentionSelected">
+    <Index>6</Index>
+    <GrayCode>5</GrayCode>
+    <ClockTime>130396297184700000</ClockTime>
+    <EventTime>18 Mar 2014 15:21:58.470</EventTime>
+    <GroupVars>
+      <GV Name="Intention">REST</GV>
+      <GV Name="Feedback">NONE</GV>
+      <GV Name="Milliseconds">33792</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndTrial">
+    <Index>7</Index>
+    <GrayCode>4</GrayCode>
+    <ClockTime>130396297424740000</ClockTime>
+    <EventTime>18 Mar 2014 15:22:22.474</EventTime>
+    <GroupVars>
+      <GV Name="Intention">REST</GV>
+      <GV Name="Feedback">NONE</GV>
+      <GV Name="Milliseconds">46080</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">3</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="IntentionSelected">
+    <Index>8</Index>
+    <GrayCode>12</GrayCode>
+    <ClockTime>130396297484340000</ClockTime>
+    <EventTime>18 Mar 2014 15:22:28.434</EventTime>
+    <GroupVars>
+      <GV Name="Intention">FOCUS</GV>
+      <GV Name="Feedback">NONE</GV>
+      <GV Name="Milliseconds">49152</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">4</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndTrial">
+    <Index>9</Index>
+    <GrayCode>13</GrayCode>
+    <ClockTime>130396297724470000</ClockTime>
+    <EventTime>18 Mar 2014 15:22:52.447</EventTime>
+    <GroupVars>
+      <GV Name="Intention">FOCUS</GV>
+      <GV Name="Feedback">UPBEAT</GV>
+      <GV Name="Milliseconds">61440</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">4</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="IntentionSelected">
+    <Index>10</Index>
+    <GrayCode>15</GrayCode>
+    <ClockTime>130396297784480000</ClockTime>
+    <EventTime>18 Mar 2014 15:22:58.448</EventTime>
+    <GroupVars>
+      <GV Name="Intention">FOCUS</GV>
+      <GV Name="Feedback">NONE</GV>
+      <GV Name="Milliseconds">64512</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">5</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndTrial">
+    <Index>11</Index>
+    <GrayCode>14</GrayCode>
+    <ClockTime>130396298024560000</ClockTime>
+    <EventTime>18 Mar 2014 15:23:22.456</EventTime>
+    <GroupVars>
+      <GV Name="Intention">FOCUS</GV>
+      <GV Name="Feedback">NEUTRAL</GV>
+      <GV Name="Milliseconds">76800</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">5</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="IntentionSelected">
+    <Index>12</Index>
+    <GrayCode>10</GrayCode>
+    <ClockTime>130396298084760000</ClockTime>
+    <EventTime>18 Mar 2014 15:23:28.476</EventTime>
+    <GroupVars>
+      <GV Name="Intention">REST</GV>
+      <GV Name="Feedback">NONE</GV>
+      <GV Name="Milliseconds">79872</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">6</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndTrial">
+    <Index>13</Index>
+    <GrayCode>11</GrayCode>
+    <ClockTime>130396298324610000</ClockTime>
+    <EventTime>18 Mar 2014 15:23:52.461</EventTime>
+    <GroupVars>
+      <GV Name="Intention">REST</GV>
+      <GV Name="Feedback">NONE</GV>
+      <GV Name="Milliseconds">92160</GV>
+      <GV Name="RunNumber">1</GV>
+      <GV Name="TrialNumber">6</GV>
+    </GroupVars>
+  </Event>
+  <Event Name="EndExperiment">
+    <Index>14</Index>
+    <GrayCode>9</GrayCode>
+    <ClockTime>130396298324730000</ClockTime>
+    <EventTime>18 Mar 2014 15:23:52.473</EventTime>
+    <GroupVars>
+    </GroupVars>
+  </Event>
+</Events>

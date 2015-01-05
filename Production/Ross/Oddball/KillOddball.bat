@@ -1,0 +1,1 @@
+TaskKill /IM Oddball.exe /F

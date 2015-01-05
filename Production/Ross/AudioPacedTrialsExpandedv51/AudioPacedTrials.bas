@@ -1,0 +1,1090 @@
+#COMPILE EXE
+#DIM ALL
+#DEBUG ERROR ON
+
+'#RESOURCE "AudioPacedTrials.pbr"
+#INCLUDE "win32api.inc"
+#RESOURCE ICON,     IDI_ICON1, "AudioPacedTrials.ico"
+#RESOURCE BITMAP,   BITMAP_HIGHLIGHT, "Images\highlight.bmp"
+#RESOURCE BITMAP,   BITMAP_PROCEED , "Images\proceed.bmp"
+#RESOURCE BITMAP,   BITMAP_WAIT , "Images\wait.bmp"
+#RESOURCE BITMAP,   BITMAP_PDB , "Images\PD_black.bmp"
+#RESOURCE BITMAP,   BITMAP_PDW , "Images\PD_white.bmp"
+#RESOURCE BITMAP,   BITMAP_OKBUTTON , "Images\OKButton.bmp"
+#RESOURCE BITMAP,   BITMAP_PROCEEDBIOSEMI , "Images\BIOSEMIPROCEED.bmp"
+#RESOURCE WAVE,     UPBEAT_WAV, "Sounds\MusicalAccentTwinkle.wav"
+#RESOURCE WAVE,     NORMAL_WAV, "Sounds\VocodSynthSwish.wav"
+#RESOURCE WAVE,     REST_WAV, "Sounds\Rest.wav"
+#RESOURCE WAVE,     FOCUS_WAV, "Sounds\Focus.wav"
+#RESOURCE WAVE,     FOCUSLOW_WAV, "Sounds\FocusLow.wav"
+#RESOURCE WAVE,     FOCUSHIGH_WAV, "Sounds\FocusHigh.wav"
+#RESOURCE WAVE,     UP_WAV, "Sounds\Up.wav"
+#RESOURCE WAVE,     DOWN_WAV, "Sounds\Down.wav"
+#RESOURCE WAVE,     PLEASEWAIT_WAV, "Sounds\PleaseWait.wav"
+#RESOURCE WAVE,     ENDEXPT_WAV, "Sounds\EndExperiment.wav"
+#RESOURCE WAVE,     ENDRUN_WAV, "Sounds\EndRun.wav"
+
+
+
+
+
+%DIO_CARD_PRESENT = 0                            'NO
+
+%IMAGE_PD = 1001
+%IMAGE_BACK = 1002
+%IMAGE_PROCEED = 1003
+%ID_GRID = 1004
+%ID_HIGHLIGHT = 1005
+%ID_OK = 1009
+%TEXTBOX_SUBJECTID = 1010
+%IDC_TEXTBOX_NbrOfRuns  = 1011
+%TEXTBOX_NBRTRIALS = 1012
+%TEXTBOX_DISPLAYDURATION = 1013
+%TEXTBOX_ITDURATION = 1014
+%CHECKBOX_DIO_PRESENT = 1015
+%BUTTON_HELPEROK = 1016
+%BUTTON_HELPERCANCEL = 1017
+%FRAME_PHOTODIODE = 1018
+%ID_CONTROLLER_OK = 1019
+%ID_AGENTCARD = 1020
+%TEXTBOX_AGENTID = 1021
+%CHECKBOX_FEEDBACK = 1022
+%ID_CONTROLLER_EXIT = 1023
+%TEXTBOX_COMMENT = 1024
+%ID_NOTHING = 1025
+%BUTTON_HELP = 1026
+%IDC_LABEL_TARGET = 1027
+%IDC_BUTTON_EEGSettings = 1028
+%IDC_LABEL_01 = 1091
+%IDC_LABEL_02 = 1092
+%IDC_LABEL_03 = 1093
+%IDC_LABEL_04 = 1094
+%IDC_LABEL_05 = 1095
+%IDC_BUTTON_AudioChoices = 1096
+%IDC_BUTTON_LongDesc = 1097
+%IDC_BUTTON_Abort = 1098
+%IDC_OPTION_Standard     = 1100
+%IDC_OPTION_RNG          = 1101
+%IDC_OPTION_TCPIPRMS     = 1102
+%IDC_FRAME1 = 1103
+%IDC_FRAME_RNG = 1104
+%IDC_OPTION_FocusHigh = 1105
+%IDC_OPTION_FocusLow = 1106
+%IDC_BUTTON_ContinueRun = 1107
+%IDC_BUTTON_ControllerAudioChoices = 1108
+
+'%WAVE_FOCUS = 2000
+'%WAVE_RELAX = 2001
+
+'#RESOURCE WAVE,     WAVE_FOCUS, "Focus.WAV"
+'#RESOURCE WAVE,     WAVE_RELAX, "Relax.WAV"
+
+
+
+%ID_GLOBALTIMER = 1500
+
+%RNG_ONOFF = 1
+
+
+TYPE GlobalHandles
+    DlgSubject AS DWORD
+    DlgAgent AS DWORD
+    DlgController AS DWORD
+    DlgHelper AS DWORD
+    DlgSubjectPhotoDiode AS DWORD
+    DlgAgentPhotoDiode AS DWORD
+END TYPE
+
+'TYPE GlobalMisc
+'    gRndCnt AS LONG
+'    gByteCnt AS LONG
+'    gAccumDev AS LONG
+'    gARSAccumDev AS LONG
+'    gAccumNbrBits AS LONG
+'    gARSAccumNbrBits AS LONG
+'    gZScore AS DOUBLE
+'    gNewZScore AS DOUBLE
+'    gOldZScore AS DOUBLE
+'    gSavedZScore AS DOUBLE
+'    gARSZScore AS DOUBLE
+'    gARSNewZScore AS DOUBLE
+'    gARSOldZScore AS DOUBLE
+'    gARSSavedZScore AS DOUBLE
+'    gFirstHit AS BYTE
+'    gARSFirstHit AS BYTE
+'    pid AS DWORD
+'    gStart AS QUAD
+'    gEnd AS QUAD
+'    gHelperOpened AS INTEGER
+'    gRNDFile AS STRING * 255
+'    gARSFile AS STRING * 255
+'    gSampleCnt AS LONG
+'    gSampleSize AS LONG
+'    gSampleDuration AS LONG
+'    gRunningDuration AS LONG
+'    gBytesPerMillisecond AS LONG
+'    gStandardRNGTCPIP AS BYTE
+'    gHighOrLow AS BYTE
+'    gBetweenTrialFlag AS BYTE
+'    gRunDelayFlag AS BYTE
+'END TYPE
+
+
+
+TYPE GlobalVariables
+    Target AS LONG
+    Feedback AS LONG
+    NbrOfHits AS LONG
+    RunCnt AS LONG
+    TrialCnt AS LONG
+    TrialCntTotal AS LONG
+    SubjectID AS LONG
+    NbrOfRuns AS LONG
+    NbrOFTrials AS LONG
+    TrialLength AS LONG
+    DiodeDelay AS LONG
+    BoardNum AS LONG
+    DioCardPresent AS LONG
+    GreyCode AS LONG
+    DioIndex AS LONG
+    TargetTime AS ASCIIZ * 19
+    ElapsedTime AS ASCIIZ * 19
+    hdl AS GlobalHandles
+    'Misc AS GlobalMisc
+END TYPE
+
+GLOBAL gSamples() AS BYTE
+GLOBAL gIntentionFocus() AS LONG
+GLOBAL oApp AS IDISPATCH
+GLOBAL gWavFiles() AS STRING
+GLOBAL     gRndCnt AS LONG
+GLOBAL     gByteCnt AS LONG
+GLOBAL     gAccumDev AS LONG
+GLOBAL     gARSAccumDev AS LONG
+GLOBAL     gAccumNbrBits AS LONG
+GLOBAL     gARSAccumNbrBits AS LONG
+GLOBAL     gZScore AS DOUBLE
+GLOBAL     gNewZScore AS DOUBLE
+GLOBAL     gOldZScore AS DOUBLE
+GLOBAL     gSavedZScore AS DOUBLE
+GLOBAL     gARSZScore AS DOUBLE
+GLOBAL     gARSNewZScore AS DOUBLE
+GLOBAL     gARSOldZScore AS DOUBLE
+GLOBAL     gARSSavedZScore AS DOUBLE
+GLOBAL     gFirstHit AS BYTE
+GLOBAL     gARSFirstHit AS BYTE
+GLOBAL     pid AS DWORD
+GLOBAL     gStart AS QUAD
+GLOBAL     gEnd AS QUAD
+GLOBAL     gHelperOpened AS INTEGER
+GLOBAL     gRNDFile AS STRING * 255
+GLOBAL     gARSFile AS STRING * 255
+GLOBAL     gSampleCnt AS LONG
+GLOBAL     gSampleSize AS LONG
+GLOBAL     gSampleDuration AS LONG
+GLOBAL     gRunningDuration AS LONG
+GLOBAL     gBytesPerMillisecond AS LONG
+GLOBAL     gStandardRNGTCPIP AS BYTE
+GLOBAL     gHighOrLow AS BYTE
+GLOBAL     gBetweenTrialFlag AS BYTE
+GLOBAL     gRunDelayFlag AS BYTE
+GLOBAL     gTCPIPThread AS LONG
+GLOBAL     gStartExperiment AS LONG
+GLOBAL     gAIBTiming AS LONG
+GLOBAL     gRemoteTrialsFile AS STRING
+GLOBAL     gControllerAudioChoicesFlag AS BYTE
+
+
+GLOBAL globals AS GlobalVariables
+
+GLOBAL rngInt AS EvenOddRNGInterface
+
+
+
+'DECLARE SUB DoTimerWork(itemName AS WSTRING)
+
+#INCLUDE "DOPS_PB_CBW.INC"
+#INCLUDE "DOPS_ExperimentInfo.inc"
+#INCLUDE "DOPS_Utils.inc"
+#INCLUDE "DOPS_Statistics.inc"
+#INCLUDE "DOPS_MMTimers.inc"
+'#INCLUDE "DOPS_GESP.INC"
+'#include "DOPS_BDFEDF.inc"
+#INCLUDE "ControllerScreen.inc"
+#INCLUDE "DOPS_TCPIP.inc"
+#INCLUDE "DOPS_TCPIP_Local.inc"
+#INCLUDE "HelperScreen.inc"
+#INCLUDE "SubjectScreen.inc"
+#INCLUDE "FilterClass.inc"
+#INCLUDE "SoundCheck.inc"
+#INCLUDE "BiosemiRecording.inc"
+#INCLUDE "EvenOddRNGClass.inc"
+
+
+
+
+'#INCLUDE "AgentScreen.inc"
+
+'#INCLUDE "MyTimerClass.inc"
+
+DECLARE SUB DoNextTrial()
+
+
+' *********************************************************************************************
+'                                  M A I N     P R O G R A M
+' *********************************************************************************************
+FUNCTION PBMAIN
+    LOCAL hr AS DWORD
+    LOCAL tempFilename  AS STRING
+    LOCAL filename, temp AS ASCIIZ * 255
+    LOCAL sResult AS ASCIIZ * 255
+    LOCAL errTrapped, hThread AS LONG
+
+
+    '************************************************
+    'Read values from the INI file to initialize
+    'experiment variables
+    '************************************************
+
+    'tempFilename = COMMAND$
+    'IF (TRIM$(tempFilename) = "") THEN
+    '    MSGBOX "Please use GenericRNG filename.ini to start the program."
+    '    RETURN
+    'END IF
+    RANDOMIZE TIMER
+
+    LET gTimers = CLASS "PowerCollection"
+
+     TRY
+        LET oApp = NEWCOM "Araneus.Alea.1"
+        OBJECT CALL oApp.Open
+        THREAD CREATE ClearAleaBufferThread(1) TO hThread
+    CATCH
+        MSGBOX "Error on Opening Alea RNG. Check to see if it is plugged in (and that the drivers are installed.)" + $CRLF + _
+                "Also, there may be a program running using the RNG already."
+        errTrapped = ERR
+        EXIT TRY
+    END TRY
+
+    IF (errTrapped <> 0) THEN
+        EXIT FUNCTION
+    END IF
+
+    KILL "c:\csv_debug.txt"
+
+    gRemoteTrialsFile = "I:\TrialInfo.txt"
+
+
+    '************************************************
+    'Initialize Mersenne-twister
+    '************************************************
+    init_MT_by_array()
+
+    EXPERIMENT.SessionDescription.INIFile = "AudioPacedTrials.ini"
+    EXPERIMENT.SessionDescription.Date = DATE$
+    EXPERIMENT.SessionDescription.Time = TIME$
+
+    filename = EXE.PATH$ + EXPERIMENT.SessionDescription.INIFile
+
+
+    GetPrivateProfileString("Experiment Section", "Mode", "", EXPERIMENT.Misc.Mode, %MAXPPS_SIZE, filename)
+
+    '************************************************
+    'check the DIO card value - usually not set for
+    'demo mode.
+    '************************************************
+    GetPrivateProfileString("Experiment Section", "DigitalIOCard", "", sResult, %MAXPPS_SIZE, filename)
+    IF (LTRIM$(LCASE$(sResult)) = "yes" AND EXPERIMENT.Misc.Mode <> "demo") THEN
+        globals.DioCardPresent = 1
+    ELSE
+        globals.DioCardPresent = 0
+    END IF
+
+    '************************************************
+    'It will only configure and initialize if
+    'globals.DioCardPresent = 1.
+    '************************************************
+    globals.BoardNum = ConfigurePorts(globals.DioCardPresent, 1, 1)
+
+    CALL DioWriteInitialize(globals.DioCardPresent, globals.BoardNum)
+
+    globals.NbrOfHits = 0
+
+
+    CALL dlgControllerScreen()
+
+    DIALOG SHOW MODAL globals.hdl.DlgController, CALL cbControllerScreen TO hr
+
+
+        'SetWindowsPos
+    'timers.KillTimer()
+    killMMTimerEvent()
+
+END FUNCTION
+
+FUNCTION ClearAleaBuffer(BYVAL x AS LONG) AS LONG
+    LOCAL rndByte AS VARIANT
+    LOCAL dStart, dEnd AS DOUBLE
+
+
+    dStart = TIMER
+    DO
+        OBJECT CALL oApp.GetRandomByte() TO rndByte
+        dEnd = TIMER
+        SLEEP 1
+    LOOP UNTIL dEnd > dStart + 5
+
+     DIALOG SET TEXT globals.hdl.DlgController, "Controller Screen"
+
+    CONTROL ENABLE globals.hdl.DlgController, %ID_CONTROLLER_OK
+
+
+END FUNCTION
+
+
+
+THREAD FUNCTION ClearAleaBufferThread(BYVAL x AS LONG) AS LONG
+
+ FUNCTION = ClearAleaBuffer(x)
+
+END FUNCTION
+
+
+
+SUB StartTrial()
+    LOCAL MyTime AS IPOWERTIME
+    LOCAL now AS QUAD
+    LOCAL z, result AS LONG
+    LOCAL cond AS STRING
+    LOCAL wavFile AS ASCIIZ * 255
+
+    'PhotoDiodeOnOff(globals.hdl.DlgSubjectPhotoDiode,  1)
+
+
+    LET MyTime = CLASS "PowerTime"
+
+    MyTime.Now()
+    MyTime.FileTime TO now
+       'iVPos = 200
+    globals.DioIndex = DIOWrite(globals.DioCardPresent, globals.BoardNum, globals.GreyCode)
+    globals.TargetTime = FORMAT$(now, "###################") 'TRIM$(STR$(now, 18))
+    EVENTSANDCONDITIONS(0).EvtName = "IntentionSelected"
+    EVENTSANDCONDITIONS(0).NbrOfGVars = 4
+    EVENTSANDCONDITIONS(0).Index = globals.DioIndex
+    EVENTSANDCONDITIONS(0).GrayCode = globals.GreyCode
+    EVENTSANDCONDITIONS(0).ClockTime = globals.TargetTime
+    EVENTSANDCONDITIONS(0).EventTime = PowerTimeDateTime(MyTime)
+
+
+    'IF (globals.TrialCntTotal <= (globals.NbrOfRuns * globals.NbrOfTrials)) THEN
+        'show trial # on the experimenter screen
+        DIALOG SET TEXT globals.hdl.DlgController, "Trial # " + STR$(globals.TrialCntTotal)
+
+        '=====================================================================
+        'added 5/1/2014 per Ross Dunseath - we're writing the trial number
+        'to a network drive. A program on another machine will be checking
+        'this file to see the experiment progress.
+        '=====================================================================
+        writeTrialSemaphore(gRemoteTrialsFile, globals.TrialCntTotal)
+
+    'end if
+
+
+    'SetMMTimerOnOff("ENDINTENTION", 1)    'turn on
+    'SetMMTimerOnOff("SUBJECTDIODE", 1)    'turn on
+
+    globals.Target = gIntentionFocus(globals.TrialCnt)
+    globals.Feedback = 3
+
+    IF (gStandardRNGTCPIP = 1) THEN 'Standard
+        EVENTSANDCONDITIONS(0).GVars(0).Condition = "Intention"
+        cond = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(0).Condition, globals.Target)
+        IF (TRIM$(cond) = "") THEN
+            cond = "NONE"
+        END IF
+        rngInt.SetCondition(cond)
+    END IF
+
+    CALL WriteOutEvents()
+
+    wavFile = gWavFiles(globals.Target)
+    PlaySound wavFile, GetModuleHandle(BYVAL 0), %SND_RESOURCE OR %SND_ASYNC
+
+    'SHELL("PlayWaveAsynch.exe " + EXE.PATH$ + "\Sounds\" + gWavFiles(globals.Target))
+END SUB
+
+FUNCTION EndTrial() AS LONG
+    LOCAL MyTime AS IPOWERTIME
+    LOCAL now AS QUAD
+    LOCAL vTimers AS VARIANT
+    LOCAL systime AS SYSTEMTIME
+    LOCAL lDisplayToAgent, lResult AS LONG
+    LOCAL dStart, dEnd AS DOUBLE
+
+
+
+    CONTROL SET TEXT globals.hdl.DlgSubject, %IDC_LABEL_TARGET, ""
+
+
+
+    IF ((globals.TrialCnt * globals.RunCnt) = (globals.NbrOfRuns * globals.NbrOfTrials)) THEN
+        'lResult = CustomMessageBox(1, "Would you like to see how you did?", "Show Results")
+        'lResult = MSGBOX("Would you like to see how you did?", %MB_YESNO, "Show Results")
+        'IF (lResult = 1) THEN
+        '    CustomMessageBox(1, displayStatisticsResults(globals.TrialCnt * globals.RunCnt, globals.NbrOfHits), "Your Results")
+            'MSGBOX displayStatisticsResults(glTrialCnt, glNbrOfHits)
+        'END IF
+
+        DIALOG SET TEXT globals.hdl.DlgController, " "
+        CONTROL SET TEXT globals.hdl.DlgSubject, %IDC_LABEL_TARGET, ""
+        'PhotoDiodeOnOff(globals.hdl.DlgSubjectPhotoDiode,  0)
+
+        SELECT CASE gStandardRNGTCPIP
+            CASE 1  'Standard
+                SetMMTimerOnOff("ENDINTENTION", 0)    'turn off
+                'SetMMTimerOnOff("SUBJECTDIODE", 0)
+            CASE 2  'RNG
+                SetMMTimerOnOff("GETRESULT", 0)    'turn off
+                SetMMTimerOnOff("DELAY", 0)    'turn off
+            CASE 3
+        END SELECT
+
+        killMMTimerEvent()
+
+        LET MyTime = CLASS "PowerTime"
+
+
+        IF (gStandardRNGTCPIP = 3) THEN 'TCPIP feed
+            MyTime.FileTime TO now
+            MyTime.Now()
+            gTimerTix = GetPowerTimeTotalMillis(MyTime) - gStartExperiment
+        END IF
+
+        '**********************************************************************************************
+        'Adding a EndExperiment event and an EndExperiment event 6/19/2013 - FAA
+        '**********************************************************************************************
+        MyTime.Now()
+        MyTime.FileTime TO now
+           'iVPos = 200
+        globals.DioIndex = DIOWrite(globals.DioCardPresent, globals.BoardNum, globals.GreyCode)
+        globals.TargetTime = FORMAT$(now, "###################") 'TRIM$(STR$(now, 18))
+        EVENTSANDCONDITIONS(4).EvtName = "EndExperiment"
+        EVENTSANDCONDITIONS(4).NbrOfGVars = 1
+        EVENTSANDCONDITIONS(4).Index = globals.DioIndex
+        EVENTSANDCONDITIONS(4).GrayCode = globals.GreyCode
+        EVENTSANDCONDITIONS(4).ClockTime = globals.TargetTime
+        EVENTSANDCONDITIONS(4).EventTime = PowerTimeDateTime(MyTime)
+
+        IF (gStandardRNGTCPIP = 3) THEN 'TCPIP feed
+            MyTime.FileTime TO now
+            MyTime.Now()
+            gAIBTiming = GetPowerTimeTotalMillis(MyTime) - gStartExperiment
+            EVENTSANDCONDITIONS(4).GVars(0).Condition = "Milliseconds"
+            EVENTSANDCONDITIONS(4).GVars(0).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(4).EvtName, EVENTSANDCONDITIONS(4).GVars(0).Condition, gAIBTiming)
+        ELSE
+            EVENTSANDCONDITIONS(4).GVars(0).Condition = "Milliseconds"
+            EVENTSANDCONDITIONS(4).GVars(0).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(4).EvtName, EVENTSANDCONDITIONS(4).GVars(0).Condition, gTimerTix)
+        END IF
+
+        CALL WriteToEventFile2(4)
+        '**********************************************************************************************
+
+        PlaySound "ENDEXPT_WAV", GetModuleHandle(BYVAL 0), %SND_RESOURCE OR %SND_ASYNC
+
+        writeTrialSemaphore(gRemoteTrialsFile, -999)
+
+        CustomMessageBox(0,"The experiment is over.", "Experiment Ended.")
+
+        DIALOG END globals.hdl.DlgSubject, 0
+
+        CLOSE #900  'RNG file
+        CLOSE #950  'Alternate RNG file
+
+        FUNCTION = 1
+
+        EXIT FUNCTION
+    END IF
+
+    IF ((globals.TrialCnt = globals.NbrOfTrials) AND (globals.RunCnt < globals.NbrOfRuns)) THEN
+
+        globals.TrialCnt = 0
+        globals.RunCnt = globals.RunCnt + 1
+
+        CONTROL SET TEXT globals.hdl.DlgSubject, %IDC_LABEL_TARGET, ""
+        'PhotoDiodeOnOff(globals.hdl.DlgSubjectPhotoDiode,  0)
+
+        PlaySound "ENDRUN_WAV", GetModuleHandle(BYVAL 0), %SND_RESOURCE OR %SND_ASYNC
+        SELECT CASE gStandardRNGTCPIP
+            CASE 1  'Standard
+                SetMMTimerOnOff("ENDINTENTION", 0)    'turn off
+                'SetMMTimerOnOff("SUBJECTDIODE", 0)
+                killMMTimerEvent()
+                CustomMessageBox(0,"The run is over. Subject can take a short break.", "Run Ended.")
+                CustomMessageBox(0,"Run " + STR$(globals.RunCnt) + " is about to begin.", "Start Next Run")
+            CASE 2  'RNG
+                'SetMMTimerOnOff("SUBJECTDIODE", 0)
+                SetMMTimerOnOff("GETRESULT", 0)    'turn off
+                SetMMTimerOnOff("DELAY", 0)    'turn off
+                killMMTimerEvent()
+                CustomMessageBox(0,"The run is over. Subject can take a short break.", "Run Ended.")
+                CustomMessageBox(0,"Run " + STR$(globals.RunCnt) + " is about to begin.", "Start Next Run")
+            CASE 3
+                CONTROL SET TEXT globals.hdl.DlgController, %IDC_BUTTON_ContinueRun, "Continue Run " + STR$(globals.RunCnt)
+                CONTROL NORMALIZE globals.hdl.DlgController, %IDC_BUTTON_ContinueRun
+                gRunDelayFlag = 1
+                'CLOSE #900  'RNG file
+                'CLOSE #950  'Alternate RNG file
+                'disconnectFromServer(TCPIPSettings.TCPIPSocket)
+
+                'THREAD CLOSE gTCPIPThread TO lResult
+
+                '#DEBUG PRINT "THREAD CLOSE lResult: " + STR$(lResult)
+                'gTCPIPThread = 0
+
+        END SELECT
+
+
+
+        'CustomMessageBox(1, "The run is over. You can take a short break.", "Run Ended")
+
+        'CustomMessageBox(1, "Press OK to start trials.", "Start Trials")
+
+        SELECT CASE gStandardRNGTCPIP
+            CASE 1  'Standard
+                LET gTimers = NOTHING
+
+                LET gTimers = CLASS "PowerCollection"
+
+                gRNDFile = ""
+
+                gTimers.Add("DELAY", vTimers)
+                SetMMTimerDuration("DELAY", 5000)
+
+                gTimers.Add("ENDINTENTION", vTimers)
+                SetMMTimerDuration("ENDINTENTION", 5000)
+
+                'gTimers.Add("SUBJECTDIODE", vTimers)
+                'SetMMTimerDuration("SUBJECTDIODE", globals.DiodeDelay)
+
+                SetMMTimerOnOff("DELAY", 1)    'turn on
+
+                'Start the timers
+                setMMTimerEventPeriodic(1, 0)
+            CASE 2  'RNG
+                gRndCnt = 0
+                LET gTimers = NOTHING
+
+                LET gTimers = CLASS "PowerCollection"
+
+                'gTimers.Add("SUBJECTDIODE", vTimers)
+                'SetMMTimerDuration("SUBJECTDIODE", globals.DiodeDelay)
+
+                gPauseFlag = %TRUE
+                gTimers.Add("DELAY", vTimers)
+                SetMMTimerDuration("DELAY", 5000)
+                SetMMTimerOnOff("DELAY", 1)    'turn on
+
+                gTimers.Add("GETRESULT", vTimers)
+                SetMMTimerDuration("GETRESULT", 1000)
+
+                'gTimers.Add("STARTTRIAL", vTimers)
+                'SetMMTimerDuration("STARTTRIAL", 5000)
+
+                gAccumNbrBits = 0
+                gAccumDev = 0
+                gOldZScore = 0
+                gSavedZScore = 0
+                gFirstHit = 1
+                'SetMMTimerOnOff("GETRESULT", 1)    'turn on
+                'SetMMTimerOnOff("STARTTRIAL", 1)    'turn on
+                'Start the timers
+                setMMTimerEventPeriodic(1, 0)
+
+            CASE 3
+
+
+        END SELECT
+
+
+        'CLOSE #900  'RNG file
+        'CLOSE #950  'Alternate RNG file
+
+    END IF
+
+    'CALL WriteOutEvents()
+
+
+    globals.TrialCnt = globals.TrialCnt + 1
+    globals.TrialCntTotal = globals.TrialCntTotal + 1
+
+
+    FUNCTION = 0
+END FUNCTION
+
+SUB WriteOutEvents()
+    LOCAL MyTime AS IPOWERTIME
+    LOCAL now AS QUAD
+
+    LET MyTime = CLASS "PowerTime"
+  'TargetSelected
+    EVENTSANDCONDITIONS(0).GVars(0).Condition = "Intention"
+    EVENTSANDCONDITIONS(0).GVars(0).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(0).Condition, globals.Target)
+    EVENTSANDCONDITIONS(0).GVars(1).Condition = "Feedback"
+    EVENTSANDCONDITIONS(0).GVars(1).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(1).Condition, globals.Feedback)
+
+    IF (gStandardRNGTCPIP = 3) THEN 'TCPIP feed
+        MyTime.Now()
+        MyTime.FileTime TO now
+        gAIBTiming = GetPowerTimeTotalMillis(MyTime) - gStartExperiment
+        EVENTSANDCONDITIONS(0).GVars(2).Condition = "Milliseconds"
+        EVENTSANDCONDITIONS(0).GVars(2).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(2).Condition, gAIBTiming)
+    ELSE
+        EVENTSANDCONDITIONS(0).GVars(2).Condition = "Milliseconds"
+        EVENTSANDCONDITIONS(0).GVars(2).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(2).Condition, gTimerTix)
+    END IF
+
+    EVENTSANDCONDITIONS(0).GVars(3).Condition = "RunNumber"
+    EVENTSANDCONDITIONS(0).GVars(3).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(3).Condition, globals.RunCnt)
+    '====================================================================================
+    'changed 7/17/2014 per Ross and Ed - don't reset the trial numbers on a new run
+    'it causes issues in the FILMAN converter.
+    '====================================================================================
+    EVENTSANDCONDITIONS(0).GVars(4).Condition = "TrialNumber"
+    EVENTSANDCONDITIONS(0).GVars(4).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(4).Condition, globals.TrialCntTotal)
+
+    CALL WriteToEventFile2(0)
+END SUB
+
+SUB WriteOutEndTrialEvents()
+    LOCAL MyTime AS IPOWERTIME
+    LOCAL now AS QUAD
+
+    LET MyTime = CLASS "PowerTime"
+  'TargetSelected
+    EVENTSANDCONDITIONS(2).GVars(0).Condition = "Intention"
+    EVENTSANDCONDITIONS(2).GVars(0).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(0).Condition, globals.Target)
+    EVENTSANDCONDITIONS(2).GVars(1).Condition = "Feedback"
+    EVENTSANDCONDITIONS(2).GVars(1).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(1).Condition, globals.Feedback)
+    IF (gStandardRNGTCPIP = 3) THEN 'TCPIP feed
+        MyTime.Now()
+        MyTime.FileTime TO now
+        gAIBTiming = GetPowerTimeTotalMillis(MyTime) - gStartExperiment
+        EVENTSANDCONDITIONS(2).GVars(2).Condition = "Milliseconds"
+        EVENTSANDCONDITIONS(2).GVars(2).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(2).Condition, gAIBTiming)
+    ELSE
+        EVENTSANDCONDITIONS(2).GVars(2).Condition = "Milliseconds"
+        EVENTSANDCONDITIONS(2).GVars(2).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(2).Condition, gTimerTix)
+    END IF
+    EVENTSANDCONDITIONS(2).GVars(3).Condition = "RunNumber"
+    EVENTSANDCONDITIONS(2).GVars(3).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(3).Condition, globals.RunCnt)
+    '====================================================================================
+    'changed 7/17/2014 per Ross and Ed - don't reset the trial numbers on a new run
+    'it causes issues in the FILMAN converter.
+    '====================================================================================
+    EVENTSANDCONDITIONS(2).GVars(4).Condition = "TrialNumber"
+    EVENTSANDCONDITIONS(2).GVars(4).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(4).Condition, globals.TrialCntTotal)
+
+    CALL WriteToEventFile2(2)
+END SUB
+
+SUB DoWorkForEachTick()
+    LOCAL x, sumOfBits AS LONG
+    LOCAL rndByte AS VARIANT
+    LOCAL bRndByte AS BYTE
+    LOCAL timing AS LONG
+
+    SELECT CASE gStandardRNGTCPIP
+        CASE 1  'Standard
+            EXIT SUB
+        CASE 2
+        CASE 3
+            EXIT SUB
+    END SELECT
+
+    IF (gPauseFlag = %TRUE) THEN
+        EXIT SUB
+    END IF
+
+
+    TRY
+        '**********************************************
+        '10 is a scaling factor since we can get 10
+        'random numbers per ms.
+        '**********************************************
+        timing = 10 / (gSampleSize / gSampleDuration)
+
+        '**********************************************
+        'should be able to get 10 random numbers per ms
+        'or 10,000 samples per second
+        '**********************************************
+        FOR x = 1 TO 10
+            INCR gBytesPerMillisecond
+            OBJECT CALL oApp.GetRandomByte() TO rndByte
+            bRndByte = VARIANT#(rndByte)
+            IF (gBytesPerMillisecond MOD timing = 0) THEN
+                INCR gRndCnt
+                INCR gByteCnt
+                'OBJECT CALL oApp.GetRandomByte() TO rndByte
+                'bRndByte = VARIANT#(rndByte)
+                'if (gRndCnt < gSampleSize) then
+                    gSamples(gRndCnt) = bRndByte
+                'end if
+
+
+                'gSamples(gRndCnt) = bRndByte
+                'gRndTotal = gRndTotal +  bRndByte
+                'gRndAvg = gRndTotal / gByteCnt
+
+                #DEBUG PRINT STR$(gRndCnt) + ", " + STR$(bRndByte)
+            END IF
+        NEXT x
+
+
+    CATCH
+        MSGBOX STR$(gRndCnt)
+        MSGBOX "Error generating random numbers. Error: " + ERROR$ + $CRLF + "Please close the application."
+        SetMMTimerOnOff("GETRESULT", 0)    'turn on
+        killMMTimerEvent()
+        DIALOG END globals.hdl.DlgSubject, -1
+    END TRY
+
+    '#debug print str$(gRndCnt) + ", " + str$(bRndByte)
+
+    'MSGBOX STR$(gRndTotal(0)) + ", " + STR$(gRndCnt(0))
+    'MSGBOX STR$(gRndTotal(1)) + ", " +  STR$(gRndCnt(1))
+
+END SUB
+
+
+SUB DoTimerWork(itemName AS WSTRING)
+    LOCAL lResult, rndJitter, subPtr  AS LONG
+    LOCAL x, totalBits, arsTotalBits AS LONG
+    LOCAL absAccumDev, sqrAccumNbrBits, zScore AS DOUBLE
+    LOCAL absARSAccumDev, sqrARSAccumNbrBits, zARSScore AS DOUBLE
+    LOCAL MyTime, MyTimeRNDFile, MyTimeARSFile AS IPOWERTIME
+    LOCAL now AS QUAD
+    LOCAL tempForFile, arsTempForFile AS STRING
+    GLOBAL gTimerTix AS LONG
+
+    SELECT CASE itemName
+        CASE "DELAY"
+            SetMMTimerOnOff("DELAY", 0)    'turn off
+            gPauseFlag = %FALSE
+            'PhotoDiodeOnOff(globals.hdl.DlgSubjectPhotoDiode,  1)
+            'SetMMTimerOnOff("SUBJECTDIODE", 1)    'turn on
+            CALL StartTrial()
+            gTimerSeconds = 0
+            gTimerMinutes = 0
+            SELECT CASE gStandardRNGTCPIP
+                CASE 1  'Standard
+                    SetMMTimerDuration("ENDINTENTION", globals.TrialLength)
+                    SetMMTimerOnOff("ENDINTENTION", 1)    'turn on
+                CASE 2  'RNG
+                    SetMMTimerDuration("GETRESULT", 1000)
+                    SetMMTimerOnOff("GETRESULT", 1)    'turn on
+                CASE 3
+            END SELECT
+        CASE "GETRESULT"
+            'accumulating time in seconds
+            INCR gRunningDuration
+            arsTempForFile = ""
+
+            arsTotalBits = 0
+            'use odd samples for alternate stream of random number
+            FOR x = 1 TO gSampleSize
+                IF (Odd(x) = 1) THEN
+                   #DEBUG PRINT "gSamples(x): " + STR$(gSamples(x))
+                   arsTotalBits += sumBitsOfByte(gSamples(x))
+                END IF
+            NEXT x
+
+            gARSAccumNbrBits += 200
+            '#DEBUG PRINT "gAccumNbrBits: " + STR$(gAccumNbrBits)
+
+            gARSAccumDev += (arsTotalBits - 100)
+            '#DEBUG PRINT "gAccumDev: " + STR$(gAccumDev)
+
+            absARSAccumDev = ABS(gARSAccumDev)
+            '#DEBUG PRINT "absAccumDev: " + STR$(absAccumDev)
+
+            sqrARSAccumNbrBits = SQR(gARSAccumNbrBits)
+            '#DEBUG PRINT "sqrAccumNbrBits: " + STR$(sqrAccumNbrBits)
+
+            zARSScore = absARSAccumDev * 1.0 / SQR((gARSAccumNbrBits * 1.0) / 4.0)
+            IF (absARSAccumDev > sqrARSAccumNbrBits) THEN
+                '#DEBUG PRINT "zScore: " + STR$(zScore)
+                IF (gARSFirstHit = 1) THEN
+                    gARSOldZScore = zARSScore
+                    gARSFirstHit = 0
+                ELSE
+                    gARSNewZScore = zARSScore
+                END IF
+            END IF
+
+            '#DEBUG PRINT "gOldZScore: " + STR$(gOldZScore)
+            '#DEBUG PRINT "gNewZScore: " + STR$(gNewZScore)
+
+            IF (gARSNewZScore > gARSOldZscore) THEN
+                gARSSavedZScore = gARSNewZScore
+                gARSOldZScore = gARSSavedZScore
+            END IF
+
+            '#DEBUG PRINT "gSavedZScore: " + STR$(gSavedZScore)
+            LET MyTimeARSFile = CLASS "PowerTime"
+            MyTimeARSFile.Now()
+            MyTimeARSFile.FileTime TO now
+
+            arsTempForFile = TIME$ + "," + STR$(gRunningDuration) + ","  + FORMAT$(arsTotalBits, "0000") + "," + FORMAT$(zARSScore, "00.0000") + ","
+
+            SELECT CASE globals.Target
+                CASE 1 'REST
+                    arsTempForFile += "REST"
+                CASE 2 'FOCUS
+                    IF (gHighOrLow = 1) THEN 'High
+                        arsTempForFile += "FOCUSHIGH"
+                    ELSE
+                        arsTempForFile += "FOCUSLOW"
+                    END IF
+                CASE ELSE
+                   arsTempForFile += "FOCUS"
+            END SELECT
+
+
+            IF (gARSFile <> "") THEN
+                PRINT #950, arsTempForFile
+            END IF
+
+
+            gRndCnt = 0
+            INCR gSampleCnt
+
+            tempForFile = ""
+
+            #DEBUG PRINT STR$(gRunningDuration) + " dur " + STR$(gTimerMinutes) + " mins " + STR$(gTimerSeconds) + " secs"
+
+            totalBits = 0
+            'use even samples for deviation processing
+            FOR x = 1 TO gSampleSize
+                IF (Odd(x) = 0) THEN
+                   '#debug print "gSamples(x): " + str$(gSamples(x))
+                   totalBits += sumBitsOfByte(gSamples(x))
+                END IF
+            NEXT x
+
+
+            '#DEBUG PRINT "totalBits: " + STR$(totalBits)
+
+            gAccumNbrBits += 200
+            '#DEBUG PRINT "gAccumNbrBits: " + STR$(gAccumNbrBits)
+
+            gAccumDev += (totalBits - 100)
+            '#DEBUG PRINT "gAccumDev: " + STR$(gAccumDev)
+
+            absAccumDev = ABS(gAccumDev)
+            '#DEBUG PRINT "absAccumDev: " + STR$(absAccumDev)
+
+            sqrAccumNbrBits = SQR(gAccumNbrBits)
+            '#DEBUG PRINT "sqrAccumNbrBits: " + STR$(sqrAccumNbrBits)
+
+            zScore = absAccumDev * 1.0 / SQR((gAccumNbrBits * 1.0) / 4.0)
+            IF (absAccumDev > sqrAccumNbrBits) THEN
+                '#DEBUG PRINT "zScore: " + STR$(zScore)
+                IF (gFirstHit = 1) THEN
+                    gOldZScore = zScore
+                    gFirstHit = 0
+                ELSE
+                    gNewZScore = zScore
+                END IF
+            END IF
+
+            '#DEBUG PRINT "gOldZScore: " + STR$(gOldZScore)
+            '#DEBUG PRINT "gNewZScore: " + STR$(gNewZScore)
+
+            IF (gNewZScore > gOldZscore) THEN
+                gSavedZScore = gNewZScore
+                gOldZScore = gSavedZScore
+            END IF
+
+            '#DEBUG PRINT "gSavedZScore: " + STR$(gSavedZScore)
+            LET MyTimeRNDFile = CLASS "PowerTime"
+            MyTimeRNDFile.Now()
+            MyTimeRNDFile.FileTime TO now
+
+            tempForFile = TIME$ + "," + STR$(gRunningDuration) + "," + FORMAT$(totalBits, "0000") + "," + FORMAT$(zScore, "00.0000") + ","
+
+            SELECT CASE globals.Target
+                CASE 1 'REST
+                    tempForFile += "REST"
+                CASE 2 'FOCUS
+                    IF (gHighOrLow = 1) THEN 'High
+                        tempForFile += "FOCUSHIGH"
+                    ELSE
+                        tempForFile += "FOCUSLOW"
+                    END IF
+                CASE ELSE
+                    tempForFile += "FOCUS"
+            END SELECT
+
+            IF (gRNDFile <> "") THEN
+                PRINT #900, tempForFile
+            END IF
+
+
+
+
+
+            '================================================================
+            '3/20/2014 changing from 3 minute fixed trial length to
+            'variable length trials.
+            '================================================================
+            IF (gRunningDuration MOD (globals.TrialLength / 1000) = 0) THEN
+            'IF (gTimerMinutes = 3) THEN 'every 60 sec/min * 3 min
+                'PhotoDiodeOnOff(globals.hdl.DlgSubjectPhotoDiode,  1)
+                'SetMMTimerOnOff("SUBJECTDIODE", 1)    'turn on
+
+                LET MyTime = CLASS "PowerTime"
+                MyTime.Now()
+                MyTime.FileTime TO now
+                   'iVPos = 200
+                globals.DioIndex = DIOWrite(globals.DioCardPresent, globals.BoardNum, globals.GreyCode)
+                globals.TargetTime = FORMAT$(now, "###################") 'TRIM$(STR$(now, 18))
+                EVENTSANDCONDITIONS(2).EvtName = "EndTrial"
+                EVENTSANDCONDITIONS(2).NbrOfGVars = 4
+                EVENTSANDCONDITIONS(2).Index = globals.DioIndex
+                EVENTSANDCONDITIONS(2).GrayCode = globals.GreyCode
+                EVENTSANDCONDITIONS(2).ClockTime = globals.TargetTime
+                EVENTSANDCONDITIONS(2).EventTime = PowerTimeDateTime(MyTime)
+
+                '**********************************************************************************************
+
+
+                SetMMTimerOnOff("GETRESULT", 0)    'turn off
+                gPauseFlag = %TRUE
+
+                '================================================================
+                '3/20/2014 adding a 5 - 15 second random delay per Ross Dunseath
+                '================================================================
+
+                gBetweenTrialFlag = 0
+                rndJitter = RND(5,10) * 1000
+                SetMMTimerDuration("DELAY", rndJitter)
+
+                'SetMMTimerDuration("DELAY", 6000)
+                SetMMTimerOnOff("DELAY", 1)    'turn on
+
+                'only play audio feedback on non-rest
+                SELECT CASE globals.Target
+                    CASE 2 'FOCUS
+                        IF (gSavedZScore = 0) THEN
+                            #DEBUG PRINT "NEUTRAL AUDIO"
+                            globals.Feedback = 1
+                            SHELL("PlayWaveAsynch.exe " + EXE.PATH$ + "\Sounds\VocodSynthSwish.wav")
+                        ELSE
+                            #DEBUG PRINT "UPBEAT AUDIO"
+                            globals.Feedback = 2
+                            SHELL("PlayWaveAsynch.exe " + EXE.PATH$ + "\Sounds\MusicalAccentTwinkle.wav")
+                        END IF
+                END SELECT
+
+                WriteOutEndTrialEvents()
+
+
+
+                CALL EndTrial()
+
+                'CALL StartTrial()
+                'SetMMTimerDuration("STARTTRIAL", 4000)
+                'SetMMTimerOnOff("STARTTRIAL", 1)    'turn on
+
+                gARSFirstHit = 1
+                gARSNewZScore = 0
+                gARSOldZScore = 0
+                gARSSavedZScore = 0
+                gARSAccumNbrBits = 0
+                gARSAccumDev = 0
+                gRunningDuration = 0
+
+                gFirstHit = 1
+                gNewZScore = 0
+                gOldZScore = 0
+                gSavedZScore = 0
+                gAccumNbrBits = 0
+                gAccumDev = 0
+            ELSE
+                SetMMTimerOnOff("GETRESULT", 1)    'turn on
+            END IF
+        CASE "ENDINTENTION"
+            'msgbox "here"
+            SetMMTimerOnOff("ENDINTENTION", 0)    'turn off
+            gPauseFlag = %TRUE
+
+            LET MyTime = CLASS "PowerTime"
+            MyTime.Now()
+            MyTime.FileTime TO now
+               'iVPos = 200
+            globals.DioIndex = DIOWrite(globals.DioCardPresent, globals.BoardNum, globals.GreyCode)
+            globals.TargetTime = FORMAT$(now, "###################") 'TRIM$(STR$(now, 18))
+            EVENTSANDCONDITIONS(2).EvtName = "EndTrial"
+            EVENTSANDCONDITIONS(2).NbrOfGVars = 4
+            EVENTSANDCONDITIONS(2).Index = globals.DioIndex
+            EVENTSANDCONDITIONS(2).GrayCode = globals.GreyCode
+            EVENTSANDCONDITIONS(2).ClockTime = globals.TargetTime
+            EVENTSANDCONDITIONS(2).EventTime = PowerTimeDateTime(MyTime)
+
+            WriteOutEndTrialEvents()
+
+            CALL EndTrial()
+
+            '================================================================
+            '3/20/2014 adding a 5 - 15 second random delay per Ross Dunseath
+            '================================================================
+            RANDOMIZE TIMER
+            rndJitter = RND(5,10) * 1000
+
+            SetMMTimerDuration("DELAY", rndJitter)
+            SetMMTimerOnOff("DELAY", 1)    'turn on
+        CASE "SUBJECTDIODE"
+            CONTROL SET TEXT globals.hdl.DlgSubject, %IDC_LABEL_TARGET, ""
+            'PhotoDiodeOnOff(globals.hdl.DlgSubjectPhotoDiode,  0)
+            'SetMMTimerOnOff("SUBJECTDIODE", 0)    'turn off
+    END SELECT
+END SUB
+
+FUNCTION PowerTimeDateTimeApp(MyTime AS IPOWERTIME) AS STRING
+    'This is a version for this application
+    LOCAL tempDateTime AS STRING
+
+    tempDateTime = TRIM$(FORMAT$(MyTime.Hour(), "00")) + ":" + TRIM$(FORMAT$(MyTime.Minute(), "00")) + _
+                                            ":" + TRIM$(FORMAT$(MyTime.Second(), "00")) + "." + TRIM$(FORMAT$(MyTime.MSecond(), "000"))
+    FUNCTION = tempDateTime
+
+END FUNCTION
+
+
+
+SUB readInWavFiles()
+    LOCAL cnt, Value AS LONG
+    LOCAL Desc, LongDesc, WavFile AS STRING
+
+    REDIM gWavFiles(20)
+
+    OPEN EXE.PATH$ + "\Conditions\Intention.txt" FOR INPUT AS #1
+
+    INPUT #1, LongDesc
+
+    cnt = 0
+    DO
+        INPUT# #1, Desc, Value, WavFile
+        IF (LCASE$(Desc) = "xxx" AND Value = 999) THEN
+            EXIT LOOP
+        END IF
+        cnt = cnt + 1
+        'Changed using the wav files to using
+        'the desc. So, we could do the wav
+        'file asynchcronously  4/17/2014
+        'gWavFiles(cnt) = WavFile
+        gWavFiles(cnt) = Desc + "_WAV"
+    LOOP
+
+    CLOSE #1
+END SUB

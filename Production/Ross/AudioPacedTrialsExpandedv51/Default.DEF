@@ -1,0 +1,7 @@
+[EEG Information]
+NumberOfChannels=32
+EEGChannels=
+AIBChannels=1,2,3
+AuxiliarySensors=
+BipolarLeads=
+SampleRates=3

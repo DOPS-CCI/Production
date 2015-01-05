@@ -1,0 +1,24 @@
+nbr, desc
+-1,NONE
+19,Church Organ
+38,Synth Bass 1
+39,Synth Bass 2
+40,Violin
+42,Cello
+43,Contrabass
+47,Timpani
+48,String Ensemble 1
+49,String Ensemble 2
+50,Synth Strings 1
+51,Synth Strings 2
+52,Choir Aahs
+68,Oboe
+73,Flute
+77,Shakuhachi
+78,Whistle
+84,Lead 5 (charang)
+88,Pad 1 (new age)
+90,Pad 3 (polysynth)
+91,Pad 4 (choir)
+92,Pad 5 (bowed)
+104,Sitar

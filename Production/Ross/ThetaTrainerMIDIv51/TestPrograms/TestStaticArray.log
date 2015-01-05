@@ -1,0 +1,32 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  E:\PowerBasicClassicWindows10\Projects\Ross\ThetaTrainerMIDI\TestStaticArray.bas   {600 total lines}
+Target compilation:  TestStaticArray.EXE
+Compile time:  0.1 seconds, at 720000 lines/minute
+
+2416 bytes compiled code, 9384 bytes RTLibrary,
+88 bytes string literals, and 3808 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 15872 bytes   Memory image: 13280 bytes.
+
+Component Files:
+----------------
+E:\PowerBasicClassicWindows10\Projects\Ross\ThetaTrainerMIDI\TestStaticArray.bas
+E:\POWERBASICCLASSICWINDOWS10\PROJECTS\ROSS\THETATRAINERMIDI\DIGITALFILTERS_NEW.INC
+E:\POWERBASICCLASSICWINDOWS10\PROJECTS\ROSS\THETATRAINERMIDI\CIRCULARQUEUECLASS.INC
+
+
+Code Extracted:
+---------------
+EMGBANDPASSFILTER
+EEGBANDPASSFILTER
+EEGHIGHPASSFILTER
+EEGLOWPASSFILTER
+MYCIRCULARQUEUE:DISPLAYFRONTANDREAR
+MYCIRCULARQUEUE:MEAN
+MYCIRCULARQUEUE:RMS
+MYCIRCULARQUEUE:MOVINGWINDOWRMS
+TEST

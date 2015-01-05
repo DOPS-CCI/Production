@@ -1,0 +1,22 @@
+PowerBASIC for Windows
+PB/Win  Version 9.05.
+Copyright (c) 1996-2010 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  F:\POWERB~3\CLIENTTEST.bas   {50056 total lines}
+Target compilation:  CLIENTTEST.exe
+Compile time:  0.2 seconds, at 15016800 lines/minute
+
+5612 bytes compiled code, 6282 bytes RTLibrary,
+44 bytes string literals, and 4460 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 18944 bytes   Memory image: 10786 bytes.
+
+Component Files:
+----------------
+F:\POWERB~3\CLIENTTEST.bas
+F:\POWERB~3\WINAPI\WIN32API.INC
+F:\POWERBASICCLASSICWINDOWS9\MMFCOMM.INC
+
+

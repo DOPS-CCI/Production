@@ -1,0 +1,13 @@
+IDI_ICON1 ICON DISCARDABLE "ThetaTrainer.ico"
+BITMAP_HIGHLIGHT     BITMAP "Images\highlight.bmp"
+
+BITMAP_PROCEED   BITMAP "Images\proceed.bmp"
+BITMAP_WAIT      BITMAP "Images\wait.bmp"
+
+BITMAP_PDB       BITMAP "Images\PD_black.bmp"
+BITMAP_PDW       BITMAP "Images\PD_white.bmp"
+
+BITMAP_OKBUTTON  BITMAP "Images\OKButton.bmp"
+
+FOCUS2_ID         WAVE    "Sounds\Focus2.wav"
+RELAX2_ID         WAVE    "Sounds\Rest2.wav"

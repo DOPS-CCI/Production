@@ -1,0 +1,6 @@
+Is the stimulus a beagle or canary.
+BEAGLE,1,
+CANARY,2,
+BLANK,3,
+xxx,999,
+

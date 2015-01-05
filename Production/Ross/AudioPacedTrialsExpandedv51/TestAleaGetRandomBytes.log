@@ -1,0 +1,22 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  E:\DOPS_Applications\Ross\AudioPacedTrialsExpandedv3\TestAleaGetRandomBytes.bas   {32 total lines}
+Target compilation:  TestAleaGetRandomBytes.EXE
+Compile time:  0.1 seconds, at 38400 lines/minute
+
+1040 bytes compiled code, 14392 bytes RTLibrary,
+232 bytes string literals, and 2892 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 19456 bytes   Memory image: 17516 bytes.
+
+Component Files:
+----------------
+E:\DOPS_Applications\Ross\AudioPacedTrialsExpandedv3\TestAleaGetRandomBytes.bas
+
+
+Code Extracted:
+---------------
+<NONE>

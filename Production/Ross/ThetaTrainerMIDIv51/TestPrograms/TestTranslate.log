@@ -1,0 +1,22 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  F:\PowerBasicClassicWindows10\Projects\Ross\ThetaTrainer\TestTranslate.bas   {253 total lines}
+Target compilation:  TestTranslate.EXE
+Compile time:  0.1 seconds, at 303600 lines/minute
+
+3504 bytes compiled code, 10260 bytes RTLibrary,
+152 bytes string literals, and 2820 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 17408 bytes   Memory image: 13232 bytes.
+
+Component Files:
+----------------
+F:\PowerBasicClassicWindows10\Projects\Ross\ThetaTrainer\TestTranslate.bas
+
+
+Code Extracted:
+---------------
+<NONE>

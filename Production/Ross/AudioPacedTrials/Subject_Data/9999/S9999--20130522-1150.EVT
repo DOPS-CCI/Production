@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="IntentionSelected">
+    <Index>0</Index>
+    <GrayCode>1</GrayCode>
+    <ClockTime>130136970724730000</ClockTime>
+    <EventTime>22 May 2013 11:51:12.473</EventTime>
+    <GroupVars>
+      <GV Name="Intention"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+</Events>

@@ -1,0 +1,11 @@
+OK. I think you're right, though. I think it is a conversion issue and once I get that straight - the rest (breaking it into channels per sample) seems to be working fine.
+
+Here are 2 files in the ZIP file. The CVL file is just taking the string sample (and using a CVL function on it - convert long). From PowerBasic help file: The CVx functions return a number corresponding to a binary pattern stored in a ANSI string value.
+
+The CVL_htonl file is using the CVL function and then the Windows API function htonl (which is an endian conversion function). http://www.beej.us/guide/bgnet/output/html/multipage/htonsman.html
+
+This is just placing channel lead 1 in the water.
+
+I hope Jennifer is OK. I will be leaving around 3 to 3:30, but I will be in bright and early (again) tomorrow.
+
+Frank

@@ -1,0 +1,40 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  E:\DOPS_Applications\Ross\ThetaTrainerB3\TestFilters.bas   {665 total lines}
+Target compilation:  TestFilters.EXE
+Compile time:  0.1 seconds, at 798000 lines/minute
+
+4640 bytes compiled code, 16740 bytes RTLibrary,
+180 bytes string literals, and 3996 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 25600 bytes   Memory image: 20916 bytes.
+
+Component Files:
+----------------
+E:\DOPS_Applications\Ross\ThetaTrainerB3\TestFilters.bas
+E:\DOPS_APPLICATIONS\ROSS\THETATRAINERB3\DOUBLEQUEUEUSINGARRAY_LOCAL.INC
+E:\DOPS_APPLICATIONS\ROSS\THETATRAINERB3\CIRCULARQUEUECLASS.INC
+E:\DOPS_APPLICATIONS\ROSS\THETATRAINERB3\DIGITALFILTERS_NEW.INC
+
+
+Code Extracted:
+---------------
+STARTDOUBLEQUEUE
+ISDOUBLEQUEUEFULL
+ISDOUBLEQUEUEEMPTY
+DOUBLEENQUEUE
+DOUBLEDEQUEUE
+GETDOUBLEQUEUECOUNT
+DEBUGDISPLAYDOUBLEQUEUE
+RMSDOUBLEQUEUE
+MEANDOUBLEQUEUE
+SUMDOUBLEQUEUE
+RMSINTEGER
+MYCIRCULARQUEUE:DISPLAYQUEUE
+MYCIRCULARQUEUE:DISPLAYFRONTANDREAR
+EMGBANDPASSFILTER
+EEGBANDPASSFILTER
+EEGLOWPASSFILTER

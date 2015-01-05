@@ -1,0 +1,4 @@
+A number to indicate where to sync Biosemi and active webcam.
+START,1,
+SYNC,2,
+xxx, 999,

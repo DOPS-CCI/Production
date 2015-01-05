@@ -1,0 +1,915 @@
+#COMPILE EXE
+#DIM ALL
+#DEBUG ERROR ON
+
+#RESOURCE "BrugmanAlpha.pbr"
+#INCLUDE "win32api.inc"
+#INCLUDE "DOPS_PB_CBW.INC"
+#INCLUDE "DOPS_ExperimentInfo.inc"
+#INCLUDE "DOPS_Utils.inc"
+#INCLUDE "DOPS_Statistics.inc"
+
+%DIO_CARD_PRESENT = 0                            'NO
+
+%IMAGE_PD = 1001
+%IMAGE_BACK = 1002
+%IMAGE_PROCEED = 1003
+%ID_GRID = 1004
+%ID_HIGHLIGHT = 1005
+%ID_OK = 1009
+%TEXTBOX_SUBJECTID = 1010
+%TEXTBOX_NBRRUNS = 1011
+%TEXTBOX_NBRTRIALS = 1012
+%TEXTBOX_DISPLAYDURATION = 1013
+%TEXTBOX_ITDURATION = 1014
+%CHECKBOX_DIO_PRESENT = 1015
+%BUTTON_HELPEROK = 1016
+%BUTTON_HELPERCANCEL = 1017
+%FRAME_PHOTODIODE = 1018
+%ID_CONTROLLER_OK = 1019
+%ID_AGENTCARD = 1020
+%TEXTBOX_AGENTID = 1021
+%CHECKBOX_FEEDBACK = 1022
+%ID_CONTROLLER_EXIT = 1023
+%TEXTBOX_COMMENT = 1024
+%ID_NOTHING = 1025
+%BUTTON_HELP = 1026
+
+
+TYPE GlobalHandles
+    DlgSubject AS DWORD
+    DlgAgent AS DWORD
+    DlgController AS DWORD
+    DlgHelper AS DWORD
+    DlgSubjectPhotoDiode AS DWORD
+    DlgAgentPhotoDiode AS DWORD
+END TYPE
+
+TYPE GlobalVariables
+    Target AS LONG
+    Response AS LONG
+    NbrOfHits AS LONG
+    RunCnt AS LONG
+    TrialCnt AS LONG
+    TrialCntTotal AS LONG
+    HitMiss AS LONG
+    AgentShownTarget AS LONG
+    FeedBack AS LONG
+    AgentInRoom AS LONG
+    SubjectID AS LONG
+    AgentID AS LONG
+    NbrOfRuns AS LONG
+    NbrOFTrials AS LONG
+    ImageDuration AS LONG
+    ITDelay AS LONG
+    BoardNum AS LONG
+    DioCardPresent AS LONG
+    GreyCode AS LONG
+    DioIndex AS LONG
+    TargetTime AS ASCIIZ * 18
+    ResponseTime AS ASCIIZ * 18
+    ElapsedTime AS ASCIIZ * 18
+    hdl AS GlobalHandles
+END TYPE
+
+
+
+GLOBAL globals AS GlobalVariables
+
+TYPE arrayCoord
+    x AS LONG
+    y AS LONG
+END TYPE
+
+GLOBAL gCoords() AS arrayCoord
+GLOBAL pid AS DWORD
+
+
+
+' *********************************************************************************************
+'                                  M A I N     P R O G R A M
+' *********************************************************************************************
+FUNCTION PBMAIN
+    LOCAL hr AS DWORD
+    LOCAL filename AS ASCIIZ * 255
+    LOCAL sResult AS ASCIIZ * 255
+
+    '************************************************
+    'Initialize Mersenne-twister
+    '************************************************
+    init_MT_by_array()
+
+    '************************************************
+    'Read values from the INI file to initialize
+    'experiment variables
+    '************************************************
+    EXPERIMENT.SessionDescription.INIFile = "BrugmanAlpha.ini"
+    EXPERIMENT.SessionDescription.Date = DATE$
+    EXPERIMENT.SessionDescription.Time = TIME$
+
+    filename = EXE.PATH$ + EXPERIMENT.SessionDescription.INIFile
+
+    GetPrivateProfileString("Experiment Section", "Mode", "", EXPERIMENT.Misc.Mode, %MAXPPS_SIZE, filename)
+
+    '************************************************
+    'check the DIO card value - usually not set for
+    'demo mode.
+    '************************************************
+    GetPrivateProfileString("Experiment Section", "DigitalIOCard", "", sResult, %MAXPPS_SIZE, filename)
+    IF (LTRIM$(LCASE$(sResult)) = "yes" AND EXPERIMENT.Misc.Mode <> "demo") THEN
+        globals.DioCardPresent = 1
+    ELSE
+        globals.DioCardPresent = 0
+    END IF
+
+    '************************************************
+    'It will only configure and initialize if
+    'globals.DioCardPresent = 1.
+    '************************************************
+    globals.BoardNum = ConfigurePorts(globals.DioCardPresent, 1, 1)
+
+    CALL DioWriteInitialize(globals.DioCardPresent, globals.BoardNum)
+
+    globals.NbrOfHits = 0
+
+    CALL dlgControllerScreen()
+
+    DIALOG SHOW MODAL globals.hdl.DlgController, CALL cbControllerScreen TO hr
+
+
+        'SetWindowsPos
+
+END FUNCTION
+
+SUB dlgControllerScreen()
+    LOCAL hr AS DWORD
+
+    DIALOG NEW PIXELS, 0, "Controller Screen", EXPERIMENT.Misc.Screen(0).x, EXPERIMENT.Misc.Screen(0).y, 1200, 800, %DS_CENTER OR %WS_OVERLAPPEDWINDOW, 0 TO globals.hdl.DlgController
+    ' Use default styles
+    CONTROL ADD BUTTON, globals.hdl.DlgController, %ID_CONTROLLER_OK, "Set Parameters", 525, 388, 150, 25,,, CALL cbControllerOK()
+    CONTROL ADD BUTTON, globals.hdl.DlgController, %ID_CONTROLLER_EXIT, "Exit Experiment", 525, 388, 150, 25,,, CALL cbControllerExit()
+
+    DIALOG SET ICON globals.hdl.DlgController, "BrugmanAlpha.ico"
+    CONTROL SHOW STATE globals.hdl.DlgController, %ID_CONTROLLER_EXIT, %SW_HIDE
+END SUB
+
+CALLBACK FUNCTION cbControllerScreen()
+    LOCAL PS AS paintstruct
+
+    SELECT CASE CBMSG
+        CASE %WM_DESTROY
+            PostQuitMessage 0
+
+        CASE %WM_COMMAND
+            SELECT CASE CBCTL
+                CASE %IDCANCEL
+                    IF CBCTLMSG = %BN_CLICKED OR CBCTLMSG = 1 THEN
+                        DIALOG END CBHNDL, 0
+                    END IF
+            END SELECT
+        CASE %WM_PAINT
+                'beginpaint(ghDlg, PS)
+                'endpaint ghDlg, PS
+    END SELECT
+END FUNCTION
+
+CALLBACK FUNCTION cbControllerOK() AS LONG
+    LOCAL hr AS DWORD
+    LOCAL lError, x, lResult AS LONG
+    LOCAL sResult AS ASCIIZ * 255
+    LOCAL filename AS ASCIIZ * 255
+
+
+    IF CB.MSG = %WM_COMMAND AND CB.CTLMSG = %BN_CLICKED THEN
+
+
+        IF (Experiment.Misc.Mode = "demo") THEN
+            sResult = INPUTBOX$("Number of trials:", "How many trials would you like to attempt?", "25")
+            WritePrivateProfileString( "Experiment Section", "NumberOfRuns", "1", filename)
+            globals.NbrOfRuns = 1
+            WritePrivateProfileString( "Experiment Section", "NumOfTrials", sResult, filename)
+            globals.NbrOfTrials = VAL(sResult)
+            lResult = WritePrivateProfileString( "Subject Section", "ID", "9999", filename)
+            lResult = WritePrivateProfileString( "Experiment Section", "AgentID", "", filename)
+            globals.AgentID = -1
+            globals.AgentInRoom = 1
+            WritePrivateProfileString( "Delay Section", "Delay0Min", "1000", filename)
+            WritePrivateProfileString( "Delay Section", "Delay0Max", "1000", filename)
+            globals.ImageDuration = 1000
+            WritePrivateProfileString( "Delay Section", "Delay1Min", "4000", filename)
+            WritePrivateProfileString( "Delay Section", "Delay1Max", "4000", filename)
+            globals.ITDelay = 4000
+            globals.Feedback = 2
+            WritePrivateProfileString( "Experiment Section", "Feedback", "yes", filename)
+            WritePrivateProfileString( "Experiment Section", "Comment", "demo mode (" + DATE$ + " " + TIME$ + ")", filename)
+
+            CALL LoadINISettings()
+
+            CALL initializeEventFile()
+
+            globals.DioCardPresent = 0
+
+
+            CustomMessageBox(1, "Press OK to start trials.", "Start Trials")
+
+            CALL dlgSubjectScreen()
+
+            DIALOG SHOW MODELESS globals.hdl.DlgSubject, CALL cbSubjectScreen TO lResult
+
+            CONTROL SHOW STATE globals.hdl.DlgSubject, %ID_OK, %SW_HIDE
+            CONTROL SHOW STATE globals.hdl.DlgSubject, %IMAGE_BACK, %SW_SHOW
+            CONTROL SHOW STATE globals.hdl.DlgSubject, %IMAGE_PROCEED, %SW_SHOW
+            CONTROL SHOW STATE globals.hdl.DlgSubject, %ID_GRID, %SW_SHOW
+
+
+
+            globals.RunCnt = 1
+            globals.TrialCnt = 1
+            globals.TrialCntTotal = 1
+
+            globals.AgentShownTarget = 1 'No
+
+            GetTarget()
+
+            CONTROL SHOW STATE globals.hdl.DlgController, %ID_CONTROLLER_OK, %SW_HIDE
+            CONTROL SHOW STATE globals.hdl.DlgController, %ID_CONTROLLER_EXIT, %SW_SHOW
+
+            EXIT FUNCTION
+        END IF
+
+
+
+        CALL dlgControllerHelperScreen()
+        DIALOG SHOW MODAL globals.hdl.DlgHelper, CALL cbControllerHelperScreen TO hr
+
+        CONTROL SHOW STATE globals.hdl.DlgController, %ID_CONTROLLER_OK, %SW_HIDE
+        CONTROL SHOW STATE globals.hdl.DlgController, %ID_CONTROLLER_EXIT, %SW_SHOW
+
+        FUNCTION = 1
+    END IF
+END FUNCTION
+
+CALLBACK FUNCTION cbControllerExit() AS LONG
+    LOCAL hr AS DWORD
+    LOCAL lError AS LONG
+
+    IF CB.MSG = %WM_COMMAND AND CB.CTLMSG = %BN_CLICKED THEN
+            '...Process the click event here
+        CALL closeEventFile()
+
+        CALL StartRenameAndMoveFiles()
+
+        DIALOG END CBHNDL
+        FUNCTION = 1
+    END IF
+END FUNCTION
+
+SUB dlgControllerHelperScreen()
+     #PBFORMS BEGIN DIALOG %IDD_DIALOG1->->
+
+    DIALOG NEW PIXELS, 0, "Enter parameters", 336, 234, 279, 447, _
+        %DS_CENTER OR %WS_OVERLAPPEDWINDOW OR %WS_VISIBLE OR %DS_3DLOOK OR _
+        %DS_NOFAILCREATE OR %DS_SETFONT, %WS_EX_LEFT OR %WS_EX_LTRREADING OR _
+        %WS_EX_RIGHTSCROLLBAR OR %WS_EX_CONTROLPARENT, TO globals.hdl.DlgHelper
+    CONTROL ADD TEXTBOX,  globals.hdl.DlgHelper, %TEXTBOX_NBRRUNS, "1", 128, 23, 100, 20, _
+        %WS_CHILD OR %WS_VISIBLE OR %ES_LEFT OR %ES_NUMBER, _
+        %WS_EX_CLIENTEDGE OR %WS_EX_LEFT OR %WS_EX_LTRREADING OR _
+        %WS_EX_RIGHTSCROLLBAR
+    CONTROL ADD TEXTBOX,  globals.hdl.DlgHelper, %TEXTBOX_NBRTRIALS, "25", 128, 61, 100, 20, _
+        %ES_NUMBER OR %WS_CHILD OR %WS_VISIBLE, %WS_EX_CLIENTEDGE OR _
+        %WS_EX_LEFT OR %WS_EX_LTRREADING OR %WS_EX_RIGHTSCROLLBAR
+    CONTROL ADD TEXTBOX,  globals.hdl.DlgHelper, %TEXTBOX_SUBJECTID, "9999", 128, 99, 100, 20, _
+        %ES_NUMBER OR %WS_CHILD OR %WS_VISIBLE, %WS_EX_CLIENTEDGE OR _
+        %WS_EX_LEFT OR %WS_EX_LTRREADING OR %WS_EX_RIGHTSCROLLBAR
+    CONTROL ADD TEXTBOX,  globals.hdl.DlgHelper, %TEXTBOX_AGENTID, "", 128, 137, 100, 20, _
+        %ES_NUMBER OR %WS_CHILD OR %WS_VISIBLE, %WS_EX_CLIENTEDGE OR _
+        %WS_EX_LEFT OR %WS_EX_LTRREADING OR %WS_EX_RIGHTSCROLLBAR
+    CONTROL ADD TEXTBOX,  globals.hdl.DlgHelper, %TEXTBOX_DISPLAYDURATION, "1000", 128, 175, _
+        100, 20, %ES_NUMBER OR %WS_CHILD OR %WS_VISIBLE, %WS_EX_CLIENTEDGE _
+        OR %WS_EX_LEFT OR %WS_EX_LTRREADING OR %WS_EX_RIGHTSCROLLBAR
+    CONTROL ADD TEXTBOX,  globals.hdl.DlgHelper, %TEXTBOX_ITDURATION, "4000", 128, 213, 100, _
+        20, %ES_NUMBER OR %WS_CHILD OR %WS_VISIBLE, %WS_EX_CLIENTEDGE OR _
+        %WS_EX_LEFT OR %WS_EX_LTRREADING OR %WS_EX_RIGHTSCROLLBAR
+    CONTROL ADD CHECKBOX, globals.hdl.DlgHelper, %CHECKBOX_FEEDBACK, "Feedback", 82, 251, 74, _
+        17
+    CONTROL ADD TEXTBOX,  globals.hdl.DlgHelper, %TEXTBOX_COMMENT, "", 12, 294, 250, 85
+    CONTROL ADD BUTTON,   globals.hdl.DlgHelper, %BUTTON_HELPEROK, "OK", 49, 399, 75, 23, _
+        %BS_DEFAULT OR %BS_CENTER OR %BS_VCENTER OR %BS_TEXT OR %WS_CHILD OR _
+        %WS_VISIBLE, %WS_EX_LEFT OR %WS_EX_LTRREADING, CALL cbHelperScreenOK
+    DIALOG  SEND          globals.hdl.DlgHelper, %DM_SETDEFID, %BUTTON_HELPEROK, 0
+    CONTROL ADD BUTTON,   globals.hdl.DlgHelper, %BUTTON_HELPERCANCEL, "Cancel", 140, 399, 75, _
+        23, , , CALL cbHelperScreenCancel
+    CONTROL ADD BUTTON,   globals.hdl.DlgHelper, %BUTTON_HELP, "?", 240, 398, 24, 24, , , CALL cbHelperScreenHelp
+    CONTROL ADD LABEL,    globals.hdl.DlgHelper, 9900, "Number of runs:", 46, 27, 82, 13
+    CONTROL ADD LABEL,    globals.hdl.DlgHelper, 9901, "Number of trials:", 45, 65, 83, _
+        13
+    CONTROL ADD LABEL,    globals.hdl.DlgHelper, 9903, "Subject ID:", 68, 103, 60, 13
+    CONTROL ADD LABEL,    globals.hdl.DlgHelper, 9904, "Agent ID:", 76, 141, 52, 13
+    CONTROL ADD LABEL,    globals.hdl.DlgHelper, 9903, "Display duration (ms):", 26, 179, _
+        102, 13
+    CONTROL ADD LABEL,    globals.hdl.DlgHelper, 9904, "Enforced delay (ms):", 20, 217, _
+        96, 13
+    CONTROL ADD LABEL,    globals.hdl.DlgHelper, 9905, "Initial comment:", 11, 278, 80, _
+        13
+#PBFORMS END DIALOG
+
+
+    CONTROL SET CHECK globals.hdl.DlgHelper, %CHECKBOX_FEEDBACK, 1
+END SUB
+
+CALLBACK FUNCTION cbControllerHelperScreen()
+    LOCAL PS AS paintstruct
+    LOCAL temp AS STRING
+    LOCAL lError AS LONG
+
+    SELECT CASE CBMSG
+        CASE %WM_DESTROY
+            PostQuitMessage 0
+
+        CASE %WM_COMMAND
+            SELECT CASE CBCTL
+            END SELECT
+        CASE %WM_PAINT
+                'beginpaint(ghDlg, PS)
+                'endpaint ghDlg, PS
+    END SELECT
+END FUNCTION
+
+CALLBACK FUNCTION cbHelperScreenOK() AS LONG
+    LOCAL lResult, lTemp, x, y AS LONG
+    LOCAL temp AS ASCIIZ * 255
+    LOCAL filename AS ASCIIZ * 255
+    GLOBAL pid AS DWORD
+
+    EXPERIMENT.SessionDescription.INIFile = "BrugmanAlpha.ini"
+    EXPERIMENT.SessionDescription.Date = DATE$
+    EXPERIMENT.SessionDescription.Time = TIME$
+
+
+    filename = EXE.PATH$ + EXPERIMENT.SessionDescription.INIFile
+
+    globals.NbrOfHits = 0
+
+
+    IF CB.MSG = %WM_COMMAND AND CB.CTLMSG = %BN_CLICKED THEN
+            '...Process the click event here
+       CONTROL GET TEXT globals.hdl.DlgHelper, %TEXTBOX_NBRRUNS TO temp
+        WritePrivateProfileString( "Experiment Section", "NumberOfRuns", temp, filename)
+        globals.NbrOfRuns = VAL(temp)
+        IF (globals.NbrOfRuns <= 0 OR globals.NbrOfRuns > 20) THEN
+            MSGBOX "Number of runs should be a number between 1 and 20."
+            EXIT FUNCTION
+        END IF
+        CONTROL GET TEXT globals.hdl.DlgHelper, %TEXTBOX_NBRTRIALS TO temp
+        WritePrivateProfileString( "Experiment Section", "NumOfTrials", temp, filename)
+        globals.NbrOfTrials = VAL(temp)
+        IF (globals.NbrOfTrials <= 0 OR globals.NbrOfTrials > 999) THEN
+            MSGBOX "Number of trials should be a number between 1 and 999."
+            EXIT FUNCTION
+        END IF
+
+        CONTROL GET TEXT globals.hdl.DlgHelper, %TEXTBOX_SUBJECTID TO temp
+        lResult = WritePrivateProfileString( "Subject Section", "ID", temp, filename)
+        globals.SubjectID = VAL(temp)
+        IF (globals.SubjectID < 0 OR globals.SubjectID > 9999) THEN
+            MSGBOX "Subject ID should be a number between 1 and 9999."
+            EXIT FUNCTION
+        END IF
+
+        CONTROL GET TEXT globals.hdl.DlgHelper, %TEXTBOX_AGENTID TO temp
+        lResult = WritePrivateProfileString( "Experiment Section", "AgentID", temp, filename)
+        IF (TRIM$(temp) = "") THEN
+            globals.AgentID = -1
+            globals.AgentInRoom = 1
+        ELSE
+            globals.AgentID = VAL(temp)
+            IF (globals.AgentID < 0 OR globals.AgentID > 9999) THEN
+                MSGBOX "Agent ID should be a number between 1 and 9999."
+                EXIT FUNCTION
+            END IF
+
+            globals.AgentInRoom = 2
+        END IF
+
+        CONTROL GET TEXT globals.hdl.DlgHelper, %TEXTBOX_DISPLAYDURATION TO temp
+        WritePrivateProfileString( "Delay Section", "Delay0Min", temp, filename)
+        WritePrivateProfileString( "Delay Section", "Delay0Max", temp, filename)
+        globals.ImageDuration = VAL(temp)
+
+        CONTROL GET TEXT globals.hdl.DlgHelper, %TEXTBOX_ITDURATION TO temp
+        WritePrivateProfileString( "Delay Section", "Delay1Min", temp, filename)
+        WritePrivateProfileString( "Delay Section", "Delay1Max", temp, filename)
+        globals.ITDelay = VAL(temp)
+
+        CONTROL GET CHECK globals.hdl.DlgHelper, %CHECKBOX_FEEDBACK TO lTemp
+        IF (lTemp = 1) THEN
+            globals.Feedback = 2
+            WritePrivateProfileString( "Experiment Section", "Feedback", "yes", filename)
+        ELSE
+            globals.Feedback = 1
+            WritePrivateProfileString( "Experiment Section", "Feedback", "no", filename)
+        END IF
+
+        CONTROL GET TEXT globals.hdl.DlgHelper, %TEXTBOX_COMMENT TO temp
+        WritePrivateProfileString( "Experiment Section", "Comment", temp + "(" + DATE$ + " " + TIME$ + ")", filename)
+
+        CALL StartModifyExpAndTech(filename)
+
+        CALL LoadINISettings()
+
+        CALL initializeEventFile()
+
+        IF (LTRIM$(LCASE$(EXPERIMENT.Misc.DigitalIOCard)) = "yes") THEN
+            globals.DioCardPresent = 1
+        ELSE
+            globals.DioCardPresent = 0
+        END IF
+
+        'globals.BoardNum = ConfigurePorts(globals.DioCardPresent, 1, 1)
+
+        'CALL DioWriteInitialize(globals.DioCardPresent, globals.BoardNum)
+
+        IF (globals.AgentInRoom = 2) THEN
+           CALL dlgAgentScreen()
+           DIALOG SHOW MODELESS globals.hdl.DlgAgent, CALL cbAgentScreen
+        END IF
+
+        DIALOG SHOW STATE globals.hdl.DlgHelper, %SW_HIDE
+
+        '**********************************************************************************************
+        'added 12/11/2012 FAA
+        '
+        'The following lines were added to add automation functions between the Experiment and
+        'the Actiview application on the Biosemi PC. It is using a file semaphore system.
+        'The experiment will create a file on the Biosemi machine (see StartupActiview() routine)
+        'A macro written in Macro Express Pro is sitting and waiting for a file to be created (via
+        'the StartupActiview() routine). This file contains information that will be written in to
+        'certain fields in the Actiview program. When the file is created by this experiment, the
+        'macro will run, start up Actiview, and fill in the necessary fields. The StartBiosemiRecord()
+        'routine also writes a file to the Biosemi PC. This file starts up a macro that starts Actiview
+        'recording. The 2 files created: MacroValues.txt and MacroValues2.txt are created on a mapped
+        'network drive X: in the directories: \Semaphores\ActiviewStart and \Semaphores\BiosemiRecord
+        'respectively.
+        '
+
+        pid = SHELL("E:\Program Files\Active WebCam\WebCam.exe", 1)
+
+        CALL StartupActiview()
+
+        CustomMessageBox(0, "Please wait while Biosemi is starting up." + $CRLF + _
+            "The experimenter is responsible to configure EEG settings, now." + $CRLF + _
+            "Press OK when ready to start Biosemi recording.", "Start Biosemi Recording")
+
+        CALL StartBiosemiRecord()
+
+        CustomMessageBox(0, "Press OK when Biosemi is recording." + $CRLF + _
+            "You can now start the trials.", "Biosemi is Recording")
+        '**********************************************************************************************
+
+
+        CustomMessageBox(1, "Press OK to start trials.", "Start Trials")
+
+
+        CALL dlgSubjectScreen()
+
+        DIALOG SHOW MODELESS globals.hdl.DlgSubject, CALL cbSubjectScreen TO lResult
+
+        CONTROL SHOW STATE globals.hdl.DlgSubject, %ID_OK, %SW_HIDE
+        CONTROL SHOW STATE globals.hdl.DlgSubject, %IMAGE_BACK, %SW_SHOW
+        CONTROL SHOW STATE globals.hdl.DlgSubject, %IMAGE_PROCEED, %SW_SHOW
+        CONTROL SHOW STATE globals.hdl.DlgSubject, %ID_GRID, %SW_SHOW
+
+        globals.RunCnt = 1
+        globals.TrialCnt = 1
+        globals.TrialCntTotal = 1
+
+        globals.AgentShownTarget = 1 'No
+
+        GetTarget()
+
+        'DO
+        '    DIALOG DOEVENTS
+        '    DIALOG GET SIZE globals.hdl.DlgController TO x&, x&
+        'LOOP WHILE x& ' When x& = 0, dialog has ended
+
+
+        DIALOG END CBHNDL
+    END IF
+END FUNCTION
+
+
+CALLBACK FUNCTION cbHelperScreenCancel() AS LONG
+    LOCAL lError AS LONG
+
+    IF CB.MSG = %WM_COMMAND AND CB.CTLMSG = %BN_CLICKED THEN
+            '...Process the click event here
+        DIALOG END CBHNDL, 0
+    END IF
+END FUNCTION
+
+CALLBACK FUNCTION cbHelperScreenHelp() AS LONG
+    LOCAL lError AS LONG
+
+    IF CB.MSG = %WM_COMMAND AND CB.CTLMSG = %BN_CLICKED THEN
+            '...Process the click event here
+        SHELL("NOTEPAD.EXE HelpFile.txt")
+    END IF
+END FUNCTION
+
+SUB dlgSubjectScreen()
+    'DIALOG NEW pixels, 0, "", EXPERIMENT.Misc.Screen(1).x, EXPERIMENT.Misc.Screen(1).y, 1200, 800, %WS_POPUP OR %WS_BORDER, 0 TO globals.hdl.DlgSubject
+    DIALOG NEW PIXELS, 0, "", EXPERIMENT.Misc.Screen(1).x, EXPERIMENT.Misc.Screen(1).y, 1200, 800,%WS_POPUP OR %WS_BORDER, 0 TO globals.hdl.DlgSubject
+    DIALOG SET LOC globals.hdl.DlgSubject, EXPERIMENT.Misc.Screen(1).x + (EXPERIMENT.Misc.Screen(1).xMax - 1200) / 2, EXPERIMENT.Misc.Screen(1).y + (EXPERIMENT.Misc.Screen(1).yMax - 800) / 2
+
+
+    CONTROL ADD IMAGE, globals.hdl.DlgSubject, %IMAGE_PROCEED, "BITMAP_PROCEED", 538, 725, 100, 50,,,
+
+    CONTROL ADD IMAGEX, globals.hdl.DlgSubject, %ID_GRID, "BITMAP_GRID", 296, 60, 600, 600,,, 'CALL cbSubject1
+    CONTROL ADD IMAGEX, globals.hdl.DlgSubject, %ID_HIGHLIGHT, "BITMAP_HIGHLIGHT", 296, 60, 30, 30,,, 'CALL cbSubject1
+
+    CONTROL SHOW STATE globals.hdl.DlgSubject, %IMAGE_PROCEED, %SW_HIDE
+    CONTROL SHOW STATE globals.hdl.DlgSubject, %ID_GRID, %SW_HIDE
+    CONTROL SHOW STATE globals.hdl.DlgSubject, %ID_HIGHLIGHT, %SW_HIDE
+
+    globals.hdl.DlgSubjectPhotoDiode = CreatePhotoDiodeDDialog(EXPERIMENT.Misc.Screen(1).x, EXPERIMENT.Misc.Screen(1).y)
+
+
+END SUB
+
+CALLBACK FUNCTION cbSubjectScreen()
+    SELECT CASE CB.MSG
+        CASE %WM_LBUTTONDOWN
+            CALL ResponseChosen(CB.LPARAM)
+        CASE %WM_COMMAND
+            IF CB.CTLMSG = %BN_CLICKED THEN
+            END IF
+    END SELECT
+END FUNCTION
+
+SUB ResponseChosen(lParam AS DWORD)
+    LOCAL l, m, xMax, ymax, xStart, yStart, xMouse, yMouse AS LONG
+    LOCAL xTempMin, xTempMax, yTempMin, yTempMax, found, arrayCnt AS LONG
+    LOCAL response AS STRING
+
+    response = "AFKPVBGLQWCHMRXDINSYEJOTZ"
+
+    CONTROL GET LOC globals.hdl.DlgSubject, %ID_GRID TO xStart, yStart
+    CONTROL GET CLIENT globals.hdl.DlgSubject, %ID_GRID TO xMax, yMax
+
+    xMouse = LO(WORD, lParam)
+    yMouse = HI(WORD, lParam)
+
+    IF ((xMouse >= xStart)  AND (xMouse <= xStart + xMax)) THEN
+        IF ((yMouse >= yStart) AND (yMouse <= yStart + yMax)) THEN
+            found = 0
+            arrayCnt = 0
+            FOR l = 1 TO 5
+                xTempMin = xStart + ((l - 1) * (xMax / 5))
+                xTempMax = xStart + (l * (xMax / 5))
+                FOR m = 1 TO 5
+                    arrayCnt = arrayCnt + 1
+                    yTempMin = yStart + ((m - 1) * (yMax / 5))
+                    yTempMax = yStart + (m * (yMax / 5))
+                    IF ((xMouse >= xTempMin)  AND (xMouse <= xTempMax)) THEN
+                        IF ((yMouse >= yTempMin) AND (yMouse <= yTempMax)) THEN
+                            'MSGBOX mid$(response, arrayCnt, 1) + ", " + str$(m) + ", " + str$(l)
+                            globals.Response = arrayCnt
+                            globals.DioIndex = DIOWrite(globals.DioCardPresent, globals.BoardNum, globals.GreyCode)
+                            globals.ResponseTime = GetTimeWithseconds()
+                            EVENTSANDCONDITIONS(2).EvtName = "ResponseSelected"
+                            EVENTSANDCONDITIONS(2).NbrOfGVars = 9
+                            EVENTSANDCONDITIONS(2).Index = globals.DioIndex
+                            EVENTSANDCONDITIONS(2).GrayCode = globals.GreyCode
+                            EVENTSANDCONDITIONS(2).Time = globals.ResponseTime
+                            globals.ElapsedTime = STR$(ROUND(VAL(globals.ResponseTime) - VAL(globals.TargetTime), 4) * 1000)
+
+
+                           ' if target was shown to agent - now turn it off
+                            SELECT CASE globals.AgentShownTarget
+                                CASE 2 'show to agent
+                                    PhotoDiodeOnOff(globals.hdl.DlgAgentPhotoDiode,  0)
+                                    CONTROL SET IMAGEX  globals.hdl.DlgAgent, %ID_GRID, "BITMAP_GRID"
+                            END SELECT
+
+                            PhotoDiodeOnOff(globals.hdl.DlgSubjectPhotoDiode,  1)
+
+                            EnableButtons(0) 'disable buttons
+
+                            SubjectResponse()
+                            found = 1
+                        END IF
+                    END IF
+                    IF (found = 1) THEN
+                        EXIT FOR
+                    END IF
+                NEXT m
+                IF (found = 1) THEN
+                    EXIT FOR
+                END IF
+            NEXT l
+
+            'control set loc globals.hdl.DlgSubject, %ID_HIGHLIGHT, xMouse, yMouse
+        END IF
+    END IF
+END SUB
+
+
+SUB dlgAgentScreen()
+    DIALOG NEW PIXELS, 0, "", EXPERIMENT.Misc.Screen(2).x, EXPERIMENT.Misc.Screen(2).y, 1200, 800, %WS_POPUP OR %WS_BORDER, 0 TO globals.hdl.DlgAgent
+    DIALOG SET LOC globals.hdl.DlgAgent, EXPERIMENT.Misc.Screen(2).x + (EXPERIMENT.Misc.Screen(2).xMax - 1200) / 2, EXPERIMENT.Misc.Screen(2).y + (EXPERIMENT.Misc.Screen(2).yMax - 800) / 2
+    CONTROL ADD IMAGEX, globals.hdl.DlgAgent, %ID_GRID, "BITMAP_GRID", 296, 60, 600, 600,,, 'CALL cbSubject1
+    CONTROL ADD IMAGEX, globals.hdl.DlgAgent, %ID_HIGHLIGHT, "BITMAP_HIGHLIGHT", 296, 60, 30, 30,,, 'CALL cbSubject1
+
+    CONTROL SHOW STATE globals.hdl.DlgAgent, %ID_HIGHLIGHT, %SW_HIDE
+
+    globals.hdl.DlgAgentPhotoDiode = CreatePhotoDiodeDDialog(EXPERIMENT.Misc.Screen(2).x, EXPERIMENT.Misc.Screen(2).y)
+    PhotoDiodeOnOff(globals.hdl.DlgAgentPhotoDiode,  0)
+END SUB
+
+CALLBACK FUNCTION cbAgentScreen()
+    LOCAL PS AS paintstruct
+    LOCAL temp AS STRING
+    LOCAL lError AS LONG
+
+    SELECT CASE CBMSG
+        CASE %WM_DESTROY
+            PostQuitMessage 0
+
+        CASE %WM_COMMAND
+            SELECT CASE CBCTL
+            END SELECT
+        CASE %WM_PAINT
+                'beginpaint(ghDlg, PS)
+                'endpaint ghDlg, PS
+    END SELECT
+END FUNCTION
+
+FUNCTION GetTarget() AS LONG
+    globals.Target = RandomNumber(EXPERIMENT.Misc.NbrOfTargets)
+
+    globals.DioIndex = DIOWrite(globals.DioCardPresent, globals.BoardNum, globals.GreyCode)
+    globals.TargetTime = GetTimeWithseconds()
+
+    EVENTSANDCONDITIONS(0).EvtName = "TargetSelected"
+    EVENTSANDCONDITIONS(0).NbrOfGVars = 9
+    EVENTSANDCONDITIONS(0).Index = globals.DioIndex
+    EVENTSANDCONDITIONS(0).GrayCode = globals.GreyCode
+    EVENTSANDCONDITIONS(0).Time = globals.TargetTime
+
+    'give a delay before showing it to the agent
+    delay(EXPERIMENT.Misc.Delay1Max)
+
+    'E.K. requested a 250 ms jitter be added
+    'to the enforced delay (4/6/12)
+    randomDelayMilliseconds(0, 250)
+
+    CALL DisplayToAgent()
+END FUNCTION
+
+SUB DisplayToAgent()
+    LOCAL lRnd AS LONG
+    LOCAL targ, targetStr AS STRING
+
+    EVENTSANDCONDITIONS(1).EvtName = "TargetDisplayedUpstair"
+    IF (globals.AgentInRoom = 1) THEN
+        EXIT SUB
+    END IF
+
+    lRnd = RND(1, 2)
+    globals.AgentShownTarget = lRnd
+
+    SELECT CASE globals.AgentShownTarget
+        CASE 2 'show to agent
+
+            globals.DioIndex = DIOWrite(globals.DioCardPresent, globals.BoardNum, globals.GreyCode)
+            globals.TargetTime = GetTimeWithSeconds()
+            EVENTSANDCONDITIONS(1).EvtName = "TargetDisplayedUpstair"
+            EVENTSANDCONDITIONS(1).NbrOfGVars = 9
+            EVENTSANDCONDITIONS(1).Index = globals.DioIndex
+            EVENTSANDCONDITIONS(1).GrayCode = globals.GreyCode
+            EVENTSANDCONDITIONS(1).Time = globals.TargetTime
+            PhotoDiodeOnOff(globals.hdl.DlgAgentPhotoDiode,  1)
+            Feedback(globals.Target, globals.hdl.DlgAgent)
+        CASE 1  'don't show to agent
+           'globals.DioIndex = DIOWrite(globals.DioCardPresent, globals.BoardNum, globals.GreyCode)
+            globals.TargetTime = GetTimeWithSeconds()
+            EVENTSANDCONDITIONS(1).EvtName = "TargetDisplayedUpstair"
+            EVENTSANDCONDITIONS(1).NbrOfGVars = 9
+            EVENTSANDCONDITIONS(1).Index = globals.DioIndex
+            EVENTSANDCONDITIONS(1).GrayCode = globals.GreyCode
+            EVENTSANDCONDITIONS(1).Time = globals.TargetTime
+            PhotoDiodeOnOff(globals.hdl.DlgAgentPhotoDiode,  0)
+            CONTROL SET IMGBUTTONX  globals.hdl.DlgAgent, %ID_GRID, "BITMAP_GRID"
+            CONTROL REDRAW globals.hdl.DlgAgent, %ID_GRID
+     END SELECT
+
+   'enforced delay
+    'delay(EXPERIMENT.Misc.Delay1Max)
+
+    'E.K. requested a 250 ms jitter be added
+    'to the enforced delay (4/6/12)
+    'randomDelayMilliseconds(0, 250)
+END SUB
+
+
+
+FUNCTION SubjectResponse() AS LONG
+    LOCAL systime AS SYSTEMTIME
+    LOCAL lDisplayToAgent, lResult AS LONG
+
+    'show trial # on the experimenter screen
+    DIALOG SET TEXT globals.hdl.DlgController, "Trial # " + STR$(globals.TrialCntTotal)
+
+    IF (globals.Response = globals.Target) THEN
+        globals.HitMiss = 2
+        globals.NbrOfHits = globals.NbrOfHits + 1
+    ELSE
+        globals.HitMiss = 1
+    END IF
+
+
+    IF (globals.Feedback = 2) THEN
+        Feedback(globals.Target, globals.hdl.DlgSubject)
+    END IF
+
+    'screen delay
+    delay(EXPERIMENT.Misc.Delay0Max)
+
+    CONTROL SET IMAGEX  globals.hdl.DlgSubject, %ID_GRID, "BITMAP_GRID"
+    CONTROL REDRAW globals.hdl.DlgSubject, %ID_GRID
+    PhotoDiodeOnOff(globals.hdl.DlgSubjectPhotoDiode, 0)
+
+
+    WriteOutEvents()
+
+    IF ((globals.TrialCnt * globals.RunCnt) = (globals.NbrOfRuns * globals.NbrOfTrials)) THEN
+        lResult = CustomMessageBox(1, "Would you like to see how you did?", "Show Results")
+        'lResult = MSGBOX("Would you like to see how you did?", %MB_YESNO, "Show Results")
+        IF (lResult = 1) THEN
+            CustomMessageBox(1, displayStatisticsResults(globals.TrialCnt * globals.RunCnt, globals.NbrOfHits), "Your Results")
+            'MSGBOX displayStatisticsResults(glTrialCnt, glNbrOfHits)
+        END IF
+
+        CustomMessageBox(0,"The experiment is over.", "Experiment Ended.")
+
+        DIALOG END globals.hdl.DlgSubject, 0
+
+        FUNCTION = 1
+
+        EXIT FUNCTION
+    END IF
+
+    IF ((globals.TrialCnt = globals.NbrOfTrials) AND (globals.RunCnt < globals.NbrOfRuns)) THEN
+        globals.TrialCnt = 0
+        globals.RunCnt = globals.RunCnt + 1
+
+        CustomMessageBox(1, "The run is over. You can take a short break.", "Run Ended")
+        CustomMessageBox(0,"The run is over. Subject can take a short break.", "Run Ended.")
+        CustomMessageBox(0,"Run " + STR$(globals.RunCnt) + " is about to begin.", "Start Next Run")
+        CustomMessageBox(1, "Press OK to start trials.", "Start Trials")
+    END IF
+
+    globals.TrialCnt = globals.TrialCnt + 1
+    globals.TrialCntTotal = globals.TrialCntTotal + 1
+
+    'Target Selected
+    GetTarget()
+
+    EnableButtons(1) 'enable buttons
+    FUNCTION = 0
+END FUNCTION
+
+SUB WriteOutEvents()
+    'TargetSelected
+    EVENTSANDCONDITIONS(0).GVars(0).Condition = "Target"
+    EVENTSANDCONDITIONS(0).GVars(0).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(0).Condition, globals.Target)
+    EVENTSANDCONDITIONS(0).GVars(1).Condition = "Response"
+    EVENTSANDCONDITIONS(0).GVars(1).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(1).Condition, globals.Response)
+    EVENTSANDCONDITIONS(0).GVars(2).Condition = "AgentInRoom"
+    EVENTSANDCONDITIONS(0).GVars(2).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(2).Condition, globals.AgentInRoom)
+    EVENTSANDCONDITIONS(0).GVars(3).Condition = "AgentShownTarget"
+    EVENTSANDCONDITIONS(0).GVars(3).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(3).Condition, globals.AgentShownTarget)
+    EVENTSANDCONDITIONS(0).GVars(4).Condition = "Feedback"
+    EVENTSANDCONDITIONS(0).GVars(4).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(4).Condition, globals.Feedback)
+    EVENTSANDCONDITIONS(0).GVars(5).Condition = "HitMiss"
+    EVENTSANDCONDITIONS(0).GVars(5).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(5).Condition, globals.HitMiss)
+    EVENTSANDCONDITIONS(0).GVars(6).Condition = "EnforcedDelay"
+    EVENTSANDCONDITIONS(0).GVars(6).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(6).Condition, EXPERIMENT.Misc.Delay1Max)
+    EVENTSANDCONDITIONS(0).GVars(7).Condition = "RunNumber"
+    EVENTSANDCONDITIONS(0).GVars(7).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(7).Condition, globals.RunCnt)
+    EVENTSANDCONDITIONS(0).GVars(8).Condition = "TrialNumber"
+    EVENTSANDCONDITIONS(0).GVars(8).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(8).Condition, globals.TrialCnt)
+    EVENTSANDCONDITIONS(0).GVars(9).Condition = "TrialLength"
+    EVENTSANDCONDITIONS(0).GVars(9).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(0).EvtName, EVENTSANDCONDITIONS(0).GVars(9).Condition, VAL(globals.ElapsedTime))
+
+
+    CALL WriteToEventFile2(0)
+
+    'ResponseSelected
+    EVENTSANDCONDITIONS(2).GVars(0).Condition = "Target"
+    EVENTSANDCONDITIONS(2).GVars(0).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(0).Condition, globals.Target)
+    EVENTSANDCONDITIONS(2).GVars(1).Condition = "Response"
+    EVENTSANDCONDITIONS(2).GVars(1).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(1).Condition, globals.Response)
+    EVENTSANDCONDITIONS(2).GVars(2).Condition = "AgentInRoom"
+    EVENTSANDCONDITIONS(2).GVars(2).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(2).Condition, globals.AgentInRoom)
+    EVENTSANDCONDITIONS(2).GVars(3).Condition = "AgentShownTarget"
+    EVENTSANDCONDITIONS(2).GVars(3).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(3).Condition, globals.AgentShownTarget)
+    EVENTSANDCONDITIONS(2).GVars(4).Condition = "Feedback"
+    EVENTSANDCONDITIONS(2).GVars(4).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(4).Condition, globals.Feedback)
+    EVENTSANDCONDITIONS(2).GVars(5).Condition = "HitMiss"
+    EVENTSANDCONDITIONS(2).GVars(5).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(5).Condition, globals.HitMiss)
+    EVENTSANDCONDITIONS(2).GVars(6).Condition = "EnforcedDelay"
+    EVENTSANDCONDITIONS(2).GVars(6).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(6).Condition, EXPERIMENT.Misc.Delay1Max)
+    EVENTSANDCONDITIONS(2).GVars(7).Condition = "RunNumber"
+    EVENTSANDCONDITIONS(2).GVars(7).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(7).Condition, globals.RunCnt)
+    EVENTSANDCONDITIONS(2).GVars(8).Condition = "TrialNumber"
+    EVENTSANDCONDITIONS(2).GVars(8).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(8).Condition, globals.TrialCnt)
+    EVENTSANDCONDITIONS(2).GVars(9).Condition = "TrialLength"
+    EVENTSANDCONDITIONS(2).GVars(9).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(2).EvtName, EVENTSANDCONDITIONS(2).GVars(9).Condition, VAL(globals.ElapsedTime))
+
+    CALL WriteToEventFile2(2)
+
+    SELECT CASE globals.AgentShownTarget
+        CASE 2    'show to agent
+            'TargetDisplayedUpstair
+            EVENTSANDCONDITIONS(1).GVars(0).Condition = "Target"
+            EVENTSANDCONDITIONS(1).GVars(0).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(1).EvtName, EVENTSANDCONDITIONS(1).GVars(0).Condition, globals.Target)
+            EVENTSANDCONDITIONS(1).GVars(1).Condition = "Response"
+            EVENTSANDCONDITIONS(1).GVars(1).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(1).EvtName, EVENTSANDCONDITIONS(1).GVars(1).Condition, globals.Response)
+            EVENTSANDCONDITIONS(1).GVars(2).Condition = "AgentInRoom"
+            EVENTSANDCONDITIONS(1).GVars(2).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(1).EvtName, EVENTSANDCONDITIONS(1).GVars(2).Condition, globals.AgentInRoom)
+            EVENTSANDCONDITIONS(1).GVars(3).Condition = "AgentShownTarget"
+            EVENTSANDCONDITIONS(1).GVars(3).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(1).EvtName, EVENTSANDCONDITIONS(1).GVars(3).Condition, globals.AgentShownTarget)
+            EVENTSANDCONDITIONS(1).GVars(4).Condition = "Feedback"
+            EVENTSANDCONDITIONS(1).GVars(4).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(1).EvtName, EVENTSANDCONDITIONS(1).GVars(4).Condition, globals.Feedback)
+            EVENTSANDCONDITIONS(1).GVars(5).Condition = "HitMiss"
+            EVENTSANDCONDITIONS(1).GVars(5).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(1).EvtName, EVENTSANDCONDITIONS(1).GVars(5).Condition, globals.HitMiss)
+            EVENTSANDCONDITIONS(1).GVars(6).Condition = "EnforcedDelay"
+            EVENTSANDCONDITIONS(1).GVars(6).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(1).EvtName, EVENTSANDCONDITIONS(1).GVars(6).Condition, EXPERIMENT.Misc.Delay1Max)
+            EVENTSANDCONDITIONS(1).GVars(7).Condition = "RunNumber"
+            EVENTSANDCONDITIONS(1).GVars(7).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(1).EvtName, EVENTSANDCONDITIONS(1).GVars(7).Condition, globals.RunCnt)
+            EVENTSANDCONDITIONS(1).GVars(8).Condition = "TrialNumber"
+            EVENTSANDCONDITIONS(1).GVars(8).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(1).EvtName, EVENTSANDCONDITIONS(1).GVars(8).Condition, globals.TrialCnt)
+            EVENTSANDCONDITIONS(1).GVars(9).Condition = "TrialLength"
+            EVENTSANDCONDITIONS(1).GVars(9).Desc = LookupLegitimateGV(EVENTSANDCONDITIONS(1).EvtName, EVENTSANDCONDITIONS(1).GVars(9).Condition, VAL(globals.ElapsedTime))
+
+            CALL WriteToEventFile2(1)
+    END SELECT
+END SUB
+
+
+
+SUB EnableButtons(flag AS INTEGER)
+    STATIC pt AS POINTAPI
+    LOCAL x, y AS LONG
+
+    IF (flag = 1) THEN
+        'CONTROL SET IMAGEX  globals.hdl.DlgSubject, %IMAGE_BACK, "BITMAP_BACK"
+        CONTROL SET IMAGE globals.hdl.DlgSubject, %IMAGE_PROCEED, "BITMAP_PROCEED"
+        'SetLabelColors(flag)
+        SetCursorPos(pt.x, pt.y)
+        MOUSEPTR 1
+    ELSE
+        'CONTROL SET IMAGEX  globals.hdl.DlgSubject, %IMAGE_BACK, "BITMAP_BACK"
+        CONTROL SET IMAGE globals.hdl.DlgSubject, %IMAGE_PROCEED, "BITMAP_WAIT"
+        GetCursorPos(pt)
+        DIALOG GET LOC globals.hdl.DlgSubject TO x, y
+        SetCursorPos(x, y)
+        MOUSEPTR 12
+    END IF
+END SUB
+
+SUB Feedback(targ_resp AS LONG, targScrn_respScrn AS DWORD)
+    LOCAL l, m, xMax, ymax, xStart, yStart, xMouse, yMouse AS LONG
+    LOCAL xTempMin, xTempMax, yTempMin, yTempMax, found, arrayCnt AS LONG
+    LOCAL targetStr, targ AS STRING
+
+    CONTROL GET LOC targScrn_respScrn, %ID_GRID TO xStart, yStart
+    CONTROL GET CLIENT targScrn_respScrn, %ID_GRID TO xMax, yMax
+
+    found = 0
+    arrayCnt = 0
+    FOR l = 1 TO 5
+        xTempMin = xStart + ((l - 1) * (xMax / 5))
+        xTempMax = xStart + (l * (xMax / 5))
+        FOR m = 1 TO 5
+            arrayCnt = arrayCnt + 1
+            yTempMin = yStart + ((m - 1) * (yMax / 5))
+            yTempMax = yStart + (m * (yMax / 5))
+            IF (targ_resp = arrayCnt) THEN
+               ' msgbox str$(globals.Target)
+                CONTROL SET LOC targScrn_respScrn, %ID_HIGHLIGHT, xTempMin, yTempMin
+                CONTROL SHOW STATE targScrn_respScrn, %ID_HIGHLIGHT, %SW_SHOW
+                found = 1
+            END IF
+            IF (found = 1) THEN
+                EXIT FOR
+            END IF
+        NEXT m
+        IF (found = 1) THEN
+            EXIT FOR
+        END IF
+    NEXT l
+    CONTROL REDRAW targScrn_respScrn, %ID_GRID
+    CONTROL REDRAW targScrn_respScrn, %ID_HIGHLIGHT
+END SUB

@@ -1,0 +1,70 @@
+[Experiment Section]
+SoftwareVersion=1.0.0.0
+Experiment=DMI
+ExperimentType=AP
+NumberOfRuns=1
+NumOfTrials=24
+NumberofTargets=2
+TargetSensitivity=2
+Feedback=
+DigitalIOCard=yes
+StatusBits=16
+Title=Generic Healing
+Description=This is the Audio Paced Trials  Experiment
+Experimenter=Ross Dunseath
+Technician=Ross Dunseath
+AgentID=
+mode=
+ActiviewConfig=\\DOPSBIOSEMI-PC\DOPS_Applications\Actiview605\Configuring\Generic.cfg
+NumOfRuns=1
+Channels=32
+TrialOrder= 1, 2,
+;ABBABAAB
+
+[Display Section]
+AgentScreen=0
+SubjectScreen=1
+ExperimentScreen=0
+
+[Stimulus section]
+BitmapName=grid.bmp
+Rows=5
+Columns=5
+StartPosX=296
+StartPosY=60
+SizeX=600
+SizeY=600
+UpperLeftX=0
+UpperLeftY=0
+LowerRightX=120
+LowerRightY=120
+ConditionsFile=Conditions\Intention.txt
+
+
+[Subject Section]
+ID=9999
+Date=08-06-2013
+Time=11:17
+SubjectFile=S9999-AP-20130806-1117.EVT
+BDFFile=S9999-AP-20130806-1117.BDF
+ElectrodeFile=S9999-AP-20130806-1117.ETR
+HeaderFile=S9999-AP-20130806-1117.HDR
+FileFolder=C:\DOPS_Experiments\Subject_Data\9999
+DataFolder=C:\DOPS_Experiments
+
+[Delay Section]
+Delay0Min=
+Delay0Max=
+Delay1Min=180000
+Delay1Max=180000
+Delay2Min=0
+Delay2Max=0
+Delay3Min=0
+Delay3Max=0
+Delay4Min=0
+Delay4Max=0
+
+[Events Section]
+Event-01=IntentionSelected,Intention,RunNumber,TrialNumber,
+Event-02=StartExperiment,
+Event-03=EndExperiment,

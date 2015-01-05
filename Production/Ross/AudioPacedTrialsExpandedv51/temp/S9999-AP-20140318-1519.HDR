@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Header>
+  <ExperimentDescription>
+    <SoftwareVersion>1.0.0.0</SoftwareVersion>
+    <Title>Generic Healing</Title>
+    <LongDescription>This is the Audio Paced Trials, RNG</LongDescription>
+    <Experimenter>Ross Dunseath</Experimenter>
+    <Status>16</Status>
+    <GroupVar>
+      <Name>Intention</Name>
+      <Description>Target selected by computer.</Description>
+      <GV Desc="REST">1</GV>
+      <GV Desc="FOCUS">2</GV>
+      <GV Desc="UP">3</GV>
+      <GV Desc="DOWN">4</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>Feedback</Name>
+      <Description>Feedback to the subject.</Description>
+      <GV Desc="NEUTRAL">1</GV>
+      <GV Desc="UPBEAT">2</GV>
+      <GV Desc="NONE">3</GV>
+    </GroupVar>
+    <GroupVar>
+      <Name>Milliseconds</Name>
+      <Description>Milliseconds since start of the trials.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>RunNumber</Name>
+      <Description>Run number within this experimental session.</Description>
+    </GroupVar>
+    <GroupVar>
+      <Name>TrialNumber</Name>
+      <Description>Trial number within run.</Description>
+    </GroupVar>
+    <Event Type="intrinsic">
+      <Name>IntentionSelected</Name>
+      <Description>Marks when a subject is asked to focus his intention.</Description>
+      <GroupVar Name="Intention"/>
+      <GroupVar Name="Feedback"/>
+      <GroupVar Name="Milliseconds"/>
+      <GroupVar Name="RunNumber"/>
+      <GroupVar Name="TrialNumber"/>
+    </Event>
+    <Event Type="intrinsic">
+      <Name>EndTrial</Name>
+      <Description>Marks when the trial ends.</Description>
+      <GroupVar Name="Intention"/>
+      <GroupVar Name="Feedback"/>
+      <GroupVar Name="Milliseconds"/>
+      <GroupVar Name="RunNumber"/>
+      <GroupVar Name="TrialNumber"/>
+    </Event>
+    <Event Type="intrinsic">
+      <Name>StartExperiment</Name>
+      <Description>Marks when the experiment starts.</Description>
+    </Event>
+    <Event Type="intrinsic">
+      <Name>EndExperiment</Name>
+      <Description>Marks when the experiment ends.</Description>
+    </Event>
+  </ExperimentDescription>
+  <SessionDescription>
+    <Date>03-18-2014</Date>
+    <Time>15:19</Time>
+    <Subject>9999</Subject>
+    <Technician>Ross Dunseath</Technician>
+    <BDFFile>S9999-AP-20140318-1519.BDF</BDFFile>
+    <EventFile>S9999-AP-20140318-1519.EVT</EventFile>
+    <ElectrodeFile>S9999-AP-20140318-1519.ETR</ElectrodeFile>
+    <Comment>Enter text</Comment>
+  </SessionDescription>
+</Header>

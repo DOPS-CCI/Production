@@ -1,0 +1,9 @@
+[EEG Information]
+NumberOfChannels=32
+EEGChannels=
+AIBChannels=1,2,3
+AuxiliarySensors=
+BipolarLeads=
+SampleRates=3
+AIBChannelsFile=E:\DOPS_Applications\Ross\AudioPresentiment_RndMatch\Default.AIB
+BipolarLeadsFile=E:\DOPS_Applications\Ross\AudioPresentiment_RndMatch\Default.BL

@@ -1,0 +1,3831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>1</GrayCode>
+    <ClockTime>130155067735870000</ClockTime>
+    <EventTime>12 Jun 2013 10:32:53.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>3</GrayCode>
+    <ClockTime>130155067755870000</ClockTime>
+    <EventTime>12 Jun 2013 10:32:55.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>2</GrayCode>
+    <ClockTime>130155067775870000</ClockTime>
+    <EventTime>12 Jun 2013 10:32:57.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>6</GrayCode>
+    <ClockTime>130155067795870000</ClockTime>
+    <EventTime>12 Jun 2013 10:32:59.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>7</GrayCode>
+    <ClockTime>130155067815870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:01.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>5</GrayCode>
+    <ClockTime>130155067835870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:03.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>4</GrayCode>
+    <ClockTime>130155067855870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:05.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>12</GrayCode>
+    <ClockTime>130155067875880000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:07.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>13</GrayCode>
+    <ClockTime>130155067895880000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:09.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>15</GrayCode>
+    <ClockTime>130155067915870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:11.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>14</GrayCode>
+    <ClockTime>130155067935870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:13.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>10</GrayCode>
+    <ClockTime>130155067955870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:15.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>11</GrayCode>
+    <ClockTime>130155067975870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:17.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>9</GrayCode>
+    <ClockTime>130155067995870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:19.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>8</GrayCode>
+    <ClockTime>130155068015870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:21.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>24</GrayCode>
+    <ClockTime>130155068035880000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:23.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>25</GrayCode>
+    <ClockTime>130155068055880000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:25.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>27</GrayCode>
+    <ClockTime>130155068075880000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:27.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>26</GrayCode>
+    <ClockTime>130155068095870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:29.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>30</GrayCode>
+    <ClockTime>130155068115870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:31.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>31</GrayCode>
+    <ClockTime>130155068135870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:33.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>29</GrayCode>
+    <ClockTime>130155068155870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:35.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>28</GrayCode>
+    <ClockTime>130155068175870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:37.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>20</GrayCode>
+    <ClockTime>130155068195870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:39.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>21</GrayCode>
+    <ClockTime>130155068215880000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:41.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>23</GrayCode>
+    <ClockTime>130155068235880000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:43.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>22</GrayCode>
+    <ClockTime>130155068255870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:45.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>18</GrayCode>
+    <ClockTime>130155068275870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:47.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>19</GrayCode>
+    <ClockTime>130155068295870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:49.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>17</GrayCode>
+    <ClockTime>130155068315870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:51.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>16</GrayCode>
+    <ClockTime>130155068335870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:53.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>48</GrayCode>
+    <ClockTime>130155068355870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:55.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>49</GrayCode>
+    <ClockTime>130155068375870000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:57.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>51</GrayCode>
+    <ClockTime>130155068395880000</ClockTime>
+    <EventTime>12 Jun 2013 10:33:59.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>50</GrayCode>
+    <ClockTime>130155068415880000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:01.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>54</GrayCode>
+    <ClockTime>130155068435870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:03.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>55</GrayCode>
+    <ClockTime>130155068455870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:05.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>53</GrayCode>
+    <ClockTime>130155068475870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:07.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>52</GrayCode>
+    <ClockTime>130155068495870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:09.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>60</GrayCode>
+    <ClockTime>130155068515870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:11.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>61</GrayCode>
+    <ClockTime>130155068535870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:13.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>63</GrayCode>
+    <ClockTime>130155068555870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:15.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>62</GrayCode>
+    <ClockTime>130155068575880000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:17.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>58</GrayCode>
+    <ClockTime>130155068595880000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:19.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>59</GrayCode>
+    <ClockTime>130155068615870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:21.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>57</GrayCode>
+    <ClockTime>130155068635870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:23.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>56</GrayCode>
+    <ClockTime>130155068655870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:25.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>40</GrayCode>
+    <ClockTime>130155068675870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:27.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>41</GrayCode>
+    <ClockTime>130155068695870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:29.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>43</GrayCode>
+    <ClockTime>130155068715870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:31.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>42</GrayCode>
+    <ClockTime>130155068735880000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:33.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>46</GrayCode>
+    <ClockTime>130155068755880000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:35.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>47</GrayCode>
+    <ClockTime>130155068775880000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:37.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>45</GrayCode>
+    <ClockTime>130155068795870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:39.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>44</GrayCode>
+    <ClockTime>130155068815870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:41.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>36</GrayCode>
+    <ClockTime>130155068835870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:43.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>37</GrayCode>
+    <ClockTime>130155068855870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:45.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>39</GrayCode>
+    <ClockTime>130155068875870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:47.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>38</GrayCode>
+    <ClockTime>130155068895870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:49.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>34</GrayCode>
+    <ClockTime>130155068915880000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:51.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>35</GrayCode>
+    <ClockTime>130155068935880000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:53.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>33</GrayCode>
+    <ClockTime>130155068955870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:55.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>32</GrayCode>
+    <ClockTime>130155068975870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:57.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>96</GrayCode>
+    <ClockTime>130155068995870000</ClockTime>
+    <EventTime>12 Jun 2013 10:34:59.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>97</GrayCode>
+    <ClockTime>130155069015870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:01.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>99</GrayCode>
+    <ClockTime>130155069035870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:03.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>98</GrayCode>
+    <ClockTime>130155069055870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:05.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>102</GrayCode>
+    <ClockTime>130155069075870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:07.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>103</GrayCode>
+    <ClockTime>130155069095880000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:09.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>101</GrayCode>
+    <ClockTime>130155069115880000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:11.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>100</GrayCode>
+    <ClockTime>130155069135870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:13.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>108</GrayCode>
+    <ClockTime>130155069155870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:15.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>109</GrayCode>
+    <ClockTime>130155069175870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:17.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>111</GrayCode>
+    <ClockTime>130155069195870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:19.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>110</GrayCode>
+    <ClockTime>130155069215870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:21.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>106</GrayCode>
+    <ClockTime>130155069235870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:23.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>107</GrayCode>
+    <ClockTime>130155069255870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:25.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>105</GrayCode>
+    <ClockTime>130155069275880000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:27.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>104</GrayCode>
+    <ClockTime>130155069295880000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:29.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>120</GrayCode>
+    <ClockTime>130155069315870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:31.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>121</GrayCode>
+    <ClockTime>130155069335870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:33.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>123</GrayCode>
+    <ClockTime>130155069355870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:35.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>122</GrayCode>
+    <ClockTime>130155069375870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:37.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>126</GrayCode>
+    <ClockTime>130155069395870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:39.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>127</GrayCode>
+    <ClockTime>130155069415870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:41.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>125</GrayCode>
+    <ClockTime>130155069435880000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:43.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>124</GrayCode>
+    <ClockTime>130155069455880000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:45.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>116</GrayCode>
+    <ClockTime>130155069475880000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:47.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>117</GrayCode>
+    <ClockTime>130155069495870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:49.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>119</GrayCode>
+    <ClockTime>130155069515870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:51.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>118</GrayCode>
+    <ClockTime>130155069535870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:53.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>114</GrayCode>
+    <ClockTime>130155069555870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:55.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>115</GrayCode>
+    <ClockTime>130155069575870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:57.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>113</GrayCode>
+    <ClockTime>130155069595870000</ClockTime>
+    <EventTime>12 Jun 2013 10:35:59.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>112</GrayCode>
+    <ClockTime>130155069615880000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:01.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>80</GrayCode>
+    <ClockTime>130155069635880000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:03.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>81</GrayCode>
+    <ClockTime>130155069655870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:05.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>83</GrayCode>
+    <ClockTime>130155069675870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:07.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>82</GrayCode>
+    <ClockTime>130155069695870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:09.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>86</GrayCode>
+    <ClockTime>130155069715870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:11.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>87</GrayCode>
+    <ClockTime>130155069735870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:13.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>85</GrayCode>
+    <ClockTime>130155069755870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:15.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>84</GrayCode>
+    <ClockTime>130155069775870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:17.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>92</GrayCode>
+    <ClockTime>130155069795880000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:19.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>93</GrayCode>
+    <ClockTime>130155069815880000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:21.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>95</GrayCode>
+    <ClockTime>130155069835870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:23.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>94</GrayCode>
+    <ClockTime>130155069855870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:25.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>90</GrayCode>
+    <ClockTime>130155069875870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:27.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>91</GrayCode>
+    <ClockTime>130155069895870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:29.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>89</GrayCode>
+    <ClockTime>130155069915870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:31.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>88</GrayCode>
+    <ClockTime>130155069935870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:33.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>72</GrayCode>
+    <ClockTime>130155069955870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:35.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>73</GrayCode>
+    <ClockTime>130155069975880000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:37.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>75</GrayCode>
+    <ClockTime>130155069995880000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:39.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>74</GrayCode>
+    <ClockTime>130155070015870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:41.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>78</GrayCode>
+    <ClockTime>130155070035870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:43.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>79</GrayCode>
+    <ClockTime>130155070055870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:45.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>77</GrayCode>
+    <ClockTime>130155070075870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:47.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>76</GrayCode>
+    <ClockTime>130155070095870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:49.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>68</GrayCode>
+    <ClockTime>130155070115870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:51.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>69</GrayCode>
+    <ClockTime>130155070135880000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:53.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>71</GrayCode>
+    <ClockTime>130155070155880000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:55.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>70</GrayCode>
+    <ClockTime>130155070175880000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:57.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>66</GrayCode>
+    <ClockTime>130155070195870000</ClockTime>
+    <EventTime>12 Jun 2013 10:36:59.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>67</GrayCode>
+    <ClockTime>130155070215870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:01.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>65</GrayCode>
+    <ClockTime>130155070235870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:03.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>64</GrayCode>
+    <ClockTime>130155070255870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:05.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>192</GrayCode>
+    <ClockTime>130155070275870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:07.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>193</GrayCode>
+    <ClockTime>130155070295870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:09.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>195</GrayCode>
+    <ClockTime>130155070315880000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:11.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>194</GrayCode>
+    <ClockTime>130155070335880000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:13.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>198</GrayCode>
+    <ClockTime>130155070355870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:15.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>199</GrayCode>
+    <ClockTime>130155070375870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:17.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>197</GrayCode>
+    <ClockTime>130155070395870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:19.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>196</GrayCode>
+    <ClockTime>130155070415870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:21.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>204</GrayCode>
+    <ClockTime>130155070435870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:23.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>205</GrayCode>
+    <ClockTime>130155070455870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:25.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>207</GrayCode>
+    <ClockTime>130155070475870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:27.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>206</GrayCode>
+    <ClockTime>130155070495880000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:29.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>202</GrayCode>
+    <ClockTime>130155070515880000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:31.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>203</GrayCode>
+    <ClockTime>130155070535870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:33.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>201</GrayCode>
+    <ClockTime>130155070555870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:35.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>200</GrayCode>
+    <ClockTime>130155070575870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:37.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>216</GrayCode>
+    <ClockTime>130155070595870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:39.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>217</GrayCode>
+    <ClockTime>130155070615870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:41.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>219</GrayCode>
+    <ClockTime>130155070635870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:43.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>218</GrayCode>
+    <ClockTime>130155070655870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:45.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>222</GrayCode>
+    <ClockTime>130155070675880000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:47.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>223</GrayCode>
+    <ClockTime>130155070695880000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:49.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>221</GrayCode>
+    <ClockTime>130155070715870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:51.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>220</GrayCode>
+    <ClockTime>130155070735870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:53.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>212</GrayCode>
+    <ClockTime>130155070755870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:55.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>213</GrayCode>
+    <ClockTime>130155070775870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:57.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>215</GrayCode>
+    <ClockTime>130155070795870000</ClockTime>
+    <EventTime>12 Jun 2013 10:37:59.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>214</GrayCode>
+    <ClockTime>130155070815870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:01.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>210</GrayCode>
+    <ClockTime>130155070835880000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:03.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>211</GrayCode>
+    <ClockTime>130155070855880000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:05.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>209</GrayCode>
+    <ClockTime>130155070875880000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:07.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>208</GrayCode>
+    <ClockTime>130155070895870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:09.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>240</GrayCode>
+    <ClockTime>130155070915870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:11.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>241</GrayCode>
+    <ClockTime>130155070935870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:13.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>243</GrayCode>
+    <ClockTime>130155070955870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:15.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>242</GrayCode>
+    <ClockTime>130155070975870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:17.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>246</GrayCode>
+    <ClockTime>130155070995870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:19.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>247</GrayCode>
+    <ClockTime>130155071015880000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:21.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>245</GrayCode>
+    <ClockTime>130155071035880000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:23.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>244</GrayCode>
+    <ClockTime>130155071055870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:25.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>252</GrayCode>
+    <ClockTime>130155071075870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:27.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>253</GrayCode>
+    <ClockTime>130155071095870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:29.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>255</GrayCode>
+    <ClockTime>130155071115870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:31.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>254</GrayCode>
+    <ClockTime>130155071135870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:33.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>250</GrayCode>
+    <ClockTime>130155071155870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:35.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>251</GrayCode>
+    <ClockTime>130155071175870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:37.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>249</GrayCode>
+    <ClockTime>130155071195880000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:39.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>248</GrayCode>
+    <ClockTime>130155071215880000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:41.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>232</GrayCode>
+    <ClockTime>130155071235870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:43.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>233</GrayCode>
+    <ClockTime>130155071255870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:45.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>235</GrayCode>
+    <ClockTime>130155071275870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:47.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>234</GrayCode>
+    <ClockTime>130155071295870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:49.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>238</GrayCode>
+    <ClockTime>130155071315870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:51.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>239</GrayCode>
+    <ClockTime>130155071335870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:53.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>237</GrayCode>
+    <ClockTime>130155071355870000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:55.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>236</GrayCode>
+    <ClockTime>130155071375880000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:57.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>228</GrayCode>
+    <ClockTime>130155071395880000</ClockTime>
+    <EventTime>12 Jun 2013 10:38:59.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>229</GrayCode>
+    <ClockTime>130155071415870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:01.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>231</GrayCode>
+    <ClockTime>130155071435870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:03.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>230</GrayCode>
+    <ClockTime>130155071455870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:05.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>226</GrayCode>
+    <ClockTime>130155071475870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:07.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>227</GrayCode>
+    <ClockTime>130155071495870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:09.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>225</GrayCode>
+    <ClockTime>130155071515870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:11.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>224</GrayCode>
+    <ClockTime>130155071535880000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:13.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>160</GrayCode>
+    <ClockTime>130155071555880000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:15.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>161</GrayCode>
+    <ClockTime>130155071575880000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:17.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>163</GrayCode>
+    <ClockTime>130155071595870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:19.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>162</GrayCode>
+    <ClockTime>130155071615870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:21.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>166</GrayCode>
+    <ClockTime>130155071635870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:23.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>167</GrayCode>
+    <ClockTime>130155071655870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:25.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>165</GrayCode>
+    <ClockTime>130155071675870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:27.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>164</GrayCode>
+    <ClockTime>130155071695870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:29.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>172</GrayCode>
+    <ClockTime>130155071715880000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:31.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>173</GrayCode>
+    <ClockTime>130155071735880000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:33.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>175</GrayCode>
+    <ClockTime>130155071755870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:35.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>174</GrayCode>
+    <ClockTime>130155071775870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:37.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>170</GrayCode>
+    <ClockTime>130155071795870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:39.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>171</GrayCode>
+    <ClockTime>130155071815870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:41.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>169</GrayCode>
+    <ClockTime>130155071835870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:43.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>168</GrayCode>
+    <ClockTime>130155071855870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:45.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>184</GrayCode>
+    <ClockTime>130155071875870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:47.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>185</GrayCode>
+    <ClockTime>130155071895880000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:49.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>187</GrayCode>
+    <ClockTime>130155071915880000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:51.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>186</GrayCode>
+    <ClockTime>130155071935870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:53.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>190</GrayCode>
+    <ClockTime>130155071955870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:55.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>191</GrayCode>
+    <ClockTime>130155071975870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:57.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>189</GrayCode>
+    <ClockTime>130155071995870000</ClockTime>
+    <EventTime>12 Jun 2013 10:39:59.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>188</GrayCode>
+    <ClockTime>130155072015870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:01.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>180</GrayCode>
+    <ClockTime>130155072035870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:03.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>181</GrayCode>
+    <ClockTime>130155072055870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:05.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>183</GrayCode>
+    <ClockTime>130155072075880000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:07.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>182</GrayCode>
+    <ClockTime>130155072095880000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:09.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>178</GrayCode>
+    <ClockTime>130155072115870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:11.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>179</GrayCode>
+    <ClockTime>130155072135870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:13.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>177</GrayCode>
+    <ClockTime>130155072155870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:15.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>176</GrayCode>
+    <ClockTime>130155072175870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:17.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>144</GrayCode>
+    <ClockTime>130155072195870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:19.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>145</GrayCode>
+    <ClockTime>130155072215870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:21.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>147</GrayCode>
+    <ClockTime>130155072235880000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:23.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>146</GrayCode>
+    <ClockTime>130155072255880000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:25.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>150</GrayCode>
+    <ClockTime>130155072275880000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:27.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>151</GrayCode>
+    <ClockTime>130155072295870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:29.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>149</GrayCode>
+    <ClockTime>130155072315870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:31.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>148</GrayCode>
+    <ClockTime>130155072335870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:33.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>156</GrayCode>
+    <ClockTime>130155072355870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:35.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>157</GrayCode>
+    <ClockTime>130155072375870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:37.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>159</GrayCode>
+    <ClockTime>130155072395870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:39.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>158</GrayCode>
+    <ClockTime>130155072415880000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:41.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>154</GrayCode>
+    <ClockTime>130155072435880000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:43.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>155</GrayCode>
+    <ClockTime>130155072455870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:45.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>153</GrayCode>
+    <ClockTime>130155072475870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:47.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>152</GrayCode>
+    <ClockTime>130155072495870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:49.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>136</GrayCode>
+    <ClockTime>130155072515870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:51.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>137</GrayCode>
+    <ClockTime>130155072535870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:53.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>139</GrayCode>
+    <ClockTime>130155072555870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:55.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>138</GrayCode>
+    <ClockTime>130155072575870000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:57.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>142</GrayCode>
+    <ClockTime>130155072595880000</ClockTime>
+    <EventTime>12 Jun 2013 10:40:59.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>143</GrayCode>
+    <ClockTime>130155072615880000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:01.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>141</GrayCode>
+    <ClockTime>130155072635870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:03.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>140</GrayCode>
+    <ClockTime>130155072655870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:05.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>132</GrayCode>
+    <ClockTime>130155072675870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:07.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>133</GrayCode>
+    <ClockTime>130155072695870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:09.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>135</GrayCode>
+    <ClockTime>130155072715870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:11.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>134</GrayCode>
+    <ClockTime>130155072735870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:13.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>130</GrayCode>
+    <ClockTime>130155072755870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:15.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>131</GrayCode>
+    <ClockTime>130155072775880000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:17.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>129</GrayCode>
+    <ClockTime>130155072795880000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:19.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>128</GrayCode>
+    <ClockTime>130155072815870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:21.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>384</GrayCode>
+    <ClockTime>130155072835870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:23.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>385</GrayCode>
+    <ClockTime>130155072855870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:25.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>387</GrayCode>
+    <ClockTime>130155072875870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:27.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>386</GrayCode>
+    <ClockTime>130155072895870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:29.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>390</GrayCode>
+    <ClockTime>130155072915870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:31.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>391</GrayCode>
+    <ClockTime>130155072935880000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:33.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>389</GrayCode>
+    <ClockTime>130155072955880000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:35.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>388</GrayCode>
+    <ClockTime>130155072975880000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:37.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>396</GrayCode>
+    <ClockTime>130155072995870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:39.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>397</GrayCode>
+    <ClockTime>130155073015870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:41.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>399</GrayCode>
+    <ClockTime>130155073035870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:43.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>398</GrayCode>
+    <ClockTime>130155073055870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:45.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>394</GrayCode>
+    <ClockTime>130155073075870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:47.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>395</GrayCode>
+    <ClockTime>130155073095870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:49.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>393</GrayCode>
+    <ClockTime>130155073115880000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:51.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>392</GrayCode>
+    <ClockTime>130155073135880000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:53.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>408</GrayCode>
+    <ClockTime>130155073155870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:55.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>409</GrayCode>
+    <ClockTime>130155073175870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:57.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>411</GrayCode>
+    <ClockTime>130155073195870000</ClockTime>
+    <EventTime>12 Jun 2013 10:41:59.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>410</GrayCode>
+    <ClockTime>130155073215870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:01.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>414</GrayCode>
+    <ClockTime>130155073235870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:03.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>415</GrayCode>
+    <ClockTime>130155073255870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:05.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>413</GrayCode>
+    <ClockTime>130155073275870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:07.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>412</GrayCode>
+    <ClockTime>130155073295880000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:09.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>404</GrayCode>
+    <ClockTime>130155073315880000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:11.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>405</GrayCode>
+    <ClockTime>130155073335870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:13.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>407</GrayCode>
+    <ClockTime>130155073355870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:15.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>406</GrayCode>
+    <ClockTime>130155073375870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:17.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>402</GrayCode>
+    <ClockTime>130155073395870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:19.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>403</GrayCode>
+    <ClockTime>130155073415870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:21.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>401</GrayCode>
+    <ClockTime>130155073435870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:23.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>400</GrayCode>
+    <ClockTime>130155073455880000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:25.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>432</GrayCode>
+    <ClockTime>130155073475880000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:27.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>433</GrayCode>
+    <ClockTime>130155073495880000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:29.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>435</GrayCode>
+    <ClockTime>130155073515870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:31.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>434</GrayCode>
+    <ClockTime>130155073535870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:33.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>438</GrayCode>
+    <ClockTime>130155073555870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:35.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>439</GrayCode>
+    <ClockTime>130155073575870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:37.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>437</GrayCode>
+    <ClockTime>130155073595870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:39.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>436</GrayCode>
+    <ClockTime>130155073615870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:41.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>444</GrayCode>
+    <ClockTime>130155073635880000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:43.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>445</GrayCode>
+    <ClockTime>130155073655880000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:45.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>447</GrayCode>
+    <ClockTime>130155073675870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:47.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>446</GrayCode>
+    <ClockTime>130155073695870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:49.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>442</GrayCode>
+    <ClockTime>130155073715870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:51.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>443</GrayCode>
+    <ClockTime>130155073735870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:53.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>441</GrayCode>
+    <ClockTime>130155073755870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:55.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>440</GrayCode>
+    <ClockTime>130155073775870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:57.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>424</GrayCode>
+    <ClockTime>130155073795870000</ClockTime>
+    <EventTime>12 Jun 2013 10:42:59.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>425</GrayCode>
+    <ClockTime>130155073815880000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:01.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>427</GrayCode>
+    <ClockTime>130155073835880000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:03.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>426</GrayCode>
+    <ClockTime>130155073855870000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:05.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>430</GrayCode>
+    <ClockTime>130155073875870000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:07.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>431</GrayCode>
+    <ClockTime>130155073895870000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:09.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>429</GrayCode>
+    <ClockTime>130155073915870000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:11.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>428</GrayCode>
+    <ClockTime>130155073935870000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:13.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>420</GrayCode>
+    <ClockTime>130155073955870000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:15.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>421</GrayCode>
+    <ClockTime>130155073975870000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:17.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>423</GrayCode>
+    <ClockTime>130155073995880000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:19.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>422</GrayCode>
+    <ClockTime>130155074015880000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:21.588</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>418</GrayCode>
+    <ClockTime>130155074035870000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:23.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>419</GrayCode>
+    <ClockTime>130155074055870000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:25.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>417</GrayCode>
+    <ClockTime>130155074075870000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:27.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+  <Event Name="RNGSelected">
+    <Index>0</Index>
+    <GrayCode>416</GrayCode>
+    <ClockTime>130155074095870000</ClockTime>
+    <EventTime>12 Jun 2013 10:43:29.587</EventTime>
+    <GroupVars>
+      <GV Name="Audio"></GV>
+      <GV Name="Selector"></GV>
+      <GV Name="RunNumber"></GV>
+      <GV Name="TrialNumber"></GV>
+    </GroupVars>
+  </Event>
+</Events>

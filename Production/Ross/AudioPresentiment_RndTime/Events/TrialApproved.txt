@@ -1,0 +1,3 @@
+Marks when a subject is asked to focus his intention.
+intrinsic,,,,,
+xxx,999,,,,

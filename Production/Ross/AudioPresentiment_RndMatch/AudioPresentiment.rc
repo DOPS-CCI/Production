@@ -1,0 +1,12 @@
+IDI_ICON1 ICON DISCARDABLE "AudioPresentiment.ico"
+BITMAP_HIGHLIGHT     BITMAP "Images\highlight.bmp"
+
+BITMAP_PROCEED   BITMAP "Images\proceed.bmp"
+BITMAP_WAIT      BITMAP "Images\wait.bmp"
+
+BITMAP_PDB       BITMAP "Images\PD_black.bmp"
+BITMAP_PDW       BITMAP "Images\PD_white.bmp"
+
+BITMAP_OKBUTTON  BITMAP "Images\OKButton.bmp"
+
+WHITE_NOISE      WAVE   "Sounds\White_Noise.wav"

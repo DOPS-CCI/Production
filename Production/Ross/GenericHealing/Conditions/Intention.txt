@@ -1,0 +1,5 @@
+Target selected by computer.
+REST,1
+FOCUS,2
+xxx,999
+

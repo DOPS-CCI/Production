@@ -1,0 +1,7 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Error 480 in E:\PowerBasicClassicWindows10\Projects\Ross\ThetaTrainerB3\TestMidi.bas(63:021):  Parameter mismatches definition
+  Line 63:     CreateMidiMsg = CreateMidiMsg + (bytNote * (16 ^ 2))  

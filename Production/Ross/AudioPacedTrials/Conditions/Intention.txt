@@ -1,0 +1,7 @@
+Target selected by computer.
+REST,1,Rest2.wav
+FOCUS,2,Focus2.wav
+UP,3,Up.wav
+DOWN,4,Down.wav
+xxx,999
+

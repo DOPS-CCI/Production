@@ -1,0 +1,3 @@
+Marks when a subject causes the EEG RMS to go in Theta range.
+intrinsic,,,,,
+xxx,999,,,,

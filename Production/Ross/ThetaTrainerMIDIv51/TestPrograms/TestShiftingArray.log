@@ -1,0 +1,22 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2012 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  E:\PowerBasicClassicWindows10\Projects\Ross\ThetaTrainerB2\TestShiftingArray.bas   {37 total lines}
+Target compilation:  TestShiftingArray.EXE
+Compile time:  0.1 seconds, at 44400 lines/minute
+
+1232 bytes compiled code, 9928 bytes RTLibrary,
+28 bytes string literals, and 2696 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 14848 bytes   Memory image: 12652 bytes.
+
+Component Files:
+----------------
+E:\PowerBasicClassicWindows10\Projects\Ross\ThetaTrainerB2\TestShiftingArray.bas
+
+
+Code Extracted:
+---------------
+<NONE>
