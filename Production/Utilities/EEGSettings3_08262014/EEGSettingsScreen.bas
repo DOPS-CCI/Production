@@ -478,7 +478,7 @@ SUB LoadDefaults()
     DISPLAY OPENFILE 0, , , "Choose DEF Settings file", "H:\EEGSettings3", CHR$("DEF Files", 0, "*.DEF", 0), "", "DEF", %OFN_SHOWHELP   TO gDefaultFilename
     IF (gDefaultFilename <> "") THEN
         DIALOG SET TEXT hDlg, "EEG Settings - " + gDefaultFilename + " opened."
-        GetPrivateProfileString("EEG Information", "NumberOfChannels", "32", numberOfChannels, %MAXPPS_SIZE, gDefaultFilename)
+        GetPrivateProfileString("EEG Information", "NumberOfChannels", "", numberOfChannels, %MAXPPS_SIZE, gDefaultFilename)
         GetPrivateProfileString("EEG Information", "EEGChannels", "", EEGChannels, %MAXPPS_SIZE, gDefaultFilename)
         GetPrivateProfileString("EEG Information", "AIBChannels", "", AIBChannels, %MAXPPS_SIZE, gDefaultFilename)
         GetPrivateProfileString("EEG Information", "AuxiliarySensors", "", AuxiliarySensors, %MAXPPS_SIZE, gDefaultFilename)
@@ -502,12 +502,12 @@ SUB LoadDefaults()
                     LISTBOX SELECT hDlg, %IDC_LISTBOX_EEGChannels, x
                 NEXT x
             CASE "2"
-                CONTROL SET CHECK hDlg, %IDC_OPTION_32Channels, 2
+                CONTROL SET CHECK hDlg, %IDC_OPTION_64Channels, 1
                 FOR x = 1 TO 64
                     LISTBOX SELECT hDlg, %IDC_LISTBOX_EEGChannels, x
                 NEXT x
             CASE "3"
-                CONTROL SET CHECK hDlg, %IDC_OPTION_32Channels, 3
+                CONTROL SET CHECK hDlg, %IDC_OPTION_128Channels, 1
                 FOR x = 1 TO 128
                     LISTBOX SELECT hDlg, %IDC_LISTBOX_EEGChannels, x
                 NEXT x
@@ -623,16 +623,19 @@ SUB SaveDefaults()
         DISPLAY SAVEFILE 0, , , "Choose DEF Settings file", gCurrentDirectory, CHR$("DEF Files", 0, "*.DEF", 0), "", "DEF", %OFN_SHOWHELP   TO gDefaultFilename
     END IF
     IF (gDefaultFilename <> "") THEN
+
         'set number of channels
         CONTROL GET CHECK hDlg, %IDC_OPTION_32Channels TO lbState
-        SELECT CASE lbState
-            CASE 1
-                numberOfChannels = "1"      '32 channels
-            CASE 2
+        IF(lbState) THEN
+            numberOfChannels = "1"      '32 channels
+        ELSE
+            CONTROL GET CHECK hDlg, %IDC_OPTION_64Channels TO lbState
+            IF(lbState) THEN
                 numberOfChannels = "2"      '64 channels
-            CASE 3
+            ELSE
                 numberOfChannels = "3"      '128 channels
-        END SELECT
+            END IF
+        END IF
 
         'eeg channels
         LISTBOX GET COUNT hDlg, %IDC_LISTBOX_EEGChannels TO cnt
@@ -1016,7 +1019,7 @@ FUNCTION writeToConfigFile() AS LONG
         CASE 1 '32 channels
             lResult = WritePrivateProfileString( "Save", "Subset", "7", gActiviewFilenameTemp)  'Set Subset saved to 32
         CASE 2 '64 channels
-            lResult = WritePrivateProfileString( "Save", "Subset", "6", gActiviewFilenameTemp)  'Set Subset saved to 128
+            lResult = WritePrivateProfileString( "Save", "Subset", "6", gActiviewFilenameTemp)  'Set Subset saved to 64
         CASE 3 '128 channels
             lResult = WritePrivateProfileString( "Save", "Subset", "4", gActiviewFilenameTemp)  'Set Subset saved to 128
     END SELECT
