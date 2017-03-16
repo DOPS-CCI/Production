@@ -1,0 +1,487 @@
+#COMPILE EXE
+#DIM ALL
+
+#INCLUDE "psiproc.inc"
+'
+'THIS CODE ASSUMES 25 TRIALS PER RUN AND A CERTAIN NUMBER OF RUNS.
+'
+FUNCTION PBMAIN () AS LONG
+	LOCAL I, J, K AS INTEGER
+	LOCAL I1, I2, J1, J2, MI, NI AS INTEGER
+	LOCAL LIM, LIM1, LIM2 AS INTEGER
+	LOCAL N1, N2, N3, NT1, NT2 AS INTEGER
+	LOCAL IR, IC AS INTEGER
+	LOCAL NCOL, NROW AS INTEGER
+	DIM IDATA(99) AS INTEGER
+
+	DIM NT AS GLOBAL INTEGER
+	DIM NR AS GLOBAL INTEGER
+	DIM NTR AS GLOBAL INTEGER
+	DIM NRUN AS GLOBAL INTEGER
+	DIM NHIT AS GLOBAL INTEGER
+	DIM NDATA(999) AS GLOBAL INTEGER
+
+	LOCAL temp AS STRING
+	DIM ICODE(12) AS ASCIIZ*2
+	DIM IEXT(2) AS ASCIIZ*2
+
+	LOCAL OM, OH, ORS,VARR,EXPR, CR AS SINGLE
+	LOCAL ERT, VARRT, OMT, OHT, ORT AS SINGLE
+	LOCAL EXP1, EXPRT, VAR AS SINGLE
+	LOCAL SEXP, SVAR AS SINGLE
+	LOCAL GSUM, QN, QSUM, X AS SINGLE
+	LOCAL AN, AT1, CHISQ AS SINGLE
+	LOCAL SX, SXSQ AS SINGLE
+	DIM SUMTAB(53,6) AS SINGLE
+	DIM VARTAB(6,6,3) AS SINGLE
+	DIM RSCOR(51) AS SINGLE
+
+	DIM RESP(12) AS GLOBAL SINGLE
+	DIM TARGS(12) AS GLOBAL SINGLE
+
+
+	DIM CMAT(14,14,3) AS GLOBAL SINGLE
+	DIM IHDR(14) AS GLOBAL ASCIIZ*2
+	DIM IOX AS GLOBAL INTEGER
+
+	FOR I = 1 TO 12
+		ICODE(I) = STR$(I)
+	NEXT I
+
+	IEXT(1) = " T" : IEXT(2) = " %"
+
+
+	CALL READRUNTRIALS()
+
+
+	'INITIALIZE ARRAYS ETC
+	NT1 = NT + 1
+	NT2 = NT + 2
+
+	FOR K = 1 TO 3
+		FOR J = 1 TO NT2
+			FOR I = 1 TO NT2
+				CMAT(I,J,K) = 0.0
+			NEXT I
+		NEXT J
+	NEXT K
+
+	FOR J = 1 TO 6
+		FOR I = 1 TO 53
+			SUMTAB(I,J) = 0.0
+		NEXT I
+	NEXT J
+
+	FOR K = 1 TO 3
+		FOR J = 1 TO 6
+			FOR I = 1 TO 6
+				VARTAB(I,J,K) = 0.0
+			NEXT I
+		NEXT J
+	NEXT K
+
+	LIM = NTR * 2
+	LIM1 = LIM - 1
+	LIM2 = LIM - 3
+	N1 = NTR + 1
+	N2 = NTR + 2
+	N3 = NTR + 3
+
+	FOR I = 1 TO N1
+		RSCOR(I) = 0.0
+	NEXT I
+
+	FOR I = 1 TO NT
+		IHDR(I) = ICODE(I)
+	NEXT I
+
+	IHDR(NT1) = IEXT(1)
+	IHDR(NT2) = IEXT(2)
+
+	NCOL = NQUINT(NR)
+	NROW = NQUINT(NTR)
+
+	ERT = 0.0
+	VARRT = 0.0
+	OMT = 0.0
+	OHT = 0.0
+	ORT = 0.0
+	SEXP = 0.0
+	SVAR = 0.0
+
+	'INITIALIZE OUTER LOOP (ACROSS RUNS)
+	PRINT $FF;"WALD-WOLFOWITZ STRINGING TEST ON TRIALS: "
+	PRINT SPC(10);"RUN#";SPC(5);"OM";SPC(5);"OH";SPC(5);"OR";SPC(5);"EXPR";_
+					SPC(5);"VARR";SPC(5);"CR"
+
+	NRUN = 0
+	FOR J1 = 1 TO 5     'THIS LOOP HAS TO DO WITH QUINTILES
+		FOR J2 = 1 TO NCOL
+			NRUN = NRUN + 1
+			IF (NRUN > NR) THEN GOTO LABEL_35
+			OM = 0.0
+			OH = 0.0
+			ORS = 0.0
+			EXPR = 0.0
+			VARR = 0.0
+			CR = 0.0
+			CALL STRNGN(NDATA(), LIM, OM, OH, ORS, EXPR, VARR, CR)
+
+			PRINT FORTRANIntegerFmt(10, NRUN, "###0"); _
+					FORTRANSingleFmt(4, OM, "##0."); _
+					FORTRANSingleFmt(4, OH, "##0."); _
+					FORTRANSingleFmt(4, ORS, "##0."); _
+					FORTRANSingleFmt(3, EXPR, "###0.00"); _
+					FORTRANSingleFmt(3, VARR, "###0.00"); _
+					FORTRANSingleFmt(3, CR, "###0.00")
+
+			OMT = OMT + OM
+			OHT = OHT + OH
+			ORT = ORT + ORS
+			EXPRT = EXPRT + EXPR
+			VARRT = VARRT + VARR
+
+			RSCOR(NHIT) = RSCOR(NHIT) + 1.0
+
+			EXP1 = 0.0
+			VAR = 0.0
+			CALL STVNS(RESP(), TARGS(), NT, NTR, EXP1, VAR)
+
+			SEXP = SEXP + EXP1
+			SVAR = SVAR + VAR
+
+			'INCREMENT DIRECT HIT TABLES, ETC.
+			'INITIALIZE INNER LOOP (WITHIN RUNS)
+			MI = -1
+			NI = 0
+
+			FOR I1 = 1 TO 5
+				GSUM = 0.0
+				QN = 0.0
+				FOR I2 = 1 TO NROW
+					MI = MI + 2
+					NI = NI + 1
+
+					IF (MI > LIM1) THEN
+						EXIT FOR
+					END IF
+
+					QN = QN + 1.0
+
+					IF (NDATA(MI) <> NDATA(MI + 1)) THEN
+						ITERATE FOR
+					END IF
+
+					QSUM = QSUM + 1.0
+
+					SUMTAB(NI,J1) = SUMTAB(NI,J1) + 1.0
+				NEXT I2
+
+				VARTAB(I1,J1,1) = VARTAB(I1,J1,1) + QSUM
+				VARTAB(I1,J1,2) = VARTAB(I1,J1,2) + QSUM * QSUM
+				VARTAB(I1,J1,3) = VARTAB(I1,J1,3) + 1
+				SUMTAB(N2,J1) = SUMTAB(N2,J1) + QN
+			NEXT I1
+
+			X = NHIT - 1
+			VARTAB(6,J1,1) = VARTAB(6,J1,1) + X
+			VARTAB(6,J1,2) = VARTAB(6,J1,2) + X * X
+			VARTAB(6,J1,3) = VARTAB(6,J1,3) + 1.0
+		NEXT J2
+	NEXT J1
+
+
+	FOR K = 1 TO LIM1 STEP 2
+		CMAT(NDATA(K),NDATA(K + 1),1) = CMAT(NDATA(K),NDATA(K + 1),1) + 1.0
+	NEXT K
+
+	FOR K = 3 TO LIM1 STEP 2
+		CMAT(NDATA(K),NDATA(K - 1),2) = CMAT(NDATA(K),NDATA(K - 1),2) + 1.0
+	NEXT K
+
+	FOR K = 1 TO LIM2 STEP 2
+		CMAT(NDATA(K),NDATA(K + 3),3) = CMAT(NDATA(K),NDATA(K + 3),3) + 1.0
+	NEXT K
+
+ LABEL_35:
+
+	CALL ZSCOR(ORT,0,0,EXPRT,VARRT,CR)
+
+	PRINT
+	PRINT " TOTAL RESULT:"FORTRANSingleFmt(3, OMT, "###0."); _
+					FORTRANSingleFmt(3, OHT, "###0."); _
+					FORTRANSingleFmt(3, ORT, "###0."); _
+					FORTRANSingleFmt(2, EXPRT, "####0.00"); _
+					FORTRANSingleFmt(2, VARRT, "####0.00"); _
+					FORTRANSingleFmt(2, CR, "####0.00")
+
+
+	FOR J = 1 TO 5
+		FOR I = 1 TO NTR
+			SUMTAB(N1,J) = SUMTAB(N1,J) + SUMTAB(I,J)
+		NEXT I
+	NEXT J
+
+	FOR I = 1 TO N2
+		FOR J = 1 TO 5
+			SUMTAB(I,6) = SUMTAB(I,6) + SUMTAB(I,J)
+		NEXT J
+	NEXT I
+
+	'NOW ITS STATISTICS - FIRST, CHISQUARE FOR RUN POSITIONS
+	AN = NT
+	AT1 = NTR
+
+	FOR J = 1 TO 6
+		EXP1 = SUMTAB(N1,J) / AT1
+		FOR I = 1 TO NTR
+			SUMTAB(N3,J) = SUMTAB(N3,J) + (SUMTAB(I,J) - EXP1)^2 / EXP1
+		NEXT I
+	NEXT J
+
+	'NOW OVERALL CHISQUAR FOR SERIES POSITION
+	CHISQ = 0.0
+	FOR J = 1 TO 5
+		EXP1 = (SUMTAB(N2,J) / SUMTAB(N2,6)) * SUMTAB(N1,6)
+		CHISQ = CHISQ + (SUMTAB(N1,J) - EXP1)^2 / EXP1
+	NEXT J
+
+	PRINT $FF;SPC(30);"DIRECT HIT SUMMARY TABLE";SPC(21);"SERIES POSITION IN QUINTILES"
+
+	PRINT SPC(3);"RUN POSITION";SPC(3);
+	FOR I = 1 TO 5
+		PRINT FORTRANIntegerFmt(1, I, "0");SPC(9);
+	NEXT I
+	PRINT "OVERALL"
+
+
+	FOR I = 1 TO NTR
+		PRINT FORTRANIntegerFmt(14, I, "#0");SPC(3);
+		FOR J = 1 TO 5
+			PRINT FORTRANSingleFmtLeft(5, SUMTAB(I,J), "####0.");
+		NEXT J
+		PRINT SPC(3);FORTRANSingleFmtLeft(3, SUMTAB(I,6), "####0.")
+		PRINT
+	NEXT I
+
+	PRINT SPC(12);"HITS";SPC(3);
+	FOR J = 1 TO 5
+		PRINT FORTRANSingleFmtLeft(5, SUMTAB(N1,J), "####0.");
+	NEXT J
+	PRINT SPC(3);FORTRANSingleFmtLeft(3, SUMTAB(N1,6), "####0.")
+
+	PRINT SPC(10);"TRIALS";SPC(3);
+	FOR J = 1 TO 5
+		PRINT FORTRANSingleFmtLeft(5, SUMTAB(N2,J), "####0.");
+	NEXT J
+	PRINT SPC(3);FORTRANSingleFmtLeft(3, SUMTAB(N2,6), "####0.")
+
+	PRINT SPC(7);"CHISQUARE";SPC(3);
+	FOR J = 1 TO 5
+		PRINT FORTRANSingleFmtLeft(5, SUMTAB(N1,J), "####0.");
+	NEXT J
+	PRINT SPC(3);FORTRANSingleFmtLeft(3, SUMTAB(N3,6), "####0.")
+
+	PRINT "OVERALL SERIES CHISQUARE=";CHISQ
+
+	FOR K = 1 TO 3
+		FOR I = 1 TO 6
+			FOR J = 1 TO 5
+				VARTAB(I,6,K) = VARTAB(I,6,K) + VARTAB(I,J,K)
+			NEXT J
+		NEXT I
+	NEXT K
+
+	'COMPUTE THE MEANS AND VARIANCES
+	FOR I = 1 TO 6
+		FOR J = 1 TO 6
+			SX = VARTAB(I,J,1)
+			SXSQ = VARTAB(I,J,2)
+			AN = VARTAB(I,J,3)
+			VARTAB(I,J,2) = (AN * SXSQ - SX * SX) / (AN * (AN - 1.0))
+			VARTAB(I,J,1) = SX / AN
+		NEXT J
+	NEXT I
+
+	'WRITE VARTAB
+	PRINT "RUN-SCORE VARIANCE TABLE FOR DIRECT HITS"
+	PRINT "COLUMNS ARE SERIES QUINTILES; ROWS, RUN QUINTILES"
+	PRINT "ENTRIES ARE MEAN # HITS, VARIANCE, & # OF SEGMENTS"
+	PRINT SPC(7);
+	FOR I = 1 TO 6
+		PRINT SPC(7); FORTRANIntegerFmt(1, I, "0");
+	NEXT I
+	PRINT
+
+	FOR I = 1 TO 6
+		PRINT SPC(7); I;
+		FOR K = 1 TO 3
+			FOR J = 1 TO 6
+			   PRINT FORTRANSingleFmtLeft(3, VARTAB(I,J,K), "#####0.00");
+			NEXT J
+			PRINT
+			PRINT SPC(10);
+		NEXT K
+		PRINT
+	NEXT I
+
+	PRINT
+
+
+
+	INPUT TEMP
+END FUNCTION
+
+SUB READRUNTRIALS()
+	LOCAL inFile, inputStr, temp AS STRING
+	LOCAL x, cnt, gvCnt, choice, K, I, J AS INTEGER
+	LOCAL nbrTrials, nbrRuns AS INTEGER
+	DIM tempVars(20) AS STRING
+	DIM groupVars(20) AS STRING
+	DIM sDATA(99) AS STRING
+	DIM targets(999) AS INTEGER
+	DIM responses(999) AS INTEGER
+
+	DIM NRUN AS GLOBAL INTEGER
+	DIM IR AS GLOBAL INTEGER
+	DIM IC AS GLOBAL INTEGER
+	DIM NR AS GLOBAL INTEGER
+	DIM NT AS GLOBAL INTEGER
+	DIM NTR AS GLOBAL INTEGER
+	DIM NHIT AS GLOBAL INTEGER
+	DIM IDATA(99) AS GLOBAL INTEGER
+	DIM NDATA(999) AS GLOBAL INTEGER
+	DIM RESP(12) AS GLOBAL SINGLE
+	DIM TARGS(12) AS GLOBAL SINGLE
+
+
+	'Make NRUN = 1 for start (temporary)
+	NRUN = 1
+
+	LINE INPUT "Please enter the data file name: ", inFile
+	OPEN inFile FOR INPUT AS 1
+
+	'skip the first 6 lines
+	INPUT #1, inputStr
+
+	PARSE inputStr, tempVars(), " "
+
+	gvCnt = PARSECOUNT(inputStr, " ")
+	FOR x = 2 TO gvCnt - 1
+		groupVars(x - 1) = tempVars(x)
+	NEXT x
+
+	gvCnt = gvCnt - 3
+
+	PRINT
+	FOR x = 1 TO gvCnt
+		PRINT x; " - "; groupVars(x)
+	NEXT x
+	PRINT "Please choose your target group variable (1 - "; gvCnt; ") ";
+	INPUT choice
+
+	IC = choice + 2  'TARGET (COL) VAR
+
+	PRINT
+	FOR x = 1 TO gvCnt
+		PRINT x; " - "; groupVars(x)
+	NEXT x
+	PRINT "Please choose your response group variable (1 - "; gvCnt; ") ";
+	INPUT choice
+
+	IR = choice + 2 'RESPONSE (ROW) VAR
+
+	PRINT
+	PRINT "How many targets? ";
+	INPUT choice
+
+	NT = choice
+
+	PRINT
+	PRINT "How many Trials/Run? ";
+	INPUT choice
+
+	NTR = choice
+
+	PRINT
+	PRINT "How many Runs? ";
+	INPUT choice
+
+	NR = choice
+
+
+	nbrRuns = 0
+	nbrTrials = 0
+	K = 1
+	NHIT = 0
+	DO
+		LINE INPUT #1, inputStr
+
+		inputStr = TRIM$(inputStr)
+
+		CALL ParseStringToArray(inputStr, sDATA(), cnt)
+
+		FOR x = 0 TO cnt
+			IDATA(x + 1) = VAL(sDATA(x))
+		NEXT x
+
+		INCR nbrTrials
+
+		IF (NTR = nbrTrials) THEN
+			nbrRuns = nbrRuns + 1
+		END IF
+
+		targets(nbrTrials) = IDATA(IC)
+		responses(nbrTrials) = IDATA(IR)
+
+		I = responses(nbrTrials)
+		J = targets(nbrTrials)
+
+		RESP(I) = RESP(I) + 1.0
+		TARGS(J) = TARGS(J) + 1.0
+
+		IF (targets(nbrTrials) = responses(nbrTrials)) THEN
+			NHIT = NHIT + 1
+		END IF
+
+		NDATA(K) = targets(nbrTrials)
+		NDATA(K + 1) = responses(nbrTrials)
+		K = K + 2
+	LOOP UNTIL (EOF(1))
+
+	CLOSE #1
+
+	PRINT
+	PRINT "Enter the title line: ";
+	INPUT temp
+
+	CLS
+	PRINT SPC(15);"ANALYSIS OF PSI TEST RESULTS";SPC(10); DATE$
+	PRINT SPC(1); temp
+	PRINT
+END SUB
+
+SUB ParseStringToArray(str AS STRING, arr() AS STRING, cnt AS INTEGER)
+LOCAL charCnt, strLen, x AS INTEGER
+LOCAL char, temp AS STRING
+
+strLen = LEN(str)
+
+charCnt = 0
+temp = ""
+DO
+	charCnt = charCnt + 1
+	char = MID$(str, charCnt, 1)
+	IF (char = " ") THEN
+		DO
+			charCnt = charCnt + 1
+			char = MID$(str, charCnt, 1)
+		LOOP UNTIL char <> " "
+		temp = temp + ","
+	END IF
+	temp = temp + char
+LOOP UNTIL charCnt = strLen
+
+PARSE temp, arr(), ","
+cnt = PARSECOUNT(temp, ",")
+END SUB
