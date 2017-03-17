@@ -79,7 +79,7 @@
 %IDC_CHECKBOX_ConnectToActiviewTCPIP = 1109
 %IDC_BUTTON1                         = 1110 '*
 %IDC_BUTTON_TCPIPSettings            = 1111
-%IDC_TEXTBOX5                        = 1115
+%IDC_TEXTBOX_Timeout                 = 1115
 %IDC_LABEL8                          = 1131
 %IDC_LABEL9                          = 1132
 %IDC_LABEL10                         = 1133
@@ -143,6 +143,7 @@ GLOBAL gBLFilename AS ASCIIZ *512
 GLOBAL gASFilename AS ASCIIZ *512
 GLOBAL gSettingsFile AS ASCIIZ * 512
 GLOBAL gDefaultFilename AS ASCIIZ *512
+GLOBAL gPolhemusFilename AS ASCIIZ *512
 GLOBAL gCurrentDirectory AS ASCIIZ *512
 GLOBAL hDlg   AS DWORD
 GLOBAL ghRMSSettingsDlg AS DWORD
@@ -152,7 +153,7 @@ GLOBAL gIPAddress, gActiviewConfig AS ASCIIZ *512
 GLOBAL gBytesInTCPArray, gChannelsSentByTCP, gTCPSamplesPerChannel AS LONG
 GLOBAL gPort, gTCPSubset, gAdd8EXElectrodes, gAdd7Sensors, gAdd9Jazz, gAdd32AIBChan, gAddTriggerStatusChan AS LONG
 GLOBAL gSubsetBytes, gTotalBytes AS LONG
-GLOBAL gChannelsUsed, gDefaultUsed AS BYTE
+GLOBAL gChannelsUsed AS BYTE
 
 '------------------------------------------------------------------------------
 '   ** Main Application Entry Point **
@@ -188,12 +189,12 @@ FUNCTION PBMAIN()
 
     gCurrentDirectory = "H:\EEGSettings3\"
 
-    gDefaultUsed = 0    'no default file selected
     gBLFilename = gCurrentDirectory + "Default.BL"
     gAIBFilename = gCurrentDirectory + "Default.AIB"
     gEEGFilename = gCurrentDirectory + "Default.EEG"
     gDefaultFilename = gCurrentDirectory + "Default.DEF"
     gActiviewFilenameTemp = gCurrentDirectory + PATHNAME$(NAMEX,  gActiviewFilename)
+    gPolhemusFilename = ""
 
 
 
@@ -210,7 +211,7 @@ END FUNCTION
 '   ** CallBacks **
 '------------------------------------------------------------------------------
 CALLBACK FUNCTION ShowDIALOG1Proc()
-    LOCAL exitCode, EEGChoice, lResult AS LONG
+    LOCAL exitCode, EEGChoice, lResult, checkState AS LONG
     LOCAL lWidth, lHeight AS LONG
     LOCAL hr, topMost AS DWORD
     LOCAL temp AS ASCIIZ * 255
@@ -237,26 +238,31 @@ CALLBACK FUNCTION ShowDIALOG1Proc()
 
                 CASE %IDC_BUTTON_ChooseChannels
                     IF CB.CTLMSG = %BN_CLICKED OR CB.CTLMSG = 1 THEN
-                        lResult = writeToConfigFile()
-                        IF (gDefaultUsed = 0) THEN
-                            CALL saveDefaults()
-                        END IF
 
-                        CALL loadTCPIPDefaultsLocal(gINIFilename)
+                        CONTROL GET TEXT hDlg, %IDC_TEXTBOX_BytesInTCPArray TO temp
+                        IF (TRIM$(temp) = "0") THEN
+                            MSGBOX "You must choose TCP Subset first."
+                        ELSE
+                            lResult = writeToConfigFile()
 
-                        CALL ShowDIALOG_RMS(hDlg)
+                           CALL SaveDefaultsToCurrentDefaultFile()
 
-                        topMost = SetTopMostWindow(ghRMSSettingsDlg, 1)
+                            CALL loadTCPIPDefaultsLocal(gINIFilename)
 
-                        DIALOG SHOW MODAL ghRMSSettingsDlg, CALL ShowDIALOG_RMSProc TO hr
+                            CALL ShowDIALOG_RMS(hDlg)
 
-                        topMost = SetTopMostWindow(topMost, 0)
+                            topMost = SetTopMostWindow(ghRMSSettingsDlg, 1)
 
-                        IF (gChannelsUsed = 1) THEN
-                            CONTROL NORMALIZE hDlg, %IDC_BUTTON_OKEEG
-                            CONTROL SET TEXT hDlg, %IDC_LABEL_ChannelsToUse, "Channels to Use Loaded."
-                            CONTROL SET COLOR     hDlg, %IDC_LABEL_ChannelsToUse, %RGB_GREEN, -1
-                            CONTROL REDRAW hDlg, %IDC_LABEL_ChannelsToUse
+                            DIALOG SHOW MODAL ghRMSSettingsDlg, CALL ShowDIALOG_RMSProc TO hr
+
+                            topMost = SetTopMostWindow(topMost, 0)
+
+                            IF (gChannelsUsed = 1) THEN
+                                CONTROL NORMALIZE hDlg, %IDC_BUTTON_OKEEG
+                                CONTROL SET TEXT hDlg, %IDC_LABEL_ChannelsToUse, "Channels to Use Loaded."
+                                CONTROL SET COLOR     hDlg, %IDC_LABEL_ChannelsToUse, %RGB_GREEN, -1
+                                CONTROL REDRAW hDlg, %IDC_LABEL_ChannelsToUse
+                            END IF
                         END IF
 
                     END IF
@@ -266,7 +272,7 @@ CALLBACK FUNCTION ShowDIALOG1Proc()
                 ' */
 
                 ' /* Inserted by PB/Forms 12-20-2013 09:50:54
-                CASE %IDC_TEXTBOX5
+                CASE %IDC_TEXTBOX_Timeout
 
                 ' /* Inserted by PB/Forms 12-20-2013 08:28:15
                 CASE %IDC_TEXTBOX_TCPServer
@@ -418,8 +424,8 @@ CALLBACK FUNCTION ShowDIALOG1Proc()
 
                 CASE %IDC_BUTTON_Close
                     IF CB.CTLMSG = %BN_CLICKED OR CB.CTLMSG = 1 THEN
-                        MSGBOX "Settings not saved."
-                        WritePrivateProfileString( "Experiment Section", "ActiviewConfigUsed", "NO", gINIFilename)
+                        MSGBOX "Settings not saved to .CFG file."
+                        'WritePrivateProfileString( "Experiment Section", "ActiviewConfigUsed", "NO", gINIFilename)
                         DIALOG END CB.HNDL, 0
                     END IF
                 ' */
@@ -445,6 +451,15 @@ CALLBACK FUNCTION ShowDIALOG1Proc()
 
                 CASE %IDC_BUTTON_OKEEG
                     IF CB.CTLMSG = %BN_CLICKED OR CB.CTLMSG = 1 THEN
+                        CONTROL GET CHECK hDlg, %IDC_CHECKBOX_ConnectToActiviewTCPIP TO checkState
+                        CONTROL GET TEXT hDlg, %IDC_TEXTBOX_BytesInTCPArray TO temp
+                        IF (checkState = 1 AND TRIM$(temp) = "0") THEN
+                            CONTROL SET TEXT    hDlg, %IDC_LABEL_ChannelsToUse, "Channels to Use Not Loaded."
+                            CONTROL SET COLOR   hDlg, %IDC_LABEL_ChannelsToUse, %RGB_RED, -1
+                            CONTROL REDRAW hDlg, %IDC_LABEL_ChannelsToUse
+                            MSGBOX "You have Biosemi Feedback checked, but have chosen no TCP Subset."
+                            EXIT FUNCTION
+                        END IF
                         CALL saveTCPIPDefaults(gDefaultFilename)
                         lResult = writeToConfigFile()
                         IF (lResult <> 0) THEN
@@ -468,13 +483,15 @@ END FUNCTION
 '   ** Sample Code **
 '------------------------------------------------------------------------------
 
+
+
 SUB LoadDefaults()
     LOCAL x, cnt, lResult, itemValue AS LONG
-    LOCAL numberOfChannels, EEGChannels, AIBChannels, AuxiliarySensors AS ASCIIZ * 256
-    LOCAL BipolarLeads, SampleRates, ScreenLengths AS ASCIIZ * 256
+    LOCAL numberOfChannels, EEGChannels, AIBChannels, AuxiliarySensors AS ASCIIZ * 512
+    LOCAL BipolarLeads, SampleRates, ScreenLengths AS ASCIIZ * 512
     LOCAL lbItem, temp AS STRING
 
-    gDefaultUsed = 0 'no default file selected
+
 
     DISPLAY OPENFILE 0, , , "Choose DEF Settings file", "H:\EEGSettings3", CHR$("DEF Files", 0, "*.DEF", 0), "", "DEF", %OFN_SHOWHELP   TO gDefaultFilename
     IF (gDefaultFilename <> "") THEN
@@ -488,6 +505,8 @@ SUB LoadDefaults()
         GetPrivateProfileString("EEG Information", "ScreenLength", "", ScreenLengths, %MAXPPS_SIZE, gDefaultFilename)
 
         GetPrivateProfileString("EEG Information", "AIBChannelsFile", gAIBFilename, gAIBFilename, %MAXPPS_SIZE, gDefaultFilename)
+
+
         LISTBOX RESET hDlg, %IDC_LISTBOX_AIB
         CALL AIBListBox(hDlg, %IDC_LISTBOX_AIB, 32)
         GetPrivateProfileString("EEG Information", "BipolarLeadsFile", gBLFilename, gBLFilename, %MAXPPS_SIZE, gDefaultFilename)
@@ -499,19 +518,38 @@ SUB LoadDefaults()
         SELECT CASE TRIM$(numberOfChannels)
             CASE "1"
                 CONTROL SET CHECK hDlg, %IDC_OPTION_32Channels, 1
-                FOR x = 1 TO 32
-                    LISTBOX SELECT hDlg, %IDC_LISTBOX_EEGChannels, x
-                NEXT x
+                CONTROL SET CHECK hDlg, %IDC_OPTION_64Channels, 0
+                CONTROL SET CHECK hDlg, %IDC_OPTION_128Channels, 0
+                'FOR x = 1 TO 32
+                '    LISTBOX SELECT hDlg, %IDC_LISTBOX_EEGChannels, x
+                'NEXT x
             CASE "2"
-                CONTROL SET CHECK hDlg, %IDC_OPTION_32Channels, 2
-                FOR x = 1 TO 64
-                    LISTBOX SELECT hDlg, %IDC_LISTBOX_EEGChannels, x
-                NEXT x
+                CONTROL SET CHECK hDlg, %IDC_OPTION_32Channels, 0
+                CONTROL SET CHECK hDlg, %IDC_OPTION_64Channels, 1
+                CONTROL SET CHECK hDlg, %IDC_OPTION_128Channels, 0
+                'FOR x = 1 TO 64
+                '    LISTBOX SELECT hDlg, %IDC_LISTBOX_EEGChannels, x
+                'NEXT x
             CASE "3"
-                CONTROL SET CHECK hDlg, %IDC_OPTION_32Channels, 3
-                FOR x = 1 TO 128
-                    LISTBOX SELECT hDlg, %IDC_LISTBOX_EEGChannels, x
-                NEXT x
+                CONTROL SET CHECK hDlg, %IDC_OPTION_32Channels, 0
+                CONTROL SET CHECK hDlg, %IDC_OPTION_64Channels, 0
+                CONTROL SET CHECK hDlg, %IDC_OPTION_128Channels, 1
+                'FOR x = 1 TO 128
+                '     LISTBOX SELECT hDlg, %IDC_LISTBOX_EEGChannels, x
+                'NEXT x
+        END SELECT
+
+
+        SELECT CASE TRIM$(numberOfChannels)
+            CASE "1"
+                LISTBOX RESET hDlg, %IDC_LISTBOX_EEGChannels
+                CALL EEGListBox(hDlg, %IDC_LISTBOX_EEGChannels, 32)
+            CASE "2"
+                LISTBOX RESET hDlg, %IDC_LISTBOX_EEGChannels
+                CALL EEGListBox(hDlg, %IDC_LISTBOX_EEGChannels, 64)
+            CASE "3"
+                LISTBOX RESET hDlg, %IDC_LISTBOX_EEGChannels
+                CALL EEGListBox(hDlg, %IDC_LISTBOX_EEGChannels, 128)
         END SELECT
 
 
@@ -598,7 +636,6 @@ SUB LoadDefaults()
             END IF
         END IF
 
-        gDefaultUsed = 1   'not using the default file
 
         CALL loadTCPIPDefaultsLocal(gDefaultFilename)
 
@@ -607,33 +644,40 @@ SUB LoadDefaults()
         CONTROL SET TEXT hDlg, %IDC_TEXTBOX_BytesInTCPArray, TRIM$(STR$(lResult * gTCPSamplesPerChannel))
         CONTROL SET TEXT hDlg, %IDC_TEXTBOX_ChannelsSentByTCP, TRIM$(STR$(lResult / 3))
 
-        CONTROL SET TEXT hDlg, %IDC_LABEL_LoadedDefaults, "Defaults Load."
+        CONTROL SET TEXT hDlg, %IDC_LABEL_LoadedDefaults, "Defaults Loaded."
         CONTROL SET COLOR     hDlg, %IDC_LABEL_LoadedDefaults, %RGB_GREEN, -1
         CONTROL REDRAW  hDlg, %IDC_LABEL_LoadedDefaults
+
+        CONTROL ENABLE hDlg, %IDC_BUTTON_OKEEG
+        CONTROL ENABLE hDlg, %IDC_BUTTON_Close
 
     END IF
 END SUB
 
 SUB SaveDefaults()
     LOCAL x, cnt, lbState AS LONG
-    LOCAL numberOfChannels, EEGChannels, AIBChannels, AuxiliarySensors AS ASCIIZ * 256
-    LOCAL BipolarLeads, SampleRates, ScreenLengths AS ASCIIZ * 256
+    LOCAL numberOfChannels, EEGChannels, AIBChannels, AuxiliarySensors AS ASCIIZ * 512
+    LOCAL BipolarLeads, SampleRates, ScreenLengths AS ASCIIZ * 512
     LOCAL lbItem, temp AS STRING
 
-    IF (gDefaultUsed <> 0) THEN  'not using default file
+    'IF (gDefaultUsed <> 0) THEN  'not using default file
         DISPLAY SAVEFILE 0, , , "Choose DEF Settings file", gCurrentDirectory, CHR$("DEF Files", 0, "*.DEF", 0), "", "DEF", %OFN_SHOWHELP   TO gDefaultFilename
-    END IF
+    'END IF
     IF (gDefaultFilename <> "") THEN
         'set number of channels
         CONTROL GET CHECK hDlg, %IDC_OPTION_32Channels TO lbState
-        SELECT CASE lbState
-            CASE 1
-                numberOfChannels = "1"      '32 channels
-            CASE 2
-                numberOfChannels = "2"      '64 channels
-            CASE 3
-                numberOfChannels = "3"      '128 channels
-        END SELECT
+        IF (lbState = 1) THEN
+            numberOfChannels = "1"      '32 channels
+        END IF
+        CONTROL GET CHECK hDlg, %IDC_OPTION_64Channels TO lbState
+        IF (lbState = 1) THEN
+            numberOfChannels = "2"      '64 channels
+        END IF
+
+        CONTROL GET CHECK hDlg, %IDC_OPTION_128Channels TO lbState
+        IF (lbState = 1) THEN
+            numberOfChannels = "3"      '128 channels
+        END IF
 
         'eeg channels
         LISTBOX GET COUNT hDlg, %IDC_LISTBOX_EEGChannels TO cnt
@@ -736,30 +780,194 @@ SUB SaveDefaults()
         WritePrivateProfileString("EEG Information", "AIBChannelsFile", gAIBFilename, gDefaultFilename)
         WritePrivateProfileString("EEG Information", "BipolarLeadsFile", gBLFilename, gDefaultFilename)
 
+        'added 9/3/2014 - FAA
+        WritePrivateProfileString("CHANNELS INFO", "ChooseGain", "1", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "EEGGain", ".0312", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "AIBGain", ".0006", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "OtherGain", "1", gDefaultFilename)
+
+        WritePrivateProfileString("CHANNELS INFO", "ChooseThreshold", "1", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "PreviousAverage", "12.5", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "LowerThreshold", "1", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "UpperThreshold", "1", gDefaultFilename)
+
+
         CALL saveTCPIPDefaults(gDefaultFilename)
 
-        IF (gDefaultUsed <> 0) THEN  'not using default file
-            MSGBOX gDefaultFilename + " settings saved."
-        ELSE
-            MSGBOX "Default settings saved."
+        CONTROL SET TEXT hDlg, %IDC_LABEL_LoadedDefaults, "Defaults Saved."
+        CONTROL SET COLOR     hDlg, %IDC_LABEL_LoadedDefaults, %RGB_GREEN, -1
+        CONTROL REDRAW  hDlg, %IDC_LABEL_LoadedDefaults
+
+        CONTROL ENABLE hDlg, %IDC_BUTTON_OKEEG
+        CONTROL ENABLE hDlg, %IDC_BUTTON_Close
+
+        MSGBOX gDefaultFilename + " settings saved."
+    END IF
+END SUB
+
+SUB SaveDefaultsToCurrentDefaultFile()
+    LOCAL x, cnt, lbState AS LONG
+    LOCAL numberOfChannels, EEGChannels, AIBChannels, AuxiliarySensors AS ASCIIZ * 512
+    LOCAL BipolarLeads, SampleRates, ScreenLengths AS ASCIIZ * 512
+    LOCAL lbItem, temp AS STRING
+
+    IF (gDefaultFilename <> "") THEN
+        'set number of channels
+        CONTROL GET CHECK hDlg, %IDC_OPTION_32Channels TO lbState
+        IF (lbState = 1) THEN
+            numberOfChannels = "1"      '32 channels
         END IF
+        CONTROL GET CHECK hDlg, %IDC_OPTION_64Channels TO lbState
+        IF (lbState = 1) THEN
+            numberOfChannels = "2"      '64 channels
+        END IF
+
+        CONTROL GET CHECK hDlg, %IDC_OPTION_128Channels TO lbState
+        IF (lbState = 1) THEN
+            numberOfChannels = "3"      '128 channels
+        END IF
+
+        'eeg channels
+        LISTBOX GET COUNT hDlg, %IDC_LISTBOX_EEGChannels TO cnt
+
+        IF (cnt > 0) THEN
+            temp = ""
+            FOR x = 1 TO cnt
+                LISTBOX GET STATE hDlg, %IDC_LISTBOX_EEGChannels, x TO lbState
+                IF (lbState = -1) THEN 'selected
+                    temp = temp + TRIM$(STR$(x)) + ","
+                END IF
+            NEXT x
+            EEGChannels = TRIM$(LEFT$(temp, LEN(temp) - 1))
+        END IF
+
+        'aib channels
+        LISTBOX GET COUNT hDlg, %IDC_LISTBOX_AIB TO cnt
+
+        IF (cnt > 0) THEN
+            temp = ""
+            FOR x = 1 TO cnt
+                LISTBOX GET STATE hDlg, %IDC_LISTBOX_AIB, x TO lbState
+                IF (lbState = -1) THEN 'selected
+                    temp = temp + TRIM$(STR$(x)) + ","
+                END IF
+            NEXT x
+            AIBChannels = TRIM$(LEFT$(temp, LEN(temp) - 1))
+        END IF
+
+
+        'Auxiliary Sensors
+        LISTBOX GET COUNT hDlg, %IDC_LISTBOX_AuxiliarySensors TO cnt
+
+        IF (cnt > 0) THEN
+            temp = ""
+            FOR x = 1 TO cnt
+                LISTBOX GET STATE hDlg, %IDC_LISTBOX_AuxiliarySensors, x TO lbState
+                IF (lbState = -1) THEN 'selected
+                    temp = temp + TRIM$(STR$(x)) + ","
+                END IF
+            NEXT x
+            AuxiliarySensors = TRIM$(LEFT$(temp, LEN(temp) - 1))
+        END IF
+
+        'BipolarLeads Sensors
+        LISTBOX GET COUNT hDlg, %IDC_LISTBOX_BipolarLeads TO cnt
+
+        IF (cnt > 0) THEN
+            temp = ""
+            FOR x = 1 TO cnt
+                LISTBOX GET STATE hDlg, %IDC_LISTBOX_BipolarLeads, x TO lbState
+                IF (lbState = -1) THEN 'selected
+                    temp = temp + TRIM$(STR$(x)) + ","
+                END IF
+            NEXT x
+            BipolarLeads = TRIM$(LEFT$(temp, LEN(temp) - 1))
+        END IF
+
+        'Sample Rates
+        LISTBOX GET COUNT hDlg, %IDC_LISTBOX_SampleRates TO cnt
+
+        IF (cnt > 0) THEN
+            temp = ""
+            FOR x = 1 TO cnt
+                LISTBOX GET STATE hDlg, %IDC_LISTBOX_SampleRates, x TO lbState
+                IF (lbState = -1) THEN 'selected
+                    temp = temp + TRIM$(STR$(x)) + ","
+                END IF
+            NEXT x
+            SampleRates = TRIM$(LEFT$(temp, LEN(temp) - 1))
+        END IF
+
+        'Screen Length
+        LISTBOX GET COUNT hDlg, %IDC_LISTBOX_ScreenLength TO cnt
+
+        IF (cnt > 0) THEN
+            temp = ""
+            FOR x = 1 TO cnt
+                LISTBOX GET STATE hDlg, %IDC_LISTBOX_ScreenLength, x TO lbState
+                IF (lbState = -1) THEN 'selected
+                    temp = temp + TRIM$(STR$(x)) + ","
+                END IF
+            NEXT x
+            ScreenLengths = TRIM$(LEFT$(temp, LEN(temp) - 1))
+        END IF
+
+
+
+        WritePrivateProfileString("EEG Information", "NumberOfChannels", numberOfChannels, gDefaultFilename)
+        WritePrivateProfileString("EEG Information", "EEGChannels", EEGChannels, gDefaultFilename)
+        WritePrivateProfileString("EEG Information", "AIBChannels", AIBChannels, gDefaultFilename)
+        WritePrivateProfileString("EEG Information", "AuxiliarySensors", AuxiliarySensors, gDefaultFilename)
+        WritePrivateProfileString("EEG Information", "BipolarLeads", BipolarLeads, gDefaultFilename)
+        WritePrivateProfileString("EEG Information", "SampleRates", SampleRates, gDefaultFilename)
+        WritePrivateProfileString("EEG Information", "ScreenLength", SampleRates, gDefaultFilename)
+
+        'added 8/19/2013 - FAA
+
+        WritePrivateProfileString("EEG Information", "EEGChannelsFile", gEEGFilename, gDefaultFilename)
+        WritePrivateProfileString("EEG Information", "AIBChannelsFile", gAIBFilename, gDefaultFilename)
+        WritePrivateProfileString("EEG Information", "BipolarLeadsFile", gBLFilename, gDefaultFilename)
+
+        'added 9/3/2014 - FAA
+        WritePrivateProfileString("CHANNELS INFO", "ChooseGain", "1", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "EEGGain", ".0312", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "AIBGain", ".0006", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "OtherGain", "1", gDefaultFilename)
+
+        WritePrivateProfileString("CHANNELS INFO", "ChooseThreshold", "1", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "PreviousAverage", "12.5", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "LowerThreshold", "1", gDefaultFilename)
+        WritePrivateProfileString("CHANNELS INFO", "UpperThreshold", "1", gDefaultFilename)
+
+
+        CALL saveTCPIPDefaults(gDefaultFilename)
+
     END IF
 END SUB
 
 FUNCTION EEGListBox(BYVAL hDlg AS DWORD, BYVAL lID AS LONG, BYVAL lCount _
     AS LONG) AS LONG
-    LOCAL i, labCnt, aThruFCnt, lRes AS LONG
+    LOCAL i, labCnt, aThruFCnt, lRes, lFlag AS LONG
     LOCAL selectChannel32, selectChannel64, selectChannel128, selectedState AS LONG
     LOCAL temp, lab, filename AS STRING
 
-    FOR i = %IDC_OPTION_32Channels TO %IDC_OPTION_128Channels
-         CONTROL GET CHECK hDlg, i TO lRes
-         IF lRes THEN EXIT FOR
-    NEXT i
+    CONTROL GET CHECK hDlg, %IDC_OPTION_32Channels TO lRes
+    IF (lRes = 1) THEN '32 channels
+        lFlag = 1
+    END IF
 
-    lRes = i - %IDC_OPTION_32Channels + 1
+    CONTROL GET CHECK hDlg, %IDC_OPTION_64Channels TO lRes
+    IF (lRes = 1) THEN '64 channels
+        lFlag = 2
+    END IF
 
-    SELECT CASE lRes
+    CONTROL GET CHECK hDlg, %IDC_OPTION_128Channels TO lRes
+    IF (lRes = 1) THEN '128 channels
+        lFlag = 3
+    END IF
+
+
+    SELECT CASE lFlag
         CASE 1 '32 channels
             REDIM labels(32)
 
@@ -785,7 +993,7 @@ FUNCTION EEGListBox(BYVAL hDlg AS DWORD, BYVAL lID AS LONG, BYVAL lCount _
     WEND
     CLOSE #1
 
-    SELECT CASE lRes
+    SELECT CASE lFlag
         CASE 1 '32 channels
             FOR i = 1 TO 32
                 LISTBOX SELECT hDlg, %IDC_LISTBOX_EEGChannels, i
@@ -918,7 +1126,7 @@ FUNCTION writeToConfigFile() AS LONG
     '=================================================================
     CONTROL GET CHECK hDlg, %IDC_CHECKBOX_ConnectToActiviewTCPIP TO lResult
     IF (lResult = 1) THEN
-        WritePrivateProfileString( "Experiment Section", "UseTCPIP", "1", gDefaultFilename)
+        WritePrivateProfileString( "Experiment Section", "UseTCPIP", "1", gINIFilename)
         WritePrivateProfileString( "Experiment Section", "EEGDefaultFilename", gDefaultFilename, gINIFilename)
         GetPrivateProfileString("OPTIONS", "TCPSubset", "0", temp, %MAXPPS_SIZE, gDefaultFilename)
         lResult = WritePrivateProfileString( "TCP", "TCPSubset", TRIM$(temp), gActiviewFilenameTemp)  'Set the TCPSubset under TCP settings
@@ -933,7 +1141,7 @@ FUNCTION writeToConfigFile() AS LONG
         GetPrivateProfileString("OPTIONS", "AddTriggerStatusChan", "0", temp, %MAXPPS_SIZE, gDefaultFilename)
         lResult = WritePrivateProfileString( "TCP", "TCPaddTrig", TRIM$(temp), gActiviewFilenameTemp)  'Set the TCPaddTP under TCP settings
     ELSE
-        WritePrivateProfileString( "Experiment Section", "UseTCPIP", "0", gINIFilename)
+        'WritePrivateProfileString( "Experiment Section", "UseTCPIP", "0", gINIFilename)
     END IF
     'WritePrivateProfileString( "Experiment Section", "TCPIPSettingsFile", gDefaultFilename, gINIFilename)
 
@@ -974,18 +1182,28 @@ FUNCTION writeToConfigFile() AS LONG
             lResult = WritePrivateProfileString( "Labels", "Box" + TRIM$(STR$(x)), aibLabels(x), gActiviewFilenameTemp)  'Set the Channels to Freeform
     NEXT x
 
-   '==================================================
-   'added 8/26/2014 - need to write out an indicator
-   'to whether Polhemus system will be used or not.
-   'If it is to be used, then write out the number
-   'of channels to the .INI file. Otherwise, write
-   'a blank.
-   '==================================================
+    '==================================================
+    'added 8/26/2014 - need to write out an indicator
+    'to whether Polhemus system will be used or not.
+    'If it is to be used, then write out the file
+    'name to the .INI file. Otherwise, write
+    'a blank.
+    '==================================================
+    IF (gPolhemusFilename = "") THEN 'if no previous file has been chosen - use standard files
+        SELECT CASE nbrOfChannels
+            CASE 32
+                gPolhemusFilename = "Standard-32"
+            CASE 64
+                gPolhemusFilename = "BioSemi-64"
+            CASE 128
+                gPolhemusFilename = "BioSemi-128"
+         END SELECT
+    END IF
     CONTROL GET CHECK hDlg, %IDC_CHECKBOX_UsePolhemus TO lResult
     IF (lResult = 1) THEN  'checked
-        WritePrivateProfileString( "Experiment Section", "Polhemus", STR$(nbrOfChannels), gINIFilename)
+        WritePrivateProfileString( "Experiment Section", "Polhemus", gPolhemusFilename, gINIFilename)
     ELSE
-        WritePrivateProfileString( "Experiment Section", "Polhemus", "0", gINIFilename)
+        WritePrivateProfileString( "Experiment Section", "Polhemus", "", gINIFilename)
     END IF
 
     '=================================================================
@@ -1167,13 +1385,7 @@ SUB loadTCPIPDefaultsLocal(filename AS ASCIIZ * 512)
     LOCAL eegFilename AS ASCIIZ * 512
     DIM target(1 TO 999) AS STRING
 
-    IF (gDefaultUsed = 0) THEN  'no default file selected
-        eegFilename = gDefaultFilename
-    ELSE
-        'GetPrivateProfileString("Experiment Section", "EEGDefaultFilename", "", eegFilename, 2048, gINIFilename)
-        'GetPrivateProfileString("OPTIONS", "ActiviewConfig", "", TCPIPSettings.ActiviewConfigFile, 2048, eegFilename)
-        eegFilename = gDefaultFilename
-    END IF
+    eegFilename = gDefaultFilename
 
     'IF (ISFILE(TCPIPSettings.ActiviewConfigFile) = 0) THEN
     '    MSGBOX "The default Biosemi config file was not found."
@@ -1319,10 +1531,10 @@ SUB buildChannelsToUseLocal()
             lPtr = 64
         CASE 2
             lPtr = 128
-        CASE 1
-            lPtr = 160
+        'CASE 1
+        '    lPtr = 160
         CASE 0
-            lPtr = 256
+            lPtr = 0
     END SELECT
 
     TCPIPSettings.ChannelsToUse = lPtr
@@ -1571,6 +1783,7 @@ FUNCTION ShowDIALOG1(BYVAL hParent AS DWORD) AS LONG
     LOCAL hFont2 AS DWORD
     LOCAL hFont3 AS DWORD
     LOCAL hFont4 AS DWORD
+    LOCAL hFont5 AS DWORD
 
     DIALOG NEW PIXELS, hParent, "EEG Settings", 108, 114, 668, 707, TO hDlg
     ' %WS_GROUP...
@@ -1650,7 +1863,7 @@ FUNCTION ShowDIALOG1(BYVAL hParent AS DWORD) AS LONG
         124, 39, %WS_CHILD OR %WS_VISIBLE OR %WS_TABSTOP OR %ES_LEFT OR _
         %ES_AUTOHSCROLL OR %ES_READONLY, %WS_EX_CLIENTEDGE OR %WS_EX_LEFT OR _
         %WS_EX_LTRREADING OR %WS_EX_RIGHTSCROLLBAR
-    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX5, "60000", 1254, 190, 83, 41
+    CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_Timeout, "60000", 1254, 190, 83, 41
     CONTROL ADD TEXTBOX,  hDlg, %IDC_TEXTBOX_ChannelsSentByTCP, "32", 880, _
         244, 124, 39, %WS_CHILD OR %WS_VISIBLE OR %WS_TABSTOP OR %ES_LEFT OR _
         %ES_AUTOHSCROLL OR %ES_READONLY, %WS_EX_CLIENTEDGE OR %WS_EX_LEFT OR _
@@ -1713,7 +1926,7 @@ FUNCTION ShowDIALOG1(BYVAL hParent AS DWORD) AS LONG
         "to Use", 1136, 664, 186, 33
     CONTROL ADD LABEL,    hDlg, %IDC_LABEL17, "EEG Channels", 56, 40, 240, 25
     CONTROL SET COLOR     hDlg, %IDC_LABEL17, -1, RGB(128, 128, 192)
-    CONTROL ADD LABEL,    hDlg, %IDC_LABEL18, "TCP Subset", 694, 384, 240, 25
+    CONTROL ADD LABEL,    hDlg, %IDC_LABEL18, "TCP Subset", 694, 384, 522, 25
     CONTROL SET COLOR     hDlg, %IDC_LABEL18, -1, RGB(255, 128, 255)
     CONTROL ADD LABEL,    hDlg, %IDC_LABEL19, "Biosemi Server Information", _
         688, 80, 240, 25
@@ -1729,10 +1942,12 @@ FUNCTION ShowDIALOG1(BYVAL hParent AS DWORD) AS LONG
     CONTROL ADD CHECKBOX, hDlg, %IDC_CHECKBOX_UsePolhemus, "Use Polhemus", _
         73, 190, 136, 24
 
+
     FONT NEW "Arial", 12, 0, %ANSI_CHARSET TO hFont1
     FONT NEW "Terminal", 14, 0, %ANSI_CHARSET TO hFont2
     FONT NEW "Arial Narrow", 12, 0, %ANSI_CHARSET TO hFont3
     FONT NEW "Arial", 12, 1, %ANSI_CHARSET TO hFont4
+    FONT NEW "Arial", 11, 0, %ANSI_CHARSET TO hFont5
 
     CONTROL SET FONT hDlg, %IDC_OPTION_32Channels, hFont1
     CONTROL SET FONT hDlg, %IDC_OPTION_64Channels, hFont1
@@ -1762,7 +1977,7 @@ FUNCTION ShowDIALOG1(BYVAL hParent AS DWORD) AS LONG
     CONTROL SET FONT hDlg, %IDC_TEXTBOX_TCPServer, hFont1
     CONTROL SET FONT hDlg, %IDC_TEXTBOX_TCPPort, hFont1
     CONTROL SET FONT hDlg, %IDC_TEXTBOX_BytesInTCPArray, hFont1
-    CONTROL SET FONT hDlg, %IDC_TEXTBOX5, hFont1
+    CONTROL SET FONT hDlg, %IDC_TEXTBOX_Timeout, hFont1
     CONTROL SET FONT hDlg, %IDC_TEXTBOX_ChannelsSentByTCP, hFont1
     CONTROL SET FONT hDlg, %IDC_TEXTBOX_TCPSamplesPerChannel, hFont1
     CONTROL SET FONT hDlg, %IDC_OPTION_TCPSubset0, hFont3
@@ -1799,18 +2014,31 @@ FUNCTION ShowDIALOG1(BYVAL hParent AS DWORD) AS LONG
 
     CONTROL SET CHECK hDlg, %IDC_OPTION_32Channels, 1
     EEGListBox(hDlg, %IDC_LISTBOX_EEGChannels, 32)
+
     SampleRateListBox(hDlg, %IDC_LISTBOX_SampleRates, 5)
     LISTBOX SELECT hDlg, %IDC_LISTBOX_SampleRates, 3
     ScreenLengthListBox(hDlg, %IDC_LISTBOX_ScreenLength, 5)
+
     LISTBOX SELECT hDlg, %IDC_LISTBOX_ScreenLength, 3
     ASListBox(hDlg, %IDC_LISTBOX_AuxiliarySensors, 4)
     BLListBox(hDlg, %IDC_LISTBOX_BipolarLeads, 32)
     AIBListBox(hDlg, %IDC_LISTBOX_AIB, 32)
 
     CONTROL DISABLE hDlg, %IDC_BUTTON_TCPIPSettings
+    CONTROL DISABLE hDlg, %IDC_TEXTBOX_TCPServer
+    CONTROL DISABLE hDlg, %IDC_TEXTBOX_TCPPort
+    CONTROL DISABLE hDlg, %IDC_TEXTBOX_Timeout
+    CONTROL DISABLE hDlg, %IDC_BUTTON_OKEEG
+    CONTROL DISABLE hDlg, %IDC_BUTTON_Close
+
 
     GetPrivateProfileString("Experiment Section", "ActiviewConfigUsed", "NO", temp, 2048, gINIFilename)
     IF (UCASE$(temp) = "NO" OR UCASE$(temp) = "") THEN
+        CONTROL DISABLE hDlg, %IDC_CHECKBOX_ConnectToActiviewTCPIP
+    END IF
+
+    GetPrivateProfileString("Experiment Section", "UseTCPIP", "1", temp, 2048, gINIFilename)
+    IF (UCASE$(temp) = "0" OR UCASE$(temp) = "") THEN
         CONTROL DISABLE hDlg, %IDC_CHECKBOX_ConnectToActiviewTCPIP
     END IF
 
