@@ -1,4 +1,4 @@
 Production
 ==========
 
-This is the DOPS Production Powerbasic Applications and Utilities
+DOPS Production Powerbasic Applications and Utilities
